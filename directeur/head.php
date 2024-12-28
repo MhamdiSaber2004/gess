@@ -1,5 +1,5 @@
 <?php 
-include_once "./db/db.php";
+include_once "db/db.php";
 
 if (!isset($_SESSION["idPompiste"])) {
   header("location: login.php");
