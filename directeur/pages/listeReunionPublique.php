@@ -25,7 +25,7 @@
 
                 <div class="col-4 text-right">
                     <a href="assets/file/الاستدعاء-للجلسة-العامة.pdf" download="الاستدعاء-للجلسة-العامة" class="btn btn-sm btn-primary" >استدعاء الجلسات العامة</a>
-                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#ajouterReunionPublique">إضافة الجلسات العامة</button>
+                    <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#ajouterReunionPublique">إضافة الجلسات العامة</button>
                 </div>
               </div>
             </div>
