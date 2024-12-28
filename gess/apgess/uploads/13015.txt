@@ -1,0 +1,18 @@
+--->20/06/2023 12:49:34
+Erreur s'est produit en :
+>> Forme  : mData
+>> Control: Connect
+1:	mData	Connect
+0:	_Recordset	Open
+>> Détails: Erreur de syntaxe (opérateur absent) dans l'expression 'id='.
+-----------------------------------------------------------------------------------------
+
+--->20/06/2023 12:49:35
+Erreur s'est produit en :
+>> Forme  : fClotureMois
+>> Control: btnOk_Click
+1:	fClotureMois	btnOk_Click
+0:	_Recordset	get_RecordCount
+>> Détails: Cette opération n'est pas autorisée si l'objet est fermé.
+-----------------------------------------------------------------------------------------
+

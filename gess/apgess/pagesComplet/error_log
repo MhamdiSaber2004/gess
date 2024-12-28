@@ -1,0 +1,5 @@
+[30-Jul-2024 21:47:33 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'temp' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pagesComplet/statPompe.php:174
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pagesComplet/statPompe.php(174): mysqli->query('INSERT INTO uti...')
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pagesComplet/statPompe.php on line 174

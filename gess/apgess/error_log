@@ -1,0 +1,432 @@
+[10-Oct-2023 06:25:12 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php on line 2
+[10-Oct-2023 06:25:12 UTC] PHP Warning:  Undefined variable $_SESSION in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 7
+[10-Oct-2023 06:25:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 7
+[10-Oct-2023 06:25:12 UTC] PHP Warning:  include(gestionPiController.php): Failed to open stream: No such file or directory in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 8
+[10-Oct-2023 06:25:12 UTC] PHP Warning:  include(): Failed opening 'gestionPiController.php' for inclusion (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 8
+[10-Oct-2023 06:25:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 622
+[10-Oct-2023 06:25:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 623
+[10-Oct-2023 06:25:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 623
+[10-Oct-2023 06:25:14 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php on line 2
+[10-Oct-2023 06:25:14 UTC] PHP Warning:  Undefined variable $_SESSION in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 7
+[10-Oct-2023 06:25:14 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 7
+[10-Oct-2023 06:25:14 UTC] PHP Warning:  include(gestionPiController.php): Failed to open stream: No such file or directory in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 8
+[10-Oct-2023 06:25:14 UTC] PHP Warning:  include(): Failed opening 'gestionPiController.php' for inclusion (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 8
+[10-Oct-2023 06:25:14 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 622
+[10-Oct-2023 06:25:14 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 623
+[10-Oct-2023 06:25:14 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 623
+[10-Oct-2023 21:45:32 UTC] PHP Warning:  Undefined array key "idGess" in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/head.php on line 9
+[10-Oct-2023 21:45:57 UTC] PHP Warning:  Undefined array key "idGess" in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/head.php on line 9
+[10-Oct-2023 21:47:53 UTC] PHP Warning:  Undefined array key "idGess" in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/head.php on line 9
+[10-Oct-2023 21:47:56 UTC] PHP Warning:  Undefined array key "idGess" in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/head.php on line 9
+[10-Oct-2023 22:41:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/sidebar.php:24
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(12): include()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/sidebar.php on line 24
+[10-Oct-2023 22:41:35 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/sidebar.php:24
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(12): include()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/sidebar.php on line 24
+[10-Oct-2023 22:42:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/sidebar.php:24
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(12): include()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/sidebar.php on line 24
+[10-Oct-2023 22:43:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/sidebar.php:24
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(12): include()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/sidebar.php on line 24
+[10-Oct-2023 23:42:06 UTC] PHP Warning:  Undefined array key "idGess" in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php on line 14
+[10-Oct-2023 23:42:06 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php:14) in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/head.php on line 5
+[10-Oct-2023 23:42:11 UTC] PHP Warning:  Undefined array key "idGess" in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php on line 14
+[10-Oct-2023 23:42:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php:14) in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/head.php on line 5
+[10-Oct-2023 23:42:14 UTC] PHP Warning:  Undefined array key "idGess" in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php on line 14
+[10-Oct-2023 23:42:14 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php:14) in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/head.php on line 5
+[10-Oct-2023 23:42:15 UTC] PHP Warning:  Undefined array key "idGess" in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php on line 14
+[10-Oct-2023 23:42:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php:14) in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/head.php on line 5
+[10-Oct-2023 23:42:16 UTC] PHP Warning:  Undefined array key "idGess" in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php on line 14
+[10-Oct-2023 23:42:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php:14) in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/head.php on line 5
+[10-Oct-2023 23:52:24 UTC] PHP Warning:  session_start(): open(/a.ness.com.tn/sess_81dd49d256425a30eaa3861063a5974c, O_RDWR) failed: No such file or directory (2) in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php on line 2
+[10-Oct-2023 23:52:24 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /a.ness.com.tn) in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php on line 2
+[10-Oct-2023 23:52:24 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php:2) in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/head.php on line 5
+[10-Oct-2023 23:52:33 UTC] PHP Warning:  session_start(): open(/a.ness.com.tn/sess_81dd49d256425a30eaa3861063a5974c, O_RDWR) failed: No such file or directory (2) in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/logout.php on line 2
+[10-Oct-2023 23:52:33 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /a.ness.com.tn) in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/logout.php on line 2
+[10-Oct-2023 23:52:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/logout.php:2) in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/logout.php on line 6
+[11-Oct-2023 22:25:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php:119
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(132): include()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php on line 119
+[11-Oct-2023 22:25:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php:119
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(132): include()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php on line 119
+[11-Oct-2023 22:26:05 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php:119
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(132): include()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php on line 119
+[11-Oct-2023 22:26:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php:119
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(132): include()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php on line 119
+[11-Oct-2023 22:26:37 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php:119
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(132): include()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php on line 119
+[11-Oct-2023 22:28:03 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php:119
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(132): include()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php on line 119
+[11-Oct-2023 22:28:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php:119
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(132): include()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php on line 119
+[11-Oct-2023 22:34:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php:119
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(132): include()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php on line 119
+[12-Jul-2024 17:27:38 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[12-Jul-2024 17:28:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[12-Jul-2024 17:29:07 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cjmxjvbk_argon_latest.benefique_AEP' doesn't exist in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php:68
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php(68): mysqli->query('SELECT * FROM b...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(46): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php on line 68
+[12-Jul-2024 17:29:50 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[17-Jul-2024 11:22:38 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cjmxjvbk_argon_latest.benefique_PI' doesn't exist in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php:68
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php(68): mysqli->query('SELECT * FROM b...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(46): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php on line 68
+[18-Jul-2024 07:42:48 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[18-Jul-2024 10:43:50 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[18-Jul-2024 10:45:50 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[18-Jul-2024 10:46:42 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cjmxjvbk_argon_latest.benefique_PI' doesn't exist in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php:68
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php(68): mysqli->query('SELECT * FROM b...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(46): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php on line 68
+[18-Jul-2024 10:51:29 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cjmxjvbk_argon_latest.benefique_PI' doesn't exist in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php:68
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php(68): mysqli->query('SELECT * FROM b...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(46): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php on line 68
+[18-Jul-2024 11:16:46 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[18-Jul-2024 16:34:42 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cjmxjvbk_argon_latest.benefique_AEP' doesn't exist in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php:68
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php(68): mysqli->query('SELECT * FROM b...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(46): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php on line 68
+[18-Jul-2024 16:48:58 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[18-Jul-2024 16:56:11 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cjmxjvbk_argon_latest.benefique_AEP' doesn't exist in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/modifProbleme.php:78
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/modifProbleme.php(78): mysqli->query('SELECT * FROM b...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(43): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/modifProbleme.php on line 78
+[18-Jul-2024 16:56:32 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cjmxjvbk_argon_latest.benefique_AEP' doesn't exist in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php:68
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php(68): mysqli->query('SELECT * FROM b...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(46): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php on line 68
+[22-Jul-2024 11:42:16 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[22-Jul-2024 11:42:42 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[25-Jul-2024 20:23:26 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[25-Jul-2024 21:15:49 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[26-Jul-2024 12:38:24 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[26-Jul-2024 12:46:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[26-Jul-2024 12:48:25 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[26-Jul-2024 12:49:26 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[26-Jul-2024 12:50:39 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[26-Jul-2024 13:00:16 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[26-Jul-2024 18:55:23 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[27-Jul-2024 18:19:18 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[27-Jul-2024 18:23:52 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[27-Jul-2024 18:25:40 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[27-Jul-2024 18:34:48 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[27-Jul-2024 18:35:05 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[27-Jul-2024 22:07:23 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[28-Jul-2024 12:33:06 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[28-Jul-2024 19:38:43 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[28-Jul-2024 19:39:22 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[29-Jul-2024 11:55:54 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[29-Jul-2024 11:56:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[29-Jul-2024 11:56:36 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[30-Jul-2024 22:33:20 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cjmxjvbk_argon_latest.benefique_PI' doesn't exist in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php:68
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php(68): mysqli->query('SELECT * FROM b...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(46): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php on line 68
+[31-Jul-2024 09:20:08 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[31-Jul-2024 09:20:19 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[31-Jul-2024 11:00:23 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[27-Sep-2024 12:12:57 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[27-Sep-2024 12:13:01 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[27-Sep-2024 12:15:47 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cjmxjvbk_argon_latest.benefique_PI' doesn't exist in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php:68
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php(68): mysqli->query('SELECT * FROM b...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(46): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php on line 68
+[27-Sep-2024 12:16:03 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cjmxjvbk_argon_latest.benefique_PI' doesn't exist in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php:68
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php(68): mysqli->query('SELECT * FROM b...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(46): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php on line 68
+[27-Sep-2024 12:16:31 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cjmxjvbk_argon_latest.benefique_PI' doesn't exist in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php:68
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php(68): mysqli->query('SELECT * FROM b...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(46): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php on line 68
+[27-Sep-2024 13:40:33 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cjmxjvbk_argon_latest.benefique_PI' doesn't exist in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php:68
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php(68): mysqli->query('SELECT * FROM b...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(46): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/ajoutProbleme.php on line 68
+[30-Sep-2024 09:51:57 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[30-Sep-2024 13:12:08 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[30-Sep-2024 13:16:59 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[30-Sep-2024 13:18:08 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[30-Sep-2024 13:18:27 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[03-Oct-2024 08:23:47 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[06-Oct-2024 20:25:35 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13
+[10-Oct-2024 13:54:35 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'idPompiste' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php:13
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php(13): mysqli->query('INSERT INTO `pr...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(49): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/prgPompeEauQuotiqien.php on line 13

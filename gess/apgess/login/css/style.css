@@ -1,0 +1,55 @@
+
+
+
+
+
+body {
+    background-color: #d4dadc;
+}
+.a :hover{
+    background-color: black !important;
+
+}
+.wrapper--w690 {
+    max-width: 690px;
+  }
+  .wrapper {
+    margin: 0 auto;
+  } 
+ 
+  .card-1 {
+    background: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: absolute;
+    -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    top: 99px;
+    font-family: "Montserrat", "Arial", "Helvetica Neue", sans-serif;
+  }
+  .first-div {
+    width: 40rem;
+     
+}
+
+  @media (max-width: 767px) {
+  
+    #tab-login,#tab-register{
+      font-size: 14px !important;
+      min-width: 100px;
+  }
+  .card-1 {
+    width: 100%;
+    top: 120px;
+
+  }
+
+}
+@media (min-width: 767px) {
+   
+   
+
+ }

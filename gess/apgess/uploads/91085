@@ -1,0 +1,36 @@
+[04-Jan-2024 11:39:02 Asia/Manila] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /mnt/ssd/gcsorgtn/public_html/classes/DBConnection.php on line 18
+[04-Jan-2024 11:39:02 Asia/Manila] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /mnt/ssd/gcsorgtn/public_html/classes/SystemSettings.php on line 16
+[04-Jan-2024 11:39:02 Asia/Manila] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /mnt/ssd/gcsorgtn/public_html/classes/SystemSettings.php:17
+Stack trace:
+#0 /mnt/ssd/gcsorgtn/public_html/classes/SystemSettings.php(189): SystemSettings->load_system_info()
+#1 /mnt/ssd/gcsorgtn/public_html/config.php(9): require_once('/mnt/ssd/gcsorg...')
+#2 /mnt/ssd/gcsorgtn/public_html/index.php(1): require_once('/mnt/ssd/gcsorg...')
+#3 {main}
+  thrown in /mnt/ssd/gcsorgtn/public_html/classes/SystemSettings.php on line 17
+[04-Jan-2024 11:39:04 Asia/Manila] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /mnt/ssd/gcsorgtn/public_html/classes/DBConnection.php on line 18
+[04-Jan-2024 11:39:04 Asia/Manila] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /mnt/ssd/gcsorgtn/public_html/classes/SystemSettings.php on line 16
+[04-Jan-2024 11:39:04 Asia/Manila] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /mnt/ssd/gcsorgtn/public_html/classes/SystemSettings.php:17
+Stack trace:
+#0 /mnt/ssd/gcsorgtn/public_html/classes/SystemSettings.php(189): SystemSettings->load_system_info()
+#1 /mnt/ssd/gcsorgtn/public_html/config.php(9): require_once('/mnt/ssd/gcsorg...')
+#2 /mnt/ssd/gcsorgtn/public_html/index.php(1): require_once('/mnt/ssd/gcsorg...')
+#3 {main}
+  thrown in /mnt/ssd/gcsorgtn/public_html/classes/SystemSettings.php on line 17
+[04-Jan-2024 11:39:05 Asia/Manila] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /mnt/ssd/gcsorgtn/public_html/classes/DBConnection.php on line 18
+[04-Jan-2024 11:39:05 Asia/Manila] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /mnt/ssd/gcsorgtn/public_html/classes/SystemSettings.php on line 16
+[04-Jan-2024 11:39:05 Asia/Manila] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /mnt/ssd/gcsorgtn/public_html/classes/SystemSettings.php:17
+Stack trace:
+#0 /mnt/ssd/gcsorgtn/public_html/classes/SystemSettings.php(189): SystemSettings->load_system_info()
+#1 /mnt/ssd/gcsorgtn/public_html/config.php(9): require_once('/mnt/ssd/gcsorg...')
+#2 /mnt/ssd/gcsorgtn/public_html/index.php(1): require_once('/mnt/ssd/gcsorg...')
+#3 {main}
+  thrown in /mnt/ssd/gcsorgtn/public_html/classes/SystemSettings.php on line 17
+[04-Jan-2024 11:39:06 Asia/Manila] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /mnt/ssd/gcsorgtn/public_html/classes/DBConnection.php on line 18
+[04-Jan-2024 11:39:06 Asia/Manila] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /mnt/ssd/gcsorgtn/public_html/classes/SystemSettings.php on line 16
+[04-Jan-2024 11:39:06 Asia/Manila] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /mnt/ssd/gcsorgtn/public_html/classes/SystemSettings.php:17
+Stack trace:
+#0 /mnt/ssd/gcsorgtn/public_html/classes/SystemSettings.php(189): SystemSettings->load_system_info()
+#1 /mnt/ssd/gcsorgtn/public_html/config.php(9): require_once('/mnt/ssd/gcsorg...')
+#2 /mnt/ssd/gcsorgtn/public_html/index.php(1): require_once('/mnt/ssd/gcsorg...')
+#3 {main}
+  thrown in /mnt/ssd/gcsorgtn/public_html/classes/SystemSettings.php on line 17

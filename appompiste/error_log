@@ -1,0 +1,73 @@
+[11-Oct-2023 02:06:06 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'cjmxjvbk_argon'@'102.219.176.27' to database 'cjmxjvbk_argon' in /home3/cjmxjvbk/a.ness.com.tn/appompiste/db/db.php on line 7
+[11-Oct-2023 02:06:06 UTC] PHP Warning:  Attempt to read property "connect_error" on bool in /home3/cjmxjvbk/a.ness.com.tn/appompiste/db/db.php on line 9
+[11-Oct-2023 02:06:06 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/appompiste/db/db.php on line 14
+[11-Oct-2023 02:06:06 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/appompiste/db/db.php:7) in /home3/cjmxjvbk/a.ness.com.tn/appompiste/head.php on line 7
+[11-Oct-2023 02:06:13 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home3/cjmxjvbk/a.ness.com.tn/appompiste/controller/controller.php:9
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/appompiste/login.php(4): include_once()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/appompiste/controller/controller.php on line 9
+[11-Oct-2023 02:06:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home3/cjmxjvbk/a.ness.com.tn/appompiste/controller/controller.php:9
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/appompiste/login.php(4): include_once()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/appompiste/controller/controller.php on line 9
+[11-Oct-2023 02:06:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home3/cjmxjvbk/a.ness.com.tn/appompiste/controller/controller.php:9
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/appompiste/login.php(4): include_once()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/appompiste/controller/controller.php on line 9
+[11-Oct-2023 02:06:36 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home3/cjmxjvbk/a.ness.com.tn/appompiste/controller/controller.php:9
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/appompiste/login.php(4): include_once()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/appompiste/controller/controller.php on line 9
+[11-Oct-2023 02:06:36 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home3/cjmxjvbk/a.ness.com.tn/appompiste/controller/controller.php:9
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/appompiste/login.php(4): include_once()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/appompiste/controller/controller.php on line 9
+[11-Oct-2023 02:06:37 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home3/cjmxjvbk/a.ness.com.tn/appompiste/controller/controller.php:9
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/appompiste/login.php(4): include_once()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/appompiste/controller/controller.php on line 9
+[11-Oct-2023 02:06:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home3/cjmxjvbk/a.ness.com.tn/appompiste/controller/controller.php:9
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/appompiste/login.php(4): include_once()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/appompiste/controller/controller.php on line 9
+[11-Oct-2023 02:06:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home3/cjmxjvbk/a.ness.com.tn/appompiste/controller/controller.php:9
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/appompiste/login.php(4): include_once()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/appompiste/controller/controller.php on line 9
+[11-Oct-2023 02:06:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home3/cjmxjvbk/a.ness.com.tn/appompiste/controller/controller.php:9
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/appompiste/login.php(4): include_once()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/appompiste/controller/controller.php on line 9
+[17-Jul-2024 10:46:36 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cjmxjvbk_argon_latest.benefique_PI' doesn't exist in /home3/cjmxjvbk/a.ness.com.tn/appompiste/pages/ajoutProbleme.php:68
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/appompiste/pages/ajoutProbleme.php(68): mysqli->query('SELECT * FROM b...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/appompiste/index.php(56): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/appompiste/pages/ajoutProbleme.php on line 68
+[18-Jul-2024 10:49:29 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cjmxjvbk_argon_latest.benefique_AEP' doesn't exist in /home3/cjmxjvbk/a.ness.com.tn/appompiste/pages/ajoutProbleme.php:68
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/appompiste/pages/ajoutProbleme.php(68): mysqli->query('SELECT * FROM b...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/appompiste/index.php(56): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/appompiste/pages/ajoutProbleme.php on line 68
+[18-Jul-2024 10:50:16 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cjmxjvbk_argon_latest.benefique_AEP' doesn't exist in /home3/cjmxjvbk/a.ness.com.tn/appompiste/pages/ajoutProbleme.php:68
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/appompiste/pages/ajoutProbleme.php(68): mysqli->query('SELECT * FROM b...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/appompiste/index.php(56): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/appompiste/pages/ajoutProbleme.php on line 68
+[26-Jul-2024 13:29:52 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cjmxjvbk_argon_latest.benefique_AEP' doesn't exist in /home3/cjmxjvbk/a.ness.com.tn/appompiste/pages/ajoutProbleme.php:68
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/appompiste/pages/ajoutProbleme.php(68): mysqli->query('SELECT * FROM b...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/appompiste/index.php(56): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/appompiste/pages/ajoutProbleme.php on line 68

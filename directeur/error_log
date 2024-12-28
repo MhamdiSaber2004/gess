@@ -1,0 +1,120 @@
+[10-Oct-2023 06:25:12 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php on line 2
+[10-Oct-2023 06:25:12 UTC] PHP Warning:  Undefined variable $_SESSION in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 7
+[10-Oct-2023 06:25:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 7
+[10-Oct-2023 06:25:12 UTC] PHP Warning:  include(gestionPiController.php): Failed to open stream: No such file or directory in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 8
+[10-Oct-2023 06:25:12 UTC] PHP Warning:  include(): Failed opening 'gestionPiController.php' for inclusion (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 8
+[10-Oct-2023 06:25:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 622
+[10-Oct-2023 06:25:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 623
+[10-Oct-2023 06:25:12 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 623
+[10-Oct-2023 06:25:14 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php on line 2
+[10-Oct-2023 06:25:14 UTC] PHP Warning:  Undefined variable $_SESSION in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 7
+[10-Oct-2023 06:25:14 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 7
+[10-Oct-2023 06:25:14 UTC] PHP Warning:  include(gestionPiController.php): Failed to open stream: No such file or directory in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 8
+[10-Oct-2023 06:25:14 UTC] PHP Warning:  include(): Failed opening 'gestionPiController.php' for inclusion (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 8
+[10-Oct-2023 06:25:14 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 622
+[10-Oct-2023 06:25:14 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 623
+[10-Oct-2023 06:25:14 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/gestionAep.php on line 623
+[10-Oct-2023 21:45:32 UTC] PHP Warning:  Undefined array key "idGess" in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/head.php on line 9
+[10-Oct-2023 21:45:57 UTC] PHP Warning:  Undefined array key "idGess" in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/head.php on line 9
+[10-Oct-2023 21:47:53 UTC] PHP Warning:  Undefined array key "idGess" in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/head.php on line 9
+[10-Oct-2023 21:47:56 UTC] PHP Warning:  Undefined array key "idGess" in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/head.php on line 9
+[10-Oct-2023 22:41:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/sidebar.php:24
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(12): include()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/sidebar.php on line 24
+[10-Oct-2023 22:41:35 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/sidebar.php:24
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(12): include()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/sidebar.php on line 24
+[10-Oct-2023 22:42:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/sidebar.php:24
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(12): include()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/sidebar.php on line 24
+[10-Oct-2023 22:43:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/sidebar.php:24
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(12): include()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/sidebar.php on line 24
+[10-Oct-2023 23:42:06 UTC] PHP Warning:  Undefined array key "idGess" in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php on line 14
+[10-Oct-2023 23:42:06 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php:14) in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/head.php on line 5
+[10-Oct-2023 23:42:11 UTC] PHP Warning:  Undefined array key "idGess" in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php on line 14
+[10-Oct-2023 23:42:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php:14) in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/head.php on line 5
+[10-Oct-2023 23:42:14 UTC] PHP Warning:  Undefined array key "idGess" in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php on line 14
+[10-Oct-2023 23:42:14 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php:14) in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/head.php on line 5
+[10-Oct-2023 23:42:15 UTC] PHP Warning:  Undefined array key "idGess" in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php on line 14
+[10-Oct-2023 23:42:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php:14) in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/head.php on line 5
+[10-Oct-2023 23:42:16 UTC] PHP Warning:  Undefined array key "idGess" in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php on line 14
+[10-Oct-2023 23:42:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php:14) in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/head.php on line 5
+[10-Oct-2023 23:52:24 UTC] PHP Warning:  session_start(): open(/a.ness.com.tn/sess_81dd49d256425a30eaa3861063a5974c, O_RDWR) failed: No such file or directory (2) in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php on line 2
+[10-Oct-2023 23:52:24 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /a.ness.com.tn) in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php on line 2
+[10-Oct-2023 23:52:24 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/db/db.php:2) in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/head.php on line 5
+[10-Oct-2023 23:52:33 UTC] PHP Warning:  session_start(): open(/a.ness.com.tn/sess_81dd49d256425a30eaa3861063a5974c, O_RDWR) failed: No such file or directory (2) in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/logout.php on line 2
+[10-Oct-2023 23:52:33 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /a.ness.com.tn) in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/logout.php on line 2
+[10-Oct-2023 23:52:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/logout.php:2) in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/logout.php on line 6
+[11-Oct-2023 22:25:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php:119
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(132): include()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php on line 119
+[11-Oct-2023 22:25:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php:119
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(132): include()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php on line 119
+[11-Oct-2023 22:26:05 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php:119
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(132): include()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php on line 119
+[11-Oct-2023 22:26:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php:119
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(132): include()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php on line 119
+[11-Oct-2023 22:26:37 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php:119
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(132): include()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php on line 119
+[11-Oct-2023 22:28:03 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php:119
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(132): include()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php on line 119
+[11-Oct-2023 22:28:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php:119
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(132): include()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php on line 119
+[11-Oct-2023 22:34:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php:119
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/index.php(132): include()
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/gess/apgess/pages/listeAttentePI.php on line 119
+[27-Jul-2024 16:36:20 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cjmxjvbk_argon_latest.benefique_PI' doesn't exist in /home3/cjmxjvbk/a.ness.com.tn/directeur/pages/ajoutProbleme.php:68
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/directeur/pages/ajoutProbleme.php(68): mysqli->query('SELECT * FROM b...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/directeur/index.php(43): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/directeur/pages/ajoutProbleme.php on line 68
+[27-Jul-2024 16:36:57 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cjmxjvbk_argon_latest.benefique_PI' doesn't exist in /home3/cjmxjvbk/a.ness.com.tn/directeur/pages/ajoutProbleme.php:68
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/directeur/pages/ajoutProbleme.php(68): mysqli->query('SELECT * FROM b...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/directeur/index.php(43): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/directeur/pages/ajoutProbleme.php on line 68
+[29-Jul-2024 12:14:15 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(-è_ç'' at line 1 in /home3/cjmxjvbk/a.ness.com.tn/directeur/controller/controller.php:38
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/directeur/controller/controller.php(38): mysqli->query('SELECT * FROM p...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/directeur/login.php(4): include_once('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/directeur/controller/controller.php on line 38
+[11-Aug-2024 17:31:32 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cjmxjvbk_argon_latest.benefique_PI' doesn't exist in /home3/cjmxjvbk/a.ness.com.tn/directeur/pages/ajoutProbleme.php:68
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/directeur/pages/ajoutProbleme.php(68): mysqli->query('SELECT * FROM b...')
+#1 /home3/cjmxjvbk/a.ness.com.tn/directeur/index.php(43): include('/home3/cjmxjvbk...')
+#2 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/directeur/pages/ajoutProbleme.php on line 68

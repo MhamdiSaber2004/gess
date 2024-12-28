@@ -1,0 +1,337 @@
+[18-Jul-2024 06:36:44 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[18-Jul-2024 06:37:14 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[18-Jul-2024 06:40:24 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'consommationJour' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/statPompe.php:174
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/statPompe.php(174): mysqli->query('INSERT INTO uti...')
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/statPompe.php on line 174
+[18-Jul-2024 16:24:08 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[27-Jul-2024 19:01:08 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[27-Jul-2024 19:06:18 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[28-Jul-2024 19:43:56 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[28-Jul-2024 19:44:07 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[28-Jul-2024 19:44:29 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[28-Jul-2024 19:45:14 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[28-Jul-2024 19:46:43 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'consommationJour' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/statPompe.php:174
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/statPompe.php(174): mysqli->query('INSERT INTO uti...')
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/statPompe.php on line 174
+[29-Jul-2024 11:35:07 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[29-Jul-2024 11:35:22 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[30-Jul-2024 21:37:54 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[30-Jul-2024 21:38:13 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[01-Oct-2024 10:08:02 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[01-Oct-2024 10:08:08 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[01-Oct-2024 10:08:09 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[01-Oct-2024 10:08:09 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[03-Oct-2024 08:38:27 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[04-Oct-2024 18:20:38 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[04-Oct-2024 18:23:42 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[04-Oct-2024 18:24:26 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[04-Oct-2024 18:24:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:1) in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 14
+[04-Oct-2024 18:24:42 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[04-Oct-2024 18:24:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:1) in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 14
+[04-Oct-2024 18:24:43 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[04-Oct-2024 18:24:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:1) in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 14
+[04-Oct-2024 18:24:55 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[04-Oct-2024 18:24:55 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:1) in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 14
+[04-Oct-2024 18:24:56 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[04-Oct-2024 18:24:56 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:1) in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 14
+[04-Oct-2024 18:25:10 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[04-Oct-2024 18:25:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:1) in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 14
+[04-Oct-2024 18:25:30 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[04-Oct-2024 18:25:30 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:1) in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 14
+[04-Oct-2024 18:25:32 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[04-Oct-2024 18:25:32 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:1) in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 14
+[04-Oct-2024 18:43:21 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[04-Oct-2024 18:43:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:1) in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 14
+[04-Oct-2024 18:44:21 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[04-Oct-2024 18:44:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:1) in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 14
+[04-Oct-2024 18:44:43 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 1
+[04-Oct-2024 18:44:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:1) in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 14
+[04-Oct-2024 18:44:44 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 1
+[04-Oct-2024 18:44:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:1) in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 14
+[04-Oct-2024 18:44:58 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:1) in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 14
+[04-Oct-2024 18:45:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:1) in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 14
+[04-Oct-2024 18:45:08 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[04-Oct-2024 18:45:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:1) in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 14
+[04-Oct-2024 18:45:09 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[04-Oct-2024 18:45:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:1) in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 14
+[04-Oct-2024 18:45:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:1) in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 14
+[04-Oct-2024 18:45:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:1) in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 14
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined global variable $_SESSION in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 14
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 14
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined global variable $_SESSION in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 27
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 27
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 35
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 36
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined variable $totalDetteAvantFacture in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 427
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined variable $totalConsommation in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 431
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined variable $totalPrixConsommation in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 433
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined variable $totalPrixFixe in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 434
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined variable $totalPrixConsommation in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 435
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined variable $totalPrixFixe in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 435
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined variable $totalDetteTotal in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 437
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined variable $totalDettePaye in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 438
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined variable $totalDetteReste in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 439
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined variable $numLigne1 in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 462
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined array key "rowBenefique" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 515
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 515
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined array key "dette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 522
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined array key "numConsommation" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 585
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined array key "numConsommationPrecedent" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 585
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 591
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 591
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined array key "numConsommation" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 597
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined array key "numConsommationPrecedent" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 597
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 597
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 597
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 603
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 603
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined array key "numConsommation" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 609
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined array key "numConsommationPrecedent" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 609
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 609
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 609
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 609
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 609
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 615
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 615
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined array key "numConsommation" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 621
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined array key "numConsommationPrecedent" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 621
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 621
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 621
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 621
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 621
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 621
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 621
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined array key "dette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 621
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined array key "prixDemande" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 663
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined variable $numLigne1 in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 725
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined array key "erreur" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 730
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined array key "erreur" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 754
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined array key "rowBenefique" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 765
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined array key "ajoutUC2SubmitResult" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 776
+[04-Oct-2024 18:45:55 UTC] PHP Warning:  Undefined array key "ajoutUC3SubmitResult" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 789
+[04-Oct-2024 18:46:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:1) in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 14
+[04-Oct-2024 18:47:36 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[04-Oct-2024 18:47:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:1) in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 14
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined global variable $_SESSION in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 13
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 13
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined global variable $_SESSION in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 26
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 26
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 34
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 35
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined variable $totalDetteAvantFacture in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 426
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined variable $totalConsommation in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 430
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined variable $totalPrixConsommation in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 432
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined variable $totalPrixFixe in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 433
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined variable $totalPrixConsommation in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 434
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined variable $totalPrixFixe in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 434
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined variable $totalDetteTotal in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 436
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined variable $totalDettePaye in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 437
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined variable $totalDetteReste in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 438
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined variable $numLigne1 in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 461
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined array key "rowBenefique" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 514
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 514
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined array key "dette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 521
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined array key "numConsommation" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 584
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined array key "numConsommationPrecedent" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 584
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 590
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 590
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined array key "numConsommation" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 596
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined array key "numConsommationPrecedent" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 596
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 596
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 596
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 602
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 602
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined array key "numConsommation" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 608
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined array key "numConsommationPrecedent" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 608
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 608
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 608
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 608
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 608
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 614
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 614
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined array key "numConsommation" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 620
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined array key "numConsommationPrecedent" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 620
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 620
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 620
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 620
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 620
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 620
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 620
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined array key "dette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 620
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined array key "prixDemande" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 662
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined variable $numLigne1 in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 724
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined array key "erreur" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 729
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined array key "erreur" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 753
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined array key "rowBenefique" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 764
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined array key "ajoutUC2SubmitResult" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 775
+[04-Oct-2024 18:47:47 UTC] PHP Warning:  Undefined array key "ajoutUC3SubmitResult" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 788
+[04-Oct-2024 18:49:10 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[04-Oct-2024 18:49:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:1) in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 14
+[04-Oct-2024 18:49:56 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:1) in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 6
+[04-Oct-2024 18:49:57 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:1) in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 6
+[04-Oct-2024 18:50:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:1) in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 4
+[04-Oct-2024 18:50:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:1) in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 4
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined variable $totalDetteAvantFacture in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 427
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined variable $totalConsommation in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 431
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined variable $totalPrixConsommation in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 433
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined variable $totalPrixFixe in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 434
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined variable $totalPrixConsommation in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 435
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined variable $totalPrixFixe in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 435
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined variable $totalDetteTotal in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 437
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined variable $totalDettePaye in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 438
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined variable $totalDetteReste in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 439
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined variable $numLigne1 in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 462
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined array key "rowBenefique" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 515
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 515
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined array key "dette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 522
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined array key "numConsommation" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 585
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined array key "numConsommationPrecedent" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 585
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 591
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 591
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined array key "numConsommation" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 597
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined array key "numConsommationPrecedent" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 597
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 597
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 597
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 603
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 603
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined array key "numConsommation" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 609
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined array key "numConsommationPrecedent" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 609
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 609
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 609
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 609
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 609
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 615
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 615
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined array key "numConsommation" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 621
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined array key "numConsommationPrecedent" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 621
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 621
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 621
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 621
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 621
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined array key "rowDette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 621
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Trying to access array offset on value of type null in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 621
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined array key "dette" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 621
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined array key "prixDemande" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 663
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined variable $numLigne1 in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 725
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined array key "erreur" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 730
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined array key "erreur" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 754
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined array key "rowBenefique" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 765
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined array key "ajoutUC2SubmitResult" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 776
+[04-Oct-2024 18:52:01 UTC] PHP Warning:  Undefined array key "ajoutUC3SubmitResult" in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 789
+[04-Oct-2024 18:52:45 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cjmxjvbk_argon_latest.benefique_AEP' doesn't exist in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:77
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php(77): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 77
+[04-Oct-2024 18:53:40 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cjmxjvbk_argon_latest.benefique_AEP' doesn't exist in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:77
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php(77): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 77
+[04-Oct-2024 18:53:46 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cjmxjvbk_argon_latest.benefique_AEP' doesn't exist in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:77
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php(77): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 77
+[04-Oct-2024 18:54:58 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: int + string in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:624
+Stack trace:
+#0 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 624
+[05-Oct-2024 21:30:50 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'temp' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/statPompe.php:174
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/statPompe.php(174): mysqli->query('INSERT INTO uti...')
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/statPompe.php on line 174
+[06-Oct-2024 00:38:24 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: int + string in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:624
+Stack trace:
+#0 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 624
+[06-Oct-2024 00:38:30 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: int + string in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:624
+Stack trace:
+#0 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 624
+[06-Oct-2024 00:38:32 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: int + string in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:624
+Stack trace:
+#0 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 624
+[06-Oct-2024 01:04:29 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[06-Oct-2024 01:04:31 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[06-Oct-2024 01:05:06 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[06-Oct-2024 01:05:16 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[06-Oct-2024 01:05:17 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[06-Oct-2024 01:05:18 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[06-Oct-2024 01:05:34 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[06-Oct-2024 01:05:35 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[06-Oct-2024 01:05:36 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[06-Oct-2024 01:05:36 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[06-Oct-2024 01:06:00 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[06-Oct-2024 01:06:01 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[06-Oct-2024 01:06:01 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[06-Oct-2024 01:06:02 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[06-Oct-2024 01:06:23 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 1
+[06-Oct-2024 01:06:24 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 1
+[06-Oct-2024 01:06:25 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 1
+[06-Oct-2024 01:06:32 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 1
+[06-Oct-2024 01:06:48 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 1
+[06-Oct-2024 01:06:49 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 1
+[06-Oct-2024 01:07:01 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[06-Oct-2024 01:07:01 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 2
+[06-Oct-2024 01:07:06 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 13
+[06-Oct-2024 01:07:07 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 13
+[06-Oct-2024 01:08:15 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'temp' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/statPompe.php:174
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/statPompe.php(174): mysqli->query('INSERT INTO uti...')
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/statPompe.php on line 174
+[06-Oct-2024 01:08:54 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'temp' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/statPompe.php:174
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/statPompe.php(174): mysqli->query('INSERT INTO uti...')
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/statPompe.php on line 174
+[06-Oct-2024 01:10:19 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/cjmxjvbk/a.ness.com.tn/directeur/db/db.php on line 1
+[06-Oct-2024 01:10:51 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: int + string in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:627
+Stack trace:
+#0 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 627
+[06-Oct-2024 01:11:01 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: int + string in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:627
+Stack trace:
+#0 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 627
+[06-Oct-2024 01:11:42 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: int + string in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:627
+Stack trace:
+#0 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 627
+[06-Oct-2024 01:12:03 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'cjmxjvbk_argon_latest.benefique_AEP' doesn't exist in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:75
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php(75): mysqli->query('SELECT * FROM b...')
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 75
+[06-Oct-2024 01:12:59 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: int + string in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php:625
+Stack trace:
+#0 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/utilisationEtFacture.php on line 625
+[06-Oct-2024 03:10:23 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'temp' at row 1 in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/statPompe.php:174
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/statPompe.php(174): mysqli->query('INSERT INTO uti...')
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/statPompe.php on line 174
+[09-Oct-2024 00:23:44 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and mois='' ORDER BY date' at line 1 in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/registre.php:318
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/registre.php(318): mysqli->query('SELECT * FROM r...')
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/registre.php on line 318
+[09-Oct-2024 00:23:53 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and mois='' ORDER BY date' at line 1 in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/registre.php:318
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/registre.php(318): mysqli->query('SELECT * FROM r...')
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/registre.php on line 318
+[09-Oct-2024 00:24:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and mois='' ORDER BY date' at line 1 in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/registre.php:318
+Stack trace:
+#0 /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/registre.php(318): mysqli->query('SELECT * FROM r...')
+#1 {main}
+  thrown in /home3/cjmxjvbk/a.ness.com.tn/directeur/pagesComplet/registre.php on line 318

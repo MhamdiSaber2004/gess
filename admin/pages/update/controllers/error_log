@@ -1,0 +1,46 @@
+[08-Sep-2023 05:25:46 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php:3
+Stack trace:
+#0 /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php(3): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php on line 3
+[08-Sep-2023 05:28:04 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php:3
+Stack trace:
+#0 /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php(3): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php on line 3
+[08-Sep-2023 05:28:07 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php:3
+Stack trace:
+#0 /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php(3): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php on line 3
+[08-Sep-2023 05:28:19 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php:3
+Stack trace:
+#0 /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php(3): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php on line 3
+[08-Sep-2023 05:30:06 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php:3
+Stack trace:
+#0 /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php(3): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php on line 3
+[08-Sep-2023 05:42:06 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php:3
+Stack trace:
+#0 /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php(3): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php on line 3
+[08-Sep-2023 05:51:05 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php:3
+Stack trace:
+#0 /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php(3): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php on line 3
+[08-Sep-2023 05:54:17 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php:3
+Stack trace:
+#0 /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php(3): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php on line 3
+[08-Sep-2023 05:58:41 UTC] PHP Parse error:  syntax error, unexpected identifier "cjmxjvbk_argon", expecting ")" in /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php on line 3
+[08-Sep-2023 05:58:58 UTC] PHP Parse error:  syntax error, unexpected identifier "cjmxjvbk_argon", expecting ")" in /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php on line 3
+[08-Sep-2023 05:59:01 UTC] PHP Parse error:  syntax error, unexpected identifier "cjmxjvbk_argon", expecting ")" in /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php on line 3
+[08-Sep-2023 05:59:20 UTC] PHP Parse error:  syntax error, unexpected identifier "cjmxjvbk_argon", expecting ")" in /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php on line 3
+[08-Sep-2023 06:00:10 UTC] PHP Parse error:  syntax error, unexpected identifier "ID", expecting ")" in /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php on line 5
+[08-Sep-2023 06:00:13 UTC] PHP Parse error:  syntax error, unexpected identifier "ID", expecting ")" in /home3/cjmxjvbk/public_html/a/argongess/pi/controllers/get_accreditations.php on line 5
