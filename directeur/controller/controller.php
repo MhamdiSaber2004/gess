@@ -41,7 +41,6 @@ if(isset($_POST['newReunName'])){
         $sql1="INSERT INTO `reunionpublique` (`date`, `doc`, `idGess`,`active`) VALUES ('$date','$newReunfile','$idGess','1')";
         
         if ($conn->query($sql1) === TRUE) {
-            echo 'lfkjpoer';
             $_SESSION['messageClass']="success";
             $_SESSION['message']="تمت الإضافة بنجاح";
             header("Location: ../index.php?page=listeReunionPublique");
