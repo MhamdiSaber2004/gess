@@ -24,7 +24,7 @@
                 </div>
                 <div class="col-6 text-right">
                     <a href="assets/file/محضر-جلسة-اجتماع-مجلس-الادارة-عدد" download="محضر-جلسة-اجتماع-مجلس-الادارة"class="btn btn-sm btn-primary" >طباعة محضر جلسة اجتماع مجلس الادارة</a>
-                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#ajouterReunionInterne">إضافة جلسات اجتماع مجلس ادارة</button>
+                    <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#ajouterReunionInterne">إضافة جلسات اجتماع مجلس ادارة</button>
                 </div>
               </div>
             </div>
