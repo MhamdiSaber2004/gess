@@ -3,6 +3,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 include 'db/db.php';
+session_start();
 //include_once "controller/controller.php";
 // connexion gess --directeur
 if(!empty($_POST["login"])) {
