@@ -1,4 +1,4 @@
-<?php session_start();
+<?php 
 
 $servername = "102.219.176.39";
 $database = "cjmxjvbk_testt";
