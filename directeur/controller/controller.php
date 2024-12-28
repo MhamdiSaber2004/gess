@@ -3,6 +3,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 include '../db/db.php';
+session_start();
 
 $idPompiste=$_SESSION['idPompiste'];
 $idGess=$_SESSION['idGess'];
