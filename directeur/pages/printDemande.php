@@ -46,7 +46,7 @@ if(isset($_GET['idDemande']) && ! empty ( $_GET['idDemande'] ))
     if ($result->num_rows > 0) {
         // output data of each demande
         $demande = $result->fetch_assoc() ;
-        print_r($demande);
+        
 
         $idBenefique=$demande['idBenefique'];
 
@@ -85,7 +85,7 @@ if(isset($_GET['idDemande']) && ! empty ( $_GET['idDemande'] ))
     <p class="d-flex d-xxl-flex justify-content-start justify-content-xxl-start text-black" ><strong></strong>&nbsp; المجتمع بتاريخ   : &nbsp;<strong><?php echo $demande['dateConseil'];  ?></strong>&nbsp;<br></p>
     <p class="d-xxl-flex justify-content-xxl-start text-black" ></p>
 
-    <p class="d-flex d-xxl-flex justify-content-start justify-content-xxl-start text-black" >&nbsp; بعد الاطلاع على  : &nbsp;<strong><?php echo $demande['dateN'];  ?></strong>&nbsp;<br></p>
+    <p class="d-flex d-xxl-flex justify-content-start justify-content-xxl-start text-black" >&nbsp; بعد الاطلاع على  : &nbsp;<strong>&nbsp;<br></p>
 
     <p class="d-flex justify-content-start text-black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- القانون الأساسي للمجمع و خاصة فصوله المتعلقة بقبول منخرطين جدد  : <br></p>
     <p class="d-flex justify-content-start text-black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- النظام الداخلي للمجمع : <br></p>
