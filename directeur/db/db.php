@@ -1,6 +1,6 @@
 <?php session_start();
 
-$servername = "102.219.176.27";
+$servername = "197.240.41.148";
 $database = "cjmxjvbk";
 $username = "cjmxjvbk_testt";
 $password = "07OC24hk@++#";
