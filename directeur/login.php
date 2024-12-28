@@ -7,8 +7,7 @@ if(isset($_POST["login"])) {
 
   $username = $_POST["email"];
   $password = $_POST["password"];
-
-
+  
   $sql = "SELECT * FROM pompiste where email='$username' and mdp='$password'";
   $result = $conn->query($sql);
   

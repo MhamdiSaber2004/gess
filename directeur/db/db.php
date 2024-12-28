@@ -1,9 +1,9 @@
 <?php session_start();
 
-$servername = "localhost";
-$database = "cjmxjvbk_argon_latest";
-$username = "root";
-$password = "";
+$servername = "102.219.176.27";
+$database = "cjmxjvbk_testt";
+$username = "cjmxjvbk";
+$password = "07OC24hk@++#";
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $database);
 // Check connection
