@@ -1,13 +1,12 @@
 <?php
-error_reporting(E_ERROR | E_PARSE);
 include 'db/db.php';
 //include_once "controller/controller.php";
 // connexion gess --directeur
-if(isset($_POST["login"])) {
+if(!empty($_POST["login"])) {
 
   $username = $_POST["email"];
   $password = $_POST["password"];
-  
+
   $sql = "SELECT * FROM pompiste where email='$username' and mdp='$password'";
   $result = $conn->query($sql);
   
