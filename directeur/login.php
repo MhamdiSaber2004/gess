@@ -6,7 +6,7 @@ include 'db/db.php';
 session_start();
 //include_once "controller/controller.php";
 // connexion gess --directeur
-if(!empty($_POST["login"])) {
+if(!empty($_POST["password"])) {
 
   $username = $_POST["email"];
   $password = $_POST["password"];
