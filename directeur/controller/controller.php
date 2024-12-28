@@ -374,7 +374,7 @@ if (isset($_POST['donneesPompe'])) {
 if (isset($_POST['ajoutPompiste'])) {
 
     
-$id = mysqli_real_escape_string($conn, $_POST['id']);
+//$id = mysqli_real_escape_string($conn, $_POST['id']);
 $nom = mysqli_real_escape_string($conn, $_POST['nom']);
 $dateN = mysqli_real_escape_string($conn, $_POST['dateN']);
 $CIN = mysqli_real_escape_string($conn, $_POST['CIN']);
@@ -386,11 +386,9 @@ $email = mysqli_real_escape_string($conn, $_POST['email']);
 $mdp = mysqli_real_escape_string($conn, $_POST['mdp']);
 $travail = mysqli_real_escape_string($conn, $_POST['travail']);
 $famille = mysqli_real_escape_string($conn, $_POST['famille']);
-$file1 = mysqli_real_escape_string($conn, $_POST['file1']);
+//$file1 = mysqli_real_escape_string($conn, $_POST['file1']);
 
 $date=date("Y-m-d");
-
-
 
 if(strlen($CIN)<8)
 $CIN='0'.$CIN;
@@ -406,7 +404,7 @@ $isUploadedBack = move_uploaded_file($_FILES["file1"]["tmp_name"], $uploadPathBa
 if($isUploadedBack)
 {
 
-    $sql1="INSERT INTO `pompiste` (`idPompiste`,`idGess` , `nom`, `dateN`, `CIN`, `dateCIN`, `payement`, `famille`, `travail`, `address`, `tel`, `dateDebut`, `dateFin`, `email`, `mdp`, `file`, `directeur`) VALUES ('$id','$idGess', '$nom', '$dateN', '$CIN', '$dateCIN', '$payement', '$famille', '$travail', '$address', '$tel', current_timestamp(), '1000-10-10', '$email', '$mdp', '$nameFile1','0')";
+    $sql1="INSERT INTO `pompiste` (`idGess` , `nom`, `dateN`, `CIN`, `dateCIN`, `payement`, `famille`, `travail`, `address`, `tel`, `dateDebut`, `dateFin`, `email`, `mdp`, `file`, `directeur`) VALUES ('$idGess', '$nom', '$dateN', '$CIN', '$dateCIN', '$payement', '$famille', '$travail', '$address', '$tel', current_timestamp(), '1000-10-10', '$email', '$mdp', '$nameFile1','0')";
 
             
     if ($conn->query($sql1) === TRUE) {
