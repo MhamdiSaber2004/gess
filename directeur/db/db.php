@@ -2,7 +2,7 @@
 
 $servername = "197.240.41.148";
 $database = "cjmxjvbk_testt";
-$username = "cjmxjvbk";
+$username = "cjmxjvbk_";
 $password = "07OC24hk@++#";
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $database);
