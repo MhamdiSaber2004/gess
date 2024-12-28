@@ -46,6 +46,7 @@ if(isset($_GET['idDemande']) && ! empty ( $_GET['idDemande'] ))
     if ($result->num_rows > 0) {
         // output data of each demande
         $demande = $result->fetch_assoc() ;
+        print_r($demande);
 
         $idBenefique=$demande['idBenefique'];
 
