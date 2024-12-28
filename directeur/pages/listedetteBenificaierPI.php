@@ -3,6 +3,7 @@ include_once "../db/db.php";
 $dateDebute=$_GET['dateDebut'];
 $dateFin=$_GET['dateFin'];
 $sommeMontant=0;
+session_start();
 
 if (!isset($_SESSION["idPompiste"])) {
   header("location: ../login.php");
