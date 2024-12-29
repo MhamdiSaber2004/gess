@@ -233,7 +233,7 @@
 <!-- info compteur -->
 <button id="infoCompteurButton" class="visually-hidden btn btn-sm btn-primary" data-backdrop="static" data-keyboard="false" data-toggle="modal" data-target="#infoCompteur"></button>
 
-<?php if ($_SESSION['numCompteur']!="") { $numCompteur=$_SESSION['numCompteur']; unset($_SESSION['numCompteur']); ?>
+<?php if (empty($_SESSION['numCompteur'])) { $numCompteur=$_SESSION['numCompteur']; unset($_SESSION['numCompteur']); ?>
 <script>
                   window.onload = function () {
               document.getElementById("infoCompteurButton").click(); };
