@@ -92,35 +92,21 @@ if(isset($_GET['idBenefique']) && ! empty ( $_GET['idBenefique'] ))
                     <div class="col-lg-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-city"> 
-
-
-
                         <?php 
+                        $consomme=false;
                         $numCompteur=$row['numCompteur'];
                         $sql1="SELECT * from consommation_aep where numCompteur='$numCompteur' "; 
                         $result1 = $conn->query($sql1);
-   
- 
                         if ($result1->num_rows > 0) {
                          $consomme=true;
                          echo "  لا يمكنك تغير الديون المتخلدة إذا كان هناك إستهلك مسجل للمنتفع";
-
                         }
                         else{
                           echo " الديون المتخلدة بذمة المنتفع";
-
                         }
                         ?> 
                         </label>
-                        <input name="dette" type="number" id="dette" class="form-control form-control-alternative" placeholder="الديون المتخلدة بذمة المنتفع" value="<?php echo $row['dette'] ?>"
-                        <?php 
-                        if($consomme)
-                        echo "readonly";
-                        
-                             ?>
-                             
-                        >
-                        
+                        <input name="dette" type="number" id="dette" class="form-control form-control-alternative" placeholder="الديون المتخلدة بذمة المنتفع" value="<?php echo $row['dette'] ?>" <?php if($consomme){echo "readonly";}?>>
                       </div>
                     </div>
                   </div>
