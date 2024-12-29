@@ -25,8 +25,8 @@
                 <div class="media-body ml-2 d-none d-lg-block">
                   <span class="mb-0 text-sm  font-weight-bold">
                     <?php
-                    $idPompiste=$_SESSION['idPompiste'];
-                   $sql = "SELECT * FROM pompiste where idPompiste='$idPompiste'";
+                    $idAdmin=$_SESSION['idAdmin'];
+                   $sql = "SELECT * FROM admin where idAdmin='$idAdmin'";
                    $result = $conn->query($sql);
                    
                    if ($result->num_rows > 0) {
