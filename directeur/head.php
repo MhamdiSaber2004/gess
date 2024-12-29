@@ -5,7 +5,7 @@ ini_set('display_errors', 1);
 include_once "db/db.php";
 session_start();
 
-if(empty($_SESSION['messageClass']) && empty($_SESSION['message'])){
+if(empty($_SESSION['messageClass']) || empty($_SESSION['message'])){
   $_SESSION['messageClass']="";
   $_SESSION['message']="";
 }

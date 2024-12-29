@@ -1,6 +1,4 @@
- <?php
-  print_r($_SESSION);
- ?>
+
  <!-- Main content -->
   <div class="main-content">
    
