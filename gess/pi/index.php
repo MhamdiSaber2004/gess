@@ -133,9 +133,7 @@ ini_set('display_errors', 1);
                                        
                                        if ($result->rowCount() > 0) {
                                           // Fetch data using PDO::FETCH_ASSOC to get an associative array
-                                          $rows = $result->fetchAll(PDO::FETCH_ASSOC);
-                                          
-                                          foreach ($rows as $row) {
+                                          while ($row = $result->fetch_assoc()) {
                                               echo '<option value="' . $row['id'] . '">' . $row['nom_etat'] . '</option>';
                                           }
                                        }
