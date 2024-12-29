@@ -452,29 +452,20 @@ if (isset($_POST['modifPompiste'])) {
     $famille = mysqli_real_escape_string($conn, $_POST['famille']);
     
     
-if(strlen($cin)<8)
-$cin='0'.$cin;
+if(strlen($CIN)<8)
+    $CIN='0'.$CIN;
     $sql="UPDATE `pompiste` SET `nom` = '$nom', `dateN` = '$dateN', `CIN` = '$CIN', `dateCIN` = '$dateCIN', `payement` = '$payement', `famille` = '$famille', `travail` = '$travail', `address` = '$address', `tel` = '$tel', `email` = '$email', `mdp` = '$mdp' WHERE `pompiste`.`idPompiste` = $id;";    
 
-    
-    
-
-                
         if ($conn->query($sql) === TRUE) {
             $_SESSION['messageClass']="success";
             $_SESSION['message']="تم التحيين بنجاح";
             header("Location: ../index.php?page=listePompiste");
-        exit();
-          }
-    
-        
-  
-       else
-       {
-        $_SESSION['messageClass']="danger";
-        $_SESSION['message']="حصل خطأ ما، الرجاء المحاولة لاحقا";
-header("Location: ../index.php?page=listePompiste");
-        exit();
+            exit();
+        }else{
+            $_SESSION['messageClass']="danger";
+            $_SESSION['message']="حصل خطأ ما، الرجاء المحاولة لاحقا";
+            header("Location: ../index.php?page=listePompiste");
+            exit();
        }
     
 }
