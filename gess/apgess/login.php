@@ -1,5 +1,5 @@
 <?php
-error_reporting(E_ERROR | E_PARSE);
+
 include './db/db.php';
 include_once "./controller/controller.php";
 
