@@ -4,6 +4,10 @@ ini_set('display_errors', 1);
  session_start();
  include "db/db.php";
 
+ if (isset($_SESSION["loginAdmin"])) {
+  header("location: index.php");
+  exit();
+}
  if (isset($_POST["login"])) {
 
   $email = $_POST['email'];
@@ -30,10 +34,7 @@ ini_set('display_errors', 1);
 
 
 
-if (isset($_SESSION["loginAdmin"])) {
-    header("location: index.php");
-    exit();
-  }
+
 ?>
 
 <!DOCTYPE html>
