@@ -1,8 +1,9 @@
 <?php 
 
+
 include "head.php";
 
-error_reporting(E_ERROR | E_PARSE);
+
 
 include "sidebar.php";
 
