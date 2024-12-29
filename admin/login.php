@@ -2,6 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
  session_start();
+
  include "db/db.php";
 
  if (isset($_SESSION["loginAdmin"])) {
@@ -20,7 +21,6 @@ ini_set('display_errors', 1);
    if ($result->num_rows > 0) {
       $row = $result->fetch_assoc();
       $_SESSION['loginAdmin'] =$row["idAdmin"] ;
-      $currentpage = $_SERVER['REQUEST_URI'];
       header("Location: index.php");
       exit();
    } 
