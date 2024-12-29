@@ -441,7 +441,7 @@ if (isset($_POST['modifPompiste'])) {
     $id = mysqli_real_escape_string($conn, $_POST['id']);
     $nom = mysqli_real_escape_string($conn, $_POST['nom']);
     $dateN = mysqli_real_escape_string($conn, $_POST['dateN']);
-    $CIN = mysqli_real_escape_string($conn, $_POST['CIN']);
+    $CIN = $_POST['CIN'];
     $dateCIN = mysqli_real_escape_string($conn, $_POST['dateCIN']);
     $payement = mysqli_real_escape_string($conn, $_POST['payement']);
     $address = mysqli_real_escape_string($conn, $_POST['address']);
@@ -463,7 +463,7 @@ $cin='0'.$cin;
         if ($conn->query($sql) === TRUE) {
             $_SESSION['messageClass']="success";
             $_SESSION['message']="تم التحيين بنجاح";
-     header("Location: ../index.php?page=listePompiste");
+            header("Location: ../index.php?page=listePompiste");
         exit();
           }
     
