@@ -5,9 +5,6 @@ ini_set('display_errors', 1);
 include '../db/db.php';
 session_start();
 
-$_SESSION['messageClass']="";
-$_SESSION['message']="";
-
 $idPompiste=$_SESSION['idPompiste'];
 $idGess=$_SESSION['idGess'];
 
