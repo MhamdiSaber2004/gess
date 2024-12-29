@@ -1,11 +1,9 @@
-<?php
-error_reporting(E_ERROR | E_PARSE);
+<?php 
 
-session_start();
-$servername = "localhost";
-$database = "cjmxjvbk_argon_latest";
-$username = "root";
-$password = "";
+$servername = "102.219.176.39";
+$database = "cjmxjvbk_testt";
+$username = "cjmxjvbk";
+$password = "#07OC24hk@++#";
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $database);
 // Check connection
