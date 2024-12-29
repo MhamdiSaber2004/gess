@@ -1,4 +1,6 @@
 <?php 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 include_once "db/db.php";
 
@@ -6,9 +8,6 @@ if (!isset($_SESSION["loginAdmin"])) {
   header("location: login.php");
   exit();
 }
-
-
-
 ?>
 
 <!DOCTYPE html>

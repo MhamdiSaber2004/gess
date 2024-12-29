@@ -14,16 +14,15 @@ ini_set('display_errors', 1);
    $result = $conn->query($sql);
 
    if ($result->num_rows > 0) {
-       $row = $result->fetch_assoc();
-       $_SESSION['loginAdmin'] =$row["idAdmin"] ;
-       $_SESSION['fname'] = $dbFullName;
-       $currentpage = $_SERVER['REQUEST_URI'];
-       header("Location: index.php");
-       exit();
-
+      $row = $result->fetch_assoc();
+      $_SESSION['loginAdmin'] =$row["idAdmin"] ;
+      $_SESSION['fname'] = $dbFullName;
+      $currentpage = $_SERVER['REQUEST_URI'];
+      header("Location: index.php");
+      exit();
    } 
    else {
-       $error["erreur"] = "الرجاء التثبت من صحة المعطيات التي قمت بادخلها";
+      $error["erreur"] = "الرجاء التثبت من صحة المعطيات التي قمت بادخلها";
    }
 
   

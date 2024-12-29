@@ -1,9 +1,11 @@
 <?php 
- session_start();
+
+
+session_start();
 include "head.php";
 
 include "sidebar.php";
-include './db/db.php';
+include 'db/db.php';
 
 
 
