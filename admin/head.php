@@ -4,10 +4,16 @@ ini_set('display_errors', 1);
 
 include_once "db/db.php";
 
+if(empty($_SESSION['messageClass']) || empty($_SESSION['message'])){
+  $_SESSION['messageClass']="";
+  $_SESSION['message']="";
+}
+
 if (!isset($_SESSION["loginAdmin"])) {
   header("location: login.php");
   exit();
 }
+
 ?>
 
 <!DOCTYPE html>
