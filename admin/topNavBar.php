@@ -25,7 +25,7 @@
                 <div class="media-body ml-2 d-none d-lg-block">
                   <span class="mb-0 text-sm  font-weight-bold">
                     <?php
-                    $idAdmin=$_SESSION['idAdmin'];
+                    $idAdmin=$_SESSION['loginAdmin'];
                    $sql = "SELECT * FROM admin where idAdmin='$idAdmin'";
                    $result = $conn->query($sql);
                    
