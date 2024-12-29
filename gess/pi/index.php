@@ -130,6 +130,7 @@ ini_set('display_errors', 1);
                                     <?php
                                        $sql = "SELECT * FROM etats_tunisie";
                                        $result = $conn->query($sql);
+                                       print_r($result);
                                        
                                        if ($result->rowCount() > 0) {
                                           // Fetch data using PDO::FETCH_ASSOC to get an associative array
