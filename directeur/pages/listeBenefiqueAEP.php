@@ -255,7 +255,7 @@
         
           <div class="btn-wrapper text-center">
 
-          <input type="text" name="numCompteur" id="" value="<?php  echo $numCompteur ?>" hidden>
+          <input type="text" name="numCompteur" id="" value="<?php  echo $oxa ?>" hidden>
 
           <input type="text" name="nom" id="" value="<?php  echo $_SESSION['nom'] ?>" hidden>
 
