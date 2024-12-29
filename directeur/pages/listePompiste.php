@@ -159,7 +159,7 @@ $sql = "SELECT * FROM pompiste where idGess='$idGess' and actif=1";
                 </thead>
                 <tbody>
                 <?php
-                  $sql = "SELECT * FROM pompiste where idGess='$idGess' and actif=1";
+                  $sql = "SELECT * FROM pompiste where idGess='$idGess' and actif=1 and directeur='0'";
                   $result = $conn->query($sql);
                   
                   if ($result->num_rows > 0) {
