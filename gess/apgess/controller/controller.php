@@ -51,8 +51,6 @@ if (isset($_POST["connexion"])) {
             header("Location: ../index.php");
             exit();
         } else {
-  
-         
           $_SESSION['messageClass']="success";
           $_SESSION["message"] ="تم تعطيل حسابك، الرجاء التواصل مع رئيس الموقع";
           header("Location: ../index.php");
