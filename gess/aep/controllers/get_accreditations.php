@@ -1,6 +1,6 @@
 <?php
 // Connexion à la base de données
-$connexion = new PDO('mysql:host=102.219.176.39;dbname=cjmxjvbk_argon_latest', 'cjmxjvbk_argon_latest','cjmxjvbk_argon_latest');
+$connexion = new PDO('mysql:host=102.219.176.39;dbname=cjmxjvbk_testt', 'cjmxjvbk', '#07OC24hk@++#');
 
 // Récupération de l'ID de l'état depuis la requête GET
 $etatId = $_GET['etat_id'];
