@@ -2,32 +2,9 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 include "../db/db.php";
+
 session_start();
-if (isset($_POST["login"])) {
 
-   $email = $_POST['email'];
-    $password = $_POST['password'];
-
-    // Use prepared statements to prevent SQL injection
-    $sql = "SELECT idAdmin,email, nom FROM admin WHERE email= '$email' AND mdp='$password'";
-    $result = $conn->query($sql);
-
-    if ($result->num_rows > 0) {
-        $row = $result->fetch_assoc();
-        $_SESSION['loginAdmin'] =$row["idAdmin"] ;
-        $_SESSION['fname'] = $dbFullName;
-        $currentpage = $_SERVER['REQUEST_URI'];
-        header("Location: index.php");
-        exit();
-
-    } 
-    else {
-        $error["erreur"] = "الرجاء التثبت من صحة المعطيات التي قمت بادخلها";
-    }
-
-   
-
-}
 if (isset($_POST["updateData"])) {
 
     $email = $_POST['email'];
