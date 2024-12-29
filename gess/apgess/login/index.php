@@ -1,6 +1,7 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
+
 session_start();
 
 include '../db/db.php';
@@ -9,11 +10,6 @@ if (isset($_SESSION["idGess"])) {
   header("location: ../index.php");
   exit();
 }
-
-
-
-
-
 
 ?>
 

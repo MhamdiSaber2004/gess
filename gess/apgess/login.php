@@ -3,6 +3,8 @@
 include './db/db.php';
 include_once "./controller/controller.php";
 
+session_start();
+
 if (isset($_SESSION["idPompiste"])) {
     header("location: index.php");
     exit();
