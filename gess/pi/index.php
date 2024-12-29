@@ -1,8 +1,6 @@
 <?php  
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 
-   include "database/db.php";
+   include "./database/db.php";
    include "process.php";
    // error_reporting(0);
    
@@ -130,11 +128,12 @@ ini_set('display_errors', 1);
                                     <?php
                                        $sql = "SELECT * FROM etats_tunisie";
                                        $result = $conn->query($sql);
-                                       echo $result->rowCount();                                       
+                                       
                                        if ($result->rowCount() > 0) {
-                                          
                                           // Fetch data using PDO::FETCH_ASSOC to get an associative array
-                                          while ($row = $result->fetch_assoc()) {
+                                          $rows = $result->fetchAll(PDO::FETCH_ASSOC);
+                                          
+                                          foreach ($rows as $row) {
                                               echo '<option value="' . $row['id'] . '">' . $row['nom_etat'] . '</option>';
                                           }
                                        }
