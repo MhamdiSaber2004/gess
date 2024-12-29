@@ -2,6 +2,7 @@
 
 include '../db/db.php';
 
+session_start();
 $idPompiste=$_SESSION['idPompiste'];
 $idGess=$_SESSION['idGess'];
 
