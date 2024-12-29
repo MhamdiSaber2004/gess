@@ -222,10 +222,15 @@
                        <option value="مقابل نسبة من المداخيل"> مقابل نسبة من المداخيل</option>
                        <option value="من دون مقابل">من دون مقابل</option>
                       </select>
-
-
                       </div>
                     </div>
+                </div>
+                <div class="form-group focused">
+                  <label class="form-control-label" for="input-first-name">نوع المهمة</label>
+                  <select class="form-control form-control-alternative" type="text" placeholder="" name="directeur">
+                    <option value="0"> حارس شابكة</option>
+                    <option value="0"> حارس نضام مائي</option>
+                  </select>
                 </div>
                 <hr class="my-4" />
                 <!-- Address -->
