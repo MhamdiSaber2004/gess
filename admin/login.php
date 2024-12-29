@@ -10,9 +10,6 @@ if (isset($_SESSION["loginAdmin"])) {
     header("location: index.php");
     exit();
   }
-
-
-
 ?>
 
 <!DOCTYPE html>

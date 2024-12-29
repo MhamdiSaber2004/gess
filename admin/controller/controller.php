@@ -1,8 +1,8 @@
 <?php
-
-error_reporting(0);
-include "./db/db.php";
-
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+include "../db/db.php";
+session_start();
 if (isset($_POST["login"])) {
 
    $email = $_POST['email'];
