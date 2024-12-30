@@ -18,18 +18,17 @@
           <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <div class="media align-items-center">
             <span class="mb-0 text-sm  font-weight-bold"> مرحبا ,
-                  <?php
-                   $sql = "SELECT * FROM utilisateurs where idGess='$idGess'";
-                   $result = $conn->query($sql);
-                   
-                   if ($result->num_rows > 0) {
-                       // output data of each row
-                       while ($row = $result->fetch_assoc()) {
-                       
-                           echo $row["nom_utilisateur"]; }
-                      }
-                    ?>
-                  </span>
+              <?php
+                $idPompiste = $_SESSION['idPompiste'];
+                $sql = "SELECT nom FROM pompiste where idPompiste='$idGess'";
+                $result = $conn->query($sql);
+                if ($result->num_rows > 0) {
+                    while ($row = $result->fetch_assoc()) {
+                      echo $row["nom"]; 
+                    }
+                  }
+                ?>
+              </span>
             </div>
           </a>
           <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
