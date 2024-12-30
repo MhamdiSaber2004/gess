@@ -113,312 +113,113 @@
                 </thead>
                 <tbody>
                 <?php
-                                       $sql = "SELECT * FROM benefique_pi where idGess='$idGess' and active=1 ";
-                                       $result = $conn->query($sql);
-                                       
-                                       if ($result->num_rows > 0) {
-                                           // output data of each row
-                                           while ($row = $result->fetch_assoc()) {
-                                            $idBenefique=$row['idBenefique'];
-
-
-                                            $sql1 = "SELECT * from dette_pi where idBenefique='$idBenefique' ";
-                                       $result1 = $conn->query($sql1);
-                                       
-                                      $row1 = $result1->fetch_assoc();
-
-                                      if ($row['active']==1)
-                                      {
-                                        $color="green";
-                                        $active="مقبول";
-                                      }
-                                      if ($row['active']==0)
-                                      {
-                                        $color="yellow";
-                                        $active="قيد الانتظار";
-                                      }
-                                      if ($row['active']==-1)
-                                      {
-                                        $color="red";
-
-                                        $active="مرفوض";
-                                      }
-
-                                          
-                                               echo '
-                                               <tr>
-                                               <th scope="row">'
-                                               . $row["idBenefique"] .'
-                                               </th>
-                                               <td>'
-                                               . $row['numBenefique'] .'
-                    </td>
-                    <td>'
-                    . $row['nom'].'
-                    </td>
-                    <td>'
-                    . $row['aire'] .'
-                    </td>
-                    <td>'
-                    . $row['numPlace'] .'
-                    </td>
-                    <td>'
-                    . $row['numPrise'] .'
-                    </td>
-                    <td>'
-                    . $row['numDiviseur'] .'
-                    </td>
-                    <td>'
-                    . $row['numCompteur'] .'
-                    </td>
-                    <td>'
-                    . $row1['dette'] .'
-                    </td>
-                  
-                    <td class="text-center">
-                      <div class="dropdown">
-                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <i class="fas fa-ellipsis-v text-black-50"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                   
-                        <a class="dropdown-item" href="index.php?page=modifBenefiquePI&idBenefique='.$row["idBenefique"].'">تحيين</a>
-                          <a class="dropdown-item" data-toggle="modal" data-target="#delete'.$row['idBenefique'].'" href="#">تعطيل الحساب</a>
-                        </div>
-                      </div>
-                    </td>
-                    </tr>
-
-
-                    <div class="row">
-
-<div class="col-md-6">
-    <div class="modal fade" id="delete'.$row['idBenefique'].'" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
-  <div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
-      <div class="modal-content">
-        
-          <div class="modal-body p-0">
+            $sql = "SELECT * FROM benefique_pi where idGess='$idGess' and active=1 ";
+            $result = $conn->query($sql);
             
-<div class="card bg-secondary border-0 ">
-  <div class="card-header bg-transparent pb-2">
-      <h3 class=" text-center mt-2">تعطيل حساب منتفع ؟</h3><br>
-      <div class="text-center mb-4">هل أنت متأكد أنك تريد تعطيل حساب المنتفع ؟ <br><br>  صاحب ب.ت.و. : '.$row['CIN'].' <br> صاحب العداد :  '.$row['numCompteur'].'</div>
-        
-    
-          
-        
-      
-  </div>
- 
-</div>
-<div class="modal-footer flex-row-reverse">
-<button type="button" class="btn btn-secondary" data-dismiss="modal">إلغاء</button>
-<a href="controller/controller.php?idBenefiquePI='.$row['idBenefique'].'" name="deleteBenefiquePI" type="submit" onclick=" return checkInputsConsommation()"  class="btn btn-primary" >تعطيل </a>
-</div>
-          </div>
-          
-      </div>
-  </div>
-</div>
-
-</div>
-</div>
+            if ($result->num_rows > 0) {
+                // output data of each row
+                while ($row = $result->fetch_assoc()) {
+                $idBenefique=$row['idBenefique'];
 
 
-                                               ';
-                                               echo($row);
-                                           }
-                                       }
-                                       
-                                       ?>
+                $sql1 = "SELECT * from dette_pi where idBenefique='$idBenefique' ";
+                $result1 = $conn->query($sql1);
+            
+                $row1 = $result1->fetch_assoc();
+
+                if ($row['active']==1)
+                {
+                  $color="green";
+                  $active="مقبول";
+                }
+                if ($row['active']==0)
+                {
+                  $color="yellow";
+                  $active="قيد الانتظار";
+                }
+                if ($row['active']==-1)
+                {
+                  $color="red";
+
+                  $active="مرفوض";
+                }
+                echo '
+                  <tr>
+                  <th scope="row">'
+                  . $row["idBenefique"] .'
+                  </th>
+                  <td>'
+                  . $row['numBenefique'] .'
+                  </td>
+                  <td>'
+                  . $row['nom'].'
+                  </td>
+                  <td>'
+                  . $row['aire'] .'
+                  </td>
+                  <td>'
+                  . $row['numPlace'] .'
+                  </td>
+                  <td>'
+                  . $row['numPrise'] .'
+                  </td>
+                  <td>'
+                  . $row['numDiviseur'] .'
+                  </td>
+                  <td>'
+                  . $row['numCompteur'] .'
+                  </td>
+                  <td>'
+                  . $row1['dette'] .'
+                  </td>
                 
+                  <td class="text-center">
+                    <div class="dropdown">
+                      <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-v text-black-50"></i>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                   
-                  
-                </tbody>
-              </table>
-            </div>
-           
+                      <a class="dropdown-item" href="index.php?page=modifBenefiquePI&idBenefique='.$row["idBenefique"].'">تحيين</a>
+                        <a class="dropdown-item" data-toggle="modal" data-target="#delete'.$row['idBenefique'].'" href="#">تعطيل الحساب</a>
+                      </div>
+                    </div>
+                  </td>
+                  </tr>
+                  <div class="row">
+                  <div class="col-md-6">
+                  <div class="modal fade" id="delete'.$row['idBenefique'].'" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+                  <div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+                    <div class="modal-content">
+                      <div class="modal-body p-0">
+                        <div class="card bg-secondary border-0 ">
+                          <div class="card-header bg-transparent pb-2">
+                            <h3 class=" text-center mt-2">تعطيل حساب منتفع ؟</h3><br>
+                            <div class="text-center mb-4">هل أنت متأكد أنك تريد تعطيل حساب المنتفع ؟ <br><br>  صاحب ب.ت.و. : '.$row['CIN'].' <br> صاحب العداد :  '.$row['numCompteur'].'</div>
+                            </div>
+                          </div>
+                          <div class="modal-footer flex-row-reverse">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">إلغاء</button>
+                            <a href="controller/controller.php?idBenefiquePI='.$row['idBenefique'].'" name="deleteBenefiquePI" type="submit" onclick=" return checkInputsConsommation()"  class="btn btn-primary" >تعطيل </a>
+                          </div>
+                        </div>
+                      
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+                  ';
+                  }
+                }
+                ?>
+              </tbody>
+            </table>
           </div>
+          
         </div>
       </div>
-      
-
-
-
-
-      
-
-
-
-
-<!-- info compteur -->
-<button id="infoCompteurButton" class="visually-hidden btn btn-sm btn-primary" data-backdrop="static" data-keyboard="false" data-toggle="modal" data-target="#infoCompteur"></button>
-
-<?php if ($_SESSION['numCompteur']!="") { $numCompteur=$_SESSION['numCompteur']; unset($_SESSION['numCompteur']); ?>
-<script>
-                  window.onload = function () {
-              document.getElementById("infoCompteurButton").click(); };
-              </script>
-<?php  } ?>
-
-
-
-      <div class="col-md-6">
-    <div class="modal fade" id="infoCompteur" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
-  <div class="modal-dialog modal- modal-dialog-centered modal-md" role="document">
-      <div class="modal-content">
-      <form method="post" action="controller/controller.php">
-
-          <div class="modal-body p-0">
-<div class="card bg-secondary border-0 mb-0">
-  <div class="card-header bg-transparent pb-5">
-      <h3 class=" text-center mt-2"> إضافة معلومات العداد رقم :    <?php echo $numCompteur ?></h3><br>
-      <!--<div class="text-center mb-4">الرجاء إختيار سنة وشهر الدفتر الذي تريد طباعته</div>-->
-        
-          <div class="btn-wrapper text-center">
-
-          <input type="text" name="numCompteur" id="" value="<?php  echo $numCompteur ?>" hidden>
-
-          <input type="text" name="nom" id="" value="<?php  echo $_SESSION['nom'] ?>" hidden>
-
-
-          <div class="col-lg-12">
-                      <div class="form-group">
-
-                      <label class="form-control-label" for="input-first-name"> وجود عقد </label>
-
-                      <select class="form-control form-control-alternative" type="text" name="contrat" placeholder="" required >
-                      <option value="" > الرجاء الاختيار    </option>
-                      <option value="نعم" > نعم </option>
-                      <option value="لا " > لا </option>
-                     
-                      </select>
-
-
-                      </div>
-                    </div>
-
-                    <div class="col-lg-12">
-                      <div class="form-group">
-
-                      <label class="form-control-label" for="input-first-name"> وجود العداد </label>
-
-                      <select class="form-control form-control-alternative" type="text" name="avoirCompteur" placeholder="" required >
-                      <option value="" > الرجاء الاختيار    </option>
-                      <option value="نعم" > نعم </option>
-                      <option value="لا " > لا </option>
-                  
-                      </select>
-
-
-                      </div>
-                    </div>
-
-                    <div class="col-lg-12">
-                      <div class="form-group">
-
-                      <label class="form-control-label" for="input-first-name"> نوعية العداد </label>
-
-                      <select class="form-control form-control-alternative" type="text" name="typeCompteur" placeholder="" required >
-                      <option value="" > الرجاء الاختيار    </option>
-                      <option value="KENT" > KENT </option>
-                      <option value="لا(صيني) " > لا(صيني) </option>
-                  
-                      </select>
-
-
-                      </div>
-                    </div>
-
-                    <div class="col-lg-12">
-                      <div class="form-group">
-
-                      <label class="form-control-label" for="input-first-name"> العداد </label>
-
-                      <select class="form-control form-control-alternative" type="text" name="travailleCompteur" placeholder="" required >
-                      <option value="" > الرجاء الاختيار    </option>
-                      <option value="يشتغل" > يشتغل </option>
-                      <option value="لا يشتغل " > لا يشتغل </option>
-                  
-                      </select>
-
-
-                      </div>
-                    </div>
-
-                    <div class="col-lg-12">
-                      <div class="form-group">
-
-                      <label class="form-control-label" for="input-first-name"> المسافة </label>
-
-                      <select class="form-control form-control-alternative" type="text" name="distance" placeholder="" required >
-                      <option value="" > الرجاء الاختيار    </option>
-                      <option value="اقل من 10 متر" > اقل من 10 متر </option>
-                      <option value="اكثر من 10 متر " > اكثر من 10 متر </option>
-                      
-                      
-                      </select>
-
-
-                      </div>
-                    </div>
-
-                    <div class="col-lg-12">
-                      <div class="form-group">
-
-                      <label class="form-control-label" for="input-first-name"> الربط </label>
-
-                      <select class="form-control form-control-alternative" type="text" name="liaison" placeholder="" required >
-                      <option value="" > الرجاء الاختيار    </option>
-                      <option value="قبل العداد" > قبل العداد </option>
-                      <option value="بعد العداد " > بعد العداد </option>
-                      
-                      
-                      </select>
-
-
-                      </div>
-                    </div>
-
-                    <div class="col-lg-12">
-                      <div class="form-group">
-
-                      <label class="form-control-label" for="input-first-name"> الاستعمال </label>
-
-                      <select class="form-control form-control-alternative" type="text" name="utilisation" placeholder="" required >
-                      <option value="" > الرجاء الاختيار    </option>
-                      <option value="للشراب" > للشراب </option>
-                      <option value="للري " > للري </option>
-                      
-                      
-                      </select>
-
-
-                      </div>
-                    </div>
-
-
-
-
-
-
-                    
-          </div>
-        
-      
-  </div>
- 
-</div>
-  
-          </div>
-          <div class="modal-footer flex-row-reverse">
-                                 <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">إلغاء</button>-->
-                                  <button type="submit"class="btn btn-primary" name="ajoutInfoCompteur" >متابعة</button>
-                                  
-                                  </div>
-</form>
-      </div>
-  </div>
-</div>
-
-</div>
+    </div>
+    <?php
+    print_r($row);
+?>
