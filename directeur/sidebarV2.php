@@ -142,7 +142,23 @@
             </a>
           </li>
           <li class="nav-item <?php echo ($current_page === 'listeInfoCompteur') ? 'active' : ''; ?>">
-            <a class="nav-link" href="GDA/gestionAep.php" >
+            <a class="nav-link" href="
+              <?php
+                $idGess=$_SESSION['idGess'];
+                $sql = "SELECT type FROM gess  where idGess='$idGess'";
+                  $result = $conn->query($sql);
+                  
+                  if ($result->num_rows > 0) {
+                    while ($row = $result->fetch_assoc()) {
+                      if($row['type']=='منطقة سقوية'){
+                        echo 'GDA/gestionPi.php';
+                      }else{
+                          echo 'GDA/gestionAep.php';
+                      }
+                    }
+                  }
+              ?>
+            " >
               <i class="ni ni-chart-bar-32 text-red"></i>المزانية السنوية
             </a>
           </li>
