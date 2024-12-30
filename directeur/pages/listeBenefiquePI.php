@@ -24,8 +24,8 @@
                 </div>
                 <div class="col-4 text-right">
 <!--                  <a href="#!" data-toggle="modal" data-target="#modal-form" class="btn btn-sm btn-primary">منتفعين اخرين </a> 
+<a href="index.php?page=ajoutBenefiquePI"  class="btn btn-sm btn-primary">إضافة منتفع  </a> 
  -->
- <a href="index.php?page=ajoutBenefiquePI"  class="btn btn-sm btn-primary">إضافة منتفع  </a> 
 
                   </div>
               </div>
