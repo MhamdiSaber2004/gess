@@ -160,7 +160,18 @@ include "gestionPiController.php";
 <button class="capture-button" onclick="location.href='/gess/apgess/'">رجوع</button>
 <button class="capture-button" onclick="capturePage()">طباعة</button>
 </div>
-<h3 style="text-align: right;font-size:22px">مرحبا, حسام </h3>
+<h3 style="text-align: right;font-size:22px">مرحبا, 
+<?php
+$idPompiste = $_SESSION['idPompiste'];
+$sql = "SELECT nom FROM pompiste where idPompiste='$idGess'";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+      echo $row["nom"]; 
+    }
+  }
+?>
+</h3>
 <h5 style="text-align: right;font-size:16px"> مجمع التنمية في قطاع الفلاحة و الصيد البحري للري </h5>
 <div class="title1">  <span class="text-with-border">الميزانية السنوية لسنة 2023 - 2024</span></div>
 <table>
@@ -588,7 +599,18 @@ include "gestionPiController.php";
   <div style="display:flex;">
 <button class="capture-button" onclick="location.href='../index.php'">رجوع</button>
 </div>
-<h3 style="text-align: right;font-size:22px">مرحبا, حسام </h3>
+<h3 style="text-align: right;font-size:22px">مرحبا, 
+<?php
+$idPompiste = $_SESSION['idPompiste'];
+$sql = "SELECT nom FROM pompiste where idPompiste='$idGess'";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+      echo $row["nom"]; 
+    }
+  }
+?>
+</h3>
 <h5 style="text-align: right;font-size:16px"> مجمع التنمية في قطاع الفلاحة و الصيد البحري للري </h5><br>
 <h5 style="text-align: right;font-size:14px;color :red">  الرجاء تعمير جميع الخانات و التثبت من صحتها قبل التسجيل / لا يمكن تعديل الخانات بعد التسجيل *</h5>
 <div class="title1">  <span class="text-with-border">الميزانية السنوية لسنة 2023 - 2024</span></div>
