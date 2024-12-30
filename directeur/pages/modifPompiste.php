@@ -103,22 +103,21 @@ if(isset($_GET['id']) && ! empty ( $_GET['id'] ))
             <div class="row">
                 <div class="col-lg-6">
                   <div class="form-group">
-
-                  <label class="form-control-label" for="input-first-name">الحالة العائلية</label>
-
-                  <select class="form-control form-control-alternative" type="text" name="famille" placeholder="" name="famille" >
-                   <option value="أعزب" <?php if($row['famille']=="أعزب") {echo "selected";} ?>> أعزب</option>
-                   <option value="متزوج"<?php if($row['famille']=="متزوج") {echo "selected";} ?>> متزوج</option>
-                   <option value="مطلق"<?php if($row['famille']=="مطلق") {echo "selected";} ?>>مطلق</option>
-                  </select>
-               </div>
+                    <label class="form-control-label" for="input-first-name">الحالة العائلية</label>
+                    <select class="form-control form-control-alternative" type="text" name="famille" placeholder="" name="famille" >
+                    <option value="أعزب" <?php if($row['famille']=="أعزب") {echo "selected";} ?>> أعزب</option>
+                    <option value="متزوج"<?php if($row['famille']=="متزوج") {echo "selected";} ?>> متزوج</option>
+                    <option value="مطلق"<?php if($row['famille']=="مطلق") {echo "selected";} ?>>مطلق</option>
+                    </select>
+                  </div>
+                </div>
                 <div class="col-lg-6">
                   <div class="form-group">
                     <label class="form-control-label" for="input-last-name">المهنة</label>
                     <select class="form-control form-control-alternative" id="travail" type="text" placeholder="" name="travail">
                       <option value="حارس شابكة"> حارس شابكة</option>
                       <option value="حارس نضام مائي"> حارس نضام مائي</option>
-                    </select>                      
+                    </select>                       
                   </div>
                 </div>
               </div>
