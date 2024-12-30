@@ -454,7 +454,7 @@ if (isset($_POST['modifPompiste'])) {
     
 if(strlen($CIN)<8)
     $CIN='0'.$CIN;
-    $sql="UPDATE `pompiste` SET `nom` = '$nom', `dateN` = '$dateN', `CIN` = '$CIN', `dateCIN` = '$dateCIN', `payement` = '$payement', `famille` = '$famille', `travail` = '$travail', `address` = '$address', `tel` = '$tel', `email` = '$email', `mdp` = '$mdp' WHERE `pompiste`.`idPompiste` = $id;";    
+    $sql="UPDATE `pompiste` SET `nom` = '$nom', `dateN` = '$dateN', `CIN` = '$CIN', `dateCIN` = '$dateCIN', `payement` = '$payement', `famille` = '$famille', `travail` = '$travail', `address` = '$address', `tel` = '$tel', `email` = '$email', `mdp` = '$mdp' WHERE `pompiste`.`idPompiste` = $id `directeur`='0';";    
 
         if ($conn->query($sql) === TRUE) {
             $_SESSION['messageClass']="success";
