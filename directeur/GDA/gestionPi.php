@@ -658,19 +658,19 @@ if ($result->num_rows > 0) {
       <th colspan="8" style="text-align: center;">   تقدير كميات الماء المتوقع انتاجها و توزيعها </th>
     </tr>
     <tr>
-      <td  colspan="2"><input  type="number" step="any" name="quantite_prevue_achat_ou_pompage" id="quantite_prevue_achat_ou_pompage"  dir="rtl" placeholder="  الكمية المزمع شرائها أو ضخها   "   onchange="calcul()"></td>
+      <td  colspan="2"><input  type="number" step="any" name="quantite_prevue_achat_ou_pompage" id="quantite_prevue_achat_ou_pompage"  dir="rtl" placeholder="  الكمية المزمع شرائها أو ضخها   "   onkeyup="calcul()"></td>
       <td  colspan="2">	م3</td>
       <td  colspan="3">  الكمية المزمع شرائها أو ضخها  </td>
       <td  colspan="1" style="width:8px">(3)</td>
     </tr>
     <tr>
-      <td  colspan="2"> <input type="number" step="any"  name="pourcentage_perte" id="pourcentage_perte" dir="rtl" placeholder=" نسبة الضياع	  " onchange="calcul()" ></td>
+      <td  colspan="2"> <input type="number" step="any"  name="pourcentage_perte" id="pourcentage_perte" dir="rtl" placeholder=" نسبة الضياع	  " onkeyup="calcul()" ></td>
       <td  colspan="2">%</td>
       <td  colspan="3">  نسبة الضياع	  </td>
       <td  colspan="1" style="width:8px">(4)</td>
     </tr>
     <tr>
-      <td  colspan="2"><input type="number" step="any"  name="quantite_prevue_distribution" id="quantite_prevue_distribution"  dir="rtl"  value="" onchange="calcul()"  disabled></td>
+      <td  colspan="2"><input type="number" step="any"  name="quantite_prevue_distribution" id="quantite_prevue_distribution"  dir="rtl"  value="" onkeyup="calcul()"  disabled></td>
       <td  colspan="2">	م3</td>
       <td  colspan="3">   الكمية المزمع توزيعها	((3)-(4)*(3)) </td>
       <td  colspan="1" style="width:8px">(5)</td>
@@ -679,19 +679,19 @@ if ($result->num_rows > 0) {
       <th colspan="8" style="text-align: center;">   معطيات خاصة بمحطة الضخ</th>
     </tr> 
     <tr>
-      <td colspan="2" ><input type="number" step="any" dir="rtl" name="debit_pompe" id="debit_pompe" placeholder=" دفق  محطة الضخ" onchange="calcul()" ></td>
+      <td colspan="2" ><input type="number" step="any" dir="rtl" name="debit_pompe" id="debit_pompe" placeholder=" دفق  محطة الضخ" onkeyup="calcul()" ></td>
       <td colspan="2" > (م3/س)</td>
       <td colspan="3" > 3,6 * (ل/ث) دفق محطة الضخ	  (م3/س)	 = دفق محطة الضخ </td>
       <td colspan="1"  style="width:8px">(8)</td>
     </tr>
     <tr>
-      <td colspan="2" ><input disabled type="number" name="heure_travail_ness" id="heure_travail_ness" step="any" dir="rtl" value="0" onchange="calcul()" ></td>
+      <td colspan="2" ><input disabled type="number" name="heure_travail_ness" id="heure_travail_ness" step="any" dir="rtl" value="0" onkeyup="calcul()" ></td>
       <td colspan="2" >س</td>
       <td colspan="3" >  ((3)/(8))	= عدد ساعات التشغيل الضرورية  </td>
       <td colspan="1"  style="width:8px">(9)</td>
     </tr>
     <tr>
-      <td colspan="2" ><input  type="number" name="consommation_energie_par_heure" id="consommation_energie_par_heure" step="any" dir="rtl" onchange="calcul()"></td>
+      <td colspan="2" ><input  type="number" name="consommation_energie_par_heure" id="consommation_energie_par_heure" step="any" dir="rtl" onkeyup="calcul()"></td>
       <td colspan="2" ></td>
       <td colspan="3" >  استهلاك الطاقة في الساعة (كيلواط / الساعة أو لتر/س) </td>
       <td colspan="1"  style="width:8px">(10)</td>
@@ -710,52 +710,52 @@ if ($result->num_rows > 0) {
       <td colspan="1" >د</td>
       <td colspan="1" >=(11)*0.001</td>
       <td colspan="2" >(16)</td>
-      <td colspan="1" ><input  type="number" name="point_eau" id="point_eau" step="any" dir="rtl" placeholder="  نقطة الماء   " onchange="calcul()"></td>
+      <td colspan="1" ><input  type="number" name="point_eau" id="point_eau" step="any" dir="rtl" placeholder="  نقطة الماء   " onkeyup="calcul()"></td>
       <td colspan="1" >  	نقطة الماء    </td>
       <td colspan="1"  style="width:8px">(11)</td>
     </tr>
     <tr>
-      <td colspan="1" ><input disabled type="number" name="reseau_construction1" id="reseau_construction1" step="any" dir="rtl" onchange="calcul()" ></td>
+      <td colspan="1" ><input disabled type="number" name="reseau_construction1" id="reseau_construction1" step="any" dir="rtl" onkeyup="calcul()" ></td>
       <td colspan="1" >د</td>
       <td colspan="1" >=(12)*0.005</td>
       <td colspan="2" >(17)</td>
-      <td colspan="1" ><input  type="number" name="reseau_construction" id="reseau_construction" step="any" dir="rtl" placeholder="  الشبكة و البناء   " onchange="calcul()"></td>
+      <td colspan="1" ><input  type="number" name="reseau_construction" id="reseau_construction" step="any" dir="rtl" placeholder="  الشبكة و البناء   " onkeyup="calcul()"></td>
       <td colspan="1" >  	الشبكة و البناء    </td>
       <td colspan="1"  style="width:8px">(12)</td>
     </tr>
     <tr>
-      <td colspan="1" ><input disabled type="number" name="pompage_equipement1" id="pompage_equipement1" step="any" dir="rtl" onchange="calcul()" ></td>
+      <td colspan="1" ><input disabled type="number" name="pompage_equipement1" id="pompage_equipement1" step="any" dir="rtl" onkeyup="calcul()" ></td>
       <td colspan="1" >د</td>
       <td colspan="1" >=(13)*0.025</td>
       <td colspan="2" >(18)</td>
-      <td colspan="1" ><input  type="number" name="pompage_equipement" id="pompage_equipement" step="any" dir="rtl" placeholder="  تجهيزات محطة الضخ   " onchange="calcul()"></td>
+      <td colspan="1" ><input  type="number" name="pompage_equipement" id="pompage_equipement" step="any" dir="rtl" placeholder="  تجهيزات محطة الضخ   " onkeyup="calcul()"></td>
       <td colspan="1" >  	 تجهيزات محطة الضخ   </td>
       <td colspan="1"  style="width:8px">(13)</td>
     </tr>
     <tr>
-      <td colspan="1" ><input disabled type="number" name="electricite1" id="electricite1" step="any" dir="rtl" onchange="calcul()" ></td>
+      <td colspan="1" ><input disabled type="number" name="electricite1" id="electricite1" step="any" dir="rtl" onkeyup="calcul()" ></td>
       <td colspan="1" >د</td>
       <td colspan="1" >=(14)*0.005</td>
       <td colspan="2" >(19)</td>
-      <td colspan="1" ><input  type="number" name="electricite" id="electricite" step="any" dir="rtl" placeholder="الكهربة" onchange="calcul()"></td>
+      <td colspan="1" ><input  type="number" name="electricite" id="electricite" step="any" dir="rtl" placeholder="الكهربة" onkeyup="calcul()"></td>
       <td colspan="1" >  		الكهربة (المحلول الكهربائي)    </td>
       <td colspan="1"  style="width:8px">(14)</td>
     </tr>
     <tr>
-      <td colspan="1" ><input disabled type="number" name="compteurs1" id="compteurs1" step="any" dir="rtl" onchange="calcul()" ></td>
+      <td colspan="1" ><input disabled type="number" name="compteurs1" id="compteurs1" step="any" dir="rtl" onkeyup="calcul()" ></td>
       <td colspan="1" >د</td>
       <td colspan="1" >=(15)*0.01</td>
       <td colspan="2" ></td>
-      <td colspan="1" ><input  type="number" name="compteurs" id="compteurs" step="any" dir="rtl" placeholder="   العدادات   " onchange="calcul()"></td>
+      <td colspan="1" ><input  type="number" name="compteurs" id="compteurs" step="any" dir="rtl" placeholder="   العدادات   " onkeyup="calcul()"></td>
       <td colspan="1" >العدادات</td>
       <td colspan="1"  style="width:8px">(15)</td>
     </tr>
     <tr>
-      <td colspan="1" ><input  type="couts_maintenance_totals" onchange="calcul()" name="couts_maintenance_totals" id="couts_maintenance_totals" step="any" dir="rtl" disabled></td>
+      <td colspan="1" ><input  type="couts_maintenance_totals" onkeyup="calcul()" name="couts_maintenance_totals" id="couts_maintenance_totals" step="any" dir="rtl" disabled></td>
       <td colspan="1" >د</td>
       <td colspan="1" >مجموع  تكاليف الصيانة</td>
       <td colspan="2" >(20)</td>
-      <td colspan="1" ><input  type="number" onchange="calcul()" name="couts_totals_realisation" id="couts_totals_realisation" step="any" dir="rtl" disabled></td>
+      <td colspan="1" ><input  type="number" onkeyup="calcul()" name="couts_totals_realisation" id="couts_totals_realisation" step="any" dir="rtl" disabled></td>
       <td colspan="1" >مجموع تكاليف الانجاز    </td>
       <td colspan="1"  style="width:8px"></td>
     </tr>
@@ -763,23 +763,23 @@ if ($result->num_rows > 0) {
       <th colspan="8" style="text-align: center;">معطيات أخرى</th>
     </tr> 
     <tr>
-      <td colspan="1" ><input type="number" step="any" onchange="calcul()" dir="rtl" name="nombre_membres" id="nombre_membres" placeholder=" عدد  المنخرطين "  ></td>
+      <td colspan="1" ><input type="number" step="any" onkeyup="calcul()" dir="rtl" name="nombre_membres" id="nombre_membres" placeholder=" عدد  المنخرطين "  ></td>
       <td colspan="2" >  عدد  المنخرطين</td>
       <td colspan="1" >(31)</td>
-      <td colspan="1" ><input type="number" step="any" onchange="calcul()" dir="rtl" name="cout_unitaire_energie" id="cout_unitaire_energie" placeholder=" تكلفة وحدة الطاقة"  ></td>
+      <td colspan="1" ><input type="number" step="any" onkeyup="calcul()" dir="rtl" name="cout_unitaire_energie" id="cout_unitaire_energie" placeholder=" تكلفة وحدة الطاقة"  ></td>
       <td colspan="2" >تكلفة وحدة الطاقة</td>
       <td colspan="1"  style="width:8px">(21)</td>
     </tr>
     <tr>
-      <td colspan="1" ><input type="number" step="any" onchange="calcul()" dir="rtl" name="informations_adhesion" id="informations_adhesion" placeholder=" معلوم الانخراط"  ></td>
+      <td colspan="1" ><input type="number" step="any" onkeyup="calcul()" dir="rtl" name="informations_adhesion" id="informations_adhesion" placeholder=" معلوم الانخراط"  ></td>
       <td colspan="2"  > معلوم الانخراط</td>
       <td colspan="1" >(32)</td>
-      <td colspan="1" ><input type="number" step="any" onchange="calcul()" dir="rtl" name="cout_achat_eau" id="cout_achat_eau" placeholder="   تكلفة شراء الماء  "  ></td>
+      <td colspan="1" ><input type="number" step="any" onkeyup="calcul()" dir="rtl" name="cout_achat_eau" id="cout_achat_eau" placeholder="   تكلفة شراء الماء  "  ></td>
       <td colspan="2" >  	تكلفة شراء الماء    </td>
       <td colspan="1"  style="width:8px">(22)</td>
     </tr>
     <tr>
-      <td colspan="1" ><input type="number" step="any" onchange="calcul()" dir="rtl" name="solde_initial_debut_annee" id="solde_initial_debut_annee" placeholder="  الرصيد الجملي في بداية السنة   "  ></td>
+      <td colspan="1" ><input type="number" step="any" onkeyup="calcul()" dir="rtl" name="solde_initial_debut_annee" id="solde_initial_debut_annee" placeholder="  الرصيد الجملي في بداية السنة   "  ></td>
       <td colspan="2" >الرصيد الجملي في بداية السنة</td>
       <td colspan="1" >(33)</td>
       <td colspan="1" ></td>
@@ -790,15 +790,15 @@ if ($result->num_rows > 0) {
       <td colspan="1" ></td>
       <td colspan="2" ></td>
       <td colspan="1" >(34)</td>
-      <td colspan="1" ><input type="number" step="any" onchange="calcul()" dir="rtl" name="prix_compteur" id="prix_compteur" placeholder="    سعر العداد"  ></td>
+      <td colspan="1" ><input type="number" step="any" onkeyup="calcul()" dir="rtl" name="prix_compteur" id="prix_compteur" placeholder="    سعر العداد"  ></td>
       <td colspan="2" >  	سعر العداد	    </td>
       <td colspan="1"  style="width:8px">(24)</td>
     </tr>
     <tr>
-      <td colspan="1" ><input type="number" step="any" onchange="calcul()" dir="rtl" name="montant_mensuel_net" id="montant_mensuel_net" placeholder=" المعلوم الشهري القار "  ></td>
+      <td colspan="1" ><input type="number" step="any" onkeyup="calcul()" dir="rtl" name="montant_mensuel_net" id="montant_mensuel_net" placeholder=" المعلوم الشهري القار "  ></td>
       <td colspan="2" > المعلوم الشهري القار </td>
       <td colspan="1" >(35)</td>
-      <td colspan="1" ><input type="number" step="any" dir="rtl" name="prix_moto" id="prix_moto" placeholder="سعر الدراجة النارية "  onchange="calcul()" ></td>
+      <td colspan="1" ><input type="number" step="any" dir="rtl" name="prix_moto" id="prix_moto" placeholder="سعر الدراجة النارية "  onkeyup="calcul()" ></td>
       <td colspan="2" >  	 سعر الدراجة النارية   </td>
       <td colspan="1"  style="width:8px">(25)</td>
     </tr>
@@ -806,7 +806,7 @@ if ($result->num_rows > 0) {
       <td colspan="1" ></td>
       <td colspan="2" ></td>
       <td colspan="1" >(36)</td>
-      <td colspan="1" ><input type="number" step="any" onchange="calcul()" dir="rtl" name="duree_renovation_moto" id="duree_renovation_moto" placeholder=" المدة المخصصة لتجديد الدراجة النارية "  ></td>
+      <td colspan="1" ><input type="number" step="any" onkeyup="calcul()" dir="rtl" name="duree_renovation_moto" id="duree_renovation_moto" placeholder=" المدة المخصصة لتجديد الدراجة النارية "  ></td>
       <td colspan="2" >  		المدة المخصصة لتجديد الدراجة النارية    </td>
       <td colspan="1"  style="width:8px">(26)</td>
     </tr>
@@ -814,7 +814,7 @@ if ($result->num_rows > 0) {
       <td colspan="1" ></td>
       <td colspan="2" ></td>
       <td colspan="1" >(37)</td>
-      <td colspan="1" ><input type="number" step="any" onchange="calcul()" dir="rtl" name="nombre_Travailleur" id="nombre_Travailleur" placeholder=" عدد العملة "  ></td>
+      <td colspan="1" ><input type="number" step="any" onkeyup="calcul()" dir="rtl" name="nombre_Travailleur" id="nombre_Travailleur" placeholder=" عدد العملة "  ></td>
       <td colspan="2" >  		عدد العملة    </td>
       <td colspan="1"  style="width:8px">(27)</td>
     </tr>
@@ -822,7 +822,7 @@ if ($result->num_rows > 0) {
       <td colspan="1" ></td>
       <td colspan="2" ></td>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input type="number" step="any" onchange="calcul()" dir="rtl" name="salaire_et_avantages_en_nature_par_an" id="salaire_et_avantages_en_nature_par_an" placeholder=" أجرة ومنح العملة في السنة "   ></td>
+      <td colspan="1" ><input type="number" step="any" onkeyup="calcul()" dir="rtl" name="salaire_et_avantages_en_nature_par_an" id="salaire_et_avantages_en_nature_par_an" placeholder=" أجرة ومنح العملة في السنة "   ></td>
       <td colspan="2" >  	أجرة ومنح العملة في السنة    </td>
       <td colspan="1"  style="width:8px">(28)</td>
     </tr>
@@ -830,7 +830,7 @@ if ($result->num_rows > 0) {
       <td colspan="1" ></td>
       <td colspan="2" ></td>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input type="number" step="any" onchange="calcul()" dir="rtl" name="salaire_et_avantages_du_directeur_technique_par_an" id="salaire_et_avantages_du_directeur_technique_par_an" placeholder=" أجرة ومنح المدير الفني في السنة "   ></td>
+      <td colspan="1" ><input type="number" step="any" onkeyup="calcul()" dir="rtl" name="salaire_et_avantages_du_directeur_technique_par_an" id="salaire_et_avantages_du_directeur_technique_par_an" placeholder=" أجرة ومنح المدير الفني في السنة "   ></td>
       <td colspan="2" >  		أجرة ومنح المدير الفني في السنة    </td>
       <td colspan="1"  style="width:8px">(29)</td>
     </tr>
@@ -838,7 +838,7 @@ if ($result->num_rows > 0) {
       <td colspan="1" ></td>
       <td colspan="2" ></td>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input type="number" step="any" onchange="calcul()" dir="rtl" name="salaire_gardien_per_m3_eau" id="salaire_gardien_per_m3_eau" placeholder="أجرة الحارس المتصرف على م3 من الماء "  ></td>
+      <td colspan="1" ><input type="number" step="any" onkeyup="calcul()" dir="rtl" name="salaire_gardien_per_m3_eau" id="salaire_gardien_per_m3_eau" placeholder="أجرة الحارس المتصرف على م3 من الماء "  ></td>
       <td colspan="2" >  	أجرة الحارس المتصرف على م3 من الماء    </td>
       <td colspan="1"  style="width:8px">(30)</td>
     </tr>
@@ -847,26 +847,26 @@ if ($result->num_rows > 0) {
     </tr> 
     <tr>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input type="number" step="any" onchange="calcul()" dir="rtl" name="frais_achat_eau" id="frais_achat_eau" disabled onchange="calcul()" ></td>
+      <td colspan="1" ><input type="number" step="any" onkeyup="calcul()" dir="rtl" name="frais_achat_eau" id="frais_achat_eau" disabled onkeyup="calcul()" ></td>
       <td colspan="5" >مصاريف شراء الماء = (3 ) * (22 )</td>
       <td colspan="1"  style="width:8px">(40)</td>
     </tr> 
     <tr>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input type="number" step="any" dir="rtl" name="frais_energie" id="frais_energie"  onchange="calcul()"  disabled></td>
+      <td colspan="1" ><input type="number" step="any" dir="rtl" name="frais_energie" id="frais_energie"  onkeyup="calcul()"  disabled></td>
       <td colspan="5" >مصاريف الطاقة = (10) * (9) * (21)</td>
       <td colspan="1"  style="width:8px">(41)</td>
     </tr> 
     <tr>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input type="number" step="any" onchange="calcul()" dir="rtl" name="salaire_et_avantages_en_nature_par_an1" id="salaire_et_avantages_en_nature_par_an1" disabled onchange="calcul()" ></td>
+      <td colspan="1" ><input type="number" step="any" onkeyup="calcul()" dir="rtl" name="salaire_et_avantages_en_nature_par_an1" id="salaire_et_avantages_en_nature_par_an1" disabled onkeyup="calcul()" ></td>
       <td colspan="2" >أجرة العملة = (28)</td>
       <td colspan="3" rowspan="3" >  	أجرة اليد العاملة    </td>
       <td colspan="1" rowspan="3"  style="width:8px">(42)</td>
     </tr> 
     <tr>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input disabled type="number" step="any" onchange="calcul()" dir="rtl" name="salaire_et_avantages_du_directeur_technique_par_an1" id="salaire_et_avantages_du_directeur_technique_par_an1" onchange="calcul()" ></td>
+      <td colspan="1" ><input disabled type="number" step="any" onkeyup="calcul()" dir="rtl" name="salaire_et_avantages_du_directeur_technique_par_an1" id="salaire_et_avantages_du_directeur_technique_par_an1" onkeyup="calcul()" ></td>
       <td colspan="2" >	أجرة المدير الفني = (29)</td>
     </tr> 
     <tr>
@@ -876,24 +876,24 @@ if ($result->num_rows > 0) {
     </tr> 
     <tr>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input disabled type="number" step="any" onchange="calcul()" dir="rtl" name="couts_maintenance_totals1" id="couts_maintenance_totals1"  onchange="calcul()" ></td>
+      <td colspan="1" ><input disabled type="number" step="any" onkeyup="calcul()" dir="rtl" name="couts_maintenance_totals1" id="couts_maintenance_totals1"  onkeyup="calcul()" ></td>
       <td colspan="2" >	التكاليف السنوية المخصصة للصيانة = (20)</td>
       <td colspan="3" rowspan="3" > المصاريف الجملية المخصصة للصيانة والإصلاح   </td>
       <td colspan="1" rowspan="3"  style="width:8px">(43)</td>
     </tr> 
     <tr>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input type="number" step="any" onchange="calcul()" dir="rtl" name="couverture_deficit_enregistre" placeholder="تغطية العجز" id="couverture_deficit_enregistre" onchange="calcul()" ></td>
+      <td colspan="1" ><input type="number" step="any" onkeyup="calcul()" dir="rtl" name="couverture_deficit_enregistre" placeholder="تغطية العجز" id="couverture_deficit_enregistre" onkeyup="calcul()" ></td>
       <td colspan="2" >	تغطية العجز االمسجل في مجال جمع إعتمادات الصيانة خلال السنوات الفارطة</td>
     </tr> 
     <tr>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input disabled type="number" step="any" onchange="calcul()" dir="rtl" name="renouvellement_des_compteurs" id="renouvellement_des_compteurs"  onchange="calcul()" ></td>
+      <td colspan="1" ><input disabled type="number" step="any" onkeyup="calcul()" dir="rtl" name="renouvellement_des_compteurs" id="renouvellement_des_compteurs"  onkeyup="calcul()" ></td>
       <td colspan="2" >	تجديد العدادات = (1) * 0.1 * (24)	</td>
     </tr> 
     <tr>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input type="number" step="any" onchange="calcul()" dir="rtl" name="frais_de_transport_deplacement" id="frais_de_transport_deplacement" placeholder=" مصاريف النقل و التنقل" onchange="calcul()" ></td>
+      <td colspan="1" ><input type="number" step="any" onkeyup="calcul()" dir="rtl" name="frais_de_transport_deplacement" id="frais_de_transport_deplacement" placeholder=" مصاريف النقل و التنقل" onkeyup="calcul()" ></td>
       <td colspan="2" >	مصاريف النقل و التنقل</td>
       <td colspan="3" rowspan="4" > مصاريف الإستغلال الأخرى  </td>
       <td colspan="1"  style="width:8px">(44)</td>
@@ -918,31 +918,31 @@ if ($result->num_rows > 0) {
     </tr> 
     <tr>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="renouvellement_des_equipements" id="renouvellement_des_equipements" onchange="calcul()" ></td>
+      <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="renouvellement_des_equipements" id="renouvellement_des_equipements" onkeyup="calcul()" ></td>
       <td colspan="5" >  	  تجديد المعدات ( الدراجة النارية ) = (25) / (26)  </td>
       <td colspan="1"  style="width:8px">(48)</td>
     </tr> 
     <tr>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input type="number" step="any" dir="rtl" name="frais_gestion_association" id="frais_gestion_association" placeholder=" مصاريف التصرف الخاص بالمجمع  " onchange="calcul()" ></td>
+      <td colspan="1" ><input type="number" step="any" dir="rtl" name="frais_gestion_association" id="frais_gestion_association" placeholder=" مصاريف التصرف الخاص بالمجمع  " onkeyup="calcul()" ></td>
       <td colspan="5" >  		مصاريف التصرف الخاص بالمجمع    </td>
       <td colspan="1"  style="width:8px">(49)</td>
     </tr> 
     <tr>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input type="number" step="any" dir="rtl" name="frais_divers_taraa" id="frais_divers_taraa" placeholder=" مصاريف مختلفة و طارئة	" onchange="calcul()" ></td>
+      <td colspan="1" ><input type="number" step="any" dir="rtl" name="frais_divers_taraa" id="frais_divers_taraa" placeholder=" مصاريف مختلفة و طارئة	" onkeyup="calcul()" ></td>
       <td colspan="5" >  		مصاريف مختلفة و طارئة	   </td>
       <td colspan="1"  style="width:8px">(50)</td>
     </tr> 
     <tr>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="total_frais_exploitation_entretien" id="total_frais_exploitation_entretien"  onchange="calcul()" ></td>
+      <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="total_frais_exploitation_entretien" id="total_frais_exploitation_entretien"  onkeyup="calcul()" ></td>
       <td colspan="5" >  		مجموع مصاريف الإستغلال والصيانة = مجموع المصاريف المنصوص عليها اعلاه   </td>
       <td colspan="1"  style="width:8px">(51)</td>
     </tr> 
     <tr>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="cout_par_metre_cube" id="cout_par_metre_cube" onchange="calcul()"></td>
+      <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="cout_par_metre_cube" id="cout_par_metre_cube" onkeyup="calcul()"></td>
       <td colspan="5" >  تكلفة المتر المكعب = (51) / (5)  </td>
       <td colspan="1"  style="width:8px">(52)</td>
     </tr> 
@@ -955,19 +955,19 @@ if ($result->num_rows > 0) {
     </tr> 
     <tr>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="prix_moto1" id="prix_moto1" onchange="calcul()" ></td>
+      <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="prix_moto1" id="prix_moto1" onkeyup="calcul()" ></td>
       <td colspan="2" >شراء دراجة نارية = (25)</td> 
      
     </tr> 
     <tr>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input type="number" step="any" dir="rtl" name="frais_activites_autres" id="frais_activites_autres"  placeholder="    مصاريف الأنشطة الأخرى " onchange="calcul()" ></td>
+      <td colspan="1" ><input type="number" step="any" dir="rtl" name="frais_activites_autres" id="frais_activites_autres"  placeholder="    مصاريف الأنشطة الأخرى " onkeyup="calcul()" ></td>
       <td colspan="5" >  		مصاريف الأنشطة الأخرى  </td>
       <td colspan="1"  style="width:8px">(54)</td>
     </tr> 
     <tr>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="total_des_depenses" id="total_des_depenses"   onchange="calcul()" ></td>
+      <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="total_des_depenses" id="total_des_depenses"   onkeyup="calcul()" ></td>
       <td colspan="5" >  	مجموع المصاريف = (51) + (53) +(25) + (54)	  </td>
       <td colspan="1"  style="width:8px">(55)</td>
     </tr> 
@@ -976,25 +976,25 @@ if ($result->num_rows > 0) {
     </tr> 
     <tr>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="revenues_des_adhesions" id="revenues_des_adhesions" onchange="calcul()" ></td>
+      <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="revenues_des_adhesions" id="revenues_des_adhesions" onkeyup="calcul()" ></td>
       <td colspan="5" >	مداخيل الإنخراطات = (31) * (32)</td>
       <td colspan="1"  style="width:8px">(56)</td>
     </tr> 
     <tr>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="revenues_des_frais_globaux" id="revenues_des_frais_globaux" onchange="calcul()" ></td>
+      <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="revenues_des_frais_globaux" id="revenues_des_frais_globaux" onkeyup="calcul()" ></td>
       <td colspan="5" >المداخيل المتأتية من المعاليم القارة الموظفة على الربط الخاص = (1) * (35) * 12 شهرا</td>
       <td colspan="1"  style="width:8px">(57)</td>
     </tr> 
     <tr>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="revenues_vente_eau" id="revenues_vente_eau" onchange="calcul()" ></td>
+      <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="revenues_vente_eau" id="revenues_vente_eau" onkeyup="calcul()" ></td>
       <td colspan="5" >مداخيل بيع الماء = (51) - (56) - (57)</td>
       <td colspan="1"  style="width:8px">(58)</td>
     </tr> 
     <tr>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="total_revenues_exploitation_maintenance" id="total_revenues_exploitation_maintenance" onchange="calcul()" ></td>
+      <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="total_revenues_exploitation_maintenance" id="total_revenues_exploitation_maintenance" onkeyup="calcul()" ></td>
       <td colspan="5" >مجموع مداخيل الإستغلال والصيانة = (51) = (56) + (57) + (58)	</td>
       <td colspan="1"  style="width:8px">(59)</td>
     </tr> 
@@ -1006,19 +1006,19 @@ if ($result->num_rows > 0) {
     </tr> 
     <tr>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input  type="number" step="any" dir="rtl" name="revenues_other_activities" placeholder="مداخيل الأنشطة الأخرى	" id="revenues_other_activities" onchange="calcul()" ></td>
+      <td colspan="1" ><input  type="number" step="any" dir="rtl" name="revenues_other_activities" placeholder="مداخيل الأنشطة الأخرى	" id="revenues_other_activities" onkeyup="calcul()" ></td>
       <td colspan="5" >مداخيل الأنشطة الأخرى</td>
       <td colspan="1"  style="width:8px">(61)</td>
     </tr> 
     <tr>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="total_revenues" id="total_revenues" onchange="calcul()" ></td>
+      <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="total_revenues" id="total_revenues" onkeyup="calcul()" ></td>
       <td colspan="5" >مجموع المداخيل = (59) + (60) + (61)</td>
       <td colspan="1"  style="width:8px">(62)</td>
     </tr> 
     <tr>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="solde_attendu_fin_annee" id="solde_attendu_fin_annee" onchange="calcul()" ></td>
+      <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="solde_attendu_fin_annee" id="solde_attendu_fin_annee" onkeyup="calcul()" ></td>
       <td colspan="5" >	الرصيد المنتظر في نهاية السنة = (37) - (55) + (62)</td>
       <td colspan="1"  style="width:8px">(63)</td>
     </tr> 
@@ -1027,14 +1027,14 @@ if ($result->num_rows > 0) {
     </tr> 
     <tr>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="tarif_m3_eau" id="tarif_m3_eau" onchange="calcul()" ></td>
+      <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="tarif_m3_eau" id="tarif_m3_eau" onkeyup="calcul()" ></td>
       <td colspan="3" >	سعر م3 من الماء = (58) / (5)</td>
       <td colspan="2" ></td>
       <td colspan="1"  style="width:8px">(64)</td>
     </tr> 
     <tr>
       <td colspan="1" >د</td>
-      <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="prix_vente_heure" id="prix_vente_heure" onchange="calcul()" ></td>
+      <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="prix_vente_heure" id="prix_vente_heure" onkeyup="calcul()" ></td>
       <td colspan="3" >	سعر البيع بالساعة = (64) / (8)</td>
       <td colspan="2" ></td>
       <td colspan="1"  style="width:8px">(65)</td>
