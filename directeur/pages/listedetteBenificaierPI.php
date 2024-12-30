@@ -249,17 +249,20 @@ th {
                 <input type="text" class="d-none" name="otre_non" value="1">
                 <div class="form-group">
                     <label for="exampleFormControlInput1">اسم المنتفع</label>
-                    <?php
-                        $sql = "SELECT * FROM benefique_pi where idGess='$idGess' and active=1 ";
-                        $result = $conn->query($sql);
-                        if ($result->num_rows > 0) {
-                            // output data of each row
-                            while ($row = $result->fetch_assoc()) {
-                                echo '<option value="'.$row['idBenefique'].'">'.$row['nom'].'</option>';
+                    <select class="form-control" name="nom_dettes_beneficiaires" id="nom_dettes_beneficiaires">
+                        
+                        <?php
+                            $sql = "SELECT * FROM benefique_pi where idGess='$idGess' and active=1 ";
+                            $result = $conn->query($sql);
+                            if ($result->num_rows > 0) {
+                                // output data of each row
+                                while ($row = $result->fetch_assoc()) {
+                                    echo '<option value="'.$row['idBenefique'].'">'.$row['nom'].'</option>';
+                                }
                             }
-                        }
-                    ?>                
-                </div>
+                        ?>
+                        </select>                
+                    </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">المبلغ</label>
                     <input type="text" name="montant" class="form-control" >
