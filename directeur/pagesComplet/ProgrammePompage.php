@@ -142,10 +142,10 @@ if (!isset($_SESSION["idPompiste"])) {
 
 <div class="col-md-6">
   <div class="modal fade" id="ajoutDistributionEau" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
-    <div class="modal-dialog modal- modal-dialog-centered modal-md" role="document">
+    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
         <div class="modal-content">
           <div class="modal-body p-0">
-            <div class="card bg-secondary border-0 mb-0">
+            <div class="card border-0 mb-0">
               <div class="card-header bg-transparent pb-5">
                <form>
                   <div class="mb-3">
