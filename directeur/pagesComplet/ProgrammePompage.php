@@ -1,6 +1,6 @@
 <?php
 include_once "../db/db.php";
-
+session_start();
 if (!isset($_SESSION["idPompiste"])) {
    header("location: ../login.php");
    exit();
