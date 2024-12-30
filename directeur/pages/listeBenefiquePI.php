@@ -220,6 +220,4 @@
         </div>
       </div>
     </div>
-    <?php
-    print_r($row);
-?>
+  
