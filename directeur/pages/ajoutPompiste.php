@@ -225,13 +225,6 @@
                       </div>
                     </div>
                 </div>
-                <div class="form-group focused">
-                  <label class="form-control-label" for="input-first-name">نوع المهمة</label>
-                  <select class="form-control form-control-alternative" type="text" placeholder="" name="directeur">
-                    <option value="0"> حارس شابكة</option>
-                    <option value="0"> حارس نضام مائي</option>
-                  </select>
-                </div>
                 <hr class="my-4" />
                 <!-- Address -->
                 <h6 class="heading-small text-muted mb-4">معلومات عامة </h6>
@@ -254,7 +247,10 @@
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-last-name">المهنة</label>
-                        <input type="text" id="travail" class="form-control form-control-alternative" placeholder="المهنة" name="travail" value="12345">
+                        <select class="form-control form-control-alternative" id="travail" type="text" placeholder="" name="directeur">
+                          <option value="0"> حارس شابكة</option>
+                          <option value="0"> حارس نضام مائي</option>
+                        </select>                      
                       </div>
                     </div>
                   </div>
