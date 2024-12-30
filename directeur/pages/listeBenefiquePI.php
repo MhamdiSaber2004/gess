@@ -126,6 +126,7 @@
                                        $result1 = $conn->query($sql1);
                                        
                                       $row1 = $result1->fetch_assoc();
+                                      print_r($row);
 
                                       if ($row['active']==1)
                                       {
