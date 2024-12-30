@@ -126,7 +126,6 @@
                                        $result1 = $conn->query($sql1);
                                        
                                       $row1 = $result1->fetch_assoc();
-                                      print_r($row);
 
                                       if ($row['active']==1)
                                       {
@@ -136,7 +135,6 @@
                                       if ($row['active']==0)
                                       {
                                         $color="yellow";
-
                                         $active="قيد الانتظار";
                                       }
                                       if ($row['active']==-1)
@@ -228,6 +226,7 @@
 
 
                                                ';
+                                               print_r($row);
                                            }
                                        }
                                        
