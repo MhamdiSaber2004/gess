@@ -247,7 +247,7 @@
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-last-name">المهنة</label>
-                        <select class="form-control form-control-alternative" id="travail" type="text" placeholder="" name="directeur">
+                        <select class="form-control form-control-alternative" id="travail" type="text" placeholder="" name="travail">
                           <option value="حارس شابكة"> حارس شابكة</option>
                           <option value="حارس نضام مائي"> حارس نضام مائي</option>
                         </select>                      
