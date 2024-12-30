@@ -38,18 +38,18 @@
                         <input id="idProbleme" class="form-control form-control-alternative" placeholder="رمز الحارس (تلقائي)" type="text" name="idProbleme" readonly value="<?php
                          $random = sprintf("%06d", mt_rand(111111, 999999)) ;
                          $sql = "SELECT idProbleme FROM problemes";
-                                       $result = $conn->query($sql);
-                                       
-                                       if ($result->num_rows > 0) {
-                                           // output data of each row
-                                           while ($row = $result->fetch_assoc()) {
-                                               while ($row['id'] == $random)
-                                               {
-                                                $random = sprintf("%06d", mt_rand(111111, 999999)) ;
-                                               }
-                                           }
-                                       }
-                                       echo $random;
+                          $result = $conn->query($sql);
+                          echo $result->num_rows;
+                          if ($result->num_rows > 0) {
+                              // output data of each row
+                              while ($row = $result->fetch_assoc()) {
+                                  while ($row['id'] == $random)
+                                  {
+                                  $random = sprintf("%06d", mt_rand(111111, 999999)) ;
+                                  }
+                              }
+                          }
+                          echo $random;
                          ?>">
                       </div>
                     </div>
