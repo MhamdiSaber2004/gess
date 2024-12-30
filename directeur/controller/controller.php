@@ -448,7 +448,7 @@ if (isset($_POST['modifPompiste'])) {
     $tel = mysqli_real_escape_string($conn, $_POST['tel']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $mdp = mysqli_real_escape_string($conn, $_POST['mdp']);
-    $travail = mysqli_real_escape_string($conn, $_POST['travail']);
+    $travail =  $_POST['travail'];
     $famille = mysqli_real_escape_string($conn, $_POST['famille']);
     
     
