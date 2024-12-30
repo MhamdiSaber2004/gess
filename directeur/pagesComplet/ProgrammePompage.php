@@ -147,7 +147,93 @@ if (!isset($_SESSION["idPompiste"])) {
           <div class="modal-body p-0">
             <div class="card bg-secondary border-0 mb-0">
               <div class="card-header bg-transparent pb-5">
-               aaaaaaaa
+               <form>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">فرع</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">مأخذ</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">اسم ولقب الفلاح	</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">اذن توزيع عدد</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">كمية / ساعات	</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">مأخذ</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <label for="exampleInputPassword1" class="form-label">توقيت</label>
+                    <div class="col-6">
+                      <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">من</label>
+                          <input type="text" class="form-control" id="exampleInputPassword1">
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">الى</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <label for="exampleInputPassword1" class="form-label">التوزيع الفعلي</label>
+                  <div class="row">
+                    <label for="exampleInputPassword1" class="form-label">توقيت</label>
+                    <div class="col-4">
+                      <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">من</label>
+                          <input type="text" class="form-control" id="exampleInputPassword1">
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">الى</label>
+                          <input type="text" class="form-control" id="exampleInputPassword1">
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">عدد ساعات</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label for="exampleInputPassword1" class="form-label">كمية / عداد</label>
+                    <div class="col-4">
+                      <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">من</label>
+                          <input type="text" class="form-control" id="exampleInputPassword1">
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">الى</label>
+                          <input type="text" class="form-control" id="exampleInputPassword1">
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">كمية</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">اضافة</button>
+                </form>
               </div>
             </div>
         </div>
