@@ -249,7 +249,7 @@
                         <label class="form-control-label" for="input-last-name">المهنة</label>
                         <select class="form-control form-control-alternative" id="travail" type="text" placeholder="" name="directeur">
                           <option value="0"> حارس شابكة</option>
-                          <option value="0"> حارس نضام مائي</option>
+                          <option value="0" > حارس نضام مائي</option>
                         </select>                      
                       </div>
                     </div>
