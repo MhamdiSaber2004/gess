@@ -14,7 +14,7 @@ if (isset($_SESSION['idDemandeBenefique']))
   {
     $_SESSION['messageClass']="danger";
     $_SESSION['message']="حصل خطأ ما، الرجاء المحاولة لاحقا";
-header("Location: ../index.php?page=demandeBenefique");
+    //header("Location: ../index.php?page=demandeBenefique");
   }
 
 }
@@ -22,7 +22,7 @@ else
 {
   $_SESSION['messageClass']="danger";
   $_SESSION['message']="حصل خطأ ما، الرجاء المحاولة لاحقا";
-header("Location: ../index.php?page=demandeBenefique");
+  //header("Location: ../index.php?page=demandeBenefique");
 }
 
 
