@@ -226,7 +226,7 @@
 
 
                                                ';
-                                               print_r($row);
+                                               echo($row);
                                            }
                                        }
                                        
