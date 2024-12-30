@@ -55,7 +55,7 @@ if (!isset($_SESSION["idPompiste"])) {
                   <h3 class="mb-0"><button onclick="printPompiste(&#39;printDiv&#39;)" class="btn btn-sm btn-primary">طباعة</button> </h3>
                 </div>
                 <div class="col-4 text-center">
-                  <a href="https://directeur.pagekite.me/a/directeur/pagesComplet/distributionEau.php?jour=2024-11-30#" class="btn btn-sm btn-success" data-toggle="modal" data-target="#ajoutDistributionEau">إضافة</a>
+                  <a href="#" class="btn btn-sm btn-success" data-toggle="modal" data-target="#ajoutDistributionEau">إضافة</a>
                 </div>
                 <div class="col-4 text-center">
                   <a href="../index.php" class="btn btn-sm btn-primary">رجوع</a>
