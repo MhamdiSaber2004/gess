@@ -300,7 +300,6 @@ if(isset($_POST['nom_C'])){
     $sql1="INSERT INTO `dettes_complexe`( `nom`, `dateFacture`, `montant`, `dateMontant`, `note`, `idGess`, `active`, `otre_non`) VALUES ('$nom_C','$dateFacture','$montant_C','$dateMontant','$note_C','$idGess','1','$otre_non_C')";
         
         if ($conn->query($sql1) === TRUE) {
-            echo 'lfkjpoer';
             $_SESSION['messageClass']="success";
             $_SESSION['message']="تمت الإضافة بنجاح";
             header("Location: ../pages/listeDettesComplexePI.php?dateDebut=".$datedebut."&dateFin=".$dateFin);
