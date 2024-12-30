@@ -7,7 +7,7 @@ include_once "db/db.php";
 session_start();
 
 if (!isset($_SESSION["idGess"])) {
- // header("location: login/index.php");
+  header("location: login/index.php");
   exit();
 }
 
