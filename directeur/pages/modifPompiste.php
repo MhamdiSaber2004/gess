@@ -111,14 +111,14 @@ if(isset($_GET['id']) && ! empty ( $_GET['id'] ))
                    <option value="متزوج"<?php if($row['famille']=="متزوج") {echo "selected";} ?>> متزوج</option>
                    <option value="مطلق"<?php if($row['famille']=="مطلق") {echo "selected";} ?>>مطلق</option>
                   </select>
-
-
-                  </div>
-                </div>
+               </div>
                 <div class="col-lg-6">
                   <div class="form-group">
                     <label class="form-control-label" for="input-last-name">المهنة</label>
-                    <input type="text" id="travail" class="form-control form-control-alternative" placeholder="المهنة" name="travail" value="<?php echo $row['travail']; ?>">
+                    <select class="form-control form-control-alternative" id="travail" type="text" placeholder="" name="travail">
+                      <option value="حارس شابكة"> حارس شابكة</option>
+                      <option value="حارس نضام مائي"> حارس نضام مائي</option>
+                    </select>                      
                   </div>
                 </div>
               </div>
