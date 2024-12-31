@@ -1,3 +1,8 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+?>
+
 <!-- Main content -->
   <div class="main-content">
 
