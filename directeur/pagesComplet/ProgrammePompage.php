@@ -41,6 +41,9 @@ if(!empty($_POST['aBranche'])){
   }
 }
 
+if(!empty($_POST['mBranche'])){
+  print_r($_POST);
+}
 
 
 ?>
