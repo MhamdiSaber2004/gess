@@ -11,6 +11,31 @@ $jourpp=$_GET['date'];
 
 if(!empty($_POST['aBranche'])){
   print_r($_POST);
+  $aBranche=$_POST['aBranche'];
+  $aprise=$_POST['aprise'];
+  $anomBenifique=$_POST['anomBenifique'];
+  $anumAutorisationDistribution=$_POST['anumAutorisationDistribution'];
+  $aquantiteParH=$_POST['aquantiteParH'];
+  $atimeDe=$_POST['atimeDe'];
+  $atimeA=$_POST['atimeA'];
+  $atimeReelDe=$_POST['atimeReelDe'];
+  $atimeReelA=$_POST['atimeReelA'];
+  $anumheur=$_POST['anumheur'];
+  $aquantiterDe=$_POST['aquantiterDe'];
+  $aquantiterA=$_POST['aquantiterA'];
+  $aquantiterReel=$_POST['aquantiterReel'];
+ 
+  $ajout="INSERT INTO `programme_pommpage`(`Branche`, `prise`, `nomBenifique`, `numAutorisationDistribution`, `quantiteParH`, `timeDe`, `timeA`, `timeReelDe`, `timeReelA`, `numheur`, `quantiterDe`, `quantiterA`, `quantiterReel`, `datej`) VALUES ('$aBranche','$aprise','$anomBenifique','$anumAutorisationDistribution','$aquantiteParH','$atimeDe','$atimeReelDe','$atimeReelA','$anumheur','$aquantiterDe','$aquantiterA','$aquantiterReel','$jourpp')";
+  if ($conn->query($ajout) === TRUE) {
+    $_SESSION['messageClass']="success";
+    $_SESSION['message']="تمت الإضافة بنجاح";
+    header("Location: ProgrammePompage.php?date=".$jourpp);
+    exit();
+  }else{
+      $_SESSION['messageClass']="danger";
+      $_SESSION['message']="حصل خطأ ما، الرجاء المحاولة لاحقا";
+      header("Location: ProgrammePompage.php?date=".$jourpp);
+  }
 }
 
 
