@@ -28,7 +28,7 @@ if(!empty($_POST['aBranche'])){
   $aquantiterA=$_POST['aquantiterA'];
   $aquantiterReel=$_POST['aquantiterReel'];
  
-  $ajout = "INSERT INTO `programme_pommpage`(`Branche`, `prise`, `nomBenifique`, `numAutorisationDistribution`, `quantiteParH`, `timeDe`, `timeA`, `timeReelDe`, `timeReelA`, `numheur`, `quantiterDe`, `quantiterA`, `quantiterReel`, `datej`) VALUES ('$aBranche', '$aprise', '$anomBenifique', '$anumAutorisationDistribution', '$aquantiteParH', '$atimeDe', '$atimeA', '$atimeReelDe', '$atimeReelA', '$anumheur', '$aquantiterDe', '$aquantiterA', '$aquantiterReel', '$jourpp')";
+  $ajout = "INSERT INTO `programme_pommpage`(`Branche`,`idGess` ,`prise`, `nomBenifique`, `numAutorisationDistribution`, `quantiteParH`, `timeDe`, `timeA`, `timeReelDe`, `timeReelA`, `numheur`, `quantiterDe`, `quantiterA`, `quantiterReel`, `datej`) VALUES ('$aBranche','$idGess', '$aprise', '$anomBenifique', '$anumAutorisationDistribution', '$aquantiteParH', '$atimeDe', '$atimeA', '$atimeReelDe', '$atimeReelA', '$anumheur', '$aquantiterDe', '$aquantiterA', '$aquantiterReel', '$jourpp')";
   if ($conn->query($ajout) === TRUE) {
     $_SESSION['messageClass']="success";
     $_SESSION['message']="تمت الإضافة بنجاح";
@@ -164,6 +164,9 @@ if(!empty($_POST['aBranche'])){
 
     </thead>
     <tbody>
+      <?php
+        $select=""
+      ?>
       <tr class="text-center">
          <td colspan="14">لا يوجد أي تسجيل</td>
       </tr>
