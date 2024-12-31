@@ -32,29 +32,6 @@
                 <h6 class="heading-small text-muted mb-4">معلومات العطب </h6>
                 <div class="pl-lg-4">
                   <div class="row">
-                  <div class="col-md-12">
-                      <div class="form-group">
-                        <label class="form-control-label" for="input-address">رمز العطب (تلقائي)</label>
-                        <input id="idProbleme" class="form-control form-control-alternative" placeholder="رمز الحارس (تلقائي)" type="text" name="idProbleme" readonly value="<?php
-                         $random = sprintf("%06d", mt_rand(111111, 999999)) ;
-                         $sql = "SELECT idProbleme FROM problemes";
-                          $result = $conn->query($sql);
-                          echo $result->num_rows;
-                          if ($result->num_rows > 0) {
-                              // output data of each row
-                              while ($row = $result->fetch_assoc()) {
-                                  while ($row['id'] == $random)
-                                  {
-                                  $random = sprintf("%06d", mt_rand(111111, 999999)) ;
-                                  }
-                              }
-                          }
-                          echo $random;
-                         ?>">
-                      </div>
-                    </div>
-
-
                     <div class="col-md-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-address">الساكورة عدد</label>
@@ -62,21 +39,16 @@
                         <datalist id="numeroCompteur">
 
                         <?php
-                        
-                        $idPompiste=$_SESSION['idPompiste'];
-                        $sql = "SELECT * FROM benefique_$typeGess where idGess='$idGess'";
-                        $result = $conn->query($sql);
+                          $idPompiste=$_SESSION['idPompiste'];
+                          $sql = "SELECT * FROM benefique_$typeGess where idGess='$idGess'";
+                          $result = $conn->query($sql);
 
-                        if ($result->num_rows > 0) {
-                         while ($row = $result->fetch_assoc()) {
-                         echo "<option>".$row['numCompteur']."</option>";
-                        
-                         
-                       }
-                        }
-
+                          if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                            echo "<option>".$row['numCompteur']."</option>";
+                            }
+                          }
                          ?>
-
                         </datalist>
                       </div>
                     </div>
