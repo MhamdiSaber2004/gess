@@ -104,6 +104,14 @@ if(!empty($_POST['mBranche'])){
          font-size: 1.2em;
          font-weight: bold;
       }
+      @media print {
+        *{
+          display: none;
+        }
+        #printDiv{
+          display: block;
+        }
+      }
    </style>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
@@ -233,11 +241,11 @@ if(!empty($_POST['mBranche'])){
       <?php } ?>
     </tbody>
 </table>
-<span>*انقر على ع.ر لتحيين</span>
-</div>
-</div>
-</div>
 
+</div>
+</div>
+</div>
+<span>*انقر على ع.ر لتحيين</span>
 
 <div class="col-md-6">
   <div class="modal fade" id="ajoutDistributionEau" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
