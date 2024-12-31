@@ -153,7 +153,7 @@ if(!empty($_POST['aBranche'])){
           <div class="modal-body p-0">
             <div class="card border-0 mb-0">
               <div class="card-header bg-transparent pb-5">
-               <form action="ProgrammePompage.php?date=<?php echo $date ; ?>" method="post">
+               <form action="ProgrammePompage.php?date=<?php echo $jourpp ; ?>" method="post">
                   <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">فرع</label>
                     <input type="text" name="aBranche" class="form-control" id="exampleInputPassword1">
