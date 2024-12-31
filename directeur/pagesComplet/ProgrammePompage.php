@@ -105,7 +105,7 @@ if(!empty($_POST['mBranche'])){
          font-weight: bold;
       }
       @media print {
-        button{
+        .buttons{
           display: none;
         }
         #anonce{
@@ -124,7 +124,7 @@ if(!empty($_POST['mBranche'])){
 <body>
 <br><br>
 <div class="col-12">
-<div class="card-header  border-0">
+<div class="card-header buttons  border-0">
               <div class="row align-items-center">
                 <div class="col-4 text-center">
                   <h3 class="mb-0"><button onclick="printPompiste()" class="btn btn-sm btn-primary">طباعة</button> </h3>
