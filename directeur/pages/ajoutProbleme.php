@@ -43,17 +43,7 @@ ini_set('display_errors', 1);
                         <input id="numCompteur" class="form-control form-control-alternative" list="numeroCompteur" placeholder="الساكورة عدد" type="text" name="numCompteur" value="646077">
                         <datalist id="numeroCompteur">
 
-                        <?php
-                          $idPompiste=$_SESSION['idPompiste'];
-                          $sql = "SELECT * FROM benefique_$typeGess where idGess='$idGess'";
-                          $result = $conn->query($sql);
-
-                          if ($result->num_rows > 0) {
-                            while ($row = $result->fetch_assoc()) {
-                            echo "<option>".$row['numCompteur']."</option>";
-                            }
-                          }
-                         ?>
+                      
                         </datalist>
                       </div>
                     </div>
