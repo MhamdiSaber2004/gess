@@ -13,7 +13,7 @@ $idGess=$_SESSION['idGess'];
 $jourpp=$_GET['date'];
 
 if(!empty($_POST['aBranche'])){
-  print_r($_POST);
+  //print_r($_POST);
   $aBranche=$_POST['aBranche'];
   $aprise=$_POST['aprise'];
   $anomBenifique=$_POST['anomBenifique'];
@@ -28,7 +28,7 @@ if(!empty($_POST['aBranche'])){
   $aquantiterA=$_POST['aquantiterA'];
   $aquantiterReel=$_POST['aquantiterReel'];
  
-  $ajout="INSERT INTO `programme_pommpage`(`Branche`, `prise`, `nomBenifique`, `numAutorisationDistribution`, `quantiteParH`, `timeDe`, `timeA`, `timeReelDe`, `timeReelA`, `numheur`, `quantiterDe`, `quantiterA`, `quantiterReel`, `datej`) VALUES ('$aBranche','$aprise','$anomBenifique','$anumAutorisationDistribution','$aquantiteParH','$atimeDe','$atimeReelDe','$atimeReelA','$anumheur','$aquantiterDe','$aquantiterA','$aquantiterReel','$jourpp')";
+  $ajout = "INSERT INTO `programme_pommpage`(`Branche`, `prise`, `nomBenifique`, `numAutorisationDistribution`, `quantiteParH`, `timeDe`, `timeA`, `timeReelDe`, `timeReelA`, `numheur`, `quantiterDe`, `quantiterA`, `quantiterReel`, `datej`) VALUES ('$aBranche', '$aprise', '$anomBenifique', '$anumAutorisationDistribution', '$aquantiteParH', '$atimeDe', '$atimeA', '$atimeReelDe', '$atimeReelA', '$anumheur', '$aquantiterDe', '$aquantiterA', '$aquantiterReel', '$jourpp')";
   if ($conn->query($ajout) === TRUE) {
     $_SESSION['messageClass']="success";
     $_SESSION['message']="تمت الإضافة بنجاح";
