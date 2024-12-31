@@ -2,12 +2,18 @@
 include_once "../db/db.php";
 session_start();
 if (!isset($_SESSION["idPompiste"])) {
-   header("location: ../login.php");
-   exit();
- }
+  header("location: ../login.php");
+  exit();
+}
 
- $idGess=$_SESSION['idGess'];
- $jourpp=$_GET['date'];
+$idGess=$_SESSION['idGess'];
+$jourpp=$_GET['date'];
+
+if(!empty($_POST['aBranche'])){
+  print_r($_POST);
+}
+
+
 
 ?>
 
@@ -147,26 +153,26 @@ if (!isset($_SESSION["idPompiste"])) {
           <div class="modal-body p-0">
             <div class="card border-0 mb-0">
               <div class="card-header bg-transparent pb-5">
-               <form>
+               <form action="progremmePompage.php" method="post">
                   <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">فرع</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1">
+                    <input type="text" name="aBranche" class="form-control" id="exampleInputPassword1">
                   </div>
                   <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">مأخذ</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1">
+                    <input type="text" name="aprise" class="form-control" id="exampleInputPassword1">
                   </div>
                   <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">اسم ولقب الفلاح	</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1">
+                    <input type="text" name="anomBenifique" class="form-control" id="exampleInputPassword1">
                   </div>
                   <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">اذن توزيع عدد</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1">
+                    <input type="text" name="anumAutorisationDistribution" class="form-control" id="exampleInputPassword1">
                   </div>
                   <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">كمية / ساعات	</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1">
+                    <input type="text" name="aquantiteParH" class="form-control" id="exampleInputPassword1">
                   </div>
                   <hr>
                   <div class="row">
@@ -174,13 +180,13 @@ if (!isset($_SESSION["idPompiste"])) {
                     <div class="col-6">
                       <div class="mb-3">
                           <label for="exampleInputPassword1" class="form-label">من</label>
-                          <input type="text" class="form-control" id="exampleInputPassword1">
+                          <input type="time" name="atimeDe" class="form-control" id="exampleInputPassword1">
                       </div>
                     </div>
                     <div class="col-6">
                       <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">الى</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1">
+                        <input type="time" name="atimeA" class="form-control" id="exampleInputPassword1">
                       </div>
                     </div>
                   </div>
@@ -191,19 +197,19 @@ if (!isset($_SESSION["idPompiste"])) {
                     <div class="col-4">
                       <div class="mb-3">
                           <label for="exampleInputPassword1" class="form-label">من</label>
-                          <input type="time" class="form-control" id="exampleInputPassword1">
+                          <input type="time" name="atimeReelDe" class="form-control" id="exampleInputPassword1">
                       </div>
                     </div>
                     <div class="col-4">
                       <div class="mb-3">
                           <label for="exampleInputPassword1" class="form-label">الى</label>
-                          <input type="time" class="form-control" id="exampleInputPassword1">
+                          <input type="time" name="atimeReelA" class="form-control" id="exampleInputPassword1">
                       </div>
                     </div>
                     <div class="col-4">
                       <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">عدد ساعات</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1">
+                        <input type="text" name="anumheur" class="form-control" id="exampleInputPassword1">
                       </div>
                     </div>
                   </div>
@@ -212,19 +218,19 @@ if (!isset($_SESSION["idPompiste"])) {
                     <div class="col-4">
                       <div class="mb-3">
                           <label for="exampleInputPassword1" class="form-label">من</label>
-                          <input type="text" class="form-control" id="exampleInputPassword1">
+                          <input type="text" name="aquantiterDe" class="form-control" id="exampleInputPassword1">
                       </div>
                     </div>
                     <div class="col-4">
                       <div class="mb-3">
                           <label for="exampleInputPassword1" class="form-label">الى</label>
-                          <input type="text" class="form-control" id="exampleInputPassword1">
+                          <input type="text" name="aquantiterA" class="form-control" id="exampleInputPassword1">
                       </div>
                     </div>
                     <div class="col-4">
                       <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">كمية</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1">
+                        <input type="text" name="aquantiterReel" class="form-control" id="exampleInputPassword1">
                       </div>
                     </div>
                   </div>
