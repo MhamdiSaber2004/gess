@@ -316,7 +316,7 @@ if(!empty($_POST['aBranche'])){
       ?>
         <script>
           $(document).on('click', '#<?php echo $i; ?>', function() {
-            $('#modifierDistributionEau<?php echo $i; ?>').show();
+            $('#modifierDistributionEau<?php echo $i; ?>').modal('show');
           });
         </script>
         <div class="col-md-6">
