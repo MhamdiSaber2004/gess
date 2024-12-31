@@ -78,7 +78,7 @@ if(!empty($_POST['aBranche'])){
          font-weight: bold;
       }
    </style>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -315,9 +315,9 @@ if(!empty($_POST['aBranche'])){
       $i=$i+1;
       ?>
         <script>
-          $('#<?php echo $i; ?>').cilck(function(){
-            $('#modifierDistributionEau<?php echo $i; ?>').show();
-          })
+          $(document).on('click', '#<?php echo $i; ?>', function() {
+              alert('fghjklkjhgfdfghjk');
+          });
         </script>
         <div class="col-md-6">
           <div class="modal fade" id="modifierDistributionEau<?php echo $i; ?>" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
