@@ -105,11 +105,11 @@ if(!empty($_POST['mBranche'])){
          font-weight: bold;
       }
       @media print {
-        *{
+        button{
           display: none;
         }
-        #printDiv{
-          display: block;
+        #anonce{
+          display: none;
         }
       }
    </style>
@@ -245,7 +245,7 @@ if(!empty($_POST['mBranche'])){
 </div>
 </div>
 </div>
-<span>*انقر على ع.ر لتحيين</span>
+<span id="anonce">*انقر على ع.ر لتحيين</span>
 
 <div class="col-md-6">
   <div class="modal fade" id="ajoutDistributionEau" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
