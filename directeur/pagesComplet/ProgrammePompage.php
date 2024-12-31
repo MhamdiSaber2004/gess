@@ -165,7 +165,7 @@ if(!empty($_POST['aBranche'])){
     </thead>
     <tbody>
       <?php
-        $select="SELECT * FROM `programme_pommpage` WHERE idGess=$idGess";
+        $select="SELECT * FROM `programme_pommpage` WHERE idGess=$idGess and datej=$jourpp";
         $result = $conn->query($select);
         
         if ($result->num_rows > 0) {
@@ -189,7 +189,6 @@ if(!empty($_POST['aBranche'])){
                   <td><?php echo $row['quantiterDe']; ?></td>
                   <td><?php echo $row['quantiterA']; ?></td>
                   <td><?php echo $row['quantiterReel']; ?></td>
-                  <td><?php echo $row['datej']; ?></td>
                 <?php
             }
             echo '</tr>';
