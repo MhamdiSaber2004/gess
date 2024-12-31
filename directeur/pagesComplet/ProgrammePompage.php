@@ -107,6 +107,11 @@ if(!empty($_POST['mBranche'])){
    </style>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+   <script>
+    function printPompiste('printDiv'){
+      window.print();
+    }
+   </script>
 </head>
 <body>
 <br><br>
@@ -114,7 +119,7 @@ if(!empty($_POST['mBranche'])){
 <div class="card-header  border-0">
               <div class="row align-items-center">
                 <div class="col-4 text-center">
-                  <h3 class="mb-0"><button onclick="printPompiste(&#39;printDiv&#39;)" class="btn btn-sm btn-primary">طباعة</button> </h3>
+                  <h3 class="mb-0"><button onclick="printPompiste('printDiv')" class="btn btn-sm btn-primary">طباعة</button> </h3>
                 </div>
                 <div class="col-4 text-center">
                   <button href="#" class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#ajoutDistributionEau">إضافة</button>
