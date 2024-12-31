@@ -13,6 +13,7 @@ $idGess=$_SESSION['idGess'];
 $jourpp=$_GET['date'];
 
 if(!empty($_POST['aBranche'])){
+  print_r($_POST);
   $aBranche=$_POST['aBranche'];
   $aprise=$_POST['aprise'];
   $anomBenifique=$_POST['anomBenifique'];
