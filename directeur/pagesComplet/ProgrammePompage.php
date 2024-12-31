@@ -78,6 +78,7 @@ if(!empty($_POST['aBranche'])){
          font-weight: bold;
       }
    </style>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -175,7 +176,7 @@ if(!empty($_POST['aBranche'])){
             while ($row = $result->fetch_assoc()) {
               $i=$i+1;
                 ?>
-                  <td><?php echo $i; ?></td>
+                  <td id="<?php echo $i; ?>"><?php echo $i; ?></td>
                   <td><?php echo $row['Branche']; ?></td>
                   <td><?php echo $row['prise']; ?></td>
                   <td><?php echo $row['nomBenifique']; ?></td>
@@ -301,6 +302,123 @@ if(!empty($_POST['aBranche'])){
     </div>
   </div>
 </div>
+
+<?php
+ $select1="SELECT * FROM `programme_pommpage` WHERE idGess=$idGess AND datej='$jourpp'";
+ $result1 = $conn->query($select1);
+ 
+ if ($result1->num_rows > 0) {
+    echo '<tr class="text-center">';
+    // output data of each row
+    $i=0;
+    while ($row1 = $result1->fetch_assoc()) {
+      $i=$i+1;
+      ?>
+        <script>
+          $('#<?php echo $i; ?>').cilck(function(){
+            $('#modifierDistributionEau<?php echo $i; ?>').show();
+          })
+        </script>
+        <div class="col-md-6">
+          <div class="modal fade" id="modifierDistributionEau<?php echo $i; ?>" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+                <div class="modal-content">
+                  <div class="modal-body p-0">
+                    <div class="card border-0 mb-0">
+                      <div class="card-header bg-transparent pb-5">
+                      <form action="ProgrammePompage.php?date=<?php echo $jourpp ; ?>" method="post">
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">فرع</label>
+                            <input type="text" name="mBranche" class="form-control" id="exampleInputPassword1" value="<?php echo $row1['Branche']; ?>">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">مأخذ</label>
+                            <input type="text" name="mprise" class="form-control" id="exampleInputPassword1" value="<?php echo $row1['prise'] ; ?>">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">اسم ولقب الفلاح	</label>
+                            <input type="text" name="mnomBenifique" class="form-control" id="exampleInputPassword1" value="<?php echo $row1['nomBenifique'] ; ?>">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">اذن توزيع عدد</label>
+                            <input type="text" name="mnumAutorisationDistribution" class="form-control" id="exampleInputPassword1" value="<?php echo $row1['numAutorisationDistribution'] ; ?>">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">كمية / ساعات	</label>
+                            <input type="text" name="mquantiteParH" class="form-control" id="exampleInputPassword1" value="<?php echo $row1['quantiteParH'] ; ?>">
+                          </div>
+                          <hr>
+                          <div class="row">
+                            <label for="exampleInputPassword1" class="form-label">توقيت</label>
+                            <div class="col-6">
+                              <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label">من</label>
+                                  <input type="time" name="mtimeDe" class="form-control" id="exampleInputPassword1" value="<?php echo $row1['timeDe'] ; ?>">
+                              </div>
+                            </div>
+                            <div class="col-6">
+                              <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">الى</label>
+                                <input type="time" name="mtimeA" class="form-control" id="exampleInputPassword1" value="<?php echo $row1['timeA'] ; ?>">
+                              </div>
+                            </div>
+                          </div>
+                          <hr>
+                          <label for="exampleInputPassword1" class="form-label">التوزيع الفعلي</label>
+                          <div class="row">
+                            <label for="exampleInputPassword1" class="form-label">توقيت</label>
+                            <div class="col-4">
+                              <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label">من</label>
+                                  <input type="time" name="mtimeReelDe" class="form-control" id="exampleInputPassword1" value="<?php echo $row1['timeReelDe'] ; ?>">
+                              </div>
+                            </div>
+                            <div class="col-4">
+                              <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label">الى</label>
+                                  <input type="time" name="mtimeReelA" class="form-control" id="exampleInputPassword1" value="<?php echo $row1['timeReelA'] ; ?>">
+                              </div>
+                            </div>
+                            <div class="col-4">
+                              <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">عدد ساعات</label>
+                                <input type="text" name="mnumheur" class="form-control" id="exampleInputPassword1" value="<?php echo $row1['numheur'] ; ?>">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <label for="exampleInputPassword1" class="form-label">كمية / عداد</label>
+                            <div class="col-4">
+                              <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label">من</label>
+                                  <input type="text" name="mquantiterDe" class="form-control" id="exampleInputPassword1" value="<?php echo $row1['quantiterDe'] ; ?>">
+                              </div>
+                            </div>
+                            <div class="col-4">
+                              <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label">الى</label>
+                                  <input type="text" name="mquantiterA" class="form-control" id="exampleInputPassword1" value="<?php echo $row1['quantiterA'] ; ?>">
+                              </div>
+                            </div>
+                            <div class="col-4">
+                              <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">كمية</label>
+                                <input type="text" name="mquantiterReel" class="form-control" id="exampleInputPassword1" value="<?php echo $row1['quantiterReel'] ; ?>">
+                              </div>
+                            </div>
+                          </div>
+                          <button type="submit" class="btn btn-primary">اضافة</button>
+                        </form>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      <?php
+    }
+  }
+?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
 
