@@ -165,11 +165,40 @@ if(!empty($_POST['aBranche'])){
     </thead>
     <tbody>
       <?php
-        $select=""
+        $select="SELECT * FROM `programme_pommpage` WHERE idGess=$idGess";
+        $result = $conn->query($select);
+        
+        if ($result->num_rows > 0) {
+            echo '<tr class="text-center">';
+            // output data of each row
+            $i=0;
+            while ($row = $result->fetch_assoc()) {
+              $i=$i+1;
+                ?>
+                  <td><?php echo $i; ?></td>
+                  <td><?php echo $row['Branche']; ?></td>
+                  <td><?php echo $row['prise']; ?></td>
+                  <td><?php echo $row['nomBenifique']; ?></td>
+                  <td><?php echo $row['numAutorisationDistribution']; ?></td>
+                  <td><?php echo $row['quantiteParH']; ?></td>
+                  <td><?php echo $row['timeDe']; ?></td>
+                  <td><?php echo $row['timeA']; ?></td>
+                  <td><?php echo $row['timeReelDe']; ?></td>
+                  <td><?php echo $row['timeReelA']; ?></td>
+                  <td><?php echo $row['numheur']; ?></td>
+                  <td><?php echo $row['quantiterDe']; ?></td>
+                  <td><?php echo $row['quantiterA']; ?></td>
+                  <td><?php echo $row['quantiterReel']; ?></td>
+                  <td><?php echo $row['datej']; ?></td>
+                <?php
+            }
+            echo '</tr>';
+        }else{
       ?>
-      <tr class="text-center">
-         <td colspan="14">لا يوجد أي تسجيل</td>
-      </tr>
+        <tr class="text-center">
+          <td colspan="14">لا يوجد أي تسجيل</td>
+        </tr>
+      <?php } ?>
     </tbody>
 </table>
 </div>
