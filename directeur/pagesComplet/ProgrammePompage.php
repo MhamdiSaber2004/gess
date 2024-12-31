@@ -241,11 +241,10 @@ if(!empty($_POST['mBranche'])){
       <?php } ?>
     </tbody>
 </table>
-
-</div>
-</div>
-</div>
 <span id="anonce">*انقر على ع.ر لتحيين</span>
+</div>
+</div>
+</div>
 
 <div class="col-md-6">
   <div class="modal fade" id="ajoutDistributionEau" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
