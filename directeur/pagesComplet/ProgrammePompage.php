@@ -165,7 +165,7 @@ if(!empty($_POST['aBranche'])){
     </thead>
     <tbody>
       <?php
-        $select="SELECT * FROM `programme_pommpage` WHERE idGess=$idGess and datej=$jourpp";
+        $select="SELECT * FROM `programme_pommpage` WHERE idGess=$idGess AND datej='$jourpp'";
         $result = $conn->query($select);
         
         if ($result->num_rows > 0) {
