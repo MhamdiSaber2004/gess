@@ -191,13 +191,13 @@ if (!isset($_SESSION["idPompiste"])) {
                     <div class="col-4">
                       <div class="mb-3">
                           <label for="exampleInputPassword1" class="form-label">من</label>
-                          <input type="time" class="form-control" id="exampleInputPassword1">
+                          <input type="text" class="form-control" id="exampleInputPassword1">
                       </div>
                     </div>
                     <div class="col-4">
                       <div class="mb-3">
                           <label for="exampleInputPassword1" class="form-label">الى</label>
-                          <input type="time" class="form-control" id="exampleInputPassword1">
+                          <input type="text" class="form-control" id="exampleInputPassword1">
                       </div>
                     </div>
                     <div class="col-4">
