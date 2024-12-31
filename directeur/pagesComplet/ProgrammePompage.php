@@ -13,7 +13,6 @@ $idGess=$_SESSION['idGess'];
 $jourpp=$_GET['date'];
 
 if(!empty($_POST['aBranche'])){
-  //print_r($_POST);
   $aBranche=$_POST['aBranche'];
   $aprise=$_POST['aprise'];
   $anomBenifique=$_POST['anomBenifique'];
@@ -42,8 +41,7 @@ if(!empty($_POST['aBranche'])){
 }
 
 if(!empty($_POST['mBranche'])){
-  $midProgrammePompage=$_POST['idProgrammePompage'];
-  print_r($_POST);
+  $midProgrammePompage=$_POST['midProgrammePompage'];
   $mBranche=$_POST['mBranche'];
   $mprise=$_POST['mprise'];
   $mnomBenifique=$_POST['mnomBenifique'];
