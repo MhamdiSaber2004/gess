@@ -58,8 +58,8 @@ if(!empty($_POST['mBranche'])){
   $mquantiterA=$_POST['mquantiterA'];
   $mquantiterReel=$_POST['mquantiterReel'];
 
-  $modifier = "UPDATE `programme_pommpage` SET `Branche`='$mBranche',`prise`='$mprise',`nomBenifique`='$mnomBenifique',`numAutorisationDistribution`='$mnumAutorisationDistribution',`quantiteParH`='$mquantiteParH',`timeDe`='$mtimeDe',`timeA`='$mtimeA',`timeReelDe`='$mtimeReelDe',`timeReelA`='$mtimeReelA',`numheur`='$mnumheur',`quantiterDe`='$mquantiterDe',`quantiterA`='$mquantiterA',`quantiterReel`='$mquantiterReel' WHERE idProgrammePompage =$midProgrammePompage";
-  if ($conn->query($ajout) === TRUE) {
+  $modifier = "UPDATE `programme_pommpage` SET `Branche`='$mBranche',`prise`='$mprise',`nomBenifique`='$mnomBenifique',`numAutorisationDistribution`='$mnumAutorisationDistribution',`quantiteParH`='$mquantiteParH',`timeDe`='$mtimeDe',`timeA`='$mtimeA',`timeReelDe`='$mtimeReelDe',`timeReelA`='$mtimeReelA',`numheur`='$mnumheur',`quantiterDe`='$mquantiterDe',`quantiterA`='$mquantiterA',`quantiterReel`='$mquantiterReel' WHERE idProgrammePompage =$midProgrammePompage;";
+  if ($conn->query($modifier) === TRUE) {
     $_SESSION['messageClass']="success";
     $_SESSION['message']="تمت الإضافة بنجاح";
     header("Location: ProgrammePompage.php?date=".$jourpp);
