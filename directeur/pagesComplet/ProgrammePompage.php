@@ -170,12 +170,12 @@ if(!empty($_POST['aBranche'])){
         $result = $conn->query($select);
         
         if ($result->num_rows > 0) {
-            echo '<tr class="text-center">';
             // output data of each row
             $i=0;
             while ($row = $result->fetch_assoc()) {
               $i=$i+1;
                 ?>
+                <tr class="text-center">
                   <td id="<?php echo $i; ?>"><?php echo $i; ?></td>
                   <td><?php echo $row['Branche']; ?></td>
                   <td><?php echo $row['prise']; ?></td>
@@ -190,9 +190,9 @@ if(!empty($_POST['aBranche'])){
                   <td><?php echo $row['quantiterDe']; ?></td>
                   <td><?php echo $row['quantiterA']; ?></td>
                   <td><?php echo $row['quantiterReel']; ?></td>
+                  </tr>
                 <?php
             }
-            echo '</tr>';
         }else{
       ?>
         <tr class="text-center">
@@ -201,6 +201,7 @@ if(!empty($_POST['aBranche'])){
       <?php } ?>
     </tbody>
 </table>
+<span>*انقر على ع.ر</span>
 </div>
 </div>
 </div>
