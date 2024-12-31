@@ -42,7 +42,33 @@ if(!empty($_POST['aBranche'])){
 }
 
 if(!empty($_POST['mBranche'])){
+  $midProgrammePompage=$_POST['idProgrammePompage'];
   print_r($_POST);
+  $mBranche=$_POST['mBranche'];
+  $mprise=$_POST['mprise'];
+  $mnomBenifique=$_POST['mnomBenifique'];
+  $mnumAutorisationDistribution=$_POST['mnumAutorisationDistribution'];
+  $mquantiteParH=$_POST['mquantiteParH'];
+  $mtimeDe=$_POST['mtimeDe'];
+  $mtimeA=$_POST['mtimeA'];
+  $mtimeReelDe=$_POST['mtimeReelDe'];
+  $mtimeReelA=$_POST['mtimeReelA'];
+  $mnumheur=$_POST['mnumheur'];
+  $mquantiterDe=$_POST['mquantiterDe'];
+  $mquantiterA=$_POST['mquantiterA'];
+  $mquantiterReel=$_POST['mquantiterReel'];
+
+  $modifier = "UPDATE `programme_pommpage` SET `Branche`='$mBranche',`prise`='$mprise',`nomBenifique`='$mnomBenifique',`numAutorisationDistribution`='$mnumAutorisationDistribution',`quantiteParH`='$mquantiteParH',`timeDe`='$mtimeDe',`timeA`='$mtimeA',`timeReelDe`='$mtimeReelDe',`timeReelA`='$mtimeReelA',`numheur`='$mnumheur',`quantiterDe`='$mquantiterDe',`quantiterA`='$mquantiterA',`quantiterReel`='$mquantiterReel' WHERE idProgrammePompage =$midProgrammePompage";
+  if ($conn->query($ajout) === TRUE) {
+    $_SESSION['messageClass']="success";
+    $_SESSION['message']="تمت الإضافة بنجاح";
+    header("Location: ProgrammePompage.php?date=".$jourpp);
+    exit();
+  }else{
+      $_SESSION['messageClass']="danger";
+      $_SESSION['message']="حصل خطأ ما، الرجاء المحاولة لاحقا";
+      header("Location: ProgrammePompage.php?date=".$jourpp);
+  }
 }
 
 
@@ -204,7 +230,7 @@ if(!empty($_POST['mBranche'])){
       <?php } ?>
     </tbody>
 </table>
-<span>*انقر على ع.ر</span>
+<span>*انقر على ع.ر لتحيين</span>
 </div>
 </div>
 </div>
@@ -331,6 +357,7 @@ if(!empty($_POST['mBranche'])){
                     <div class="card border-0 mb-0">
                       <div class="card-header bg-transparent pb-5">
                       <form action="ProgrammePompage.php?date=<?php echo $jourpp ; ?>" method="post">
+                      <input type="text" name="midProgrammePompage" value="<?php echo $row1['idProgrammePompage']; ?>" class="d-none">
                           <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">فرع</label>
                             <input type="text" name="mBranche" class="form-control" id="exampleInputPassword1" value="<?php echo $row1['Branche']; ?>">
@@ -411,7 +438,7 @@ if(!empty($_POST['mBranche'])){
                               </div>
                             </div>
                           </div>
-                          <button type="submit" class="btn btn-primary">اضافة</button>
+                          <button type="submit" class="btn btn-primary">تحيين</button>
                         </form>
                       </div>
                     </div>
