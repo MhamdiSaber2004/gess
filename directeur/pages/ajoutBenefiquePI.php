@@ -346,9 +346,8 @@ else
                         <input type="number"  name="numDiviseur" id="aire" class="form-control form-control-alternative" placeholder="رقم المقسم">
                       </div>
                     </div>
-                  
-                                      </div>
-                                      <hr class="my-4" />
+                  </div>
+                  <hr class="my-4" />
                 <!-- Address -->
                 <h6 class="heading-small text-muted mb-4">معلومات العداد</h6>
                 <div class="row">
@@ -367,33 +366,34 @@ else
                     </div>
                     <div class="col-lg-12">
                       <div class="form-group">
+                        <label class="form-control-label" for="input-country">رقم الفرع</label>
+                        <input type="number"  name="numBranch" id="numBranch" class="form-control form-control-alternative" placeholder="رقم الفرع">
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="form-group">
                         <label class="form-control-label" for="input-country">رقم المأخذ </label>
                         <input type="number" name="numPrise" id="numPrise" list="numPrises" class="form-control form-control-alternative" placeholder="رقم المأخذ " >
                         <datalist id="numPrises">
-                                                <?php
+                          <?php
+                              $idPompiste=$_SESSION['idPompiste'];
+                              $sql = "SELECT * from pompiste where idPompiste='$idPompiste'";
 
-                                                   $idPompiste=$_SESSION['idPompiste'];
-                                                   $sql = "SELECT * from pompiste where idPompiste='$idPompiste'";
+                              $result = $conn->query($sql);
 
-                                                   $result = $conn->query($sql);
-                                               
-                                                   
-                                                       $row = $result->fetch_assoc();
-                                                       $idGess=$row['idGess'];
-                                                   
-                                                   
-                                                    $sql = "SELECT numPrise FROM prise_pi where idGess='$idGess' ";
-                                                                  $result = $conn->query($sql);
-                                                   
-                                                                  if ($result->num_rows > 0) {
-                                                                   while ($row = $result->fetch_assoc()) {
-                                                                   echo "<option>".$row['numPrise']."</option>";
-                                                                  
-                                                                   
-                                                                 }
-                                                                  }
-                                                    ?>
-                                             </datalist>
+                              $row = $result->fetch_assoc();
+                              $idGess=$row['idGess'];
+                                  
+                              $sql = "SELECT numPrise FROM prise_pi where idGess='$idGess' ";
+                              $result = $conn->query($sql);
+                
+                              if ($result->num_rows > 0) {
+                                while ($row = $result->fetch_assoc()) {
+                                  echo "<option>".$row['numPrise']."</option>";
+                                }
+                              }
+                              ?>
+                        </datalist>
                       </div>
                     </div>
                   </div>
