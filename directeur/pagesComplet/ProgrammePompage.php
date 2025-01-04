@@ -347,7 +347,7 @@ if(!empty($_POST['mBranche'])){
     $('#aquantiterReel').val($('#aquantiterA').val()-$('#aquantiterDe').val());
   });
   $('#atimeReelA').change(function(){
-    $('#anumheur').val($('#atimeReelA').val().('h')-$('#atimeDe').val().('h'));
+    $('#anumheur').val($('#atimeReelA').val().getHours()-$('#atimeDe').val().getHours());
   });
 </script>
 
