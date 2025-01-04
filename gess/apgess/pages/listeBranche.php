@@ -23,7 +23,7 @@
                   <h3 class="mb-0">قائمة الفروع </h3>
                 </div>
                 <div class="col-4 text-right">
-                  <a href="#!" data-toggle="modal" data-target="#ajoutBranche" class="btn btn-sm btn-primary">إضافة منتفع</a> -->
+                  <a href="#!" data-toggle="modal" data-target="#ajoutBranche" class="btn btn-sm btn-primary">إضافة فرع</a> 
                 </div>
               </div>
             </div>
@@ -173,7 +173,7 @@
             
 <div class="card bg-secondary border-0 mb-0">
   <div class="card-header bg-transparent pb-5">
-      <h3 class=" text-center mt-2">حذف المأخذ ؟</h3><br>
+      <h3 class=" text-center mt-2">حذف فرع ؟</h3><br>
       <div class="text-center mb-4">هل أنت متأكد أنك تريد حذف المأخذ  عدد '.$row['numBranche'].' ؟</div>
         
           <div class="btn-wrapper text-center">
