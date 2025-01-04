@@ -92,11 +92,9 @@ else
                         <input id="id" class="form-control form-control-alternative" placeholder="العدد الرتبي (تلقائي)" type="text" name="numBenefique" readonly value="<?php
                          $sql = "SELECT count(idBenefique) as num FROM benefique_pi where idGess='$idGess'";
                                        $result = $conn->query($sql);
-                                       
-                                       
                                            // output data of each row
                                           $row = $result->fetch_assoc();
-                                          echo $row["num"];
+                                          echo $row["num"]+1;
                                                
                                        
                          ?>">
