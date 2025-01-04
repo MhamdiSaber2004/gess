@@ -174,7 +174,7 @@
 <div class="card bg-secondary border-0 mb-0">
   <div class="card-header bg-transparent pb-5">
       <h3 class=" text-center mt-2">حذف المأخذ ؟</h3><br>
-      <div class="text-center mb-4">هل أنت متأكد أنك تريد حذف المأخذ  عدد '.$row['numPrise'].' ؟</div>
+      <div class="text-center mb-4">هل أنت متأكد أنك تريد حذف المأخذ  عدد '.$row['numBranche'].' ؟</div>
         
           <div class="btn-wrapper text-center">
               <a href="controller/controller.php?idBrancheSupprimer='.$row['idBranche'].'" name="supprimerPompiste" class="btn btn-neutral btn-icon">
