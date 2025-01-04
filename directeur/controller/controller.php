@@ -1291,6 +1291,7 @@ if (isset($_POST['ajoutBenefiquePI'])) {
     $mdp = mysqli_real_escape_string($conn, $_POST['mdp']);
     $dette = mysqli_real_escape_string($conn, $_POST['dette']);
     $numPrise = mysqli_real_escape_string($conn, $_POST['numPrise']);
+    $numBranch = mysqli_real_escape_string($conn, $_POST['numBranch']);
     $numBenefique = mysqli_real_escape_string($conn, $_POST['numBenefique']);
 
     $numDiviseur = mysqli_real_escape_string($conn, $_POST['numDiviseur']);
@@ -1329,24 +1330,13 @@ if (isset($_POST['ajoutBenefiquePI'])) {
         $idPrise=$row['idPrise'];
 
 
-    $_SESSION['messageClass']="danger";
-    $_SESSION['message']="رقم المأخذ هذا خاطئ أو لا ينتمي إلى نفس المجمع الذي أنت فيه";
-header("Location: ../index.php?page=listeBenefiquePI");
-    }
+        $_SESSION['messageClass']="danger";
+        $_SESSION['message']="رقم المأخذ هذا خاطئ أو لا ينتمي إلى نفس المجمع الذي أنت فيه";
+        header("Location: ../index.php?page=listeBenefiquePI");
+    }else{
 
-  else
-  {
-
-
-
-
-
-
-
-    $sql="INSERT INTO `benefique_pi` (`idBenefique`, `idGess`, `numBenefique`, `idPompiste`, `nom`, `dateN`, `CIN`, `dateCIN`, `address`, `propriete`, `tel`, `dette`, `dateInscription`, `numPlace`,  `numDiviseur`, `aire`, `numCompteur`, `donneesCompteur`, `numPrise`, `email`, `mdp`, `active`) 
-    VALUES ('$idBenefique', '$idGess', '$numBenefique', '$idPompiste', '$nom', '$dateN', '$CIN', '$dateCIN', '$address', '$propriete', '$tel', '$dette', current_timestamp(), '$numPlace', '$numDiviseur', '$aire', '$numCompteur', '$donneesCompteur', '$numPrise', '$email', '$mdp','1');";
-
-    
+    $sql="INSERT INTO `benefique_pi` (`idBenefique`, `idGess`, `numBenefique`, `idPompiste`, `nom`, `dateN`, `CIN`, `dateCIN`, `address`, `propriete`, `tel`, `dette`, `dateInscription`, `numPlace`,  `numDiviseur`, `aire`, `numCompteur`, `donneesCompteur`, `numPrise`, `email`, `mdp`, `active`,`numBranch`) 
+    VALUES ('$idBenefique', '$idGess', '$numBenefique', '$idPompiste', '$nom', '$dateN', '$CIN', '$dateCIN', '$address', '$propriete', '$tel', '$dette', current_timestamp(), '$numPlace', '$numDiviseur', '$aire', '$numCompteur', '$donneesCompteur', '$numPrise', '$email', '$mdp','1','$numBranch');";
     
     if($conn->query($sql) === TRUE){
 
