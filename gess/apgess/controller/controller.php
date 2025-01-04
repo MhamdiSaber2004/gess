@@ -851,36 +851,23 @@ if (isset($_POST['modificationBranche'])) {
 
 // supprimer branche
 if (isset($_GET["idBrancheSupprimer"]) &&  $_GET["idBrancheSupprimer"] != "" && is_numeric($_GET["idBrancheSupprimer"])) {
-    
+
     $idBrancheSupprimer = $_GET["idBrancheSupprimer"];
 
-    $sql = "SELECT * from prise_pi where numBranche='$numBranche'";
-
-    $result = $conn->query($sql);
-
-    if ($result->num_rows > 0) {
-
-        if ($row['numParticipantPrise']>0){
-            $_SESSION['messageClass']="danger";
-            $_SESSION['message']="لا يمكنك حذف فرع به مأخذ ";
-            header("Location: ../index.php?page=listeBranche");
-            exit();
-        }
-
-        $sql = "DELETE FROM branche WHERE idBranche = $idBrancheSupprimer";
+    $sql = "DELETE FROM branche WHERE idBranche = $idBrancheSupprimer";
+    
+    if ($conn->query($sql) === true) {
         
-        if ($conn->query($sql) === true) {
-           
-            $_SESSION['messageClass']="success";
-            $_SESSION['message']="تم الحذف بنجاح";
-            header("Location: ../index.php?page=listeBranche");
-            
-        } else {
-            $_SESSION['messageClass']="danger";
-            $_SESSION['message']="حصل خطأ ما، الرجاء المحاولة لاحقا";
-            header("Location: ../index.php?page=listeBranche");
-        }
+        $_SESSION['messageClass']="success";
+        $_SESSION['message']="تم الحذف بنجاح";
+        header("Location: ../index.php?page=listeBranche");
+        
+    } else {
+        $_SESSION['messageClass']="danger";
+        $_SESSION['message']="حصل خطأ ما، الرجاء المحاولة لاحقا";
+        header("Location: ../index.php?page=listeBranche");
     }
+
 }
 
 
