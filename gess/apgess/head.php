@@ -6,6 +6,10 @@ include_once "db/db.php";
 
 session_start();
 
+if(empty($_SESSION['message'])){
+  $_SESSION['message']="";
+}
+
 if (!isset($_SESSION["idGess"])) {
   header("location: login/index.php");
   exit();
