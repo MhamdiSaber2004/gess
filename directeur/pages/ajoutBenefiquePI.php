@@ -345,7 +345,7 @@ else
                     <div class="col-lg-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-country">رقم المقسم</label>
-                        <input type="number"  name="numDiviseur" id="aire" class="form-control form-control-alternative" placeholder="رقم المقسم" value="<?php echo $row['aire'] ?>" >
+                        <input type="number"  name="numDiviseur" id="aire" class="form-control form-control-alternative" placeholder="رقم المقسم">
                       </div>
                     </div>
                   
