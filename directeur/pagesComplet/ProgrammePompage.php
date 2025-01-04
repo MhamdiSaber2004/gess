@@ -344,10 +344,10 @@ if(!empty($_POST['mBranche'])){
 </div>
 <script>
   $('#aquantiterA').change(function(){
-    $('#aquantiterReel').val($('#aquantiterA').val()-$('#aquantiterDe').val())
+    $('#aquantiterReel').val($('#aquantiterA').val()-$('#aquantiterDe').val());
   });
   $('#atimeReelA').change(function(){
-    $('#anumheur').val($('#atimeReelA').val()-$('#atimeDe').val())
+    $('#anumheur').val($('#atimeReelA').val().('h')-$('#atimeDe').val().('h'));
   });
 </script>
 
