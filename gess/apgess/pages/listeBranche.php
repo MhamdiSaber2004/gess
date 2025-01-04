@@ -23,8 +23,8 @@
                   <h3 class="mb-0">قائمة الفروع </h3>
                 </div>
                 <div class="col-4 text-right">
-                  <!--                   <a href="#!" data-toggle="modal" data-target="#modal-form" class="btn btn-sm btn-primary">إضافة منتفع</a> -->
-                  </div>
+                  <a href="#!" data-toggle="modal" data-target="#ajoutBranche" class="btn btn-sm btn-primary">إضافة منتفع</a> -->
+                </div>
               </div>
             </div>
             
