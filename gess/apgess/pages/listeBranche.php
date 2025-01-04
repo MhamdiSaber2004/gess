@@ -174,11 +174,11 @@
 <div class="card bg-secondary border-0 mb-0">
   <div class="card-header bg-transparent pb-5">
       <h3 class=" text-center mt-2">حذف فرع ؟</h3><br>
-      <div class="text-center mb-4">هل أنت متأكد أنك تريد حذف المأخذ  عدد '.$row['numBranche'].' ؟</div>
+      <div class="text-center mb-4">هل أنت متأكد أنك تريد حذف الفرع  عدد '.$row['numBranche'].' ؟</div>
         
           <div class="btn-wrapper text-center">
               <a href="controller/controller.php?idBrancheSupprimer='.$row['idBranche'].'" name="supprimerPompiste" class="btn btn-neutral btn-icon">
-                  <span class="btn-inner--text">حذف المأخذ</span>
+                  <span class="btn-inner--text">حذف فرع</span>
               </a><br><br>
               <a href="#" class="btn btn-neutral btn-icon" data-dismiss="modal">
                   <span class="btn-inner--text" >إلغاء</span>
