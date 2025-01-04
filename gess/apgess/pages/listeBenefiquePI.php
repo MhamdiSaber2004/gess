@@ -23,9 +23,7 @@
                   <h3 class="mb-0">القائمة الإسمية للمنتفعين</h3>
                 </div>
                 <div class="col-4 text-right">
-<!--                  <a href="#!" data-toggle="modal" data-target="#modal-form" class="btn btn-sm btn-primary">منتفعين اخرين </a> 
- -->
-
+                 <a href="#!" data-toggle="modal" data-target="#modal-form" class="btn btn-sm btn-primary">منتفعين اخرين </a> 
                   </div>
               </div>
             </div>
