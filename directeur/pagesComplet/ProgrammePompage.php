@@ -260,11 +260,10 @@ if(!empty($_POST['mBranche'])){
                     <?php
                       $selectb="SELECT * FROM `benefique_pi` WHERE idGess=$idGess AND active='1'";
                       $resultb = $conn->query($selectb);
-                      
                       if ($resultb->num_rows > 0) {
                           while ($rowb = $resultb->fetch_assoc()){
                             ?>
-                              <option value="<?php echo $rowb['nom'] ?>"><?php echo $rowb['nom'] ?></option>
+                              <option value="<?php echo $rowb['nom'] ?>" onclick="alert('ok !')"><?php echo $rowb['nom'] ?></option>
                             <?php
                           }
                       }
