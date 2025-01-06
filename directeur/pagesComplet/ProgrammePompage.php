@@ -256,7 +256,20 @@ if(!empty($_POST['mBranche'])){
                <form action="ProgrammePompage.php?date=<?php echo $jourpp ; ?>" method="post">
                   <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">اسم ولقب الفلاح	</label>
-                    <input type="text" name="anomBenifique" class="form-control" id="anomBenifique">
+                    <select class="form-select" name="anomBenifique" id="anomBenifique">
+                    <?php
+                      $selectb="SELECT * FROM `benefique_pi` WHERE idGess=$idGess AND active='1'";
+                      $resultb = $conn->query($selectb);
+                      
+                      if ($resultb->num_rows > 0) {
+                          while ($rowb = $resultb->fetch_assoc()){
+                            ?>
+                              <option value="<?php echo $rowb['nom'] ?>"><?php echo $rowb['nom'] ?></option>
+                            <?php
+                          }
+                      }
+                    ?>
+                    </select>
                   </div>
                   <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">فرع</label>
@@ -343,7 +356,7 @@ if(!empty($_POST['mBranche'])){
   </div>
 </div>
 <script>
-  $('#aquantiterA').change(function(){
+  $('#aquantiterA').keyup(function(){
     $('#aquantiterReel').val($('#aquantiterA').val()-$('#aquantiterDe').val());
   });
   $('#atimeReelA').change(function(){
@@ -378,23 +391,23 @@ if(!empty($_POST['mBranche'])){
                       <input type="text" name="midProgrammePompage" value="<?php echo $row1['idProgrammePompage']; ?>" class="d-none">
                           <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">فرع</label>
-                            <input type="text" name="mBranche" class="form-control" id="mBranche" value="<?php echo $row1['Branche']; ?>">
+                            <input type="text" name="mBranche" class="form-control" id="mBranche<?php echo $i; ?>" value="<?php echo $row1['Branche']; ?>">
                           </div>
                           <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">مأخذ</label>
-                            <input type="text" name="mprise" class="form-control" id="mprise" value="<?php echo $row1['prise'] ; ?>">
+                            <input type="text" name="mprise" class="form-control" id="mprise<?php echo $i; ?>" value="<?php echo $row1['prise'] ; ?>">
                           </div>
                           <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">اسم ولقب الفلاح	</label>
-                            <input type="text" name="mnomBenifique" class="form-control" id="mnomBenifique" value="<?php echo $row1['nomBenifique'] ; ?>">
+                            <input type="text" name="mnomBenifique" class="form-control" id="mnomBenifique<?php echo $i; ?>" value="<?php echo $row1['nomBenifique'] ; ?>">
                           </div>
                           <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">اذن توزيع عدد</label>
-                            <input type="text" name="mnumAutorisationDistribution" class="form-control" id="mnumAutorisationDistribution" value="<?php echo $row1['numAutorisationDistribution'] ; ?>">
+                            <input type="text" name="mnumAutorisationDistribution" class="form-control" id="mnumAutorisationDistribution<?php echo $i; ?>" value="<?php echo $row1['numAutorisationDistribution'] ; ?>">
                           </div>
                           <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">كمية / ساعات	</label>
-                            <input type="text" name="mquantiteParH" class="form-control" id="mquantiteParH" value="<?php echo $row1['quantiteParH'] ; ?>">
+                            <input type="text" name="mquantiteParH" class="form-control" id="mquantiteParH<?php echo $i; ?>" value="<?php echo $row1['quantiteParH'] ; ?>">
                           </div>
                           <hr>
                           <div class="row">
@@ -402,13 +415,13 @@ if(!empty($_POST['mBranche'])){
                             <div class="col-6">
                               <div class="mb-3">
                                   <label for="exampleInputPassword1" class="form-label">من</label>
-                                  <input type="time" name="mtimeDe" class="form-control" id="mtimeDe" value="<?php echo $row1['timeDe'] ; ?>">
+                                  <input type="time" name="mtimeDe" class="form-control" id="mtimeDe<?php echo $i; ?>" value="<?php echo $row1['timeDe'] ; ?>">
                               </div>
                             </div>
                             <div class="col-6">
                               <div class="mb-3">
                                 <label for="exampleInputPassword1" class="form-label">الى</label>
-                                <input type="time" name="mtimeA" class="form-control" id="mtimeA" value="<?php echo $row1['timeA'] ; ?>">
+                                <input type="time" name="mtimeA" class="form-control" id="mtimeA<?php echo $i; ?>" value="<?php echo $row1['timeA'] ; ?>">
                               </div>
                             </div>
                           </div>
@@ -419,19 +432,19 @@ if(!empty($_POST['mBranche'])){
                             <div class="col-4">
                               <div class="mb-3">
                                   <label for="exampleInputPassword1" class="form-label">من</label>
-                                  <input type="time" name="mtimeReelDe" class="form-control" id="mtimeReelDe" value="<?php echo $row1['timeReelDe'] ; ?>">
+                                  <input type="time" name="mtimeReelDe" class="form-control" id="mtimeReelDe<?php echo $i; ?>" value="<?php echo $row1['timeReelDe'] ; ?>">
                               </div>
                             </div>
                             <div class="col-4">
                               <div class="mb-3">
                                   <label for="exampleInputPassword1" class="form-label">الى</label>
-                                  <input type="time" name="mtimeReelA" class="form-control" id="mtimeReelA" value="<?php echo $row1['timeReelA'] ; ?>">
+                                  <input type="time" name="mtimeReelA" class="form-control" id="mtimeReelA<?php echo $i; ?>" value="<?php echo $row1['timeReelA'] ; ?>">
                               </div>
                             </div>
                             <div class="col-4">
                               <div class="mb-3">
                                 <label for="exampleInputPassword1" class="form-label">عدد ساعات</label>
-                                <input type="text" name="mnumheur" class="form-control" id="mnumheur" value="<?php echo $row1['numheur'] ; ?>">
+                                <input type="text" name="mnumheur" class="form-control" id="mnumheur<?php echo $i; ?>" value="<?php echo $row1['numheur'] ; ?>">
                               </div>
                             </div>
                           </div>
@@ -440,19 +453,19 @@ if(!empty($_POST['mBranche'])){
                             <div class="col-4">
                               <div class="mb-3">
                                   <label for="exampleInputPassword1" class="form-label">من</label>
-                                  <input type="text" name="mquantiterDe" class="form-control" id="mquantiterDe" value="<?php echo $row1['quantiterDe'] ; ?>">
+                                  <input type="text" name="mquantiterDe" class="form-control" id="mquantiterDe<?php echo $i; ?>" value="<?php echo $row1['quantiterDe'] ; ?>">
                               </div>
                             </div>
                             <div class="col-4">
                               <div class="mb-3">
                                   <label for="exampleInputPassword1" class="form-label">الى</label>
-                                  <input type="text" name="mquantiterA" class="form-control" id="mquantiterA" value="<?php echo $row1['quantiterA'] ; ?>">
+                                  <input type="text" name="mquantiterA" class="form-control" id="mquantiterA<?php echo $i; ?>" value="<?php echo $row1['quantiterA'] ; ?>">
                               </div>
                             </div>
                             <div class="col-4">
                               <div class="mb-3">
                                 <label for="exampleInputPassword1" class="form-label">كمية</label>
-                                <input type="text" name="mquantiterReel" class="form-control" id="mquantiterReel" value="<?php echo $row1['quantiterReel'] ; ?>">
+                                <input type="text" name="mquantiterReel" class="form-control" id="mquantiterReel<?php echo $i; ?>" value="<?php echo $row1['quantiterReel'] ; ?>">
                               </div>
                             </div>
                           </div>
