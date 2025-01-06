@@ -263,7 +263,7 @@ if(!empty($_POST['mBranche'])){
                       if ($resultb->num_rows > 0) {
                           while ($rowb = $resultb->fetch_assoc()){
                             ?>
-                              <option value="<?php echo $rowb['nom'] ?>" onclick="alert('ok !')"><?php echo $rowb['nom'] ?></option>
+                              <option value="<?php echo $rowb['nom'] ?>" selected="alert('ok !')"><?php echo $rowb['nom'] ?></option>
                             <?php
                           }
                       }
