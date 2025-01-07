@@ -423,11 +423,11 @@ if(!empty($_POST['mBranche'])){
                         </div>
                           <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">فرع</label>
-                            <input type="text" name="mBranche" class="form-control" id="mBranche<?php echo $i; ?>" value="<?php echo $row1['prise'] ; ?>">
+                            <input type="text" name="mBranche" class="form-control" id="mBranche<?php echo $i; ?>" value="<?php echo $row1['numBranch'] ; ?>">
                           </div>
                           <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">مأخذ</label>
-                            <input type="text" name="mprise" class="form-control" id="mprise<?php echo $i; ?>" value="<?php echo $row1['prise'] ; ?>">
+                            <input type="text" name="mprise" class="form-control" id="mprise<?php echo $i; ?>" value="<?php echo $row1['numPrise'] ; ?>">
                           </div>
                           
                           <div class="mb-3">
