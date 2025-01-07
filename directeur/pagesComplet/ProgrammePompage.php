@@ -369,9 +369,9 @@ if(!empty($_POST['mBranche'])){
       if ($resultb1->num_rows > 0) {
           while ($rowb1 = $resultb1->fetch_assoc()){
             ?>
-              if(anomBenifique == '<?php echo $rowb['nom'] ?>'){
-                $('#aBranche').val('<?php echo $rowb['numBranch'] ?>');
-                $('#aprise').val('<?php echo $rowb['numPrise'] ?>');
+              if(anomBenifique == '<?php echo $rowb1['nom'] ?>'){
+                $('#aBranche').val('<?php echo $rowb1['numBranch'] ?>');
+                $('#aprise').val('<?php echo $rowb1['numPrise'] ?>');
               }
             <?php
           }
