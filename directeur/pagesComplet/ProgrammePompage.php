@@ -263,7 +263,7 @@ if(!empty($_POST['mBranche'])){
                       if ($resultb->num_rows > 0) {
                           while ($rowb = $resultb->fetch_assoc()){
                             ?>
-                              <option value="<?php echo $rowb['nom'] ?>" selected="alert('ok !')"><?php echo $rowb['nom'] ?></option>
+                              <option value="<?php echo $rowb['nom'] ?>"><?php echo $rowb['nom'] ?></option>
                             <?php
                           }
                       }
@@ -361,6 +361,23 @@ if(!empty($_POST['mBranche'])){
   $('#atimeReelA').change(function(){
     $('#anumheur').val(parseInt($('#atimeReelA').val().substring(0, 2))-parseInt($('#atimeReelDe').val().substring(0, 2)));
   });
+  $('#anomBenifique').change(function(){
+    let anomBenifique = $('#anomBenifique').val();
+    <?php
+      $selectb1="SELECT * FROM `benefique_pi` WHERE idGess=$idGess AND active='1'";
+      $resultb1 = $conn->query($selectb1);
+      if ($resultb1->num_rows > 0) {
+          while ($rowb1 = $resultb1->fetch_assoc()){
+            ?>
+              if(anomBenifique == <?php echo $rowb['nom'] ?>){
+                $('#aBranche').val(<?php echo $rowb['numBranch'] ?>);
+                $('#aprise').val(<?php echo $rowb['numPrise'] ?>);
+              }
+            <?php
+          }
+      }
+    ?>
+  })
 </script>
 
 <?php
