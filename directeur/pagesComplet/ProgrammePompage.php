@@ -404,11 +404,23 @@ if(!empty($_POST['mBranche'])){
                     <div class="card border-0 mb-0">
                       <div class="card-header bg-transparent pb-5">
                       <form action="ProgrammePompage.php?date=<?php echo $jourpp ; ?>" method="post">
-                      <input type="text" name="midProgrammePompage" value="<?php echo $row1['idProgrammePompage']; ?>" class="d-none">
-                          <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">فرع</label>
-                            <input type="text" name="mBranche" class="form-control" id="mBranche<?php echo $i; ?>" value="<?php echo $row1['Branche']; ?>">
-                          </div>
+                        <input type="text" name="midProgrammePompage" value="<?php echo $row1['idProgrammePompage']; ?>" class="d-none">
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">اسم ولقب الفلاح	</label>
+                          <select class="form-select" name="mBranche" id="mBranche<?php echo $i; ?>">
+                          <?php
+                            $selectb2="SELECT * FROM `benefique_pi` WHERE idGess=$idGess AND active='1'";
+                            $resultb2 = $conn->query($selectb2);
+                            if ($resultb2->num_rows > 0) {
+                                while ($rowb2 = $resultb2->fetch_assoc()){
+                                  ?>
+                                    <option value="<?php echo $rowb2['nom'] ?>"><?php echo $rowb2['nom'] ?></option>
+                                  <?php
+                                }
+                            }
+                          ?>
+                          </select>
+                        </div>
                           <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">مأخذ</label>
                             <input type="text" name="mprise" class="form-control" id="mprise<?php echo $i; ?>" value="<?php echo $row1['prise'] ; ?>">
@@ -493,6 +505,31 @@ if(!empty($_POST['mBranche'])){
             </div>
           </div>
         </div>
+        <script>
+          $('#mquantiterA<?php echo $i; ?>').keyup(function(){
+            $('#mquantiterReel<?php echo $i; ?>').val($('#mquantiterA<?php echo $i; ?>').val()-$('#mquantiterDe<?php echo $i; ?>').val());
+          });
+          $('#mtimeReelA<?php echo $i; ?>').change(function(){
+            $('#mnumheur<?php echo $i; ?>').val(parseInt($('#mtimeReelA<?php echo $i; ?>').val().substring(0, 2))-parseInt($('#mtimeReelDe<?php echo $i; ?>').val().substring(0, 2)));
+          });
+          $('#mnomBenifique<?php echo $i; ?>').change(function(){
+            let anomBenifique = $('#mnomBenifique<?php echo $i; ?>').val();
+            <?php
+              $selectb3="SELECT * FROM `benefique_pi` WHERE idGess=$idGess AND active='1'";
+              $resultb3 = $conn->query($selectb3);
+              if ($resultb3->num_rows > 0) {
+                  while ($rowb3 = $resultb3->fetch_assoc()){
+                    ?>
+                      if(anomBenifique == '<?php echo $rowb3['nom'] ?>'){
+                        $('#mBranche<?php echo $i; ?>').val('<?php echo $rowb3['numBranch'] ?>');
+                        $('#mprise<?php echo $i; ?>').val('<?php echo $rowb3['numPrise'] ?>');
+                      }
+                    <?php
+                  }
+              }
+            ?>
+          })
+        </script>
       <?php
     }
   }
