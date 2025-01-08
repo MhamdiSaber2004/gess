@@ -412,7 +412,7 @@ include "footer.php"
                         <label for="formFile" class="form-label">الى</label>
                         <input type="date" name="dateFin" class="form-control">
                         <br><br>
-                        <input type="submit" class="btn btn-neutral btn-icon" value="قائمة ديون المنتفعين نحو المجمع">
+                        <input type="submit" class="btn btn-neutral btn-icon" value="قائمة ديون المجمع نحو المزودين">
                       </form>
                     </div>
                   </div>
