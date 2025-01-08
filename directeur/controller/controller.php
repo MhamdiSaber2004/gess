@@ -3592,24 +3592,7 @@ if (isset($_POST["ajoutProbleme"])) {
 
 // modifier info probleme
 if (isset($_POST["modifProbleme"])) {
-    if(isset($_FILES['file1'])){
-        $file1 = $_FILES['file1']['name'];
-        $imageArrBack = explode('.', $file1); //first index is file name and second index file type
-        $rand = rand(10000, 99999);
-        $nameFile1 = $rand . '.' . $imageArrBack[1];
-        $uploadPathBack = "../uploads/" . $nameFile1;
-        $isUploadedBack = move_uploaded_file($_FILES["file1"]["tmp_name"], $uploadPathBack);
-    }
-    if(isset($_FILES['file2'])){
-    $file2 = $_FILES['file2']['name'];
-    $file2Arr = explode('.', $file2); //first index is file name and second index file type
-    $rand = rand(10000, 99999);
-    $nameFile2 = $rand . '.' . $file2Arr[1];
-    $uploadPath = "../uploads/" . $nameFile2;
-    $isUploaded = move_uploaded_file($_FILES["file2"]["tmp_name"], $uploadPath);
-    }
-   
-
+ 
     $idProbleme = mysqli_real_escape_string($conn, $_POST["idProbleme"]);
     $numCompteur = mysqli_real_escape_string($conn, $_POST["numCompteur"]);
     $numCompteurPrecedent = mysqli_real_escape_string($conn,$_POST["numCompteurPrecedent"]);
@@ -3621,6 +3604,40 @@ if (isset($_POST["modifProbleme"])) {
     $elementAchete = mysqli_real_escape_string($conn, $_POST["elementAchete"]);
     //$file2 = mysqli_real_escape_string($conn, $_POST["file2"]);
 
+    if(isset($_FILES['file1'])){
+        $file1 = $_FILES['file1']['name'];
+        $imageArrBack = explode('.', $file1); //first index is file name and second index file type
+        $rand = rand(10000, 99999);
+        $nameFile1 = $rand . '.' . $imageArrBack[1];
+        $uploadPathBack = "../uploads/" . $nameFile1;
+        $isUploadedBack = move_uploaded_file($_FILES["file1"]["tmp_name"], $uploadPathBack);
+    }else{
+        $sql="SELECT fichierPrix from problemes where idProbleme='$idProbleme'";
+    
+        $result = $conn->query($sql);
+    
+        if ($result->num_rows > 0) {
+            $rfile1 = $result->fetch_assoc();
+            $nameFile1=$rfile1['fichierPrix'] ;
+        }
+    }
+    if(isset($_FILES['file2'])){
+    $file2 = $_FILES['file2']['name'];
+    $file2Arr = explode('.', $file2); //first index is file name and second index file type
+    $rand = rand(10000, 99999);
+    $nameFile2 = $rand . '.' . $file2Arr[1];
+    $uploadPath = "../uploads/" . $nameFile2;
+    $isUploaded = move_uploaded_file($_FILES["file2"]["tmp_name"], $uploadPath);
+    }else{
+        $sql1="SELECT fichierElementAchete from problemes where idProbleme='$idProbleme'";
+    
+        $result1 = $conn->query($sql1);
+    
+        if ($result1->num_rows > 0) {
+            $rfile2 = $result->fetch_assoc();
+            $nameFile2=$rfile2['fichierElementAchete'] ;
+        }
+    }
     
     $sql = "UPDATE `problemes` SET `detail` = '$detail', `numCompteur` = '$numCompteur', `typeBenefique` = '$typeBenefique', `prix` = '$prix', `elementAchete` = '$elementAchete', `typeProbleme` = '$typeProbleme', `fichierPrix` = '$f1', `fichierElementAchete` = '$f2' WHERE `problemes`.`idProbleme` = '$idProbleme';";
 
@@ -3632,7 +3649,7 @@ if (isset($_POST["modifProbleme"])) {
         $_SESSION['messageClass']="danger";
         $_SESSION['message']="حصل خطأ ما، الرجاء المحاولة لاحقا";
         header("Location: ../index.php?page=listeProblemes");
-    exit();
+        exit();
     }
 }
 
