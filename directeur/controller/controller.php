@@ -3562,7 +3562,7 @@ if (isset($_POST["ajoutProbleme"])) {
 
 
 
-    $idProbleme = mysqli_real_escape_string($conn, $_POST["idProbleme"]);
+    //$idProbleme = mysqli_real_escape_string($conn, $_POST["idProbleme"]);
     $numCompteur = mysqli_real_escape_string($conn, $_POST["numCompteur"]);
     $detail = mysqli_real_escape_string($conn, $_POST["detail"]);
     $typeProbleme = mysqli_real_escape_string($conn, $_POST["typeProbleme"]);
@@ -3570,33 +3570,21 @@ if (isset($_POST["ajoutProbleme"])) {
     $prix = mysqli_real_escape_string($conn, $_POST["prix"]);
     $elementAchete = mysqli_real_escape_string($conn, $_POST["elementAchete"]);
 
+    $sql = "INSERT INTO `problemes` ( `idPompiste`, `idGess`, `numCompteur`, `detail`, `typeBenefique`, `prix`, `elementAchete`, `date`, `typeProbleme`, `fichierPrix`, `fichierElementAchete`) 
+    VALUES ('$idPompiste', '$idGess', '$numCompteur', '$detail', '$typeBenefique', '$prix', '$elementAchete', current_timestamp(), '$typeProbleme', '$f1', '$f2');";
 
-
-     $sql = "SELECT * FROM benefique_$typeGess  where idGess='$idGess' and numCompteur='$numCompteur'";
-
-    $result = $conn->query($sql);
-
-    if ($result->num_rows > 0) {
-        $sql = "INSERT INTO `problemes` (`idProbleme`, `idPompiste`, `idGess`, `numCompteur`, `detail`, `typeBenefique`, `prix`, `elementAchete`, `date`, `typeProbleme`, `fichierPrix`, `fichierElementAchete`) 
-VALUES ('$idProbleme', '$idPompiste', '$idGess', '$numCompteur', '$detail', '$typeBenefique', '$prix', '$elementAchete', current_timestamp(), '$typeProbleme', '$f1', '$f2');";
-
-        if ($conn->query($sql) === true) {
-            
-    $_SESSION['messageClass']="success";
-            $_SESSION['message']="تمت الإضافة بنجاح";
-    header("Location: ../index.php?page=listeProblemes");
-        } else {
+    if ($conn->query($sql) === true) {
         
-        $_SESSION['messageClass']="danger";
-            $_SESSION['message']="حصل خطأ ما، الرجاء المحاولة لاحقا";
-    header("Location: ../index.php?page=listeProblemes");
-        }
+        $_SESSION['messageClass']="success";
+        $_SESSION['message']="تمت الإضافة بنجاح";
+        header("Location: ../index.php?page=listeProblemes");
     } else {
-  
-       $_SESSION['messageClass']="danger";
-            $_SESSION['message']="رقم العداد هذا لا ينتمي إلى نفس المجمع الذي أنت فيه";
-    header("Location: ../index.php?page=listeProblemes");
+    
+        $_SESSION['messageClass']="danger";
+        $_SESSION['message']="حصل خطأ ما، الرجاء المحاولة لاحقا";
+        header("Location: ../index.php?page=listeProblemes");
     }
+   
 }
 
 
