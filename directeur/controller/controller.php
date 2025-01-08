@@ -3631,7 +3631,7 @@ if (isset($_POST["modifProbleme"])) {
     }else{
         $sql2="SELECT fichierElementAchete from problemes where idProbleme='$idProbleme'";
     
-        $result2 = $conn->query($sql1);
+        $result2 = $conn->query($sql2);
     
         if ($result2->num_rows > 0) {
             $rfile2 = $result2->fetch_assoc();
