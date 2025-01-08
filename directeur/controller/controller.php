@@ -3592,7 +3592,7 @@ if (isset($_POST["ajoutProbleme"])) {
 
 // modifier info probleme
 if (isset($_POST["modifProbleme"])) {
-    if(iset($_FILES['file1'])){
+    if(isset($_FILES['file1'])){
         $file1 = $_FILES['file1']['name'];
         $imageArrBack = explode('.', $file1); //first index is file name and second index file type
         $rand = rand(10000, 99999);
@@ -3600,7 +3600,7 @@ if (isset($_POST["modifProbleme"])) {
         $uploadPathBack = "../uploads/" . $nameFile1;
         $isUploadedBack = move_uploaded_file($_FILES["file1"]["tmp_name"], $uploadPathBack);
     }
-    if(iset($_FILES['file2'])){
+    if(isset($_FILES['file2'])){
     $file2 = $_FILES['file2']['name'];
     $file2Arr = explode('.', $file2); //first index is file name and second index file type
     $rand = rand(10000, 99999);
