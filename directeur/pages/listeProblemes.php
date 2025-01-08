@@ -87,9 +87,9 @@
 
 
 
-                                            if($row['dateFin'] == "1000-10-10")
+                                            if($row['date'] == "1000-10-10")
                                             {
-                                              $row['dateFin']='ناشط';
+                                              $row['date']='ناشط';
                                             }
                                                echo '
                                                <tr>
@@ -117,7 +117,7 @@
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                           <a class="dropdown-item" href="#" data-toggle="modal" data-target="#documents'.$row["idProbleme"].'">تفاصيل </a>
                           <a class="dropdown-item" href="index.php?page=modifProbleme&idProbleme='.$row["idProbleme"].'">تحيين</a>
-                          <!--<a class="dropdown-item" data-toggle="modal" data-target="#supprimer'.$row['id'].'" href="index.php?page=listePompiste&action=supprimer&id=">حذف</a>-->
+                          <!--<a class="dropdown-item" data-toggle="modal" data-target="#supprimer'.$row['idProbleme'].'" href="index.php?page=listePompiste&action=supprimer&id=">حذف</a>-->
                         </div>
                       </div>
                     </td>
@@ -163,7 +163,7 @@
 <div class="row">
 
 <div class="col-md-6">
-    <div class="modal fade" id="supprimer'.$row['id'].'" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+    <div class="modal fade" id="supprimer'.$row['idProbleme'].'" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
   <div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
       <div class="modal-content">
         
@@ -172,10 +172,10 @@
 <div class="card bg-secondary border-0 mb-0">
   <div class="card-header bg-transparent pb-5">
       <h3 class=" text-center mt-2">حذف حارس نظام مائي ؟</h3><br>
-      <div class="text-center mb-4">هل أنت متأكد أنك تريد حذف الحارس  عدد '.$row['id'].' ؟</div>
+      <div class="text-center mb-4">هل أنت متأكد أنك تريد حذف الحارس  عدد '.$row['idProbleme'].' ؟</div>
         
           <div class="btn-wrapper text-center">
-              <a href="controller/controller.php?idPompisteSupprimer='.$row['id'].'" name="supprimerPompiste" class="btn btn-neutral btn-icon">
+              <a href="controller/controller.php?idPompisteSupprimer='.$row['idProbleme'].'" name="supprimerPompiste" class="btn btn-neutral btn-icon">
                   <span class="btn-inner--text">حذف حارس النظام المائي</span>
               </a><br><br>
               <a href="#" class="btn btn-neutral btn-icon" data-dismiss="modal">
