@@ -3639,7 +3639,7 @@ if (isset($_POST["modifProbleme"])) {
         }
     }
     
-    $sql = "UPDATE `problemes` SET `detail` = '$detail', `numCompteur` = '$numCompteur', `typeBenefique` = '$typeBenefique', `prix` = '$prix', `elementAchete` = '$elementAchete', `typeProbleme` = '$typeProbleme', `fichierPrix` = '$f1', `fichierElementAchete` = '$f2' WHERE `problemes`.`idProbleme` = '$idProbleme';";
+    $sql = "UPDATE `problemes` SET `detail` = '$detail', `numCompteur` = '$numCompteur', `typeBenefique` = '$typeBenefique', `prix` = '$prix', `elementAchete` = '$elementAchete', `typeProbleme` = '$typeProbleme', `fichierPrix` = '$nameFile1', `fichierElementAchete` = '$nameFile2' WHERE `problemes`.`idProbleme` = '$idProbleme';";
 
     if ($conn->query($sql) === true) {
        $_SESSION['messageClass']="success";
