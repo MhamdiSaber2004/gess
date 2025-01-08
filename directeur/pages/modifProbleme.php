@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 if(isset($_GET['idProbleme']) && ! empty ( $_GET['idProbleme'] ))
 {
     $idProbleme=$_GET['idProbleme'];
