@@ -3593,9 +3593,9 @@ if (isset($_POST["ajoutProbleme"])) {
 // modifier info probleme
 if (isset($_POST["modifProbleme"])) {
 
+    print_r($_POST);
 
-
-    
+    /*
     $file1 = $_FILES['file1']['name'];
     $imageArrBack = explode('.', $file1); //first index is file name and second index file type
     $rand = rand(10000, 99999);
@@ -3663,7 +3663,7 @@ header("Location: ../index.php?page=listeProblemes");
         $_SESSION['message']="رقم العداد هذا لا ينتمي إلى نفس المجمع الذي أنت فيه";
 header("Location: ../index.php?page=listeProblemes");
 exit();
-    }
+    }*/
 }
 
 
