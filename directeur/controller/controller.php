@@ -3533,34 +3533,28 @@ if (isset($_POST["ajoutProbleme"])) {
 
 
 
+    if($_FILES['file1']['name']!=""){
 
-    $file1 = $_FILES['file1']['name'];
-    $imageArrBack = explode('.', $file1); //first index is file name and second index file type
-    $rand = rand(10000, 99999);
-    $nameFile1 = $rand . '.' . $imageArrBack[1];
-    $uploadPathBack = "../uploads/" . $nameFile1;
-    $isUploadedBack = move_uploaded_file($_FILES["file1"]["tmp_name"], $uploadPathBack);
-
-    $file2 = $_FILES['file2']['name'];
-    $file2Arr = explode('.', $file2); //first index is file name and second index file type
-    $rand = rand(10000, 99999);
-    $nameFile2 = $rand . '.' . $file2Arr[1];
-    $uploadPath = "../uploads/" . $nameFile2;
-    $isUploaded = move_uploaded_file($_FILES["file2"]["tmp_name"], $uploadPath);
-
-    $f1 = ""; // Initialize $f1 and $f2
-    $f2 = "";
-
-    if ($isUploadedBack) {
-        $f1 = $nameFile1;
+        $file1 = $_FILES['file1']['name'];
+        $imageArrBack = explode('.', $file1); //first index is file name and second index file type
+        $rand = rand(10000, 99999);
+        $nameFile1 = $rand . '.' . $imageArrBack[1];
+        $uploadPathBack = "../uploads/" . $nameFile1;
+        $isUploadedBack = move_uploaded_file($_FILES["file1"]["tmp_name"], $uploadPathBack);
+    }else{
+        $nameFile1="";
     }
+    if($_FILES['file2']['name'] != ""){
 
-    if ($isUploaded) {
-        $f2 = $nameFile2;
+        $file2 = $_FILES['file2']['name'];
+        $file2Arr = explode('.', $file2); //first index is file name and second index file type
+        $rand = rand(10000, 99999);
+        $nameFile2 = $rand . '.' . $file2Arr[1];
+        $uploadPath = "../uploads/" . $nameFile2;
+        $isUploaded = move_uploaded_file($_FILES["file2"]["tmp_name"], $uploadPath);
+    }else{
+        $nameFile2 = "";
     }
-
-
-
 
     //$idProbleme = mysqli_real_escape_string($conn, $_POST["idProbleme"]);
     $numCompteur = mysqli_real_escape_string($conn, $_POST["numCompteur"]);
@@ -3571,7 +3565,7 @@ if (isset($_POST["ajoutProbleme"])) {
     $elementAchete = mysqli_real_escape_string($conn, $_POST["elementAchete"]);
 
     $sql = "INSERT INTO `problemes` ( `idPompiste`, `idGess`, `numCompteur`, `detail`, `typeBenefique`, `prix`, `elementAchete`, `date`, `typeProbleme`, `fichierPrix`, `fichierElementAchete`) 
-    VALUES ('$idPompiste', '$idGess', '$numCompteur', '$detail', '$typeBenefique', '$prix', '$elementAchete', current_timestamp(), '$typeProbleme', '$f1', '$f2');";
+    VALUES ('$idPompiste', '$idGess', '$numCompteur', '$detail', '$typeBenefique', '$prix', '$elementAchete', current_timestamp(), '$typeProbleme', '$nameFile1', '$nameFile2');";
 
     if ($conn->query($sql) === true) {
         
