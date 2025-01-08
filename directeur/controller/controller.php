@@ -3604,7 +3604,7 @@ if (isset($_POST["modifProbleme"])) {
     $elementAchete = mysqli_real_escape_string($conn, $_POST["elementAchete"]);
     //$file2 = mysqli_real_escape_string($conn, $_POST["file2"]);
 
-    if(isset($_FILES['file1'])){
+    if($_FILES['file1']['name'] != "" ){
         $file1 = $_FILES['file1']['name'];
         $imageArrBack = explode('.', $file1); //first index is file name and second index file type
         $rand = rand(10000, 99999);
@@ -3621,7 +3621,7 @@ if (isset($_POST["modifProbleme"])) {
             $nameFile1=$rfile1['fichierPrix'] ;
         }
     }
-    if(isset($_FILES['file2'])){
+    if($_FILES['file2']['name'] != ""){
     $file2 = $_FILES['file2']['name'];
     $file2Arr = explode('.', $file2); //first index is file name and second index file type
     $rand = rand(10000, 99999);
