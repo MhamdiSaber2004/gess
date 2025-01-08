@@ -3592,37 +3592,23 @@ if (isset($_POST["ajoutProbleme"])) {
 
 // modifier info probleme
 if (isset($_POST["modifProbleme"])) {
-
-    print_r($_POST);
-
-    /*
-    $file1 = $_FILES['file1']['name'];
-    $imageArrBack = explode('.', $file1); //first index is file name and second index file type
-    $rand = rand(10000, 99999);
-    $nameFile1 = $rand . '.' . $imageArrBack[1];
-    $uploadPathBack = "../uploads/" . $nameFile1;
-    $isUploadedBack = move_uploaded_file($_FILES["file1"]["tmp_name"], $uploadPathBack);
-
+    if(iset($_FILES['file1'])){
+        $file1 = $_FILES['file1']['name'];
+        $imageArrBack = explode('.', $file1); //first index is file name and second index file type
+        $rand = rand(10000, 99999);
+        $nameFile1 = $rand . '.' . $imageArrBack[1];
+        $uploadPathBack = "../uploads/" . $nameFile1;
+        $isUploadedBack = move_uploaded_file($_FILES["file1"]["tmp_name"], $uploadPathBack);
+    }
+    if(iset($_FILES['file2'])){
     $file2 = $_FILES['file2']['name'];
     $file2Arr = explode('.', $file2); //first index is file name and second index file type
     $rand = rand(10000, 99999);
     $nameFile2 = $rand . '.' . $file2Arr[1];
     $uploadPath = "../uploads/" . $nameFile2;
     $isUploaded = move_uploaded_file($_FILES["file2"]["tmp_name"], $uploadPath);
-
-    $f1 = ""; // Initialize $f1 and $f2
-    $f2 = "";
-
-    if ($isUploadedBack) {
-        $f1 = $nameFile1;
     }
-
-    if ($isUploaded) {
-        $f2 = $nameFile2;
-    }
-
-
-
+   
 
     $idProbleme = mysqli_real_escape_string($conn, $_POST["idProbleme"]);
     $numCompteur = mysqli_real_escape_string($conn, $_POST["numCompteur"]);
@@ -3631,39 +3617,25 @@ if (isset($_POST["modifProbleme"])) {
     $typeProbleme = mysqli_real_escape_string($conn, $_POST["typeProbleme"]);
     $typeBenefique = mysqli_real_escape_string($conn, $_POST["typeBenefique"]);
     $prix = mysqli_real_escape_string($conn, $_POST["prix"]);
-    $file1 = mysqli_real_escape_string($conn, $_POST["file1"]);
+    //$file1 = mysqli_real_escape_string($conn, $_POST["file1"]);
     $elementAchete = mysqli_real_escape_string($conn, $_POST["elementAchete"]);
-    $file2 = mysqli_real_escape_string($conn, $_POST["file2"]);
+    //$file2 = mysqli_real_escape_string($conn, $_POST["file2"]);
 
-    $idPompiste = $_SESSION["idPompiste"];
+    
+    $sql = "UPDATE `problemes` SET `detail` = '$detail', `numCompteur` = '$numCompteur', `typeBenefique` = '$typeBenefique', `prix` = '$prix', `elementAchete` = '$elementAchete', `typeProbleme` = '$typeProbleme', `fichierPrix` = '$f1', `fichierElementAchete` = '$f2' WHERE `problemes`.`idProbleme` = '$idProbleme';";
 
-    $sql = "SELECT * FROM benefique_$typeGess  where idGess='$idGess' and numCompteur='$numCompteur' ";
-
-    $result = $conn->query($sql);
-
-    if ($result->num_rows > 0) {
-        $sql = "UPDATE `problemes` SET `detail` = '$detail', `numCompteur` = '$numCompteur', `typeBenefique` = '$typeBenefique', `prix` = '$prix', `elementAchete` = '$elementAchete', `typeProbleme` = '$typeProbleme', `fichierPrix` = '$f1', `fichierElementAchete` = '$f2' WHERE `problemes`.`idProbleme` = '$idProbleme';";
-
-        if ($conn->query($sql) === true) {
-
-
+    if ($conn->query($sql) === true) {
        $_SESSION['messageClass']="success";
        $_SESSION['message']="تم التحيين بنجاح";
-header("Location: ../index.php?page=listeProblemes");
-        } else {
-          
-
-            $_SESSION['messageClass']="danger";
-            $_SESSION['message']="حصل خطأ ما، الرجاء المحاولة لاحقا";
-    header("Location: ../index.php?page=listeProblemes");
-    exit();
-        }
+        header("Location: ../index.php?page=listeProblemes");
     } else {
         $_SESSION['messageClass']="danger";
-        $_SESSION['message']="رقم العداد هذا لا ينتمي إلى نفس المجمع الذي أنت فيه";
-header("Location: ../index.php?page=listeProblemes");
-exit();
-    }*/
+        $_SESSION['message']="حصل خطأ ما، الرجاء المحاولة لاحقا";
+        header("Location: ../index.php?page=listeProblemes");
+    exit();
+    }
+    
+    }
 }
 
 
