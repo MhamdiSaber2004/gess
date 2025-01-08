@@ -71,24 +71,6 @@ if(isset($_GET['idProbleme']) && ! empty ( $_GET['idProbleme'] ))
                   <div class="form-group">
                     <label class="form-control-label" for="input-email">الساكورة عدد</label>
                     <input type="nom" list="numeroCompteur" id="numCompteur" class="form-control form-control-alternative" placeholder="" name="numCompteur" value="<?php echo $row['numCompteur']; ?>">
-                    <datalist id="numeroCompteur">
-
-                        <?php
-                        
-                        $idPompiste=$_SESSION['idPompiste'];
-                        $sql = "SELECT * FROM benefique_$typeGess  where idGess='$idGess'";
-                        $result = $conn->query($sql);
-
-                                       if ($result->num_rows > 0) {
-                                        while ($row1 = $result->fetch_assoc()) {
-                                        echo "<option>".$row1['numCompteur']."</option>";
-                                       
-                                        
-                                      }
-                                       }
-                         ?>
-
-                        </datalist>
                   </div>
                 </div>
                 <div class="col-lg-12">
