@@ -3629,12 +3629,12 @@ if (isset($_POST["modifProbleme"])) {
     $uploadPath = "../uploads/" . $nameFile2;
     $isUploaded = move_uploaded_file($_FILES["file2"]["tmp_name"], $uploadPath);
     }else{
-        $sql1="SELECT fichierElementAchete from problemes where idProbleme='$idProbleme'";
+        $sql2="SELECT fichierElementAchete from problemes where idProbleme='$idProbleme'";
     
-        $result1 = $conn->query($sql1);
+        $result2 = $conn->query($sql1);
     
-        if ($result1->num_rows > 0) {
-            $rfile2 = $result->fetch_assoc();
+        if ($result2->num_rows > 0) {
+            $rfile2 = $result2->fetch_assoc();
             $nameFile2=$rfile2['fichierElementAchete'] ;
         }
     }
