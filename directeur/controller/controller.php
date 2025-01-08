@@ -3634,9 +3634,8 @@ if (isset($_POST["modifProbleme"])) {
         header("Location: ../index.php?page=listeProblemes");
     exit();
     }
-    
-    }
 }
+
 
 
 
