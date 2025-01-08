@@ -71,14 +71,14 @@
                                             if($row['fichierPrix']=="") {  
                                               $fichierPrix='<h6 class="heading-small text-muted mb-4 text-red text-center" id="erreur"> لا يوجد مرفقات مصاريف الاصلاح</h6>';
                                               }else{ 
-                                                 $fichierPrix=' <a href="../../appompiste/uploads/'.$row['fichierPrix'].'" name="supprimerPompiste" class="btn btn-neutral btn-icon">
+                                                 $fichierPrix=' <a href="../uploads/'.$row['fichierPrix'].'" name="supprimerPompiste" class="btn btn-neutral btn-icon">
                                                  <span class="btn-inner--text">مرفقات مصاريف الاصلاح</span>
                                              </a>';
                                                   } 
                                                      if($row['fichierElementAchete']=="") {  
                                              $fichierElementAchete=' <h6 class="heading-small text-muted mb-4 text-red text-center" id="erreur"> لا يوجد مرفقات المواد المشتراة </h6>';
                                               }else{ 
-                                                 $fichierElementAchete=' <a href="../../appompiste/uploads/'.$row['fichierElementAchete'].'" name="supprimerPompiste" class="btn btn-neutral btn-icon">
+                                                 $fichierElementAchete=' <a href="../uploads/'.$row['fichierElementAchete'].'" name="supprimerPompiste" class="btn btn-neutral btn-icon">
                                                  <span class="btn-inner--text">مرفقات المواد المشتراة </span>
                                              </a>';
                                                   } 
