@@ -1296,8 +1296,6 @@ if (isset($_POST['ajoutBenefiquePI'])) {
 
     $numDiviseur = mysqli_real_escape_string($conn, $_POST['numDiviseur']);
 
-
-
     $sql = "SELECT * from benefique_pi where numCompteur='$numCompteur'";
 
     $result = $conn->query($sql);
@@ -1338,81 +1336,24 @@ if (isset($_POST['ajoutBenefiquePI'])) {
     $sql="INSERT INTO `benefique_pi` (`idBenefique`, `idGess`, `numBenefique`, `idPompiste`, `nom`, `dateN`, `CIN`, `dateCIN`, `address`, `propriete`, `tel`, `dette`, `dateInscription`, `numPlace`,  `numDiviseur`, `aire`, `numCompteur`, `donneesCompteur`, `numPrise`, `email`, `mdp`, `active`,`numBranch`) 
     VALUES ('$idBenefique', '$idGess', '$numBenefique', '$idPompiste', '$nom', '$dateN', '$CIN', '$dateCIN', '$address', '$propriete', '$tel', '$dette', current_timestamp(), '$numPlace', '$numDiviseur', '$aire', '$numCompteur', '$donneesCompteur', '$numPrise', '$email', '$mdp','1','$numBranch');";
 
-    if($conn->query($sql) === TRUE){                
-        $idDette =  mt_rand(100000, 999999) ;
-        $sql = "SELECT idDette FROM dette_pi";
-                      $result = $conn->query($sql);
-                      if ($result->num_rows > 0) {
-                          // output data of each row
-                          while ($row = $result->fetch_assoc()) {
-                           
-                              while ($row['idDette'] == $idDette)
-                              {
-                               $idDette =  mt_rand(100000, 999999) ;
-                              }
-                          }
-                      }
-
-
-        $sql="INSERT INTO `dette_pi` (`idDette`, `idBenefique`, `dette`) VALUES ('$idDette', '$idBenefique', '$dette');";
-
-        if($conn->query($sql) === TRUE){
-
-
-            $sql="UPDATE prise_pi set numParticipantPrise=numParticipantPrise+1 where numPrise=$numPrise";
-
-
-            if($conn->query($sql) === TRUE){
-
-
-                $sql="UPDATE `demandes_benefique` SET `active` = '2' WHERE `idDemandeBenefique` = '$idDemande';";
-
-
-            if($conn->query($sql) === TRUE){
+        if($conn->query($sql) === TRUE){                
         
-                $_SESSION['numCompteur']=$numCompteur;
-                $_SESSION['nom']=$nom;
-              
-                $_SESSION['messageClass']="success";
-                $_SESSION['message']="تم الإضافة بنجاح";
-        header("Location: ../index.php?page=listeBenefiquePI");
-              
+            $_SESSION['numCompteur']=$numCompteur;
+            $_SESSION['nom']=$nom;
         
-            
-           }
-           else
-           {
+            $_SESSION['messageClass']="success";
+            $_SESSION['message']="تم الإضافة بنجاح";
+            header("Location: ../index.php?page=listeBenefiquePI");
+        }else{
             $_SESSION['messageClass']="danger";
             $_SESSION['message']="حصل خطأ ما، الرجاء المحاولة لاحقا";
-        header("Location: ../index.php?page=listeBenefiquePI");
-           }
-                 
-            }
-
-
- else
-        {
-         $_SESSION['messageClass']="danger";
-         $_SESSION['message']="حصل خطأ ما، الرجاء المحاولة لاحقا";
-         header("Location: ../index.php?page=listeBenefiquePI");
-         exit();
-        }
-
-
-
-        
-       }
-       else
-       {
-        $_SESSION['messageClass']="danger";
-        $_SESSION['message']="حصل خطأ ما، الرجاء المحاولة لاحقا";
-        header("Location: ../index.php?page=listeBenefiquePI");
-        exit();
-       }
+            header("Location: ../index.php?page=listeBenefiquePI");
+        }        
+    }
   }
     
-    }
-}
+    
+
 
 
 
