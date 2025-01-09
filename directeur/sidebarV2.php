@@ -86,7 +86,7 @@
             </a>
           </li>
           <li class="nav-item <?php echo ($current_page === 'prgPompeEauQuotiqien') ? 'active' : ''; ?>">
-            <a class="nav-link" href="index.php?page=listeReunionPublique">
+            <a class="nav-link" data-toggle="collapse"  data-target="#documentsReunions" >
               <i class="ni ni-vector text-red"></i>اعداد و تنظيم الجلسات العامة   
             </a>
           </li>
