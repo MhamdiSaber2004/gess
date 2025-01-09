@@ -117,7 +117,7 @@ th {
     </div>
 <?php } ?>
 <div id="content mx-4">
-    <h3 style="text-align: center;">ديون المنتفعين نحو المجمع</h3>
+    <h3 style="text-align: center;">قائمة ديون المجمع نحو المزودين </h3>
     <h5 style="text-align: center;">الفترة من <?php echo $_GET['dateDebut'] ?> الى <?php echo $_GET['dateFin'] ?></h5>
     <table>
     <tr>
