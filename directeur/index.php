@@ -25,6 +25,9 @@ if(isset($_GET['page']) && ! empty ( $_GET['page']) ) {
           case 'documents':
             include "./pages/documents.php";
             break;
+            case 'documentsReunions':
+              include "./pages/documentsReunions.php";
+              break;
             case 'listeFix':
               include "./pages/listeFix.php";
               break;
