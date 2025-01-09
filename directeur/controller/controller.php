@@ -46,17 +46,17 @@ if(isset($_POST['numtype'])){
         if ($conn->query($sql1) === TRUE) {
             $_SESSION['messageClass']="success";
             $_SESSION['message']="تمت الإضافة بنجاح";
-            header("Location: ../index.php?page=listeReunionPublique");
+            header("Location: ../index.php?page=documentsReunions&type=$numtype");
         exit();
         }else{
             $_SESSION['messageClass']="danger";
             $_SESSION['message']="حصل خطأ ما، الرجاء المحاولة لاحقا";
-            header("Location: ../index.php?page=listeReunionPublique");
+            header("Location: ../index.php?page=documentsReunions&type=$numtype");
         }
     }else{
         $_SESSION['messageClass']="danger";
         $_SESSION['message']="حصل خطأ ما، الرجاء المحاولة لاحقا";
-        header("Location: ../index.php?page=listeReunionPublique");
+        header("Location: ../index.php?page=documentsReunions&type=$numtype");
         exit();
     }
 }
