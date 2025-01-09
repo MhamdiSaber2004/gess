@@ -74,7 +74,7 @@ if($typeR==1){
         </thead>
         <tbody>
         <?php
-            $sql = "SELECT * FROM reunionpublique where idGess='$idGess' and `active`='1'";
+            $sql = "SELECT * FROM reunionpublique where idGess='$idGess' and `active`='1' and numtype='$typeR'";
             $result = $conn->query($sql);
             
             if ($result->num_rows > 0) {
