@@ -289,13 +289,13 @@ include "footer.php"
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="index.php?page=documentsReunions&type=2">
-                          <i class="ni ni-bullet-list-67 text-red"></i>الستدعاء للجلسة العامة
+                          <i class="ni ni-bullet-list-67 text-red"></i>استدعاء للجلسة العامة
                         </a>
                       </li>
 
                       <li class="nav-item">
                         <a class="nav-link" href="index.php?page=documentsReunions&type=3">
-                          <i class="ni ni-bullet-list-67 text-red"></i> عناصر التقرير األدبي
+                          <i class="ni ni-bullet-list-67 text-red"></i>  التقرير األدبي
                         </a>
                       </li>
                       <li class="nav-item">
