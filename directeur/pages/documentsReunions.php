@@ -54,7 +54,7 @@ if($typeR==1){
 
         <div class="col-4 text-right">
             <?php echo $urlfile ?>
-            <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#ajouterReunionPublique">إضافة الجلسات العامة</button>
+            <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#ajouterReunionPublique">إضافة</button>
         </div>
         </div>
     </div>
