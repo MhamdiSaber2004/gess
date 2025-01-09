@@ -272,69 +272,68 @@ include "footer.php"
   }
 </script>
 
-  <div class="col-md-6">
-    <div class="modal fade" id="documentsReunions"  tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
-      <div class="modal-dialog modal- modal-dialog-centered modal-md" role="document">
-        <div class="modal-content">
-          <div class="modal-body p-0">
-            <div class="card bg-secondary border-0 mb-0">
-              <div class="card-header bg-transparent pb-5">
-                  <h3 class=" text-center mt-2">اعداد و تنظيم الجلسات العامة  </h3><br>
-                    <div class="btn-wrapper text-center">
-                      <ul class="navbar-nav  text-center">
-                        <li class="nav-item">
-                          <a class="nav-link" href="index.php?page=documentsReunions&type=1">
-                            <i class="ni ni-bullet-list-67 text-red"></i> إعلان عن الجلسة العامة  
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="index.php?page=documentsReunions&type=2">
-                            <i class="ni ni-bullet-list-67 text-red"></i>الستدعاء للجلسة العامة
-                          </a>
-                        </li>
+<div class="col-md-6">
+  <div class="modal fade" id="documentsReunions"  tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+    <div class="modal-dialog modal- modal-dialog-centered modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <div class="card bg-secondary border-0 mb-0">
+            <div class="card-header bg-transparent pb-5">
+                <h3 class=" text-center mt-2">اعداد و تنظيم الجلسات العامة  </h3><br>
+                  <div class="btn-wrapper text-center">
+                    <ul class="navbar-nav  text-center">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.php?page=documentsReunions&type=1">
+                          <i class="ni ni-bullet-list-67 text-red"></i> إعلان عن الجلسة العامة  
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.php?page=documentsReunions&type=2">
+                          <i class="ni ni-bullet-list-67 text-red"></i>الستدعاء للجلسة العامة
+                        </a>
+                      </li>
 
-                        <li class="nav-item">
-                          <a class="nav-link" href="index.php?page=documentsReunions&type=3">
-                            <i class="ni ni-bullet-list-67 text-red"></i> عناصر التقرير األدبي
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="index.php?page=documentsReunions&type=4">
-                            <i class="ni ni-bullet-list-67 text-red"></i> القرير المالي 
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="index.php?page=documentsReunions&type=5">
-                            <i class="ni ni-bullet-list-67 text-red"></i> طلب ترشح لعضوية مجلس الادارة
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="index.php?page=documentsReunions&type=6">
-                            <i class="ni ni-bullet-list-67 text-red"></i> طلب ترشح لعضوية اللجنة الداخلية لمراقبة الحسابات 
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="index.php?page=documentsReunions&type=7">
-                            <i class="ni ni-bullet-list-67 text-red"></i> قائمة المرشحين 
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="index.php?page=documentsReunions&type=8">
-                            <i class="ni ni-bullet-list-67 text-red"></i> قائمة الحضور في الجلسة العامة 
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="index.php?page=documentsReunions&type=9">
-                            <i class="ni ni-bullet-list-67 text-red"></i> محضر جلسة عامة 
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="index.php?page=documentsReunions&type=10">
-                            <i class="ni ni-bullet-list-67 text-red"></i> محضر جلسة أول اجتماع لمجلس االدارة 
-                          </a>
-                        </li>
-                      </ul>    
-                    </div>
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.php?page=documentsReunions&type=3">
+                          <i class="ni ni-bullet-list-67 text-red"></i> عناصر التقرير األدبي
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.php?page=documentsReunions&type=4">
+                          <i class="ni ni-bullet-list-67 text-red"></i> القرير المالي 
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.php?page=documentsReunions&type=5">
+                          <i class="ni ni-bullet-list-67 text-red"></i> طلب ترشح لعضوية مجلس الادارة
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.php?page=documentsReunions&type=6">
+                          <i class="ni ni-bullet-list-67 text-red"></i> طلب ترشح لعضوية اللجنة الداخلية لمراقبة الحسابات 
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.php?page=documentsReunions&type=7">
+                          <i class="ni ni-bullet-list-67 text-red"></i> قائمة المرشحين 
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.php?page=documentsReunions&type=8">
+                          <i class="ni ni-bullet-list-67 text-red"></i> قائمة الحضور في الجلسة العامة 
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.php?page=documentsReunions&type=9">
+                          <i class="ni ni-bullet-list-67 text-red"></i> محضر جلسة عامة 
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.php?page=documentsReunions&type=10">
+                          <i class="ni ni-bullet-list-67 text-red"></i> محضر جلسة أول اجتماع لمجلس االدارة 
+                        </a>
+                      </li>
+                    </ul>    
                   </div>
                 </div>
               </div>
@@ -344,6 +343,7 @@ include "footer.php"
       </div>
     </div>
   </div>
+</div>
 
 
 <div class="col-md-6">
