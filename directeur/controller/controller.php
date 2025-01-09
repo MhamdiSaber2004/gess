@@ -24,7 +24,7 @@ $result = $conn->query($sql);
       $typeGess="PI";
     }
 //ajouter reunion
-if(isset($_POST['newReunName'])){
+if(isset($_POST['numtype'])){
     
 
     $file1 = $_FILES['newReun']['name'];
