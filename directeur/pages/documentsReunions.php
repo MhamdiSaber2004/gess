@@ -122,7 +122,7 @@ if($typeR==1){
           <div class="modal-body p-0">
             <div class="card bg-secondary border-0 mb-0">
                 <div class="card-header bg-transparent pb-5">
-                    <div class="btn-wrapper text-center d-none" id="newReunFrom">
+                    <div class="btn-wrapper text-center" id="newReunFrom">
                       <form action="controller/controller.php" method="post" class="text-center" enctype="multipart/form-data">
                         <input type="text" name="numtype" class="d-none" value="<?php echo $typeR ; ?>">
                         <div class="mb-3">
@@ -130,7 +130,7 @@ if($typeR==1){
                             <input type="text" class="form-control" name="type" id="type">
                         </div>
                         <div class="mb-3">
-                            <label for="newReun" class="form-label">تفاصيل</label>
+                            <label for="newReun" class="form-label">ملف</label><br>
                             <input type="file" name="newReun" accept="image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf" id="newReunFile">
                         </div>
                         <br><br>
