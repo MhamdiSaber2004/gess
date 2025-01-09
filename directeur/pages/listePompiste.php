@@ -154,6 +154,7 @@ $sql = "SELECT * FROM pompiste where idGess='$idGess' and actif=1";
                     <th scope="col">الاسم و اللقب</th>
                     <th scope="col">تاريخ التكليف</th>
                     <th scope="col">بطاقات التعريف الوطنية  </th>
+                    <th scope="col">صفة المهمة </th>
                     <th scope="col"></th>
                   </tr>
                 </thead>
@@ -180,6 +181,9 @@ $sql = "SELECT * FROM pompiste where idGess='$idGess' and actif=1";
                     <td>'
                     . $row['CIN'] .'
                     </td>
+                    <th scope="row">'
+                    . $row["travail"] .'
+                    </th>
                     
                     <td class="text-center">
                       <div class="dropdown">
