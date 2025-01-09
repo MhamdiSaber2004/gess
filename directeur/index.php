@@ -267,14 +267,6 @@ include "footer.php"
 
 ?>
 
-<script>
-  function ajouterfileNewReun(){
-    document.getElementById("newReunFile").click();
-    document.getElementById("newReunbtn").classList.add("d-none");
-    document.getElementById("newReunFrom").classList.remove("d-none");
-  }
-</script>
-
 <div class="col-md-6">
   <div class="modal fade" id="documentsReunions"  tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
     <div class="modal-dialog modal- modal-dialog-centered modal-md" role="document">

@@ -129,7 +129,10 @@ if($typeR==1){
                             <label for="type" class="form-label">تفاصيل</label>
                             <input type="text" class="form-control" name="type" id="type">
                         </div>
-                        <input type="file" name="newReun" accept="image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf" id="newReunFile">
+                        <div class="mb-3">
+                            <label for="newReun" class="form-label">تفاصيل</label>
+                            <input type="file" name="newReun" accept="image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf" id="newReunFile">
+                        </div>
                         <br><br>
                         <button type="submit" class="btn btn-primary">اضافة</button>
                       </form>
