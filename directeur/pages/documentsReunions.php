@@ -68,6 +68,7 @@ if($typeR==1){
         <thead class="thead-light">
             <tr>
             <th scope="col">الرمز</th>
+            <th scope="col">التفاصيل</th>
             <th scope="col">تاريخ</th>
             <th scope="col"></th>
             </tr>
@@ -87,6 +88,9 @@ if($typeR==1){
                     <th scope="row">'
                     . $i .'
                     </th>
+                    <td>'
+                    . $row['type'] .'
+                    </td>
                     <td>'
                     . $row['date'] .'
                     </td>
