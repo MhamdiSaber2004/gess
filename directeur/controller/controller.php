@@ -41,7 +41,7 @@ if(isset($_POST['numtype'])){
 
     if($isUploadedBack){
         
-        $sql1="INSERT INTO `reunionpublique` (`date`, `doc`, `idGess`,`active`,`type`,`numtype`) VALUES ('$date','$newReunfile','$idGess','1','$type','$type')";
+        $sql1="INSERT INTO `reunionpublique` (`date`, `doc`, `idGess`,`active`,`type`,`numtype`) VALUES ('$date','$newReunfile','$idGess','1','$type','$numtype')";
         
         if ($conn->query($sql1) === TRUE) {
             $_SESSION['messageClass']="success";
