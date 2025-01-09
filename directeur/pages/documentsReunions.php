@@ -101,7 +101,7 @@ if($typeR==1){
                             </a>
                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                 <a class="dropdown-item" href="uploads/'.$row['doc'].'" download="reunion le '.$row['date'].'" >تفاصيل و طباعة</a>
-                                <a class="dropdown-item" href="controller/controller.php?idReunionDesacive='.$row["idReun"].'">حذف</a>
+                                <a class="dropdown-item" href="controller/controller.php?idReunionDesacive='.$row["idReun"].'&type='.$typeR.'">حذف</a>
                             </div>
                         </div>
                     </td>

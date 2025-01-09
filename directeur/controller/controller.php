@@ -64,6 +64,7 @@ if(isset($_POST['numtype'])){
 if (isset($_GET['idReunionDesacive']) && $_GET['idReunionDesacive']!="" && is_numeric($_GET['idReunionDesacive']) ) {
 
     $id=$_GET['idReunionDesacive'];
+    $typeR=$_GET['type'];
 
     $sql="UPDATE reunionpublique set active=0  WHERE `reunionpublique`.`idReun` = '$id'";
     
@@ -73,14 +74,14 @@ if (isset($_GET['idReunionDesacive']) && $_GET['idReunionDesacive']!="" && is_nu
         if ($conn->query($sql) === TRUE) {
             $_SESSION['messageClass']="success";
             $_SESSION['message']="تم الحذف بنجاح";
-            header("Location: ../index.php?page=listeReunionPublique");
+            header("Location: ../index.php?page=documentsReunions&type=$typeR");
             exit();
         }
     
     }else{
         $_SESSION['messageClass']="danger";
         $_SESSION['message']="حصل خطأ ما، الرجاء المحاولة لاحقا";
-        header("Location: ../index.php?page=listeReunionPublique");
+        header("Location: ../index.php?page=documentsReunions&type=$typeR");
         exit();
     }
     
