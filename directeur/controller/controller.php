@@ -36,9 +36,12 @@ if(isset($_POST['newReunName'])){
 
     $date=date("Y-m-d h:i:s");
 
+    $numtype=$_POST['numtype'];
+    $type=$_POST['type'];
+
     if($isUploadedBack){
         
-        $sql1="INSERT INTO `reunionpublique` (`date`, `doc`, `idGess`,`active`) VALUES ('$date','$newReunfile','$idGess','1')";
+        $sql1="INSERT INTO `reunionpublique` (`date`, `doc`, `idGess`,`active`,`type`,`numtype`) VALUES ('$date','$newReunfile','$idGess','1','$type','$type')";
         
         if ($conn->query($sql1) === TRUE) {
             $_SESSION['messageClass']="success";

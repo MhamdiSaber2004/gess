@@ -106,13 +106,38 @@ if($typeR==1){
             }
             
             ?>
-        
-            
-            
         </tbody>
         </table>
     </div>
     
     </div>
 </div>
+</div>
+
+
+<div class="col-md-6">
+  <div class="modal fade" id="ajouterReunionPublique" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+    <div class="modal-dialog modal- modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="card bg-secondary border-0 mb-0">
+                <div class="card-header bg-transparent pb-5">
+                    <div class="btn-wrapper text-center d-none" id="newReunFrom">
+                      <form action="controller/controller.php" method="post" class="text-center" enctype="multipart/form-data">
+                        <input type="text" name="numtype" class="d-none" value="<?php echo $typeR ; ?>">
+                        <div class="mb-3">
+                            <label for="type" class="form-label">تفاصيل</label>
+                            <input type="text" class="form-control" name="type" id="type">
+                        </div>
+                        <input type="file" name="newReun" accept="image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf" id="newReunFile">
+                        <br><br>
+                        <button type="submit" class="btn btn-primary">اضافة</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
 </div>

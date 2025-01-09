@@ -349,40 +349,7 @@ include "footer.php"
 </div>
 
 
-<div class="col-md-6">
-  <div class="modal fade" id="ajouterReunionPublique" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
-    <div class="modal-dialog modal- modal-dialog-centered modal-md" role="document">
-        <div class="modal-content">
-          <div class="modal-body p-0">
-            <div class="card bg-secondary border-0 mb-0">
-              <div class="card-header bg-transparent pb-5">
 
-                    <div class="btn-wrapper text-center" id="newReunbtn">
-                      <a href="assets/file/اعلان-عن-الجلسة-العامة.pdf" download="الاعلان عن جلسة العامة" class="btn btn-neutral btn-icon">
-                          <span class="btn-inner--text">طباعة</span>
-                      </a><br><br>
-                      <button class="btn btn-neutral btn-icon" onclick="ajouterfileNewReun()">
-                          <span class="btn-inner--text">رفع ملف</span>
-                      </button>
-                    </div>
-
-                    <div class="btn-wrapper text-center d-none" id="newReunFrom">
-                      <form action="controller/controller.php" method="post" class="text-center" enctype="multipart/form-data">
-                        <input type="text" name="newReunName" class="d-none" value="123">
-                        <input type="file" name="newReun" class="d-none" accept="image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf" id="newReunFile">
-                        <br><br>
-                        <input type="submit" class="btn btn-neutral btn-icon" value="تاكيد رفع ملف">
-                      </form>
-                     
-                    </div>
-
-                  </div>
-              </div>
-            </div>
-        </div>
-    </div>
-  </div>
-</div>
 
 
 <div class="col-md-6">
