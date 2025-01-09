@@ -5,6 +5,27 @@ if(isset($_GET['type'])){
 }else{
     header('location : index.php');
 }
+if($typeR==1){
+    $urlfile='<a href="https://gda2.ness.com.tn/assets/fichier/direct/اعلان-عن-الجلسة-العامة.pdf" download="الاعلان عن جلسة العامة" class="btn btn-sm btn-primary"> <span>الاعلان عن جلسة العامة</span></a>';
+}else if($typeR==2){
+    $urlfile='<a href="https://gda2.ness.com.tn/assets/fichier/direct/استدعاء-للجلسة-العامة.pdf" download="الاستدعاء للجلسة العامة" class="btn btn-sm btn-primary"> <span>الاستدعاء للجلسة العامة</span></a>';
+}else if($typeR==3){
+    $urlfile='<a href="https://gda2.ness.com.tn/assets/fichier/direct/التقرير-الأدبي.pdf" download="التقرير الأدبي" class="btn btn-sm btn-primary"> <span>التقرير الأدبي</span></a>';
+}else if($typeR==4){
+    $urlfile='<a href="https://gda2.ness.com.tn/assets/fichier/direct/التقرير-المالي.pdf" download="التقرير المالي" class="btn btn-sm btn-primary"> <span>التقرير المالي</span></a>';
+}else if($typeR==5){
+    $urlfile='<a href="https://gda2.ness.com.tn/assets/fichier/direct/طلب-ترشح-لعضوية-مجلس-الادارة (1).pdf" download="طلب ترشح لعضوية مجلس الادارة" class="btn btn-sm btn-primary"> <span>طلب ترشح لعضوية مجلس الادارة</span></a>';
+}else if($typeR==6){
+    $urlfile='<a href="https://gda2.ness.com.tn/assets/fichier/direct/طلب-ترشح-لعضوية-اللجنة-الداخلية-لمراقبة-الحسابات.pdf" download="طلب ترشح لعضوية اللجنة الداخلية لمراقبة الحسابات" class="btn btn-sm btn-primary"> <span>طلب ترشح لعضوية اللجنة الداخلية لمراقبة الحسابات</span></a>';
+}else if($typeR==7){
+    $urlfile='<a href="https://gda2.ness.com.tn/assets/fichier/direct/قائمة-المرشحين.pdf" download="قائمة المرشحين" class="btn btn-sm btn-primary"> <span>قائمة المرشحين</span></a>';
+}else if($typeR==8){
+    $urlfile='<a href="https://gda2.ness.com.tn/assets/fichier/direct/قائمة-الحضور-في-الجلسة-العامة.pdf" download="قائمة الحضور في الجلسة العامة" class="btn btn-sm btn-primary"> <span>قائمة الحضور في الجلسة العامة</span></a>';
+}else if($typeR==9){
+    $urlfile='<a href="https://gda2.ness.com.tn/assets/fichier/direct/محضر-جلسة-أول-اجتماع-مجلس-الادارة.pdf" download="محضر جلسة أول اجتماع لمجلس الادارة" class="btn btn-sm btn-primary"> <span>محضر جلسة أول اجتماع لمجلس الادارة</span></a>';
+}else{
+    $urlfile='<a href="https://gda2.ness.com.tn/assets/fichier/direct/محضر-جلسة-أول-اجتماع-مجلس-الادارة.pdf" download="محضر جلسة أول اجتماع لمجلس الادارة" class="btn btn-sm btn-primary"> <span>محضر جلسة أول اجتماع لمجلس الادارة</span></a>';
+}
 
 ?>
 
@@ -32,7 +53,7 @@ if(isset($_GET['type'])){
         </div>
 
         <div class="col-4 text-right">
-            <a href="assets/file/الاستدعاء-للجلسة-العامة.pdf" download="الاستدعاء-للجلسة-العامة" class="btn btn-sm btn-primary" >استدعاء الجلسات العامة</a>
+            <?php echo $urlfile ?>
             <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#ajouterReunionPublique">إضافة الجلسات العامة</button>
         </div>
         </div>
