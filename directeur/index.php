@@ -290,7 +290,7 @@ include "footer.php"
 
                       <li class="nav-item">
                         <a class="nav-link" href="index.php?page=documentsReunions&type=3">
-                          <i class="ni ni-bullet-list-67 text-red"></i>  التقرير األدبي
+                          <i class="ni ni-bullet-list-67 text-red"></i>  التقرير الأدبي
                         </a>
                       </li>
                       <li class="nav-item">
