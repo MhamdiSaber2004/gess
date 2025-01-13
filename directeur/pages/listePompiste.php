@@ -191,7 +191,7 @@ $sql = "SELECT * FROM pompiste where idGess='$idGess' and actif=1";
                           <i class="fas fa-ellipsis-v text-black-50"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                          <a class="dropdown-item" href="../uploads/'.$row["file"].'" target="_blank">تفاصيل و طباعة</a>
+                          <a class="dropdown-item" href="uploads/'.$row["file"].'" target="_blank">تفاصيل و طباعة</a>
                           <a class="dropdown-item" href="index.php?page=modifPompiste&id='.$row["idPompiste"].'">تحيين</a>
                           <a class="dropdown-item" href="controller/controller.php?idPompisteDesacive='.$row["idPompiste"].'">حذف</a>
                           <!--<a class="dropdown-item" data-toggle="modal" data-target="#supprimer'.$row['idPompiste'].'" href="index.php?page=listePompiste&action=supprimer&id=">حذف</a>-->
