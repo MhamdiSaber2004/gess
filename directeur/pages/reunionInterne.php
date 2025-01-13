@@ -23,7 +23,7 @@
                   <h3 class="mb-0">قائمة الجلسات العامة  </h3>
                 </div>
                 <div class="col-6 text-right">
-                    <a href="assets/file/محضر-جلسة-اجتماع-مجلس-الادارة-عدد.pdf" download="محضر-جلسة-اجتماع-مجلس-الادارة"class="btn btn-sm btn-primary" >طباعة محضر جلسة اجتماع مجلس الادارة</a>
+                    <a href="index.php?page=printPremierMa7dherReunionPublique" class="btn btn-sm btn-primary" >طباعة محضر جلسة اجتماع مجلس الادارة</a>
                     <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#ajouterReunionInterne">إضافة جلسات اجتماع مجلس ادارة</button>
                 </div>
               </div>
