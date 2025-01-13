@@ -12,7 +12,7 @@ if($typeR==1){
 }else if($typeR==3){
     $urlfile='<a href="index.php?page=rapportLitteraire" class="btn btn-sm btn-primary"> التقرير الأدبي</a>';
 }else if($typeR==4){
-    $urlfile='<a href="https://gda2.ness.com.tn/assets/fichier/direct/التقرير-المالي.pdf" class="btn btn-sm btn-primary"> التقرير المالي  </a>';
+    $urlfile='<a href="index.php?page=rapportFinancier" class="btn btn-sm btn-primary"> التقرير المالي  </a>';
 }else if($typeR==5){
     $urlfile='<a href="https://gda2.ness.com.tn/assets/fichier/direct/طلب-ترشح-لعضوية-مجلس-الادارة (1).pdf" target="_blank" class="btn btn-sm btn-primary">    طلب ترشح لعضوية مجلس الادارة  </a>';
 }else if($typeR==6){
