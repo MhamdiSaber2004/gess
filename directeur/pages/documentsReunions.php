@@ -10,7 +10,7 @@ if($typeR==1){
 }else if($typeR==2){
     $urlfile='<a href="https://gda2.ness.com.tn/assets/fichier/direct/استدعاء-للجلسة-العامة.pdf" target="_blank" class="btn btn-sm btn-primary"> الاستدعاء للجلسة العامة  </a>';
 }else if($typeR==3){
-    $urlfile='<a href="index.php?page=rapportLitteraire" target="_blank" class="btn btn-sm btn-primary"> التقرير الأدبي</a>';
+    $urlfile='<a href="index.php?page=rapportLitteraire" class="btn btn-sm btn-primary"> التقرير الأدبي</a>';
 }else if($typeR==4){
     $urlfile='<a href="https://gda2.ness.com.tn/assets/fichier/direct/التقرير-المالي.pdf" class="btn btn-sm btn-primary"> التقرير المالي  </a>';
 }else if($typeR==5){
