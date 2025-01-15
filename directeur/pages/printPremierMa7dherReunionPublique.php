@@ -60,37 +60,37 @@
         <td style="border: 1px solid;">1</td>
         <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;" placeholder="......................"></td>
         <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;" placeholder="......................"></td>
-        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;" placeholder="......................"></td>
+        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;"></td>
       </tr>
       <tr style="border: 1px solid;">
         <td style="border: 1px solid;">2</td>
         <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;" placeholder="......................"></td>
         <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;" placeholder="......................"></td>
-        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;" placeholder="......................"></td>
+        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;"></td>
       </tr>
       <tr style="border: 1px solid;">
         <td style="border: 1px solid;">3</td>
         <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;" placeholder="......................"></td>
         <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;" placeholder="......................"></td>
-        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;" placeholder="......................"></td>
+        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;"></td>
       </tr>
       <tr style="border: 1px solid;">
         <td style="border: 1px solid;">4</td>
         <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;" placeholder="......................"></td>
         <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;" placeholder="......................"></td>
-        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;" placeholder="......................"></td>
+        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;"></td>
       </tr>
       <tr style="border: 1px solid;">
         <td style="border: 1px solid;">5</td>
         <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;" placeholder="......................"></td>
         <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;" placeholder="......................"></td>
-        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;" placeholder="......................"></td>
+        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;"></td>
       </tr>
       <tr style="border: 1px solid;">
         <td style="border: 1px solid;">6</td>
         <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;" placeholder="......................"></td>
         <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;" placeholder="......................"></td>
-        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;" placeholder="......................"></td>
+        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;"></td>
       </tr>
     </table>
     <br>
