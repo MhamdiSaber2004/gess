@@ -497,7 +497,7 @@
           var deff<?php echo $i ?>=document.getElementById('inp<?php echo $i ?>1').value - document.getElementById('inp<?php echo $i ?>2').value;
           document.getElementById("inp<?php echo $i ?>3").value = deff<?php echo $i ?>;
 
-          console.log(parseFloat(deff<?php echo $i ?>));
+          console.log(parseFloat(document.getElementById('inp<?php echo $i ?>1')));
           var moy<?php echo $i ?>=(parseFloat(deff<?php echo $i ?>) / parseFloat(document.getElementById('inp<?php echo $i ?>1')))*100;
           document.getElementById("inp<?php echo $i ?>4").value = moy<?php echo $i ?>;
 
