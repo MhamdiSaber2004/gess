@@ -278,10 +278,10 @@
                     </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">الرصيد الجملي في أول سنة</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp01" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp02" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp03" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp04" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" colspan="5">المداخيل</td>
@@ -292,54 +292,54 @@
 
                       <tr>
                         <td class="text-center" style="border: 1px solid;">انخراطات</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp11" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp12" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp13" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp14" style="width: 100px;border: 0;"></td>
                       </tr>
 
 
                       <tr>
                         <td class="text-center" style="border: 1px solid;">اشتراكات</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp21" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp22" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp23" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp24" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">بيع ماء</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp31" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp32" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp33" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp34" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">مداخيل أنشطة أخرى</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp41" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp42" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp43" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp44" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">مداخيل مختلفة</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp51" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp52" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp53" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp54" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">مداخيل قروض</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp61" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp62" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp63" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp64" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">جملة المداخيل</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp71" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp72" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp73" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp74" style="width: 100px;border: 0;"></td>
                       </tr>
 
 
@@ -349,87 +349,87 @@
 
                       <tr>
                         <td class="text-center" style="border: 1px solid;">اشتراكات</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp81" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp82" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp83" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp84" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">شراء الماء</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp91" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp92" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp93" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp94" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">الطاقة</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp101" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp102" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp103" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp104" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">مصاريف استغلال أخرى</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp111" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp112" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp113" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp114" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">صيانة و اصلاح</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp121" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp122" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp123" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp124" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">أجور</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp131" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp132" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp133" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp134" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">ادارة و تصرف</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp141" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp142" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp143" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp144" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">مصاريف مختلفة</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp151" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp152" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp153" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp154" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">مصاريف الأنشطة الأخرى</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp161" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp162" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp163" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp164" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">استثمار و تجهيز</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp171" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp172" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp173" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp174" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">جملة المصاريف</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp181" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp182" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp183" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp184" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">الرصيد في آخر سنة</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp191" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp192" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp193" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp194" style="width: 100px;border: 0;"></td>
                       </tr>
 
 
@@ -499,7 +499,14 @@
 
           var moy<?php echo $i ?>=(parseFloat(deff<?php echo $i ?>) / parseFloat(document.getElementById('inp<?php echo $i ?>1').value))*100;
           document.getElementById("inp<?php echo $i ?>4").value = moy<?php echo $i ?>;
+        })
 
+        document.getElementById('minp<?php echo $i ?>2').addEventListener("keyup", function(){
+          var deff<?php echo $i ?>=document.getElementById('minp<?php echo $i ?>2').value - document.getElementById('minp<?php echo $i ?>1').value;
+          document.getElementById("minp<?php echo $i ?>3").value = deff<?php echo $i ?>;
+
+          var moy<?php echo $i ?>=(parseFloat(deff<?php echo $i ?>) / parseFloat(document.getElementById('minp<?php echo $i ?>1').value))*100;
+          document.getElementById("minp<?php echo $i ?>4").value = moy<?php echo $i ?>;
         })
       <?php
     }
