@@ -238,7 +238,15 @@ $s_statement=0;
          <td class="x48" style="background:black"></td>
          <td class="x48" style="background:black"></td>
          <td class="x48" style="background:black"></td>
-         <td dir="RTL" align="right" colspan="4" class="x50" style="border-right:2px solid windowtext;border-bottom:1px solid windowtext;">الرصيد اخر السنة السابقة</td>
+         <td dir="RTL" align="right" colspan="4" class="x50" style="border-right:2px solid windowtext;border-bottom:1px solid windowtext;">
+         <?php 
+            if($moisValue='January'){
+               echo 'الرصيد اخر السنة السابقة';
+            }else{
+               echo 'الرصيد اخر الشهر السابقة';
+            }
+         ?>
+         </td>
          <td></td>
       </tr>
       <tr height='20' style='mso-height-source:userset;height:15pt;font-weight: bold;'>
