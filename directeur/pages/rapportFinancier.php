@@ -63,7 +63,7 @@
   <div class="col-lg-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-username">مقدمة </label>
-                        <div id="inputArea1" ><textarea name="introduction" id="introduction" cols="100" rows="4" style="border: 0;"></textarea></div>
+                        <div id="inputArea1" ><textarea name="introduction" id="introduction" cols="100" rows="4" style="border: 0;" placeholder="............................................................................................................................................................................................................................................................................................................"></textarea></div>
                       </div>
                     </div>
 
