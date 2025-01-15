@@ -493,16 +493,10 @@
   <?php
     for($i=0 ; $i<20 ; $i++){
       ?>
-      const inp2<?php echo $i ?>=document.getElementById('inp<?php echo $i ?>2');
-      const inp1<?php echo $i?>=document.getElementById('inp<?php echo $i ?>1');
-
-      inp2<?php echo $i ?>.onkeyup = function() {moydeff()};
-      function moydeff(){
-        var deff<?php echo $i ?>=inp1<?php echo $i?>.value - inp2<?php echo $i?>.value;
-        document.getElementById("inp<?php echo $i ?>3").value = deff<?php echo $i ?>;
-      }
-
-
+        document.getElementById('inp<?php echo $i ?>2').addEventListener("keyup", function(){
+          var deff<?php echo $i ?>=document.getElementById('inp<?php echo $i ?>1').value - document.getElementById('inp<?php echo $i ?>2').value;
+          document.getElementById("inp<?php echo $i ?>3").value = deff<?php echo $i ?>;
+        })
       <?php
     }
   ?>
