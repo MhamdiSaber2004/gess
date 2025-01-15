@@ -94,7 +94,7 @@
       </tr>
     </table>
     <br>
-    <small class="d-flex justify-content-start text-black"> رفعت الجلسة على الساعة : .................................  &nbsp;<br></small>
+    <small class="d-flex justify-content-start text-black"> رفعت الجلسة على الساعة : <input type="text" style="width: 100px;border: 0;" placeholder="......................">  &nbsp;<br></small>
 
     <small class="d-flex justify-content-start text-black"><br>  &nbsp;<br></small>
 
