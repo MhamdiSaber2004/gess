@@ -1,28 +1,28 @@
 
-<?php 
+  <?php 
 
-$year = date("Y");
+  $year = date("Y");
 
-$sql="SELECT * FROM `rapport_financier` where idGess='$idGess' and annee='$year'";
-$result = $conn->query($sql);
-   
-if ($result->num_rows == 0) {
+  $sql="SELECT * FROM `rapport_financier` where idGess='$idGess' and annee='$year'";
+  $result = $conn->query($sql);
+    
+  if ($result->num_rows == 0) {
 
-}
+  }
 
-?>
-
-
+  ?>
 
 
-<!-- Main content -->
+
+
+  <!-- Main content -->
   <div class="main-content">
-   
+    
     <!-- Header -->
     <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
       <div class="container-fluid">
         <div class="header-body">
-         
+          
         </div>
       </div>
     </div>
@@ -33,7 +33,7 @@ if ($result->num_rows == 0) {
         <div class="col">
           <div class="card shadow">
             
-           
+            
             <div class="card-header bg-secondary border-0">
               <div class="row align-items-center">
                 <div class="col-8">
@@ -52,18 +52,18 @@ if ($result->num_rows == 0) {
 
             <div class="table-responsive col-12">
             <div id="alert" class="alert alert-<?php echo $_SESSION['messageClass'] ?> alert-dismissible fade <?php if($_SESSION['message']!="") echo "show"; else echo "visually-hidden"  ?>" role="alert" >
- <?php echo $_SESSION['message'];  unset($_SESSION['message']); ?>
+  <?php echo $_SESSION['message'];  unset($_SESSION['message']); ?>
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
+  </div>
 
-<div class="no-print bg-secondary"  id="printDiv">
+  <div class="no-print bg-secondary"  id="printDiv">
 
 
-
-<div class="col-lg-12">
+  <form>
+  <div class="col-lg-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-username">مقدمة </label>
-                        <div id="inputArea1" >....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................</div>
+                        <div id="inputArea1" ><textarea name="introduction" id="introduction" cols="30" rows="10"></textarea></div>
                       </div>
                     </div>
 
@@ -86,9 +86,9 @@ if ($result->num_rows == 0) {
                     </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">الرصيد الجملي في أول سنة</td>
-<!-- 
+  <!-- 
                     <td class="text-center" style="border: 1px solid;"><div id="inputArea20"style="width:100%"  onclick="makeEditable(this);" contenteditable="true">إضغط مرتين لإضافة معطيات</div></td>
--->
+  -->
                         <td class="text-center" style="border: 1px solid;"></td>
                         <td class="text-center" style="border: 1px solid;"></td>
                         <td class="text-center" style="border: 1px solid;"></td>
@@ -281,9 +281,6 @@ if ($result->num_rows == 0) {
                     </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">الرصيد الجملي في أول سنة</td>
-<!-- 
-                    <td class="text-center" style="border: 1px solid;"><div id="inputArea20"style="width:100%"  onclick="makeEditable(this);" contenteditable="true">إضغط مرتين لإضافة معطيات</div></td>
--->
                         <td class="text-center" style="border: 1px solid;"></td>
                         <td class="text-center" style="border: 1px solid;"></td>
                         <td class="text-center" style="border: 1px solid;"></td>
@@ -483,127 +480,18 @@ if ($result->num_rows == 0) {
                       </div>
                     </div>
 
+  </div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-  
-<div id="inputArea1" contenteditable="true">........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................</div>
-<div id="inputArea2" contenteditable="true">Double click to edit</div>
-
-<div id="inputArea20" contenteditable="true" onclick="makeEditable(this);">Double click to edit</div>
-<div id="inputArea20" contenteditable="true" onclick="makeEditable(this);">Double click to edit</div>
-<div id="inputArea20" contenteditable="true" onclick="makeEditable(this);">Double click to edit</div>
-<div id="inputArea20" contenteditable="true" onclick="makeEditable(this);">Double click to edit</div>
-<div id="inputArea20" contenteditable="true" onclick="makeEditable(this);">Double click to edit</div>
-
--->
-
-
-
-
-<form id="myForm" method="post">
-    <input type="hidden" id="inputArea1" name="inputArea1" value="">
-    <input type="hidden" id="inputArea2" name="inputArea3" value="">
-    <input type="hidden" id="inputArea2" name="inputArea4" value="">
-    <input type="hidden" id="inputArea2" name="inputArea5" value="">
-    <input type="hidden" id="inputArea2" name="inputArea6" value="">
-    <input type="hidden" id="inputArea2" name="inputArea7" value="">
-    <input type="hidden" id="inputArea2" name="inputArea8" value="">
-    <input type="hidden" id="inputArea2" name="inputArea9" value="">
-    <input type="hidden" id="inputArea2" name="inputArea10" value="">
-    <input type="hidden" id="inputArea2" name="inputArea11" value="">
-    <input type="hidden" id="inputArea2" name="inputArea12" value="">
-    <input type="hidden" id="inputArea2" name="inputArea13" value="">
-    <input type="hidden" id="inputArea2" name="inputArea14" value="">
-    <input type="hidden" id="inputArea2" name="inputArea15" value="">
-    <input type="hidden" id="inputArea2" name="inputArea16" value="">
-    <input type="hidden" id="inputArea2" name="inputArea17" value="">
-    <input type="hidden" id="inputArea2" name="inputArea18" value="">
-    <input type="hidden" id="inputArea2" name="inputArea19" value="">
-    <input type="hidden" id="inputArea20" name="inputArea20" value="">
-    <input type="submit" name="rapportFinancier" value="Submit">
-</form>
-
-
-
-</div>
-
-
-
-             
+              
             </div>
-           
+            
           </div>
         </div>
       </div>
-      
-      <script>
-function printPompiste(areaID){
-    var printContent = document.getElementById(areaID).innerHTML;
-    var originalContent = document.body.innerHTML;
-    document.body.innerHTML = printContent;
-    window.print();
-    document.body.innerHTML = originalContent;
-}
+</form>  
 
-
-var inputs = document.querySelectorAll('.inputArea');
-
-for (var i = 0; i < inputs.length; i++) {
-    inputs[i].ondblclick = function() {
-        this.setAttribute('contenteditable', 'false');
-        var input = document.createElement('input');
-        input.type = 'text';
-        input.value = this.textContent;
-        this.innerHTML = '';
-        this.textContent = 'aaaaa';
-        this.appendChild(input);
-        input.focus();
-
-        input.onblur = function() {
-            var div = this.parentNode;
-            div.setAttribute('contenteditable', 'true');
-            div.innerHTML = '';
-            div.appendChild(document.createTextNode(this.value));
-        }
-    }
-}
-
-document.getElementById('myForm').onsubmit = function() {
-    for (var i = 0; i < inputs.length; i++) {
-        document.getElementById('inputArea' + (i + 1)).value = inputs[i].textContent;
-    }
-}
-
-function makeEditable(element) {
-    element.contentEditable = true;
-    if(element.textContent == "إضغط مرتين لإضافة معطيات")
-      {
-        element.textContent ="";
-      }
-    //element.textContent ="";
-    element.addEventListener('blur', function() {
-      if(element.textContent =="")
-      {
-        element.textContent ="إضغط مرتين لإضافة معطيات";
-      }
-        element.contentEditable = false;
-    });
-}
-</script>
 
 
 
