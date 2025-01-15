@@ -148,10 +148,10 @@ if (isset($_SESSION["idPompiste"])) {
                 <div class="card-body">
                   <form id="loginForm"  action="login.php" method="post">
                     <div class="mb-3">
-                      <input type="text" v name="email" class="form-control form-control-lg text-end" value="10294849@gmail.com" placeholder="البريد الالكتروني" aria-label="Email" required>
+                      <input type="text" v name="email" class="form-control form-control-lg text-end" value="9512010@gmail.com" placeholder="البريد الالكتروني" aria-label="Email" required>
                     </div>
                       <div class="mb-3">
-                      <input type="password" name="password" id="password-input" value="azeazeaze" class="form-control form-control-lg text-end" placeholder="كلمة السر" aria-label="Password" required>
+                      <input type="password" name="password" id="password-input" value="12345678" class="form-control form-control-lg text-end" placeholder="كلمة السر" aria-label="Password" required>
                       <i class="fas fa-eye" id="toggle-password"></i>
                     </div>
                     <!--<div class="form-check form-switch">
