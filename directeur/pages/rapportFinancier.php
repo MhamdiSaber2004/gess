@@ -516,8 +516,23 @@ if ($result->num_rows == 0) {
 
 <form id="myForm" method="post">
     <input type="hidden" id="inputArea1" name="inputArea1" value="">
-    <input type="hidden" id="inputArea2" name="inputArea2" value="">
-    ...
+    <input type="hidden" id="inputArea2" name="inputArea3" value="">
+    <input type="hidden" id="inputArea2" name="inputArea4" value="">
+    <input type="hidden" id="inputArea2" name="inputArea5" value="">
+    <input type="hidden" id="inputArea2" name="inputArea6" value="">
+    <input type="hidden" id="inputArea2" name="inputArea7" value="">
+    <input type="hidden" id="inputArea2" name="inputArea8" value="">
+    <input type="hidden" id="inputArea2" name="inputArea9" value="">
+    <input type="hidden" id="inputArea2" name="inputArea10" value="">
+    <input type="hidden" id="inputArea2" name="inputArea11" value="">
+    <input type="hidden" id="inputArea2" name="inputArea12" value="">
+    <input type="hidden" id="inputArea2" name="inputArea13" value="">
+    <input type="hidden" id="inputArea2" name="inputArea14" value="">
+    <input type="hidden" id="inputArea2" name="inputArea15" value="">
+    <input type="hidden" id="inputArea2" name="inputArea16" value="">
+    <input type="hidden" id="inputArea2" name="inputArea17" value="">
+    <input type="hidden" id="inputArea2" name="inputArea18" value="">
+    <input type="hidden" id="inputArea2" name="inputArea19" value="">
     <input type="hidden" id="inputArea20" name="inputArea20" value="">
     <input type="submit" name="rapportFinancier" value="Submit">
 </form>
@@ -545,7 +560,7 @@ function printPompiste(areaID){
 }
 
 
-/*var inputs = document.querySelectorAll('.inputArea');
+var inputs = document.querySelectorAll('.inputArea');
 
 for (var i = 0; i < inputs.length; i++) {
     inputs[i].ondblclick = function() {
@@ -565,7 +580,7 @@ for (var i = 0; i < inputs.length; i++) {
             div.appendChild(document.createTextNode(this.value));
         }
     }
-}*/
+}
 
 document.getElementById('myForm').onsubmit = function() {
     for (var i = 0; i < inputs.length; i++) {
