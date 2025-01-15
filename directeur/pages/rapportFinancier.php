@@ -494,7 +494,7 @@
     for($i=0 ; $i<20 ; $i++){
       ?>
         document.getElementById('inp<?php echo $i ?>2').addEventListener("keyup", function(){
-          var deff<?php echo $i ?>=document.getElementById('inp<?php echo $i ?>1').value - document.getElementById('inp<?php echo $i ?>2').value;
+          var deff<?php echo $i ?>=document.getElementById('inp<?php echo $i ?>2').value - document.getElementById('inp<?php echo $i ?>1').value;
           document.getElementById("inp<?php echo $i ?>3").value = deff<?php echo $i ?>;
 
           var moy<?php echo $i ?>=(parseFloat(deff<?php echo $i ?>) / parseFloat(document.getElementById('inp<?php echo $i ?>1').value))*100;
