@@ -89,10 +89,10 @@
   <!-- 
                     <td class="text-center" style="border: 1px solid;"><div id="inputArea20"style="width:100%"  onclick="makeEditable(this);" contenteditable="true">إضغط مرتين لإضافة معطيات</div></td>
   -->
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" colspan="5">المداخيل</td>
@@ -103,54 +103,54 @@
 
                       <tr>
                         <td class="text-center" style="border: 1px solid;">انخراطات</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
                       </tr>
 
 
                       <tr>
                         <td class="text-center" style="border: 1px solid;">اشتراكات</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">بيع ماء</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">مداخيل أنشطة أخرى</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">مداخيل مختلفة</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">مداخيل قروض</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">جملة المداخيل</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
                       </tr>
 
 
@@ -160,87 +160,87 @@
 
                       <tr>
                         <td class="text-center" style="border: 1px solid;">اشتراكات</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">شراء الماء</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">الطاقة</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">مصاريف استغلال أخرى</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">صيانة و اصلاح</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">أجور</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">ادارة و تصرف</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">مصاريف مختلفة</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">مصاريف الأنشطة الأخرى</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">استثمار و تجهيز</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">جملة المصاريف</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
                       </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">الرصيد في آخر سنة</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
+                        <td class="text-center" style="border: 1px solid;"><input type="text" name="" style="width: 100px;border: 0;"></td>
                       </tr>
 
 
