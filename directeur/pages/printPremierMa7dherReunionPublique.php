@@ -37,18 +37,18 @@
     <small class="d-flex d-xxl-flex justify-content-start justify-content-xxl-start text-black" > ب :&nbsp;</small>
 
     <h1 class="d-flex  justify-content-center "><br> محضر جلسة اول اجتماع لمجلس الإدارة  <br><br></h1>
-    <small class="d-flex justify-content-start text-black">التاريخ ......................... الساعة...................المكان..................... اثر الجلسة العامة............................المنعقدة  بتاريخ.......................  &nbsp;<br></small>
+    <small class="d-flex justify-content-start text-black">التاريخ <input type="text" style="width: 100px;border: 0;"> الساعة<input type="text" style="width: 100px;border: 0;">المكان<input type="text" style="width: 100px;border: 0;"> اثر الجلسة العامة<input type="text" style="width: 100px;border: 0;">المنعقدة  بتاريخ.......................  &nbsp;<br></small>
     <small class="d-flex justify-content-start text-black">اجتمع مجلس إدارة المجمع لتوزيع المهام بين  أعضائه و لتفويض الصلاحيات لرئيس مجلس إدارة المجمع و لأمين ماله.  &nbsp;<br></small>
     <small class="d-flex justify-content-start text-black">وبعد المداولات و المناقشة  قرر مجلس الإدارة تعيين :&nbsp;<br></small><br>
-    <small class="d-flex justify-content-start text-black">-السيد ..........................................صاحب بطاقة التعريف  رقم : .................................   &nbsp;<br></small>
+    <small class="d-flex justify-content-start text-black">-السيد <input type="text" style="width: 100px;border: 0;">صاحب بطاقة التعريف  رقم : <input type="text" style="width: 100px;border: 0;">   &nbsp;<br></small>
     <small class="d-flex justify-content-start text-black">  امين مال للمجمع .  &nbsp;<br></small>
-    <small class="d-flex justify-content-start text-black">السيد............................................................   : عضو مكلف بــ : ....................................  &nbsp;<br></small>
-    <small class="d-flex justify-content-start text-black">السيد............................................................   : عضو مكلف بــ : ....................................  &nbsp;<br></small>
-    <small class="d-flex justify-content-start text-black">السيد............................................................   : عضو مكلف بــ : ....................................  &nbsp;<br></small>
-    <small class="d-flex justify-content-start text-black">السيد............................................................   : عضو مكلف بــ : ....................................  &nbsp;<br></small>
-    <small class="d-flex justify-content-start text-black">السيد............................................................   : عضو مكلف بــ : ....................................  &nbsp;<br></small>
+    <small class="d-flex justify-content-start text-black">السيد<input type="text" style="width: 100px;border: 0;">   : عضو مكلف بــ : <input type="text" style="width: 100px;border: 0;">  &nbsp;<br></small>
+    <small class="d-flex justify-content-start text-black">السيد<input type="text" style="width: 100px;border: 0;">   : عضو مكلف بــ : <input type="text" style="width: 100px;border: 0;">  &nbsp;<br></small>
+    <small class="d-flex justify-content-start text-black">السيد<input type="text" style="width: 100px;border: 0;">   : عضو مكلف بــ : <input type="text" style="width: 100px;border: 0;">  &nbsp;<br></small>
+    <small class="d-flex justify-content-start text-black">السيد<input type="text" style="width: 100px;border: 0;">   : عضو مكلف بــ : <input type="text" style="width: 100px;border: 0;">  &nbsp;<br></small>
+    <small class="d-flex justify-content-start text-black">السيد<input type="text" style="width: 100px;border: 0;">   : عضو مكلف بــ : <input type="text" style="width: 100px;border: 0;">  &nbsp;<br></small>
     <small class="d-flex justify-content-start text-black">وقرر مجلس الإدارة التفويض لرئيسه و لأمين مال المجمع ، القيام بعمليات الإيداع و السحب بالحساب  الجاري للمجمع ، رقم:   &nbsp;<br></small>
-    <small class="d-flex justify-content-start text-black">................................................................................................................  &nbsp;<br></small>
+    <small class="d-flex justify-content-start text-black<input type="text" style="width: 100px;border: 0;">  &nbsp;<br></small>
     <br><table style="border: 1px solid;width:70%">
       <tr style="border: 1px solid;">
         <td style="border: 1px solid;">العدد الرتبي</td>
@@ -58,39 +58,39 @@
       </tr>
       <tr style="border: 1px solid;">
         <td style="border: 1px solid;">1</td>
-        <td  style="border: 1px solid;"></td>
-        <td  style="border: 1px solid;"></td>
-        <td  style="border: 1px solid;"></td>
+        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;"></td>
+        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;"></td>
+        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;"></td>
       </tr>
       <tr style="border: 1px solid;">
         <td style="border: 1px solid;">2</td>
-        <td  style="border: 1px solid;"></td>
-        <td  style="border: 1px solid;"></td>
-        <td  style="border: 1px solid;"></td>
+        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;"></td>
+        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;"></td>
+        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;"></td>
       </tr>
       <tr style="border: 1px solid;">
         <td style="border: 1px solid;">3</td>
-        <td  style="border: 1px solid;"></td>
-        <td  style="border: 1px solid;"></td>
-        <td  style="border: 1px solid;"></td>
+        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;"></td>
+        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;"></td>
+        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;"></td>
       </tr>
       <tr style="border: 1px solid;">
         <td style="border: 1px solid;">4</td>
-        <td  style="border: 1px solid;"></td>
-        <td  style="border: 1px solid;"></td>
-        <td  style="border: 1px solid;"></td>
+        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;"></td>
+        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;"></td>
+        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;"></td>
       </tr>
       <tr style="border: 1px solid;">
         <td style="border: 1px solid;">5</td>
-        <td  style="border: 1px solid;"></td>
-        <td  style="border: 1px solid;"></td>
-        <td  style="border: 1px solid;"></td>
+        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;"></td>
+        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;"></td>
+        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;"></td>
       </tr>
       <tr style="border: 1px solid;">
         <td style="border: 1px solid;">6</td>
-        <td  style="border: 1px solid;"></td>
-        <td  style="border: 1px solid;"></td>
-        <td  style="border: 1px solid;"></td>
+        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;"></td>
+        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;"></td>
+        <td  style="border: 1px solid;"><input type="text" style="width: 100px;border: 0;"></td>
       </tr>
     </table>
     <br>
