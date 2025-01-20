@@ -6,7 +6,7 @@ if(isset($_GET['type'])){
     header('location : index.php');
 }
 if($typeR==1){
-    $urlfile='<a href="https://gda2.ness.com.tn/assets/fichier/direct/اعلان-عن-الجلسة-العامة.pdf" target="_blank" class="btn btn-sm btn-primary"> الاعلان عن جلسة العامة  </a>';
+    $urlfile='<a href="index.php?page=printReuinionPublique" class="btn btn-sm btn-primary"> الاعلان عن جلسة العامة  </a>';
 }else if($typeR==2){
     $urlfile='<a href="https://gda2.ness.com.tn/assets/fichier/direct/استدعاء-للجلسة-العامة.pdf" target="_blank" class="btn btn-sm btn-primary"> الاستدعاء للجلسة العامة  </a>';
 }else if($typeR==3){
