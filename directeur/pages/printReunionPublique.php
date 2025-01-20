@@ -90,9 +90,10 @@
 
           <script>
 function printPompiste(areaID){
-  
+    var printContent = document.getElementById(areaID).innerHTML;
+    var originalContent = document.body.innerHTML;
     window.print();
-  
+    document.body.innerHTML = originalContent;
 }
 </script>
 
