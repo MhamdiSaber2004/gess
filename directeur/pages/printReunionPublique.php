@@ -1,3 +1,32 @@
+  <?php
+if(isset($post['inp1'])){
+  $inp1=$post['inp1'];
+  $inp2=$post['inp2'];
+  $inp3=$post['inp3'];
+  $inp4=$post['inp4'];
+  $inp5=$post['inp5'];
+  $inp6=$post['inp6'];
+  $inp7=$post['inp7'];
+  $inp8=$post['inp8'];
+  $inp9=$post['inp9'];
+  $inp10=$post['inp10'];
+  $inp11=$post['inp11'];
+  $inp12=$post['inp12'];
+  $inp13=$post['inp13'];
+  $inp14=$post['inp14'];
+  $inp15=$post['inp15'];
+  $inp16=$post['inp16'];
+
+  
+
+
+
+
+}
+
+?>
+  
+  
   <!-- Main content -->
   <div class="main-content">
 
@@ -30,7 +59,11 @@
                 <div class="no-print" id="printDiv">
                   <br><br>
                   <small class="d-flex justify-content-start text-black">مجمع التنمية في قطاع الفلاحة و الصيد البحري &nbsp;</small>
-                  <small class="d-flex d-xxl-flex justify-content-start justify-content-xxl-start text-black" > ب :&nbsp;</small>
+                  <small class="d-flex d-xxl-flex justify-content-start justify-content-xxl-start text-black" > ب :
+                    <?php
+
+                    ?>
+                  &nbsp;</small>
 
                   <h1 class="d-flex  justify-content-center "><br>إعلان عن الجلسة العامة<br><br></h1>
                   <small class="d-flex justify-content-start text-black">يعلن مجلس إدارة مجمع التنمية في قطاع الفلاحة و الصيد البحري بــــ: <input type="text" placeholder="..........................................." style="border:0" name="inp1">  &nbsp;<br></small>
