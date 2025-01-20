@@ -69,7 +69,7 @@
                   <br>
                   <small class="d-flex justify-content-start text-black"> <img src="assets/img/reunion/reunionPublique.png" alt="" style="width:70%;">  &nbsp;<br></small>
                 </div>
-                <button type="submit" class="btn btn-success form-control text-center text-light" >حفظ</button>
+                <button type="submit" id="submitButton" class=" no-print btn btn-primary my-4 col-12">حفظ</button>
               </form>
             </div>
           </div>
