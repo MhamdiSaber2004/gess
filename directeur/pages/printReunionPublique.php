@@ -17,7 +17,7 @@ if(isset($post['inp1'])){
   $inp15=$post['inp15'];
   $inp16=$post['inp16'];
 
-  
+print_r($_SESSION);
 
 
 
@@ -55,7 +55,7 @@ if(isset($post['inp1'])){
               </div>
             </div>
             <div class="card-body">
-              <form action="">
+              <form methode="post">
                 <div class="no-print" id="printDiv">
                   <br><br>
                   <small class="d-flex justify-content-start text-black">مجمع التنمية في قطاع الفلاحة و الصيد البحري &nbsp;</small>
