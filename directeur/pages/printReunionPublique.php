@@ -38,7 +38,7 @@
 
     <h1 class="d-flex  justify-content-center "><br>إعلان عن الجلسة العامة<br><br></h1>
     <small class="d-flex justify-content-start text-black">يعلن مجلس إدارة مجمع التنمية في قطاع الفلاحة و الصيد البحري بــــ: ...........................................  &nbsp;<br></small>
-    <small class="d-flex justify-content-start text-black">أن الجلسة العامة :.................. للمجمع ، ستنعقد يوم :<input type="text" placeholder=".............................................">، على الساعة :......................  &nbsp;<br></small>
+    <small class="d-flex justify-content-start text-black">أن الجلسة العامة :.................. للمجمع ، ستنعقد يوم :<input type="text" placeholder=".........................................................." style="border:0">، على الساعة :......................  &nbsp;<br></small>
     <small class="d-flex justify-content-start text-black">بــ: ............................  &nbsp;<br></small><br>
     <small class="d-flex justify-content-start text-black"> <bold>وذلك للنظر في المواضيع التالية :</bold>  &nbsp;<br></small>
     <small class="d-flex justify-content-start text-black">- .............................................................................................................................................................................................................................  &nbsp;<br></small>
