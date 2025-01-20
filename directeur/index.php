@@ -19,6 +19,9 @@ if(isset($_GET['page']) && ! empty ( $_GET['page']) ) {
       case 'dashboard':
         include "./pages/dashboard.php";
         break;
+        case 'printReuinionPublique'://khalil
+          include "./pages/printReunionPublique.php";
+          break;
         case 'ajoutBenefiquePublique':
           include "./pages/ajoutBenefiquePublique.php";
           break;
