@@ -14,7 +14,7 @@
     <div class="container-fluid mt--7">
       <!-- table -->
      
-        <div class="col-xl-12 order-xl-1 no-print">
+        <div class="col-xl-12 order-xl-1">
           <div class="card bg-white shadow">
             <div class="card-header bg-secondary border-0 no-print">
               <div class="row align-items-center">
@@ -52,18 +52,21 @@
                             <div class="col">
                                 <input type="text" placeholder="............................................" style="border:0">  في  <input type="text" placeholder="............................................" style="border:0"><br>
                             </div>
+                            <div class="col">
+                            
+                            </div>
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-6" >
+                            <div class="col" >
                             
                             </div>
-                            <div class="col-6">
+                            <div class="col">
                                 رئيس مجلس الإدارة <br>_____________
                             </div>
-                        <strong class="col">
-                    
-                        </strong>
+                            <div class="col">
+                            
+                            </div>
                         </div>
                     </div>
                     <br>
