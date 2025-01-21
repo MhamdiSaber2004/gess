@@ -41,7 +41,7 @@
                 </div>
 
                 <div class="col-4 text-right">
-                  <a href="#" class="btn btn-sm btn-primary" onclick="printPompiste('printDiv')">طباعة </a>
+                  <button class="btn btn-sm btn-primary" onclick="printPompiste('printDiv')">طباعة </button>
                 </div>
               </div>
             </div>
@@ -59,7 +59,7 @@
   <div class="bg-secondary"  id="printDiv">
 
 
-  <form >
+  <form method="post" action="index.php?page=rapportFinancier">
   <div class="col-lg-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-username">مقدمة </label>
