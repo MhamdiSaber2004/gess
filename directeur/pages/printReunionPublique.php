@@ -1,6 +1,6 @@
 <?php
 if(isset($__POST['inp1'])){
-  $inp1=$_POST['inp1'];
+  /*$inp1=$_POST['inp1'];
   $inp2=$_POST['inp2'];
   $inp3=$_POST['inp3'];
   $inp4=$_POST['inp4'];
@@ -15,14 +15,9 @@ if(isset($__POST['inp1'])){
   $inp13=$_POST['inp13'];
   $inp14=$_POST['inp14'];
   $inp15=$_POST['inp15'];
-  $inp16=$_POST['inp16'];
+  $inp16=$_POST['inp16'];*/
 
-print_r($_POST);
-
-echo'<script>
-alert("lfjsnml");
-</script>';
-
+  print_r($_POST);
 
 
 }
