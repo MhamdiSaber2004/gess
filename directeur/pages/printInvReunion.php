@@ -1,15 +1,6 @@
   <!-- Main content -->
   <div class="main-content">
 
-    <!-- Header -->
-    <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
-      <div class="container-fluid">
-        <div class="header-body">
-         
-        </div>
-      </div>
-    </div>
-    <!-- Page content -->
 
     <div class="container-fluid mt--7">
       <!-- table -->
@@ -37,7 +28,7 @@
                     ?>
                   &nbsp;</small>
 
-                  <div class="no-print" id="printDiv">
+<div id="printDiv">
     <br><br>
     <small class="d-flex justify-content-start text-black">مجمع التنمية في قطاع الفلاحة و الصيد البحري &nbsp;</small>
     <small class="d-flex d-xxl-flex justify-content-start justify-content-xxl-start text-black" > ب :&nbsp;</small>
