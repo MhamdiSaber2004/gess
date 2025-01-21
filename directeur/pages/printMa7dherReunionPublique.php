@@ -161,8 +161,10 @@
       <div class="col-4">
         <p class="d-xxl-flex justify-content-xxl-start text-black" >المقرر الأول</p>
       </div>
-
     </div>
+
+    <br>
+    <br>
     
 </div>
 
