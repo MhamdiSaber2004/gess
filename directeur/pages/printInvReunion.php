@@ -23,7 +23,7 @@
      
       <div class="col-xl-12 order-xl-1">
           <div class="card bg-white shadow">
-            <div class="card-header bg-secondary border-0">
+            <div class="card-header bg-secondary border-0 no-print">
               <div class="row align-items-center">
                 <div class="col-8">
                   <h3 class="mb-0"><button onclick="printPompiste('printDiv')" class="btn btn-sm btn-primary">طباعة</button> </h3>
@@ -39,7 +39,7 @@
 
 
 
-<div class="no-print" id="printDiv">
+<div id="printDiv">
     <br><br>
     <small class="d-flex justify-content-start text-black">مجمع التنمية في قطاع الفلاحة و الصيد البحري &nbsp;</small>
     <small class="d-flex d-xxl-flex justify-content-start justify-content-xxl-start text-black" > ب :&nbsp;</small>
@@ -103,10 +103,7 @@
           </div>
           <script>
 function printPompiste(areaID){
-    var printContent = document.getElementById(areaID).innerHTML;
-    var originalContent = document.body.innerHTML;
     window.print();
-    document.body.innerHTML = originalContent;
 }
 </script>
 
