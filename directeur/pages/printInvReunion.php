@@ -64,8 +64,10 @@
             <div class="col">
                 <input type="text" placeholder="............................................" style="border:0">  في  <input type="text" placeholder="............................................" style="border:0"><br>
             </div>
+        </div>
+        <br>
         <div class="row">
-        <div class="col-8" >
+            <div class="col-8" >
             
             </div>
             <div class="col-4">
