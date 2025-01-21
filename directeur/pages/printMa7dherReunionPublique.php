@@ -173,6 +173,7 @@
            
           </div>
 
+</div>
 
           <script>
 function printPompiste(areaID){
