@@ -17,7 +17,7 @@ if(isset($post['inp1'])){
   $inp15=$post['inp15'];
   $inp16=$post['inp16'];
 
-print_r($_SESSION);
+print_r($post);
 
 
 
