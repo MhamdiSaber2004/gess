@@ -82,7 +82,7 @@
         <small class="d-flex ">اني الممضي اسفله <input type="text" placeholder="................................." style="border:0"> أشهد بأني اتصلت يوم <input type="text" placeholder="................................." style="border:0">بالاستدعاء وبجدول<br></small>
         <small class="d-flex "> أعمال الجلسة العامة التي ستنعقد يوم <input type="text" placeholder="................................." style="border:0"> كما يمكنكم الاطلاع على<br></small>
         <small class="d-flex ">  تقارير مجلس اإلدارة والموازنة المالية لسنة <input type="text" placeholder="................................." style="border:0"> على الساعة <input type="text" placeholder="................................." style="border:0"> بـ<br></small>
-        <small class="d-flex "><h4>الامضاء</h4><span></span><input type="text" placeholder="................................." style="border:0"> في  <input type="text" placeholder="................................." style="border:0"><br></small>
+        <small class="d-flex "><h4>الامضاء</h4><span style="margin-left: 30%;"></span><input type="text" placeholder="................................." style="border:0"> في  <input type="text" placeholder="................................." style="border:0"><br></small>
       </div>
       
 
