@@ -108,6 +108,12 @@ else{
 
 
 <div class="card-header bg-white border-0">
+                  <small class="d-flex justify-content-start text-black">مجمع التنمية في قطاع الفلاحة و الصيد البحري &nbsp;</small>
+                  <small class="d-flex d-xxl-flex justify-content-start justify-content-xxl-start text-black" > ب :
+                    <?php
+                      echo  $placeGess;
+                    ?>
+                  &nbsp;</small>
               <div class="row align-items-center">
                 <div class="col-10 text-center">
                   <h2 class="mb-0 text-center">التقرير الأدبي  </h2>
