@@ -1,4 +1,19 @@
-  <?php
+
+  
+  
+  <!-- Main content -->
+  <div class="main-content">
+
+    <!-- Header -->
+    <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
+      <div class="container-fluid">
+        <div class="header-body">
+         
+        </div>
+      </div>
+    </div>
+    <!-- Page content -->
+    <?php
 if(isset($post['inp1'])){
   $inp1=$post['inp1'];
   $inp2=$post['inp2'];
@@ -25,20 +40,6 @@ print_r($post);
 }
 
 ?>
-  
-  
-  <!-- Main content -->
-  <div class="main-content">
-
-    <!-- Header -->
-    <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
-      <div class="container-fluid">
-        <div class="header-body">
-         
-        </div>
-      </div>
-    </div>
-    <!-- Page content -->
     <div class="container-fluid mt--7">
       <!-- table -->
      
