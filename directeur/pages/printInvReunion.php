@@ -35,7 +35,7 @@
                             echo  $placeGess;
                         ?>
                     &nbsp;</small>
-                    <h1 class="d-flex  text-center "><br>إستدعاء للجلسة العامة<br><br></h1>
+                    <h1 class="d-flex  justify-content-center "><br>إستدعاء للجلسة العامة<br><br></h1>
                     <small class="d-flex justify-content-start text-black">      الى السيد : <input type="text" placeholder="..........................................." style="border:0"> رقم بطاقة الانخراط  <input type="text" placeholder="..........................................." style="border:0">&nbsp;<br></small>
                     <h4 class="d-flex">الموضوع : استدعاء للجلسة العامة</h4>
                     <h4 class="d-flex">المصاحيب: جدول أعمال الجلسة العام</h4>
