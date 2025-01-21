@@ -1,19 +1,4 @@
-
-  
-  
-  <!-- Main content -->
-  <div class="main-content">
-
-    <!-- Header -->
-    <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
-      <div class="container-fluid">
-        <div class="header-body">
-         
-        </div>
-      </div>
-    </div>
-    <!-- Page content -->
-    <?php
+<?php
 if(isset($__POST['inp1'])){
   $inp1=$_POST['inp1'];
   $inp2=$_POST['inp2'];
@@ -34,12 +19,29 @@ if(isset($__POST['inp1'])){
 
 print_r($_POST);
 
+echo'<script>
+alert("lfjsnml");
+</script>'
 
 
 
 }
 
-?>
+
+?>  
+  <!-- Main content -->
+  <div class="main-content">
+
+    <!-- Header -->
+    <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
+      <div class="container-fluid">
+        <div class="header-body">
+         
+        </div>
+      </div>
+    </div>
+    <!-- Page content -->
+
     <div class="container-fluid mt--7">
       <!-- table -->
      
