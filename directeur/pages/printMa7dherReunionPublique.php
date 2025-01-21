@@ -100,9 +100,6 @@
       </tr>
     </table>
 
- 
-      <br>
-
     <p class="d-xxl-flex justify-content-xxl-start text-black" >وعلى لجنة داخلية للمراقبة تتركب من ...........................أعضاء</p>
     <table style="border: 1px solid;width:70%">
       <tr style="border: 1px solid;">
@@ -148,7 +145,6 @@
         <td  style="border: 1px solid;"></td>
       </tr>
     </table>
-    <br>
     <p class="d-xxl-flex justify-content-xxl-start text-black" >اختتمت الجلسة العامة على الساعة ..................................بانتهاء جدول األعمال</p>
 
     <div class="row">
@@ -163,7 +159,6 @@
       </div>
     </div>
 
-    <br>
     <br>
     
 </div>
