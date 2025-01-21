@@ -73,7 +73,7 @@
                         <small class="d-flex   ">  تقارير مجلس اإلدارة والموازنة المالية لسنة <input type="text" placeholder="................................." style="border:0"> ابتداء من يوم <br></small>
                         <small class="d-flex   "><input type="text" placeholder="................................." style="border:0"> وذلك بمقر المجمع الكائن ب   <input type="text" placeholder="................................." style="border:0"><br></small>
                     </div>
-                    <hr>
+                    <hr style="border: 1px solid black;">
                     <div style="margin-bottom: 15px;">
                         <small class="d-flex   ">اني الممضي اسفله <input type="text" placeholder="................................." style="border:0"> أشهد بأني اتصلت يوم <input type="text" placeholder="................................." style="border:0">بالاستدعاء وبجدول<br></small>
                         <small class="d-flex   "> أعمال الجلسة العامة التي ستنعقد يوم <input type="text" placeholder="................................." style="border:0"> كما يمكنكم الاطلاع على<br></small>
