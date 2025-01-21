@@ -37,6 +37,8 @@ $result = $conn->query($sql);
 
     $row = $result->fetch_assoc();
     $type=$row['type'];
+    $nameGess=$row['nom'];
+    $placeGess=$row['accreditation'];
 
     if ($type=="منطقة ماء صالح للشرب") 
     {

@@ -1,6 +1,3 @@
-<?php  
-echo $idGess ;
-?>
   <!-- Main content -->
   <div class="main-content">
 
@@ -36,7 +33,7 @@ echo $idGess ;
                   <small class="d-flex justify-content-start text-black">مجمع التنمية في قطاع الفلاحة و الصيد البحري &nbsp;</small>
                   <small class="d-flex d-xxl-flex justify-content-start justify-content-xxl-start text-black" > ب :
                     <?php
-
+                      echo  $placeGess;
                     ?>
                   &nbsp;</small>
 
