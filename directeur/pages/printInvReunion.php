@@ -100,6 +100,7 @@
         </div>
  
            
+          </div>
           <script>
 function printPompiste(areaID){
     window.print();
