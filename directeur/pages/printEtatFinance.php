@@ -41,7 +41,7 @@
       &nbsp;</small>
 
     <h1 class="d-flex  justify-content-center "><br> كشف عن الوضعية المالية للمجمع  <br><br></h1>
-    <small class="d-flex justify-content-start text-black">من الفترة : <input type="text" value="0" style="border:0" name="inp1">الى <input type="text" value="0" style="border:0" name="inp2">  &nbsp;<br></small>
+    <small class="d-flex justify-content-start text-black">من الفترة : <input type="text" placeholder="..........................................." style="border:0" name="inp1">الى <input type="text" placeholder="..........................................." style="border:0" name="inp2">  &nbsp;<br></small>
 
     <table style="border: 1px solid;width:70%">
       <tr style="border: 1px solid;">
