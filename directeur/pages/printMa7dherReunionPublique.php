@@ -103,7 +103,66 @@
  
       <br>
 
-   
+    <p class="d-xxl-flex justify-content-xxl-start text-black" >وعلى لجنة داخلية للمراقبة تتركب من ...........................أعضاء</p>
+    <table style="border: 1px solid;width:70%">
+      <tr style="border: 1px solid;">
+        <td style="border: 1px solid;">العدد الرتبي</td>
+        <td style="border: 1px solid;">الاسم و اللقب</td>
+        <td style="border: 1px solid;">رقم بطاقة التعريف </td>
+        <td style="border: 1px solid;">عدد الاصوات</td>
+      </tr>
+      <tr style="border: 1px solid;">
+        <td style="border: 1px solid;">1</td>
+        <td  style="border: 1px solid;"></td>
+        <td  style="border: 1px solid;"></td>
+        <td  style="border: 1px solid;"></td>
+      </tr>
+      <tr style="border: 1px solid;">
+        <td style="border: 1px solid;">2</td>
+        <td  style="border: 1px solid;"></td>
+        <td  style="border: 1px solid;"></td>
+        <td  style="border: 1px solid;"></td>
+      </tr>
+      <tr style="border: 1px solid;">
+        <td style="border: 1px solid;">3</td>
+        <td  style="border: 1px solid;"></td>
+        <td  style="border: 1px solid;"></td>
+        <td  style="border: 1px solid;"></td>
+      </tr>
+      <tr style="border: 1px solid;">
+        <td style="border: 1px solid;">4</td>
+        <td  style="border: 1px solid;"></td>
+        <td  style="border: 1px solid;"></td>
+        <td  style="border: 1px solid;"></td>
+      </tr>
+      <tr style="border: 1px solid;">
+        <td style="border: 1px solid;">5</td>
+        <td  style="border: 1px solid;"></td>
+        <td  style="border: 1px solid;"></td>
+        <td  style="border: 1px solid;"></td>
+      </tr>
+      <tr style="border: 1px solid;">
+        <td style="border: 1px solid;">6</td>
+        <td  style="border: 1px solid;"></td>
+        <td  style="border: 1px solid;"></td>
+        <td  style="border: 1px solid;"></td>
+      </tr>
+    </table>
+    <br>
+    <p class="d-xxl-flex justify-content-xxl-start text-black" >اختتمت الجلسة العامة على الساعة ..................................بانتهاء جدول األعمال</p>
+
+    <div class="row">
+      <div class="col-4">
+        <p class="d-xxl-flex justify-content-xxl-start text-black" > رئيس الجلسة العامة</p>
+      </div>
+      <div class="col-4">
+        <p class="d-xxl-flex justify-content-xxl-start text-black" >المقرر الثاني</p>
+      </div>
+      <div class="col-4">
+        <p class="d-xxl-flex justify-content-xxl-start text-black" >المقرر الأول</p>
+      </div>
+
+    </div>
     
 </div>
 
