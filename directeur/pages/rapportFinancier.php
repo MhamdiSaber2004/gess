@@ -35,7 +35,7 @@
             
             
             <div class="card-header bg-secondary border-0">
-              <div class="row align-items-center">
+              <div class="row align-items-center no-print">
                 <div class="col-8">
                   <h3 class="mb-0">عناصر التقرير المالي   </h3>
                 </div>
@@ -56,10 +56,10 @@
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
 
-  <div class="no-print bg-secondary"  id="printDiv">
+  <div class="bg-secondary"  id="printDiv">
 
 
-  <form>
+  <form >
   <div class="col-lg-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-username">مقدمة </label>
