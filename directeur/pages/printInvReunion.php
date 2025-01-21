@@ -72,14 +72,14 @@
         </div>
       </div>
       <br>
-      <div>
+      <div style="border: 2px solid black; border-radius: 22px; margin-bottom: 15px;">
         <small class="d-flex  justify-content-center ">يمكنكم تقديم ترشحكم لعضوية مجلس إدارة المجمع أو لجنة المراقبة الداخلية عن طريق<br></small>
         <small class="d-flex  justify-content-center "> رسالة مضمونة الوصول مع الاعلام قبل يوم <input type="text" placeholder="................................." style="border:0"> كما يمكنكم الاطلاع على<br></small>
         <small class="d-flex  justify-content-center ">  تقارير مجلس اإلدارة والموازنة المالية لسنة <input type="text" placeholder="................................." style="border:0"> ابتداء من يوم <br></small>
         <small class="d-flex  justify-content-center "><input type="text" placeholder="................................." style="border:0"> وذلك بمقر المجمع الكائن ب   <input type="text" placeholder="................................." style="border:0"><br></small>
       </div>
 
-      <div>
+      <div style="border: 2px solid black; border-radius: 22px; margin-bottom: 15px;">
         <small class="d-flex  justify-content-center ">اني الممضي اسفله <input type="text" placeholder="................................." style="border:0"> أشهد بأني اتصلت يوم <input type="text" placeholder="................................." style="border:0">بالاستدعاء وبجدول<br></small>
         <small class="d-flex  justify-content-center "> أعمال الجلسة العامة التي ستنعقد يوم <input type="text" placeholder="................................." style="border:0"> كما يمكنكم الاطلاع على<br></small>
         <small class="d-flex  justify-content-center ">  تقارير مجلس اإلدارة والموازنة المالية لسنة <input type="text" placeholder="................................." style="border:0"> على الساعة <input type="text" placeholder="................................." style="border:0"> بـ<br></small>
