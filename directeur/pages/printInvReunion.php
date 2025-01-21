@@ -1,34 +1,45 @@
-  <!-- Main content -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استدعاء للجلسة العامة</title>
+    </head>
+<body>
+    <!-- Main content -->
   <div class="main-content">
 
-
+    <!-- Header -->
+    <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
+      <div class="container-fluid">
+        <div class="header-body">
+         
+        </div>
+      </div>
+    </div>
+    <!-- Page content -->
     <div class="container-fluid mt--7">
       <!-- table -->
      
       <div class="col-xl-12 order-xl-1">
           <div class="card bg-white shadow">
             <div class="card-header bg-secondary border-0">
-              <div class="row align-items-center no-print">
+              <div class="row align-items-center">
                 <div class="col-8">
                   <h3 class="mb-0"><button onclick="printPompiste('printDiv')" class="btn btn-sm btn-primary">طباعة</button> </h3>
                 </div>
                 <div class="col-4 text-right">
-                  <a href="index.php?page=documentsReunions&type=1" class="btn btn-sm btn-primary">رجوع</a>
+                  <a href="index.php?page=listePompiste" class="btn btn-sm btn-primary">رجوع</a>
                 </div>
               </div>
             </div>
             <div class="card-body">
-              <form method="post" action="index.php?page=printReuinionPublique">
-                <div id="printDiv">
-                  <br><br>
-                  <small class="d-flex justify-content-start text-black">مجمع التنمية في قطاع الفلاحة و الصيد البحري &nbsp;</small>
-                  <small class="d-flex d-xxl-flex justify-content-start justify-content-xxl-start text-black" > ب :
-                    <?php
-                      echo  $placeGess;
-                    ?>
-                  &nbsp;</small>
+              
 
-<div id="printDiv">
+
+
+
+<div class="no-print" id="printDiv">
     <br><br>
     <small class="d-flex justify-content-start text-black">مجمع التنمية في قطاع الفلاحة و الصيد البحري &nbsp;</small>
     <small class="d-flex d-xxl-flex justify-content-start justify-content-xxl-start text-black" > ب :&nbsp;</small>
@@ -63,17 +74,17 @@
       </div>
       <br>
       <div>
-        <small class="d-flex">يمكنكم تقديم ترشحكم لعضوية مجلس إدارة المجمع أو لجنة المراقبة الداخلية عن طريق<br></small>
-        <small class="d-flex"> رسالة مضمونة الوصول مع الاعلام قبل يوم <input type="text" placeholder="................................." style="border:0"> كما يمكنكم الاطلاع على<br></small>
-        <small class="d-flex">  تقارير مجلس اإلدارة والموازنة المالية لسنة <input type="text" placeholder="................................." style="border:0"> ابتداء من يوم <br></small>
-        <small class="d-flex"><input type="text" placeholder="................................." style="border:0"> وذلك بمقر المجمع الكائن ب   <input type="text" placeholder="................................." style="border:0"><br></small>
+        <small class="d-flex  justify-content-center ">يمكنكم تقديم ترشحكم لعضوية مجلس إدارة المجمع أو لجنة المراقبة الداخلية عن طريق<br></small>
+        <small class="d-flex  justify-content-center "> رسالة مضمونة الوصول مع الاعلام قبل يوم <input type="text" placeholder="................................." style="border:0"> كما يمكنكم الاطلاع على<br></small>
+        <small class="d-flex  justify-content-center ">  تقارير مجلس اإلدارة والموازنة المالية لسنة <input type="text" placeholder="................................." style="border:0"> ابتداء من يوم <br></small>
+        <small class="d-flex  justify-content-center "><input type="text" placeholder="................................." style="border:0"> وذلك بمقر المجمع الكائن ب   <input type="text" placeholder="................................." style="border:0"><br></small>
       </div>
 
       <div>
-        <small class="d-flex ">اني الممضي اسفله <input type="text" placeholder="................................." style="border:0"> أشهد بأني اتصلت يوم <input type="text" placeholder="................................." style="border:0">بالاستدعاء وبجدول<br></small>
-        <small class="d-flex "> أعمال الجلسة العامة التي ستنعقد يوم <input type="text" placeholder="................................." style="border:0"> كما يمكنكم الاطلاع على<br></small>
-        <small class="d-flex ">  تقارير مجلس اإلدارة والموازنة المالية لسنة <input type="text" placeholder="................................." style="border:0"> على الساعة <input type="text" placeholder="................................." style="border:0"> بـ<br></small>
-        <small class="d-flex "><h4>الامضاء</h4><span style="margin-left: 30%;"></span><input type="text" placeholder="................................." style="border:0"> في  <input type="text" placeholder="................................." style="border:0"><br></small>
+        <small class="d-flex  justify-content-center ">اني الممضي اسفله <input type="text" placeholder="................................." style="border:0"> أشهد بأني اتصلت يوم <input type="text" placeholder="................................." style="border:0">بالاستدعاء وبجدول<br></small>
+        <small class="d-flex  justify-content-center "> أعمال الجلسة العامة التي ستنعقد يوم <input type="text" placeholder="................................." style="border:0"> كما يمكنكم الاطلاع على<br></small>
+        <small class="d-flex  justify-content-center ">  تقارير مجلس اإلدارة والموازنة المالية لسنة <input type="text" placeholder="................................." style="border:0"> على الساعة <input type="text" placeholder="................................." style="border:0"> بـ<br></small>
+        <small class="d-flex  justify-content-center "><h4>الامضاء</h4><span style="margin-left: 30%;"></span><input type="text" placeholder="................................." style="border:0"> في  <input type="text" placeholder="................................." style="border:0"><br></small>
       </div>
       
 
@@ -81,11 +92,16 @@
     
 </div>
 
-              </form>
-            </div>
+
+
+
+
+
+        </div>
+ 
+           
           </div>
-          
-<script>
+          <script>
 function printPompiste(areaID){
     var printContent = document.getElementById(areaID).innerHTML;
     var originalContent = document.body.innerHTML;
@@ -94,4 +110,6 @@ function printPompiste(areaID){
 }
 </script>
 
-   
+
+</body>
+</html>
