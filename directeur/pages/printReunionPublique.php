@@ -14,25 +14,25 @@
     </div>
     <!-- Page content -->
     <?php
-if(isset($post['inp1'])){
-  $inp1=$post['inp1'];
-  $inp2=$post['inp2'];
-  $inp3=$post['inp3'];
-  $inp4=$post['inp4'];
-  $inp5=$post['inp5'];
-  $inp6=$post['inp6'];
-  $inp7=$post['inp7'];
-  $inp8=$post['inp8'];
-  $inp9=$post['inp9'];
-  $inp10=$post['inp10'];
-  $inp11=$post['inp11'];
-  $inp12=$post['inp12'];
-  $inp13=$post['inp13'];
-  $inp14=$post['inp14'];
-  $inp15=$post['inp15'];
-  $inp16=$post['inp16'];
+if(isset($__POST['inp1'])){
+  $inp1=$_POST['inp1'];
+  $inp2=$_POST['inp2'];
+  $inp3=$_POST['inp3'];
+  $inp4=$_POST['inp4'];
+  $inp5=$_POST['inp5'];
+  $inp6=$_POST['inp6'];
+  $inp7=$_POST['inp7'];
+  $inp8=$_POST['inp8'];
+  $inp9=$_POST['inp9'];
+  $inp10=$_POST['inp10'];
+  $inp11=$_POST['inp11'];
+  $inp12=$_POST['inp12'];
+  $inp13=$_POST['inp13'];
+  $inp14=$_POST['inp14'];
+  $inp15=$_POST['inp15'];
+  $inp16=$_POST['inp16'];
 
-print_r($post);
+print_r($_POST);
 
 
 
