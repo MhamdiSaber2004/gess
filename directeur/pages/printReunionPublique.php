@@ -21,7 +21,7 @@ print_r($_POST);
 
 echo'<script>
 alert("lfjsnml");
-</script>'
+</script>';
 
 
 
