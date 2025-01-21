@@ -52,7 +52,7 @@
     <small class="d-flex justify-content-start text-black"><br>  &nbsp;<br></small>
     <small class="d-flex justify-content-start text-black">وبعد المناقشة و المصادقة على مختلف المواضيع المعروضة على الجلسة ، انتخب المنخرطون أعضاء مجلس الإدارة و أعضاء اللجنة الداخلية   &nbsp;<br></small>
     <small class="d-flex justify-content-start text-black"> للمراقبة وذلك طبقا للفصلين 23و37 من الامر عدد1919 لينة 1999 المؤرخ في 23 اوت 1999 و المتعلق بالمصادقة على النظام الأساسي  &nbsp;<br></small>
-    <small class="d-flex justify-content-start text-black">النموذجي  لمجامع التنمية في قطاع الفلاحة و الصيد البحري ، وقد اسفرت  الانتخابات على مجلس إدارة جديد يتركب  من .... أعضاء.  &nbsp;<br></small>
+    <small class="d-flex justify-content-start text-black">النموذجي  لمجامع التنمية في قطاع الفلاحة و الصيد البحري ، وقد اسفرت  الانتخابات على مجلس إدارة جديد يتركب  من ..................... أعضاء.  &nbsp;<br></small>
 
     <p class="d-xxl-flex justify-content-xxl-start text-black" ></p>
     <table style="border: 1px solid;width:70%">
