@@ -28,6 +28,9 @@ if(isset($_GET['page']) && ! empty ( $_GET['page']) ) {
             case 'printInvReunion':
               include "./pages/printInvReunion.php";
               break;
+              case 'printEtatFinance':
+                include "./pages/printEtatFinance.php";
+                break;
         case 'ajoutBenefiquePublique':
           include "./pages/ajoutBenefiquePublique.php";
           break;

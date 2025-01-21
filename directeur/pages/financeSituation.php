@@ -24,7 +24,7 @@
                 </div>
 
                 <div class="col-4 text-right">
-                    <a href="assets/file/كشف-عن-الوضعية-المالية-للمجمع.pdf" download="كشف-عن-الوضعية-المالية-للمجمع" class="btn btn-sm btn-primary" >متابعة الوضعية الما لية للمجمع </a>
+                    <a href="index.php?page=printEtatFinance" class="btn btn-sm btn-primary" >متابعة الوضعية المالية للمجمع </a>
                     <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#ajouterFinanceSituation">إضافة كشف عن الوضعية المالية للمجمع</button>
                 </div>
               </div>
