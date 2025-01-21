@@ -21,7 +21,7 @@
                   <h3 class="mb-0"><button onclick="printPompiste('printDiv')" class="btn btn-sm btn-primary">طباعة</button> </h3>
                 </div>
                 <div class="col-4 text-right">
-                  <a href="index.php?page=documentsReunions&type=9" class="btn btn-sm btn-primary">رجوع</a>
+                  <a href="index.php?page=financeSituation" class="btn btn-sm btn-primary">رجوع</a>
                 </div>
               </div>
             </div>
