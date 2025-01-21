@@ -22,7 +22,7 @@ if($typeR==1){
 }else if($typeR==8){
     $urlfile='<a href="https://gda2.ness.com.tn/assets/fichier/direct/قائمة-الحضور-في-الجلسة-العامة.pdf" target="_blank" class="btn btn-sm btn-primary"> قائمة الحضور في الجلسة العامة  </a>';
 }else if($typeR==9){
-    $urlfile='<a href="index.php?page=printMa7dherReunionPublique" target="_blank" class="btn btn-sm btn-primary">محضر جلسة عامة</a>';
+    $urlfile='<a href="index.php?page=printMa7dherReunionPublique" class="btn btn-sm btn-primary">محضر جلسة عامة</a>';
 }else{
     $urlfile='<a href="https://gda2.ness.com.tn/assets/fichier/direct/محضر-جلسة-أول-اجتماع-مجلس-الادارة.pdf" target="_blank" class="btn btn-sm btn-primary">محضر جلسة أول اجتماع لمجلس الادارة  </a>';
 }
