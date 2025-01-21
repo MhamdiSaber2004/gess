@@ -60,10 +60,10 @@
         </div>
         <br>
         <div class="row">
-            <div class="col-8" >
+            <div class="col-6" >
             
             </div>
-            <div class="col-4">
+            <div class="col-6">
                 رئيس مجلس الإدارة <br>_____________
             </div>
           <strong class="col">
