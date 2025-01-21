@@ -58,15 +58,19 @@
 
     <div class="container text-center text-black">
         <div class="row">
-          <div class="col">
-     
-          </div>
-          <div class="col">
-            <input type="text" placeholder="............................................" style="border:0">  في  <input type="text" placeholder="............................................" style="border:0"><br>
+            <div class="col">
+            
             </div>
-          <div class="col">
-          رئيس مجلس الإدارة <br>_____________
-          </div>
+            <div class="col">
+                <input type="text" placeholder="............................................" style="border:0">  في  <input type="text" placeholder="............................................" style="border:0"><br>
+            </div>
+        <div class="row">
+        <div class="col" >
+            
+            </div>
+            <div class="col">
+                رئيس مجلس الإدارة <br>_____________
+            </div>
           <strong class="col">
        
           </strong>
