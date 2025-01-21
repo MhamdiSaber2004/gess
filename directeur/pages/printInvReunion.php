@@ -30,9 +30,12 @@
                 <div id="printDiv">
                     <br><br>
                     <small class="d-flex justify-content-start text-black">مجمع التنمية في قطاع الفلاحة و الصيد البحري &nbsp;</small>
-                    <small class="d-flex d-xxl-flex justify-content-start justify-content-xxl-start text-black" > ب :&nbsp;</small>
-
-                    <h1 class="d-flex   "><br>إستدعاء للجلسة العامة<br><br></h1>
+                    <small class="d-flex d-xxl-flex justify-content-start justify-content-xxl-start text-black" > ب :
+                        <?php
+                            echo  $placeGess;
+                        ?>
+                    &nbsp;</small>
+                    <h1 class="d-flex  text-center "><br>إستدعاء للجلسة العامة<br><br></h1>
                     <small class="d-flex justify-content-start text-black">      الى السيد : <input type="text" placeholder="..........................................." style="border:0"> رقم بطاقة الانخراط  <input type="text" placeholder="..........................................." style="border:0">&nbsp;<br></small>
                     <h4 class="d-flex">الموضوع : استدعاء للجلسة العامة</h4>
                     <h4 class="d-flex">المصاحيب: جدول أعمال الجلسة العام</h4>
