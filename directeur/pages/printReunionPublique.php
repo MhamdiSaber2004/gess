@@ -1,4 +1,6 @@
-
+<?php  
+echo $idGess ;
+?>
   <!-- Main content -->
   <div class="main-content">
 
