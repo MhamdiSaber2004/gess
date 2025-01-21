@@ -29,7 +29,7 @@
             </div>
             <div class="card-body">
               <form method="post" action="index.php?page=printReuinionPublique">
-                <div class="no-print" id="printDiv">
+                <div id="printDiv">
                   <br><br>
                   <small class="d-flex justify-content-start text-black">مجمع التنمية في قطاع الفلاحة و الصيد البحري &nbsp;</small>
                   <small class="d-flex d-xxl-flex justify-content-start justify-content-xxl-start text-black" > ب :
