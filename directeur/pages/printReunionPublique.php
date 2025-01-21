@@ -1,4 +1,28 @@
- 
+<?php
+if(isset($__POST['inp1'])){
+  /*$inp1=$_POST['inp1'];
+  $inp2=$_POST['inp2'];
+  $inp3=$_POST['inp3'];
+  $inp4=$_POST['inp4'];
+  $inp5=$_POST['inp5'];
+  $inp6=$_POST['inp6'];
+  $inp7=$_POST['inp7'];
+  $inp8=$_POST['inp8'];
+  $inp9=$_POST['inp9'];
+  $inp10=$_POST['inp10'];
+  $inp11=$_POST['inp11'];
+  $inp12=$_POST['inp12'];
+  $inp13=$_POST['inp13'];
+  $inp14=$_POST['inp14'];
+  $inp15=$_POST['inp15'];
+  $inp16=$_POST['inp16'];*/
+
+  print_r($_POST);
+
+
+}
+?> 
+
   <!-- Main content -->
   <div class="main-content">
 
@@ -79,31 +103,7 @@
               </form>
             </div>
           </div>
-          <?php
-if(isset($__POST['inp1'])){
-  /*$inp1=$_POST['inp1'];
-  $inp2=$_POST['inp2'];
-  $inp3=$_POST['inp3'];
-  $inp4=$_POST['inp4'];
-  $inp5=$_POST['inp5'];
-  $inp6=$_POST['inp6'];
-  $inp7=$_POST['inp7'];
-  $inp8=$_POST['inp8'];
-  $inp9=$_POST['inp9'];
-  $inp10=$_POST['inp10'];
-  $inp11=$_POST['inp11'];
-  $inp12=$_POST['inp12'];
-  $inp13=$_POST['inp13'];
-  $inp14=$_POST['inp14'];
-  $inp15=$_POST['inp15'];
-  $inp16=$_POST['inp16'];*/
-
-  print_r($_POST);
-
-
-}
-?> 
-
+          
 <script>
 function printPompiste(areaID){
     var printContent = document.getElementById(areaID).innerHTML;
