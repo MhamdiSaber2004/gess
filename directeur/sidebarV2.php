@@ -176,11 +176,11 @@
               <i class="ni ni-vector text-red"></i>الاعطاب 
             </a>
           </li>
-          <li class="nav-item <?php echo ($current_page === 'listesxPompiste') ? 'active' : ''; ?>">
+          <!--<li class="nav-item <?php echo ($current_page === 'listesxPompiste') ? 'active' : ''; ?>">
             <a class="nav-link" href="index.php?page=listeInfoCompteur" >
               <i class="ni ni-chart-bar-32 text-red"></i>متابعة وضعية العدادات 
             </a>
-          </li>
+          </li>-->
       </ul>
        <!--الجانب الفني-->
     </div>
