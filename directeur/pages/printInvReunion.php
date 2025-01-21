@@ -46,9 +46,9 @@
 
     <h1 class="d-flex  justify-content-center "><br>إستدعاء للجلسة العامة<br><br></h1>
     <small class="d-flex justify-content-start text-black">      الى السيد : <input type="text" placeholder="..........................................." style="border:0"> رقم بطاقة الانخراط  <input type="text" placeholder="..........................................." style="border:0">&nbsp;<br></small>
-    <h4 class="d-flex"><br>الموضوع : استدعاء للجلسة العامة<br><br></h4>
-    <h4 class="d-flex"><br>المصاحيب: جدول أعمال الجلسة العامة<br><br></h4>
-    <h4 class="d-flex  justify-content-center "><br>و بعد، <br><br></h4>
+    <h4 class="d-flex">الموضوع : استدعاء للجلسة العامة</h4>
+    <h4 class="d-flex">المصاحيب: جدول أعمال الجلسة العام</h4>
+    <h4 class="d-flex">و بعد،</h4>
     <small class="d-flex justify-content-start text-black">يتشرف مجلس إدارة المجمع التنمية في قطاع الفلاحة و الصيد البحري بـ: <input type="text" placeholder="..............................................." style="border:0"> باستدعاكم لحضور الجلسة &nbsp;<br></small><br>
     <small class="d-flex justify-content-start text"> العامة<input type="text" placeholder="............................................" style="border:0"> التي ستنعقد يوم <input type="text" placeholder=".........................................." style="border:0">على الساعة <input type="text" placeholder="......................................." style="border:0"> &nbsp;<br><br></small>
     <small class="d-flex justify-content-start text"> بـ<input type="text" placeholder="............................................" style="border:0"> ونظرا للأهمية البالغة التي تكتسيها هذه الجلسة فان حضوركم متأكد جدا. &nbsp; <br><br> </small>
