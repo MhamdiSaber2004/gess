@@ -76,9 +76,14 @@ else{
                   <h3 class="mb-0">عناصر التقرير الأدبي</h3>
                 </div>
 
-                <div class="col-4 text-right">
-                  <a href="#" class="btn btn-sm btn-primary" onclick="printPompiste('printDiv')">طباعة </a>
-                </div>
+                <div class="row align-items-center no-print">
+                  <div class="col-8">
+                    <h3 class="mb-0"><button onclick="printPompiste('printDiv')" class="btn btn-sm btn-primary">طباعة</button> </h3>
+                  </div>
+                  <div class="col-4 text-right">
+                    <a href="index.php?page=documentsReunions&type=3" class="btn btn-sm btn-primary">رجوع</a>
+                  </div>
+              </div>
               </div>
             </div>
 
@@ -103,6 +108,12 @@ else{
 
 
 <div class="card-header bg-white border-0">
+                  <small class="d-flex justify-content-start text-black">مجمع التنمية في قطاع الفلاحة و الصيد البحري &nbsp;</small>
+                  <small class="d-flex d-xxl-flex justify-content-start justify-content-xxl-start text-black" > ب :
+                    <?php
+                      echo  $placeGess;
+                    ?>
+                  &nbsp;</small>
               <div class="row align-items-center">
                 <div class="col-10 text-center">
                   <h2 class="mb-0 text-center">التقرير الأدبي  </h2>
