@@ -40,8 +40,13 @@
                   <h3 class="mb-0">عناصر التقرير المالي   </h3>
                 </div>
 
-                <div class="col-4 text-right">
-                  <button class="btn btn-sm btn-primary" onclick="printPompiste('printDiv')">طباعة </button>
+                <div class="row align-items-center no-print">
+                  <div class="col-8">
+                    <h3 class="mb-0"><button onclick="printPompiste('printDiv')" class="btn btn-sm btn-primary">طباعة</button> </h3>
+                  </div>
+                  <div class="col-4 text-right">
+                    <a href="index.php?page=documentsReunions&type=4" class="btn btn-sm btn-primary">رجوع</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -57,6 +62,19 @@
   </div>
 
   <div class="bg-secondary"  id="printDiv">
+  <div class="card-header bg-white border-0">
+                  <small class="d-flex justify-content-start text-black">مجمع التنمية في قطاع الفلاحة و الصيد البحري &nbsp;</small>
+                  <small class="d-flex d-xxl-flex justify-content-start justify-content-xxl-start text-black" > ب :
+                    <?php
+                      echo  $placeGess;
+                    ?>
+                  &nbsp;</small>
+              <div class="row align-items-center">
+                <div class="col-10 text-center">
+                  <h2 class="mb-0 text-center">التقرير المالي  </h2>
+                </div>
+              </div>
+            </div>
 
 
   <form method="post" action="index.php?page=rapportFinancier">
