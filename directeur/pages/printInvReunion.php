@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>استدعاء للجلسة العامة</title>
-    </head>
-<body>
+
     <!-- Main content -->
   <div class="main-content">
 
@@ -112,7 +105,3 @@ function printPompiste(areaID){
     window.print();
 }
 </script>
-
-
-</body>
-</html>
