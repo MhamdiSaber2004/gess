@@ -164,12 +164,12 @@ function printPompiste(areaID){
     window.print();
 }
 
-document.getElementById('mada5ilm5talifa').addEventListener("change", function(){
+document.getElementById('mada5ilm5talifa').addEventListener("onchange", function(){
     var deff=parseFloat(document.getElementById('in5irat').value) + parseFloat(document.getElementById('ichtirak').value)+ parseFloat(document.getElementById('bay3ma').value)+ parseFloat(document.getElementById('mada5ilo5ra').value)+parseFloat( document.getElementById('mada5ilm5talifa').value);
     document.getElementById("totalmada5il").value = deff;
 })
 
-document.getElementById('istichara').addEventListener("change", function(){
+document.getElementById('istichara').addEventListener("onchange", function(){
     var deff=parseFloat(document.getElementById('chra2ma').value) + parseFloat(document.getElementById('isti8lelma').value)+ parseFloat(document.getElementById('siyana').value)+ parseFloat(document.getElementById('2oujour').value)+ parseFloat(document.getElementById('idara').value) + parseFloat(document.getElementById('masarifo5ra').value )+ parseFloat(document.getElementById('idara').value )+ parseFloat(document.getElementById('masarifanchta').value)+ parseFloat(document.getElementById('masarifanchta').value);
     document.getElementById("totalmasarif").value = deff;
 })
