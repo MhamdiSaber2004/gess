@@ -76,9 +76,14 @@ else{
                   <h3 class="mb-0">عناصر التقرير الأدبي</h3>
                 </div>
 
-                <div class="col-4 text-right">
-                  <a href="#" class="btn btn-sm btn-primary" onclick="printPompiste('printDiv')">طباعة </a>
-                </div>
+                <div class="row align-items-center no-print">
+                  <div class="col-8">
+                    <h3 class="mb-0"><button onclick="printPompiste('printDiv')" class="btn btn-sm btn-primary">طباعة</button> </h3>
+                  </div>
+                  <div class="col-4 text-right">
+                    <a href="index.php?page=documentsReunions&type=1" class="btn btn-sm btn-primary">رجوع</a>
+                  </div>
+              </div>
               </div>
             </div>
 
