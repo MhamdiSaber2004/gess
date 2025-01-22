@@ -263,7 +263,7 @@ $sql = "SELECT * FROM pompiste where idGess='$idGess' and actif=1";
         <div class="modal-body p-0">
           <div class="card bg-secondary border-0 mb-0">
             <div class="card-header bg-transparent pb-5">
-                <h3 class=" text-center mt-2">اعداد و تنظيم الجلسات العامة  </h3><br>
+                <h3 class=" text-center mt-2">طباعة عقد  </h3><br>
                   <div class="btn-wrapper text-center">
                     <ul class="navbar-nav  text-center">
                       <li class="nav-item">
