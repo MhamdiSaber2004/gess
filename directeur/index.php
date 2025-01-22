@@ -76,8 +76,8 @@ if(isset($_GET['page']) && ! empty ( $_GET['page']) ) {
               case 'reunionInterne':
                 include "./pages/reunionInterne.php";
                 break;
-          case 'printPremierMa7dherReunionPublique':
-            include "./pages/printPremierMa7dherReunionPublique.php";
+          case 'printMa7dherEjtime3Numero':
+            include "./pages/printMa7dherEjtime3Numero.php";
             break;
           case 'printMa7dherReunionPublique':
             include "./pages/printMa7dherReunionPublique.php";
