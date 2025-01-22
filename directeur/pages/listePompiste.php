@@ -267,11 +267,6 @@ $sql = "SELECT * FROM pompiste where idGess='$idGess' and actif=1";
                   <div class="btn-wrapper text-center">
                     <ul class="navbar-nav  text-center">
                       <li class="nav-item">
-                        <a class="nav-link" href="index.php?page=documentsReunions&type=1">
-                          <i class="ni ni-bullet-list-67 text-red"></i> إعلان عن الجلسة العامة  
-                        </a>
-                      </li>
-                      <li class="nav-item">
                         <a class="nav-link" href="https://gda2.ness.com.tn/assets/fichier/legal/%D8%B9%D9%82%D8%AF-%D8%AA%D8%B4%D8%BA%D9%8A%D9%84-%D8%AD%D8%A7%D8%B1%D8%B3-%D8%A7%D9%84%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D8%A7%D8%A6%D9%8A.pdf" target="_blank">
                           <i class="ni ni-bullet-list-67 text-red"></i>عقد تشغيل حارس النظام المائي
                         </a>
