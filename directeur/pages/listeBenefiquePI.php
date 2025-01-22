@@ -110,10 +110,10 @@
                   . $row['numDiviseur'] .'
                   </td>
                   <td>'
-                  . $row['numCompteur'] .'
+                  . $row['numBranch'] .'
                   </td>
                   <td>'
-                  . $row1['dette'] .'
+                  . $row1['nature'] .'
                   </td>
                 
                   <td class="text-center">
