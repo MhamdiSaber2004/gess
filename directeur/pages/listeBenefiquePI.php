@@ -46,9 +46,9 @@
                     <th scope="col">رقم المأخذ</th>
                     <th scope="col">رقم المقسم </th>
 
-                    <th scope="col">رقم العداد</th>
+                    <th scope="col">رقم الفرع</th>
 
-                    <th scope="col">الديون </th>
+                    <th scope="col">نوع الغراسات </th>
 
                     <th scope="col"></th>
 

@@ -1297,6 +1297,7 @@ if (isset($_POST['ajoutBenefiquePI'])) {
     $numPrise = mysqli_real_escape_string($conn, $_POST['numPrise']);
     $numBranch = mysqli_real_escape_string($conn, $_POST['numBranch']);
     $numBenefique = mysqli_real_escape_string($conn, $_POST['numBenefique']);
+    $nature = mysqli_real_escape_string($conn, $_POST['nature']);
 
     $numDiviseur = mysqli_real_escape_string($conn, $_POST['numDiviseur']);
 
@@ -1337,8 +1338,8 @@ if (isset($_POST['ajoutBenefiquePI'])) {
         header("Location: ../index.php?page=listeBenefiquePI");
     }else{
 
-    $sql="INSERT INTO `benefique_pi` (`idBenefique`, `idGess`, `numBenefique`, `idPompiste`, `nom`, `dateN`, `CIN`, `dateCIN`, `address`, `propriete`, `tel`, `dette`, `dateInscription`, `numPlace`,  `numDiviseur`, `aire`, `numCompteur`, `donneesCompteur`, `numPrise`, `email`, `mdp`, `active`,`numBranch`) 
-    VALUES ('$idBenefique', '$idGess', '$numBenefique', '$idPompiste', '$nom', '$dateN', '$CIN', '$dateCIN', '$address', '$propriete', '$tel', '$dette', current_timestamp(), '$numPlace', '$numDiviseur', '$aire', '$numCompteur', '$donneesCompteur', '$numPrise', '$email', '$mdp','1','$numBranch');";
+    $sql="INSERT INTO `benefique_pi` (`idBenefique`, `idGess`, `numBenefique`, `idPompiste`, `nom`, `dateN`, `CIN`, `dateCIN`, `address`, `propriete`, `tel`, `dette`, `dateInscription`, `numPlace`,  `numDiviseur`, `aire`, `numCompteur`, `donneesCompteur`, `numPrise`, `email`, `mdp`, `active`,`numBranch`,`nature`) 
+    VALUES ('$idBenefique', '$idGess', '$numBenefique', '$idPompiste', '$nom', '$dateN', '$CIN', '$dateCIN', '$address', '$propriete', '$tel', '$dette', current_timestamp(), '$numPlace', '$numDiviseur', '$aire', '$numCompteur', '$donneesCompteur', '$numPrise', '$email', '$mdp','1','$numBranch','$nature');";
 
         if($conn->query($sql) === TRUE){                
         
