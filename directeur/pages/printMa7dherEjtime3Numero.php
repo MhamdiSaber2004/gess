@@ -237,20 +237,17 @@
 
    
     
-</div>
+      </div>
 
 
 
 
 
 
-        </div>
+    </div>
  
-           
-          </div>
-
-
-          <script>
+  </div>
+<script>
 function printPompiste(areaID){
   window.print();
 }
