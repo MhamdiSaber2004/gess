@@ -275,7 +275,7 @@ if(isset($_GET['page']) && ! empty ( $_GET['page']) ) {
 
 include "topNavBar.php";
 
-//include "footer.php" 
+include "footer.php" 
 
 ?>
 
