@@ -34,7 +34,11 @@
 <div id="printDiv">
     <br><br>
     <small class="d-flex justify-content-start text-black">مجمع التنمية في قطاع الفلاحة و الصيد البحري &nbsp;</small>
-    <small class="d-flex d-xxl-flex justify-content-start justify-content-xxl-start text-black" > ب :&nbsp;</small>
+    <small class="d-flex d-xxl-flex justify-content-start justify-content-xxl-start text-black" > ب :
+      <?php
+        echo  $placeGess;
+      ?>
+    &nbsp;</small>
 
     <h1 class="d-flex  justify-content-center "><br> محضر اجتماع مجلس إدارة عدد        <br><br></h1>
     <small class="d-flex justify-content-start text-black"> المكان <input type="text" placeholder="..........................................." style="border:0" name="inp2">التاريخ<input type="text" placeholder="..........................................." style="border:0" name="inp2">الساعة<input type="text" placeholder="..........................................." style="border:0" name="inp2">  &nbsp;<br></small>
