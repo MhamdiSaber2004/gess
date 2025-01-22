@@ -340,17 +340,17 @@ else
                         <input type="number"  name="aire" id="aire" class="form-control form-control-alternative" placeholder="المساحة"  >
                       </div>
                     </div>
-                    <div>
+                    <div class="row">
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label class="form-control-label" for="input-country">رقم المقسم</label>
                           <input type="number"  name="numDiviseur" id="aire" class="form-control form-control-alternative" placeholder="رقم المقسم">
                         </div>
                       </div>
-                      <div class="col-lg-6">
+                      <div class="col-6">
                         <div class="form-group">
                           <label class="form-control-label" for="input-country">نوع الغراسات</label>
-                          <input type="number"  name="nature" id="nature" class="form-control form-control-alternative" placeholder="نوع الغراسات"  >
+                          <input type="text"  name="nature" id="nature" class="form-control form-control-alternative" placeholder="نوع الغراسات"  >
                         </div>
                       </div>
                     </div>
