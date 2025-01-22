@@ -23,7 +23,7 @@
                   <h3 class="mb-0">قائمة المنخرطين</h3>
                 </div>
                 <div class="col-4 text-right">
-                <a href="index.php?page=listeDemandeEnCours" class="btn btn-sm btn-primary"> قائمة مطالب الإنخرط</a>
+                <!--<a href="index.php?page=listeDemandeEnCours" class="btn btn-sm btn-primary"> قائمة مطالب الإنخرط</a>-->
                 <a href="index.php" class="btn btn-sm btn-primary">رجوع</a>
                 </div>
               </div>
