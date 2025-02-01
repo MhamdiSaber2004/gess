@@ -232,7 +232,7 @@ if ($result->num_rows > 0) {
     <tr>
       <td colspan="2" ><?php echo $row["heure_travail_ness"] ;?></td>
       <td colspan="2" >س</td>
-      <td colspan="3" >  ((3)/(8))	= عدد ساعات التشغيل الضرورية  </td>
+      <td colspan="3" >  ((8)/(3))	= عدد ساعات التشغيل الضرورية  </td>
       <td colspan="1"  style="width:8px">(9)</td>
     </tr>
     <tr>
@@ -385,14 +385,16 @@ if ($result->num_rows > 0) {
       <td colspan="2" >  		أجرة ومنح المدير الفني في السنة    </td>
       <td colspan="1"  style="width:8px">(29)</td>
     </tr>
+  <!--
     <tr>
       <td colspan="1" ></td>
       <td colspan="2" ></td>
       <td colspan="1" >د</td>
-      <td colspan="1" ><?php echo $row["salaire_gardien_per_m3_eau"] ;?></td>
+      <td colspan="1" ><?php //echo $row["salaire_gardien_per_m3_eau"] ;?></td>
       <td colspan="2" >  	أجرة الحارس المتصرف على م3 من الماء    </td>
       <td colspan="1"  style="width:8px">(30)</td>
     </tr>
+-->
     <tr>
       <th colspan="8" style="text-align: center;"> تقدير المصاريف</th>
     </tr> 
@@ -834,6 +836,7 @@ if ($result->num_rows > 0) {
       <td colspan="2" >  		أجرة ومنح المدير الفني في السنة    </td>
       <td colspan="1"  style="width:8px">(29)</td>
     </tr>
+    <!--
     <tr>
       <td colspan="1" ></td>
       <td colspan="2" ></td>
@@ -842,6 +845,7 @@ if ($result->num_rows > 0) {
       <td colspan="2" >  	أجرة الحارس المتصرف على م3 من الماء    </td>
       <td colspan="1"  style="width:8px">(30)</td>
     </tr>
+    -->
     <tr>
       <th colspan="8" style="text-align: center;"> تقدير المصاريف</th>
     </tr> 
@@ -949,7 +953,7 @@ if ($result->num_rows > 0) {
     <tr>
       <td colspan="1" >د</td>
       <td colspan="1" ></td>
-      <td colspan="2" ></td>
+      <td colspan="2" ><input disabled type="number" step="any" dir="rtl" name="Dépenses_investissement_equipement" id="Dépenses_investissement_equipement" onkeyup="calcul()"></td>
       <td colspan="3"rowspan="2" >  			مصاريف الإستثمار والتجهيز  </td>
       <td colspan="1" rowspan="2" style="width:8px">(53)</td>
     </tr> 
@@ -983,7 +987,7 @@ if ($result->num_rows > 0) {
     <tr>
       <td colspan="1" >د</td>
       <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="revenues_des_frais_globaux" id="revenues_des_frais_globaux" onkeyup="calcul()" ></td>
-      <td colspan="5" >المداخيل المتأتية من المعاليم القارة الموظفة على الربط الخاص = (1) * (35) * 12 شهرا</td>
+      <td colspan="5" >المداخيل المتأتية من المعاليم القارة الموظفة على الربط الخاص = (2) * (35) * 12 شهرا</td>
       <td colspan="1"  style="width:8px">(57)</td>
     </tr> 
     <tr>
