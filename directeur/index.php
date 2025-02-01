@@ -305,7 +305,11 @@ include "footer.php"
                       method="get" class="text-center">
                         <input type="text" name="newReunIName" class="d-none" value="123">
                         <label for="formFile" class="form-label">مزنية سنة  :</label>
-                        <input type="date" name="annee" class="form-control">
+                        <select name="annee" class="form-control">
+                          <?php for($i=2018 ; $i<=2030 ; $i++ ){ ?>
+                            <option value="<?php echo $i ?>"><?php echo $i ?></option>
+                          <?php } ?>
+                        </select>
                         <br><br>
                         <input type="submit" class="btn btn-neutral btn-icon" value="اطلاع">
                       </form>
