@@ -5,10 +5,16 @@ if (!isset($_SESSION["idGess"])) {
   exit();
 }
 
+if(isset($_GET['annee'])){
+  $budgetAnnee = $_GET['annee'];
+}else{
+  header("location: ../index.php");
+  exit();
+}
 
 include_once "../db/db.php";
 $idGess=$_SESSION['idGess'];
-$sql = "SELECT type FROM gess WHERE idGess = $idGess";
+$sql = "SELECT type FROM gess WHERE idGess = $idGess AND annee = $budgetAnnee";
 $result = mysqli_query($conn, $sql);
 
 if ($result) {
@@ -173,7 +179,7 @@ if ($result->num_rows > 0) {
 ?>
 </h3>
 <h5 style="text-align: right;font-size:16px"> مجمع التنمية في قطاع الفلاحة و الصيد البحري للري </h5>
-<div class="title1">  <span class="text-with-border">الميزانية السنوية لسنة 2023 - 2024</span></div>
+<div class="title1">  <span class="text-with-border">الميزانية السنوية لسنة <?php echo $budgetAnnee ?></span></div>
 <table>
     
     <tr>
