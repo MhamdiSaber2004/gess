@@ -250,6 +250,7 @@
                         <select class="form-control form-control-alternative" id="travail" type="text" placeholder="" name="travail">
                           <option value="حارس شابكة"> حارس شابكة</option>
                           <option value="حارس نضام مائي"> حارس نضام مائي</option>
+                          <option value="موزع ماء"> موزع ماء</option>
                         </select>                      
                       </div>
                     </div>
