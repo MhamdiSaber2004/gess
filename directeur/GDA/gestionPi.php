@@ -18,7 +18,7 @@ if(isset($_GET['annee'])){
 
 include_once "../db/db.php";
 $idGess=$_SESSION['idGess'];
-$sql = "SELECT type FROM gess WHERE idGess = $idGess AND annee = $budgetAnnee";
+$sql = "SELECT type FROM gess WHERE idGess = $idGess ";
 $result = mysqli_query($conn, $sql);
 
 if ($result) {
@@ -157,7 +157,7 @@ include "gestionPiController.php";
 
 <?php 
   
-  $sql = "SELECT * FROM budget WHERE idGess=$idGess";
+  $sql = "SELECT * FROM budget WHERE idGess=$idGess AND annee = $budgetAnnee";
 
   $result = $conn->query($sql);
 
