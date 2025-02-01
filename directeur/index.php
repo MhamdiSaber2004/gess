@@ -280,6 +280,45 @@ include "footer.php"
 ?>
 
 <div class="col-md-6">
+  <div class="modal fade" id="budgetAnnee" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+    <div class="modal-dialog modal- modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="card bg-secondary border-0 mb-0">
+              <div class="card-header bg-transparent pb-5">
+                    <div class="btn-wrapper text-center" id="newReunIFrom">
+                      <form action="  <?php
+                                    $idGess=$_SESSION['idGess'];
+                                    $sql = "SELECT type FROM gess  where idGess='$idGess'";
+                                      $result = $conn->query($sql);
+                                      
+                                      if ($result->num_rows > 0) {
+                                        while ($row = $result->fetch_assoc()) {
+                                          if($row['type']=='منطقة سقوية'){
+                                            echo 'GDA/gestionPi.php';
+                                          }else{
+                                              echo 'GDA/gestionAep.php';
+                                          }
+                                        }
+                                      }
+                                  ?>" 
+                      method="get" class="text-center">
+                        <input type="text" name="newReunIName" class="d-none" value="123">
+                        <label for="formFile" class="form-label">مزنية سنة  :</label>
+                        <input type="date" name="annee" class="form-control">
+                        <br><br>
+                        <input type="submit" class="btn btn-neutral btn-icon" value="اطلاع">
+                      </form>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6">
   <div class="modal fade" id="documentsReunions"  tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
     <div class="modal-dialog modal- modal-dialog-centered modal-md" role="document">
       <div class="modal-content">
