@@ -303,7 +303,6 @@ include "footer.php"
                                       }
                                   ?>" 
                       method="get" class="text-center">
-                        <input type="text" name="newReunIName" class="d-none" value="123">
                         <label for="formFile" class="form-label">مزنية سنة  :</label>
                         <select name="annee" class="form-control">
                           <?php for($i=2018 ; $i<=2030 ; $i++ ){ ?>
