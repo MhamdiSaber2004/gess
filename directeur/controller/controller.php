@@ -402,7 +402,7 @@ if ($result2->num_rows > 0) {
 }
 
 $file1 = $_FILES['file1']['name'];
-$imageArrBack = explode('.', $file1); //first index is file name and second index file type
+$imageArrBack = explode('.', $file1); 
 $rand = rand(10000, 99999);
 $nameFile1 = $rand . '.' . $imageArrBack[1];
 $uploadPathBack = "../uploads/" . $nameFile1;
