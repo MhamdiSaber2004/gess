@@ -392,7 +392,7 @@ $famille = mysqli_real_escape_string($conn, $_POST['famille']);
 
 $date=date("Y-m-d");
 
-$sql2 = "SELECT * FROM pompiste where CIN = $CIN";
+$sql2 = "SELECT * FROM pompiste where CIN = '$CIN'";
 $result2 = $conn->query($sql2);
 
 if ($result2->num_rows > 0) {
@@ -400,9 +400,6 @@ if ($result2->num_rows > 0) {
     $_SESSION['message']="رقم بطاقة التعريف مسجل بالفعل";
     header("Location: ../index.php?page=listePompiste");
 }
-
-
-
 
 $file1 = $_FILES['file1']['name'];
 $imageArrBack = explode('.', $file1); //first index is file name and second index file type
