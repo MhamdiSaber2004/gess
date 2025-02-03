@@ -559,7 +559,7 @@ if (isset($_POST['ajoutBenefiquePublique'])) {
 
     $tel = mysqli_real_escape_string($conn, $_POST['tel']);
 
-    $sql2 = "SELECT * FROM benefique_publique where CIN = $CIN";
+    $sql2 = "SELECT * FROM benefique_publique where CIN = '$CIN'";
     $result2 = $conn->query($sql2);
     
     if ($result2->num_rows > 0) {
