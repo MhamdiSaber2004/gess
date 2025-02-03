@@ -81,7 +81,7 @@
                            <div class="col-lg-12">
                      <div class="form-group">
                      <label class="form-control-label" for="file1">  الوثيقة </label>
-                     <input type="file" id="file1" class="form-control "  name="file2">
+                     <input type="file" id="file1" class="form-control "  name="file2" require>
                      </div>
                    </div>
                        
@@ -92,7 +92,7 @@
                      </div>
                   </div>
                   <div class="modal-footer flex-row-reverse">
-                     <input type="button" name="annuler" class="btn btn-secondary" value="إلغاء">
+                     <input type="button" name="annuler" class="btn btn-secondary" value="إلغاء" >
                      <input type="submit" name="ajoutDocument" class="btn btn-primary" value="تسجيل">
                   </div>
                </div>

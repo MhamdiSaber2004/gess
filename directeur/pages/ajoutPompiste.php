@@ -50,164 +50,33 @@
                                            }
                                        }
                                        echo $random;
-                         ?>">
+                         ?>"require>
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-email">الاسم و اللقب</label>
-                        <input type="nom" id="nom" class="form-control form-control-alternative" placeholder="الاسم و اللقب" name="nom" value="<?php 
-                        echo randomName();
-
-                        function randomName() {
-                            $firstname = array(
-                                'Johnathon',
-                                'Anthony',
-                                'Erasmo',
-                                'Raleigh',
-                                'Nancie',
-                                'Tama',
-                                'Camellia',
-                                'Augustine',
-                                'Christeen',
-                                'Luz',
-                                'Diego',
-                                'Lyndia',
-                                'Thomas',
-                                'Georgianna',
-                                'Leigha',
-                                'Alejandro',
-                                'Marquis',
-                                'Joan',
-                                'Stephania',
-                                'Elroy',
-                                'Zonia',
-                                'Buffy',
-                                'Sharie',
-                                'Blythe',
-                                'Gaylene',
-                                'Elida',
-                                'Randy',
-                                'Margarete',
-                                'Margarett',
-                                'Dion',
-                                'Tomi',
-                                'Arden',
-                                'Clora',
-                                'Laine',
-                                'Becki',
-                                'Margherita',
-                                'Bong',
-                                'Jeanice',
-                                'Qiana',
-                                'Lawanda',
-                                'Rebecka',
-                                'Maribel',
-                                'Tami',
-                                'Yuri',
-                                'Michele',
-                                'Rubi',
-                                'Larisa',
-                                'Lloyd',
-                                'Tyisha',
-                                'Samatha',
-                            );
-                        
-                            $lastname = array(
-                                'Mischke',
-                                'Serna',
-                                'Pingree',
-                                'Mcnaught',
-                                'Pepper',
-                                'Schildgen',
-                                'Mongold',
-                                'Wrona',
-                                'Geddes',
-                                'Lanz',
-                                'Fetzer',
-                                'Schroeder',
-                                'Block',
-                                'Mayoral',
-                                'Fleishman',
-                                'Roberie',
-                                'Latson',
-                                'Lupo',
-                                'Motsinger',
-                                'Drews',
-                                'Coby',
-                                'Redner',
-                                'Culton',
-                                'Howe',
-                                'Stoval',
-                                'Michaud',
-                                'Mote',
-                                'Menjivar',
-                                'Wiers',
-                                'Paris',
-                                'Grisby',
-                                'Noren',
-                                'Damron',
-                                'Kazmierczak',
-                                'Haslett',
-                                'Guillemette',
-                                'Buresh',
-                                'Center',
-                                'Kucera',
-                                'Catt',
-                                'Badon',
-                                'Grumbles',
-                                'Antes',
-                                'Byron',
-                                'Volkman',
-                                'Klemp',
-                                'Pekar',
-                                'Pecora',
-                                'Schewe',
-                                'Ramage',
-                            );
-                        
-                            $name = $firstname[rand ( 0 , count($firstname) -1)];
-                            $name .= ' ';
-                            $name .= $lastname[rand ( 0 , count($lastname) -1)];
-                        
-                            return $name;
-                        }
-                        ?>">
+                        <input type="nom" id="nom" class="form-control form-control-alternative" placeholder="الاسم و اللقب" name="nom" require>
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-username">تاريخ الميلاد</label>
-                        <input type="date" id="dateN" class="form-control form-control-alternative" placeholder="تاريخ الميلاد" name="dateN" value="1977-05-05">
+                        <input type="date" id="dateN" class="form-control form-control-alternative" placeholder="تاريخ الميلاد" name="dateN"  require>
                       </div>
                     </div>
 
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-city">رقم بطاقة التعريف</label>
-                        <input type="number" id="CIN" class="form-control form-control-alternative" placeholder="رقم بطاقة التعريف" name="CIN" value="<?php
-                         $random = sprintf("%06d", mt_rand(1000000, 19999999)) ;
-                         $sql = "SELECT CIN FROM pompiste";
-                                       $result = $conn->query($sql);
-                                       
-                                       if ($result->num_rows > 0) {
-                                           // output data of each row
-                                           while ($row = $result->fetch_assoc()) {
-                                               while ($row['CIN'] == $random)
-                                               {
-                                                $random = sprintf("%06d", mt_rand(1000000, 19999999)) ;
-                                               }
-                                           }
-                                       }
-                                       echo $random;
-                         ?>">
+                        <input type="number" id="CIN" class="form-control form-control-alternative" placeholder="رقم بطاقة التعريف" name="CIN" require>
                       </div>
                     </div>
                    
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-country">بتاريخ</label>
-                        <input type="date" id="dateCIN" class="form-control form-control-alternative" placeholder="بتاريخ" name="dateCIN" value="1977-02-05">
+                        <input type="date" id="dateCIN" class="form-control form-control-alternative" placeholder="بتاريخ" name="dateCIN" value="1977-02-05" require>
                       </div>
                     </div>
                     
@@ -249,7 +118,7 @@
                         <label class="form-control-label" for="input-last-name">المهنة</label>
                         <select class="form-control form-control-alternative" id="travail" type="text" placeholder="" name="travail">
                           <option value="حارس شابكة"> حارس شابكة</option>
-                          <option value="حارس نضام مائي"> حارس نضام مائي</option>
+                          <option value="حارس نضام مائي"> حارس نظام مائي</option>
                           <option value="موزع ماء"> موزع ماء</option>
                         </select>                      
                       </div>
@@ -285,7 +154,7 @@
                                            }
                                        }
                                        echo $random;
-                         ?>">
+                         ?>"require>
                       </div>
                     </div>
                   </div>
@@ -311,7 +180,7 @@
                                            }
                                        }
                                        echo $random;
-                         ?>@gmail.com">
+                         ?>@gmail.com" require>
                       </div>
                     </div>
                   </div>
@@ -319,20 +188,20 @@
                   <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-email">كلمة السر</label>
-                        <input type="password" id="mdp1" class="form-control form-control-alternative" placeholder="كلمة السر" name="mdp" value="azeazeaze">
+                        <input type="password" id="mdp1" class="form-control form-control-alternative" placeholder="كلمة السر" name="mdp" value="azeazeaze" require>
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-username">أعد إدخال كلمة السر</label>
-                        <input type="password" id="mdp2" class="form-control form-control-alternative" placeholder="أعد إدخال كلمة السر" value="azeazeaze">
+                        <input type="password" id="mdp2" class="form-control form-control-alternative" placeholder="أعد إدخال كلمة السر" value="azeazeaze"require>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-12">
                      <div class="form-group">
                      <label class="form-control-label" for="file1"> عقد العمل  </label>
-                     <input type="file" id="file1" class="form-control "  name="file1">
+                     <input type="file" id="file1" class="form-control "  name="file1" require>
                      </div>
                    </div>
                 </div>

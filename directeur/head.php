@@ -105,6 +105,17 @@ $sql = "SELECT * from pompe where idGess='$idGess'";
     margin:30px;
     background-color: white;
 }
+.print{
+  display : block
+}
+.no-print{
+  display : block
+}
+@media print{
+  .no-print{
+  display : none
+}
+}
 </style>
 
 </head>

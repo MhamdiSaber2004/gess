@@ -118,18 +118,18 @@ else
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label">الإسم و اللقب</label>
-                        <input type="text" id="nom" name="nom" class="form-control form-control-alternative" placeholder="الإسم و اللقب" value="<?php 
+                        <input type="text" id="nom" name="nom" class="form-control form-control-alternative" placeholder="الإسم و اللقب" value=" <?php 
                         if(isset($_SESSION['idDemandeBenefique']))
                         {
                           echo $demande['nom'];
                         }
-                   ?>">
+                   ?>" require>
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-username">تاريخ الميلاد</label>
-                        <input type="date" name="dateN" id="dateN" class="form-control form-control-alternative" placeholder="تاريخ الميلاد" >
+                        <input type="date" name="dateN" id="dateN" class="form-control form-control-alternative" placeholder="تاريخ الميلاد" require>
                       </div>
                     </div>
 
@@ -145,7 +145,7 @@ else
                                          echo $demande['CIN'];
                                        }
                                 
-                         ?>">
+                         ?>"require>
                       </div>
                     </div>
 
@@ -156,7 +156,7 @@ else
                         {
                           echo "";
                         }
-                       ?>">
+                       ?>" require>
                       </div>
                     </div>
                     <div class="col-lg-12">
@@ -169,7 +169,7 @@ else
                          }
                        
                         
-                         ?>">
+                         ?>"require>
                       </div>
                     </div>
                   </div>
@@ -189,7 +189,7 @@ else
                         {
                           echo $demande['address'];
                         }
-                       ?>">
+                       ?>"require>
                       </div>
                     </div>
                     <div class="col-lg-6">
@@ -197,7 +197,7 @@ else
 
                       <label class="form-control-label" for="input-first-name">الصفة</label>
 
-                      <select class="form-control form-control-alternative" type="text" name="propriete" placeholder="" >
+                      <select class="form-control form-control-alternative" type="text" name="propriete" placeholder="" require>
                        <option value="مالك"> مالك</option>
                        <option value="متسوغ"> متسوغ</option>
                       </select>
@@ -208,13 +208,13 @@ else
                     <div class="col-lg-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-last-name">عدد افراد العائلة </label>
-                        <input  name="numFamille" type="text" id="numFamille" class="form-control form-control-alternative" placeholder="عدد افراد العائلة ">
+                        <input  name="numFamille" type="text" id="numFamille" class="form-control form-control-alternative" placeholder="عدد افراد العائلة "require>
                       </div>
                     </div>
                     <div class="col-lg-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-last-name">التجمع السكني</label>
-                        <input  name="unionFamiliale" type="text" id="numFamille" class="form-control form-control-alternative" placeholder="التجمع السكني">
+                        <input  name="unionFamiliale" type="text" id="numFamille" class="form-control form-control-alternative" placeholder="التجمع السكني"require>
                       </div>
                     </div>
                   </div>
@@ -234,7 +234,7 @@ else
                                          echo $demande['tel'];
                                        }
                                     
-                         ?>">
+                         ?>" require>
                       </div>
                     </div>
                   </div>
@@ -246,19 +246,19 @@ else
                 <div class="col-lg-4">
                       <div class="form-group">
                         <label class="form-control-label" for="input-city">رقم القطعة</label>
-                        <input type="number"  name="numPlace" id="numPlace" class="form-control form-control-alternative" placeholder="رقم القطعة" >
+                        <input type="number"  name="numPlace" id="numPlace" class="form-control form-control-alternative" placeholder="رقم القطعة" require>
                       </div>
                     </div>
                     <div class="col-lg-4">
                       <div class="form-group">
                         <label class="form-control-label" for="input-country">المساحة</label>
-                        <input type="number"  name="aire" id="aire" class="form-control form-control-alternative" placeholder="المساحة" >
+                        <input type="number"  name="aire" id="aire" class="form-control form-control-alternative" placeholder="المساحة" require>
                       </div>
                     </div>
                     <div class="col-lg-4">
                       <div class="form-group">
                         <label class="form-control-label" for="input-country">رقم المقسم</label>
-                        <input type="number" name="numDiviseur" id="numDiviseur" class="form-control form-control-alternative" placeholder="رقم المقسم" >
+                        <input type="number" name="numDiviseur" id="numDiviseur" class="form-control form-control-alternative" placeholder="رقم المقسم"require >
                       </div>
                     </div>
                                       </div>
@@ -268,7 +268,7 @@ else
                     <div class="col-md-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-city">البريد الإلكتروني </label>
-                        <input  name="email" type="email" id="email" class="form-control form-control-alternative" placeholder="example@gmail.com">
+                        <input  name="email" type="email" id="email" class="form-control form-control-alternative" placeholder="example@gmail.com"require>
                       </div>
                     </div>
                   </div>
@@ -276,13 +276,13 @@ else
                   <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-email">كلمة السر</label>
-                        <input name="mdp" type="password" id="mdp1" class="form-control form-control-alternative" placeholder="كلمة السر" >
+                        <input name="mdp" type="password" id="mdp1" class="form-control form-control-alternative" placeholder="كلمة السر" require >
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-username">أعد إدخال كلمة السر</label>
-                        <input type="password" id="mdp2" class="form-control form-control-alternative" placeholder="أعد إدخال كلمة السر" >
+                        <input type="password" id="mdp2" class="form-control form-control-alternative" placeholder="أعد إدخال كلمة السر" require>
                       </div>
                     </div>
                   </div>

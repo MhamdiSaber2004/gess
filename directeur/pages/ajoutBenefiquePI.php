@@ -83,7 +83,7 @@ else
                                            }
                                        }
                                        echo $random;
-                         ?>">
+                         ?>"require>
                       </div>
                     </div>
                     <div class="col-md-12">
@@ -97,7 +97,7 @@ else
                                           echo $row["num"]+1;
                                                
                                        
-                         ?>">
+                         ?>"require>
                       </div>
                     </div> 
                   
@@ -114,161 +114,33 @@ else
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label">الإسم و اللقب</label>
-                        <input type="text" id="nom" name="nom" class="form-control form-control-alternative" placeholder="الإسم و اللقب" value="<?php 
-                        if(isset($_SESSION['idDemandeBenefique']))
-                        {
-                          echo $demande['nom'];
-                        }
-                       
-                       
-                       // echo randomName();
-
-                        function randomName() {
-                            $firstname = array(
-                                'Johnathon',
-                                'Anthony',
-                                'Erasmo',
-                                'Raleigh',
-                                'Nancie',
-                                'Tama',
-                                'Camellia',
-                                'Augustine',
-                                'Christeen',
-                                'Luz',
-                                'Diego',
-                                'Lyndia',
-                                'Thomas',
-                                'Georgianna',
-                                'Leigha',
-                                'Alejandro',
-                                'Marquis',
-                                'Joan',
-                                'Stephania',
-                                'Elroy',
-                                'Zonia',
-                                'Buffy',
-                                'Sharie',
-                                'Blythe',
-                                'Gaylene',
-                                'Elida',
-                                'Randy',
-                                'Margarete',
-                                'Margarett',
-                                'Dion',
-                                'Tomi',
-                                'Arden',
-                                'Clora',
-                                'Laine',
-                                'Becki',
-                                'Margherita',
-                                'Bong',
-                                'Jeanice',
-                                'Qiana',
-                                'Lawanda',
-                                'Rebecka',
-                                'Maribel',
-                                'Tami',
-                                'Yuri',
-                                'Michele',
-                                'Rubi',
-                                'Larisa',
-                                'Lloyd',
-                                'Tyisha',
-                                'Samatha',
-                            );
-                        
-                            $lastname = array(
-                                'Mischke',
-                                'Serna',
-                                'Pingree',
-                                'Mcnaught',
-                                'Pepper',
-                                'Schildgen',
-                                'Mongold',
-                                'Wrona',
-                                'Geddes',
-                                'Lanz',
-                                'Fetzer',
-                                'Schroeder',
-                                'Block',
-                                'Mayoral',
-                                'Fleishman',
-                                'Roberie',
-                                'Latson',
-                                'Lupo',
-                                'Motsinger',
-                                'Drews',
-                                'Coby',
-                                'Redner',
-                                'Culton',
-                                'Howe',
-                                'Stoval',
-                                'Michaud',
-                                'Mote',
-                                'Menjivar',
-                                'Wiers',
-                                'Paris',
-                                'Grisby',
-                                'Noren',
-                                'Damron',
-                                'Kazmierczak',
-                                'Haslett',
-                                'Guillemette',
-                                'Buresh',
-                                'Center',
-                                'Kucera',
-                                'Catt',
-                                'Badon',
-                                'Grumbles',
-                                'Antes',
-                                'Byron',
-                                'Volkman',
-                                'Klemp',
-                                'Pekar',
-                                'Pecora',
-                                'Schewe',
-                                'Ramage',
-                            );
-                        
-                            $name = $firstname[rand ( 0 , count($firstname) -1)];
-                            $name .= ' ';
-                            $name .= $lastname[rand ( 0 , count($lastname) -1)];
-                        
-                            return $name;
-                        }
-                        ?>">
+                        <input type="text" id="nom" name="nom" class="form-control form-control-alternative" placeholder="الإسم و اللقب" require>
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-username">تاريخ الميلاد</label>
-                        <input type="date" name="dateN" id="dateN" class="form-control form-control-alternative" placeholder="تاريخ الميلاد" >
+                        <input type="date" name="dateN" id="dateN" class="form-control form-control-alternative" placeholder="تاريخ الميلاد" require>
                       </div>
                     </div>
 
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-city">رقم بطاقة التعريف</label>
-                        <input name="CIN" type="text" id="CIN" class="form-control form-control-alternative" placeholder="رقم بطاقة التعريف" value="<?php
-                                  if(isset($_SESSION['idDemandeBenefique']))
-                                  {
-                                    echo $demande['CIN'];
-                                  }
-                           
-                         ?>">
+                        <input name="CIN" type="text" id="CIN" class="form-control form-control-alternative" placeholder="رقم بطاقة التعريف" require>
                       </div>
                     </div>
 
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-country">بتاريخ</label>
-                        <input type="date" name="dateCIN" id="dateCIN" class="form-control form-control-alternative" placeholder="بتاريخ" >
+                        <input type="date" name="dateCIN" id="dateCIN" class="form-control form-control-alternative" placeholder="بتاريخ" require >
                       </div>
                     </div>
                     <div class="col-lg-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-city">الديون المتخلدة بذمة المنتفع</label>
-                        <input name="dette" type="number" id="dette" class="form-control form-control-alternative" placeholder="الديون المتخلدة بذمة المنتفع">
+                        <input name="dette" type="number" id="dette" class="form-control form-control-alternative" placeholder="الديون المتخلدة بذمة المنتفع" require>
                       </div>
                     </div>
                   </div>
@@ -283,12 +155,7 @@ else
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-last-name">مكان السكنى</label>
-                        <input  name="address" type="text" id="address" class="form-control form-control-alternative" placeholder="مكان السكنى" value="<?php 
-                        if(isset($_SESSION['idDemandeBenefique']))
-                        {
-                          echo $demande['address'];
-                        }
-                         ?>">
+                        <input  name="address" type="text" id="address" class="form-control form-control-alternative" placeholder="مكان السكنى" require>
                       </div>
                     </div>
                     <div class="col-lg-6">
@@ -296,7 +163,7 @@ else
 
                       <label class="form-control-label" for="input-first-name">الصفة</label>
 
-                      <select class="form-control form-control-alternative" type="text" name="propriete" placeholder="">
+                      <select class="form-control form-control-alternative" type="text" name="propriete" placeholder="" require>
                        <option value="مالك"> مالك</option>
                        <option value="متسوغ"> متسوغ</option>
                       </select>
@@ -314,12 +181,7 @@ else
                     <div class="col-md-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-address">رقم الهاتف </label>
-                        <input id="tel" name="tel" class="form-control form-control-alternative" placeholder="+216 12345678 " type="number" value="<?php
-                          if(isset($_SESSION['idDemandeBenefique']))
-                          {
-                            echo $demande['tel'];
-                          }
-                         ?>">
+                        <input id="tel" name="tel" class="form-control form-control-alternative" placeholder="+216 12345678 " type="number" require>
                       </div>
                     </div>
                   </div>
@@ -331,26 +193,26 @@ else
                 <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-city">رقم القطعة</label>
-                        <input type="number"  name="numPlace" id="numPlace" class="form-control form-control-alternative" placeholder="رقم القطعة"  >
+                        <input type="number"  name="numPlace" id="numPlace" class="form-control form-control-alternative" placeholder="رقم القطعة" require >
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-country">المساحة</label>
-                        <input type="number"  name="aire" id="aire" class="form-control form-control-alternative" placeholder="المساحة"  >
+                        <input type="number"  name="aire" id="aire" class="form-control form-control-alternative" placeholder="المساحة" require >
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label class="form-control-label" for="input-country">رقم المقسم</label>
-                          <input type="number"  name="numDiviseur" id="aire" class="form-control form-control-alternative" placeholder="رقم المقسم">
+                          <input type="number"  name="numDiviseur" id="aire" class="form-control form-control-alternative" placeholder="رقم المقسم"require>
                         </div>
                       </div>
                       <div class="col-6">
                         <div class="form-group">
                           <label class="form-control-label" for="input-country">نوع الغراسات</label>
-                          <input type="text"  name="nature" id="nature" class="form-control form-control-alternative" placeholder="نوع الغراسات"  >
+                          <input type="text"  name="nature" id="nature" class="form-control form-control-alternative" placeholder="نوع الغراسات" require >
                         </div>
                       </div>
                     </div>
@@ -362,26 +224,26 @@ else
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-country">رقم العداد</label>
-                        <input type="number" name="numCompteur" id="numCompteur" class="form-control form-control-alternative" placeholder="رقم العداد" >
+                        <input type="number" name="numCompteur" id="numCompteur" class="form-control form-control-alternative" placeholder="رقم العداد" require>
                       </div>
                     </div>
              
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-city">رقم إستهلاك الماء المسجل بالعداد (في حال عداد جديد اكتب 0)  </label>
-                        <input type="number" name="donneesCompteur" id="donneesCompteur" class="form-control form-control-alternative" placeholder=" رقم إستهلاك الماء المسجل بالعداد (في حال عداد جديد اكتب 0) "  >
+                        <input type="number" name="donneesCompteur" id="donneesCompteur" class="form-control form-control-alternative" placeholder=" رقم إستهلاك الماء المسجل بالعداد (في حال عداد جديد اكتب 0) "  require>
                       </div>
                     </div>
                     <div class="col-lg-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-country">رقم الفرع</label>
-                        <input type="number"  name="numBranch" id="numBranch" class="form-control form-control-alternative" placeholder="رقم الفرع">
+                        <input type="number"  name="numBranch" id="numBranch" class="form-control form-control-alternative" placeholder="رقم الفرع" require>
                       </div>
                     </div>
                     <div class="col-lg-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-country">رقم المأخذ </label>
-                        <input type="number" name="numPrise" id="numPrise" list="numPrises" class="form-control form-control-alternative" placeholder="رقم المأخذ " >
+                        <input type="number" name="numPrise" id="numPrise" list="numPrises" class="form-control form-control-alternative" placeholder="رقم المأخذ " require>
                         <datalist id="numPrises">
                           <?php
                               $idPompiste=$_SESSION['idPompiste'];
@@ -413,7 +275,7 @@ else
                     <div class="col-md-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-city">البريد الإلكتروني </label>
-                        <input  name="email" type="email" id="email" class="form-control form-control-alternative" placeholder="example@gmail.com">
+                        <input  name="email" type="email" id="email" class="form-control form-control-alternative" placeholder="example@gmail.com" require>
                       </div>
                     </div>
                   </div>
@@ -421,13 +283,13 @@ else
                   <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-email">كلمة السر</label>
-                        <input name="mdp" type="password" id="mdp1" class="form-control form-control-alternative" placeholder="كلمة السر">
+                        <input name="mdp" type="password" id="mdp1" class="form-control form-control-alternative" placeholder="كلمة السر" require>
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-username">أعد إدخال كلمة السر</label>
-                        <input type="password" id="mdp2" class="form-control form-control-alternative" placeholder="أعد إدخال كلمة السر">
+                        <input type="password" id="mdp2" class="form-control form-control-alternative" placeholder="أعد إدخال كلمة السر" require>
                       </div>
                     </div>
                   </div>

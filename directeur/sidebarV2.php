@@ -92,7 +92,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="index.php?page=reunionInterne">
-              <i class="ni ni-chart-bar-32 text-red"></i>مسك دفتر محاضر اجتماعات مجلس الدارة
+              <i class="ni ni-chart-bar-32 text-red"></i>مسك دفتر محاضر اجتماعات مجلس الادارة
             </a>
           </li>
           <li class="nav-item">

@@ -41,7 +41,7 @@
       <div class="col-lg-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-country">رقم العداد</label>
-                        <input type="number" name="numCompteur" list="numeroCompteur" id="numCompteur" class="form-control form-control-alternative" placeholder="رقم العداد" >
+                        <input type="number" name="numCompteur" list="numeroCompteur" id="numCompteur" class="form-control form-control-alternative" placeholder="رقم العداد" require>
                         <datalist id="numeroCompteur">
                                                 <?php
                                                    
