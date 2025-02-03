@@ -98,9 +98,9 @@ if(isset($_GET['page']) && ! empty ( $_GET['page']) ) {
             case 'listeReunionPublique':
               include "./pages/listeReunionPublique.php";
               break;
-            case 'listeBenefique':
+           /* case 'listeBenefique':
               include "./pages/listeBenefique.php";
-              break;
+              break;*/
 
               case 'demandeBenefique':
                 include "./pages/demandeBenefique.php";
