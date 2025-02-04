@@ -160,7 +160,7 @@
         $montantDu=0;
 
 
-        $sql2 = "SELECT idBenefique,nom FROM `benefique_aep` WHERE idGess = $idGess";
+        $sql2 = "SELECT idBenefique,nom FROM `benefique_pi` WHERE idGess = $idGess";
         $result2 = $conn->query($sql2);
         $benefique=array();
         $nb_benefique=0;
@@ -263,10 +263,13 @@
                               <label class="form-control-label" for="input-country">إسم ولقب   </label>
                               <select class="form-select" name="idBenefique" aria-label="Default select example">
                                  <?php
-                                    for($ib=0 ; $ib < $nb_benefique ; $ib++){
-                                    ?>
-                                       <option value="<?php echo $benefique[$ib]['idBenefique'] ?>"><?php echo $benefique[$ib]['nom'] ?></option>
-                                    <?php
+                                    $sql3 = "SELECT * FROM benefique_pi where idGess='$idGess' and active=1 ";
+                                    $result3 = $conn->query($sql3);
+                                    if ($result->num_rows > 0) {
+                                       // output data of each row
+                                       while ($row = $result->fetch_assoc()) {
+                                             echo '<option value="'.$row['idBenefique'].'">'.$row['nom'].'</option>';
+                                       }
                                     }
                                  ?>
                               </select>
