@@ -116,7 +116,7 @@ if(isset($_GET['id']) && ! empty ( $_GET['id'] ))
                     <label class="form-control-label" for="input-last-name">المهنة</label>
                     <select class="form-control form-control-alternative" id="travail" type="text" placeholder="" name="travail">
                       <option value="حارس شابكة"> حارس شابكة</option>
-                      <option value="حارس نضام مائي"> حارس نظام مائي</option>
+                      <option value="حارس نظام مائي"> حارس نظام مائي</option>
                       <option value="موزع ماء"> موزع ماء</option>
                     </select>                       
                   </div>
