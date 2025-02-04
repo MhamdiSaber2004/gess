@@ -267,7 +267,7 @@
                                     $result3 = $conn->query($sql3);
                                     if ($result3->num_rows > 0) {
                                        // output data of each row
-                                       while ($row = $result->fetch_assoc()) {
+                                       while ($row = $result3->fetch_assoc()) {
                                              echo '<option value="'.$row['idBenefique'].'">'.$row['nom'].'</option>';
                                        }
                                     }
