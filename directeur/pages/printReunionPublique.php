@@ -72,7 +72,12 @@
                     </div>
                   </div>
                   <br>
-                  <small class="d-flex justify-content-start text-black"> <img src="assets/img/reunion/reunionPublique.png" alt="" style="width:70%;">  &nbsp;<br></small>
+                  <small class="d-flex justify-content-start text-black " > 
+                    يمكن للمنخرطين ابتداء من يوم ...........................االطالع على تقارير مجلس اإلدارة والموازنة المالية
+                    لسنة ...........................وذلك بمقر المجمع الكائن ب....................................وعلى الراغبين في
+                    الترشح لعضوية مجلس إدارة المجمع أو لجنة المراقبة الداخلية أن يقدموا ترشحاتهم الى المجمع عن طريق
+                    رسالة مضمونة الوصول مع االعالم قبل يوم .  &nbsp;<br>
+                  </small>
                 </div>
               </form>
             </div>

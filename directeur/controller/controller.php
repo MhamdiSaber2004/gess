@@ -1313,11 +1313,11 @@ if (isset($_POST['ajoutBenefiquePI'])) {
 
     $numDiviseur = mysqli_real_escape_string($conn, $_POST['numDiviseur']);
 
-    $sql = "SELECT * from benefique_pi where numCompteur='$numCompteur'";
+    $sql1 = "SELECT * from benefique_pi where numCompteur='$numCompteur'";
 
-    $result = $conn->query($sql);
+    $result1 = $conn->query($sql1);
 
-    if ($result->num_rows > 0) {
+    if ($result1->num_rows > 0) {
         $_SESSION['messageClass']="danger";
         $_SESSION['message']="هناك منتفع مسجل برقم العداد الذي أدخلته";
         header("Location: ../index.php?page=listeBenefiquePI");
@@ -1336,11 +1336,11 @@ if (isset($_POST['ajoutBenefiquePI'])) {
         exit();
     }
 
-    $sql = "SELECT * FROM prise_pi where idGess='$idGess' and numPrise='$numPrise'";
+    $sql2 = "SELECT * FROM prise_pi where idGess='$idGess' and numPrise='$numPrise'";
 
-    $result = $conn->query($sql);
+    $result2 = $conn->query($sql2);
 
-    if ($result->num_rows == 0) {
+    if ($result2->num_rows == 0) {
         $row = $result->fetch_assoc();
         $idPrise=$row['idPrise'];
 
@@ -1350,10 +1350,10 @@ if (isset($_POST['ajoutBenefiquePI'])) {
         header("Location: ../index.php?page=listeBenefiquePI");
     }else{
 
-    $sql="INSERT INTO `benefique_pi` (`idBenefique`, `idGess`, `numBenefique`, `idPompiste`, `nom`, `dateN`, `CIN`, `dateCIN`, `address`, `propriete`, `tel`, `dette`, `dateInscription`, `numPlace`,  `numDiviseur`, `aire`, `numCompteur`, `donneesCompteur`, `numPrise`, `email`, `mdp`, `active`,`numBranch`,`nature`) 
+    $sql3="INSERT INTO `benefique_pi` (`idBenefique`, `idGess`, `numBenefique`, `idPompiste`, `nom`, `dateN`, `CIN`, `dateCIN`, `address`, `propriete`, `tel`, `dette`, `dateInscription`, `numPlace`,  `numDiviseur`, `aire`, `numCompteur`, `donneesCompteur`, `numPrise`, `email`, `mdp`, `active`,`numBranch`,`nature`) 
     VALUES ('$idBenefique', '$idGess', '$numBenefique', '$idPompiste', '$nom', '$dateN', '$CIN', '$dateCIN', '$address', '$propriete', '$tel', '$dette', current_timestamp(), '$numPlace', '$numDiviseur', '$aire', '$numCompteur', '$donneesCompteur', '$numPrise', '$email', '$mdp','1','$numBranch','$nature');";
 
-        if($conn->query($sql) === TRUE){                
+        if($conn->query($sql3) === TRUE){                
         
             $_SESSION['numCompteur']=$numCompteur;
             $_SESSION['nom']=$nom;
