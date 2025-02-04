@@ -159,10 +159,9 @@ if(isset($_POST['nom_dettes_beneficiaires'])){
     $note = $_POST['note'];
     $otre_non = $_POST['otre_non'];
 
-    $sql1="INSERT INTO `dettes_beneficiaires`(`beneficiaires`, `montant`, `numFacture`, `date`, `note`,`idGess`,`activ`,`otre_non`) VALUES ('$nom_dettes_beneficiaires','$montant','$numFacture','$date ','$note','$idGess','1','$otre_non')";
+    $sql1="INSERT INTO `dettes_beneficiaires` (`beneficiaires`, `montant`, `numFacture`, `date`, `note`,`idGess`,`activ`,`otre_non`) VALUES ('$nom_dettes_beneficiaires','$montant','$numFacture','$date ','$note','$idGess','1','$otre_non')";
         
         if ($conn->query($sql1) === TRUE) {
-            echo 'lfkjpoer';
             $_SESSION['messageClass']="success";
             $_SESSION['message']="تمت الإضافة بنجاح";
             header("Location: ../pages/listedetteBenificaierPI.php?dateDebut=".$datedebut."&dateFin=".$dateFin);
