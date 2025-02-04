@@ -73,9 +73,9 @@
                   </div>
                   <br>
                   <small class="d-flex justify-content-start text-black " style="border: 2px solid black;padding: 20px;"> 
-                    يمكن للمنخرطين ابتداء من يوم <input type="text" placeholder="..........................................." style="border:0" name="inp17">االطالع على تقارير مجلس اإلدارة والموازنة المالية
-                    لسنة <input type="text" placeholder="..........................................." style="border:0" name="inp18">وذلك بمقر المجمع الكائن ب<input type="text" placeholder="..........................................." style="border:0" name="inp19">وعلى الراغبين في
-                    الترشح لعضوية مجلس إدارة المجمع أو لجنة المراقبة الداخلية أن يقدموا ترشحاتهم الى المجمع عن طريق
+                    يمكن للمنخرطين ابتداء من يوم <input type="text" placeholder="..........................." style="border:0" name="inp17">االطالع على تقارير مجلس اإلدارة والموازنة المالية <br>
+                    لسنة <input type="text" placeholder="..........................." style="border:0" name="inp17">وذلك بمقر المجمع الكائن ب<input type="text" placeholder="..........................." style="border:0" name="inp17">وعلى الراغبين في <br>
+                    الترشح لعضوية مجلس إدارة المجمع أو لجنة المراقبة الداخلية أن يقدموا ترشحاتهم الى المجمع عن طريق <br>
                     رسالة مضمونة الوصول مع االعالم قبل يوم .  &nbsp;<br>
                   </small>
                 </div>
