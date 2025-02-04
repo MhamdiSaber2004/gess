@@ -231,7 +231,7 @@ th {
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">حذف</button>
-                <input type="submit" class="btn btn-primary" value="حفض">
+                <input type="submit" class="btn btn-primary" value="حفظ">
             </div>
         </form>
     </div>
@@ -282,7 +282,7 @@ th {
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">حذف</button>
-                <input type="submit" class="btn btn-primary" value="حفض">
+                <input type="submit" class="btn btn-primary" value="حفظ">
             </div>
         </form>
     </div>
