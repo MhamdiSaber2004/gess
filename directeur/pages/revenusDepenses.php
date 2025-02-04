@@ -137,7 +137,16 @@ if(isset($_GET['delete'])){
                 </label>
                 <?php
                     if($_GET['factureRecettes']==1 or $_GET['factureRecettes']==3){
-                        echo '<input type="text" name="nomBayan" class="form-control">';
+                        echo '<select class="form-select" name="nomBayan" aria-label="Default select example">';
+                           $sql3 = "SELECT * FROM benefique_pi where idGess='$idGess' and active=1 ";
+                           $result3 = $conn->query($sql3);
+                           if ($result3->num_rows > 0) {
+                              // output data of each row
+                              while ($row = $result3->fetch_assoc()) {
+                                    echo '<option value="'.$row['nom'].'">'.$row['nom'].'</option>';
+                              }
+                           }
+                        echo '</select>';
                     }else{
                         echo '<input type="file" name="nomBayanf" class="form-control">';
                     }
