@@ -163,7 +163,7 @@ if(isset($_GET['idBenefique']) && ! empty ( $_GET['idBenefique'] ))
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-country">نوع الغراسات</label>
-                        <input type="number"  name="nature" id="nature" class="form-control form-control-alternative" placeholder="نوع الغراسات" value="<?php echo $row['nature'] ?>" >
+                        <input type="text"  name="nature" id="nature" class="form-control form-control-alternative" placeholder="نوع الغراسات" value="<?php echo $row['nature'] ?>" >
                       </div>
                     </div>
                   </div>
