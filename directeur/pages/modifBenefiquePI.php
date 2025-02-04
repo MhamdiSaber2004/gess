@@ -187,21 +187,21 @@ if(isset($_GET['idBenefique']) && ! empty ( $_GET['idBenefique'] ))
                                                 <?php
 
                                                    $idPompiste=$_SESSION['idPompiste'];
-                                                   $sql = "SELECT * from pompiste where idPompiste='$idPompiste'";
+                                                   $sql1 = "SELECT * from pompiste where idPompiste='$idPompiste'";
 
-                                                   $result = $conn->query($sql);
+                                                   $result1 = $conn->query($sql1);
                                                
                                                    
-                                                       $row = $result->fetch_assoc();
-                                                       $idGess=$row['idGess'];
+                                                       $row1 = $result1->fetch_assoc();
+                                                       $idGess=$row1['idGess'];
                                                    
                                                    
-                                                    $sql = "SELECT numPrise FROM prise_pi where idGess='$idGess' ";
-                                                                  $result = $conn->query($sql);
+                                                    $sql2 = "SELECT numPrise FROM prise_pi where idGess='$idGess' ";
+                                                                  $result2 = $conn->query($sql2);
                                                    
-                                                                  if ($result->num_rows > 0) {
-                                                                   while ($row = $result->fetch_assoc()) {
-                                                                   echo "<option>".$row['numPrise']."</option>";
+                                                                  if ($result2->num_rows > 0) {
+                                                                   while ($row2 = $result2->fetch_assoc()) {
+                                                                   echo "<option>".$row2['numPrise']."</option>";
                                                                   
                                                                    
                                                                  }
