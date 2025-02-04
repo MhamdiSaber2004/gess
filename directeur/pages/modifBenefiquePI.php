@@ -91,36 +91,8 @@ if(isset($_GET['idBenefique']) && ! empty ( $_GET['idBenefique'] ))
                     </div>
                     <div class="col-lg-12">
                       <div class="form-group">
-                        <label class="form-control-label" for="input-city"> 
-
-
-
-                        <?php 
-                        $numCompteur=$row['numCompteur'];
-                        $sql1="SELECT * from consommation_aep where numCompteur='$numCompteur' "; 
-                        $result1 = $conn->query($sql1);
-   
- 
-                        if ($result1->num_rows > 0) {
-                         $consomme=true;
-                         echo "  لا يمكنك تغير الديون المتخلدة إذا كان هناك إستهلك مسجل للمنتفع";
-
-                        }
-                        else{
-                          echo " الديون المتخلدة بذمة المنتفع";
-
-                        }
-                        ?> 
-                        </label>
-                        <input name="dette" type="number" id="dette" class="form-control form-control-alternative" placeholder="الديون المتخلدة بذمة المنتفع" value="<?php echo $row['dette'] ?>"
-                        <?php 
-                        if($consomme)
-                        echo "readonly";
-                        
-                             ?>
-                             
-                        >
-                        
+                        <label class="form-control-label" for="input-city"> الديون المتخلدة بذمة المنتفع </label>
+                        <input name="dette" type="number" id="dette" class="form-control form-control-alternative" placeholder="الديون المتخلدة بذمة المنتفع" value="<?php echo $row['dette'] ?>">
                       </div>
                     </div>
                   </div>
@@ -203,33 +175,8 @@ if(isset($_GET['idBenefique']) && ! empty ( $_GET['idBenefique'] ))
              
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <label class="form-control-label" for="input-city">
-                        <?php 
-                        $numCompteur=$row['numCompteur'];
-                        $sql1="SELECT * from consommation_pi where numCompteur='$numCompteur' "; 
-                        $result1 = $conn->query($sql1);
-   
- 
-                        if ($result1->num_rows > 0) {
-                         $consomme=true;
-                         echo "  لا يمكنك تغير الإستهلاك إذا كان هناك إستهلك مسجل للمنتفع";
-
-                        }
-                        else{
-                          echo "  رقم إستهلاك الماء المسجل بالعداد (في حال عداد جديد اكتب 0) ";
-
-                        }
-                        ?>  
-                        
-                       </label>
-                        <input type="number" name="donneesCompteur" id="donneesCompteur" class="form-control form-control-alternative" placeholder=" رقم إستهلاك الماء المسجل بالعداد (في حال عداد جديد اكتب 0) "  value="<?php echo $row['donneesCompteur']; ?>"
-                        <?php 
-                        if($consomme)
-                        echo "readonly";
-                        
-                             ?>
-                             
-                        >
+                        <label class="form-control-label" for="input-city">رقم إستهلاك الماء المسجل بالعداد (في حال عداد جديد اكتب 0)</label>
+                        <input type="number" name="donneesCompteur" id="donneesCompteur" class="form-control form-control-alternative"  value="<?php echo $row['donneesCompteur']; ?>">
                       </div>
                     </div>
                     <div class="col-lg-12">
@@ -272,7 +219,7 @@ if(isset($_GET['idBenefique']) && ! empty ( $_GET['idBenefique'] ))
                     <div class="col-md-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-city">البريد الإلكتروني </label>
-                        <input  name="email" type="email" id="email" class="form-control form-control-alternative" placeholder="example@gmail.com" value="<?php echo $row['email'] ?>">
+                        <input  name="email" type="email" id="email" class="form-control form-control-alternative" value="<?php echo $row['email'] ?>">
                       </div>
                     </div>
                   </div>
