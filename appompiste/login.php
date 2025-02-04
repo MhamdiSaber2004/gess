@@ -113,7 +113,7 @@ if (isset($_SESSION["idPompiste"])) {
                   
                 </div>
                 <div class="card-body">
-                  <form id="loginForm"  action="./controller/controller.php" method="post">
+                  <form id="loginForm"  action="login.php" method="post">
                     <div class="mb-3">
                       <input type="text" value="" name="email" class="form-control form-control-lg text-end" placeholder="البريد الالكتروني" aria-label="Email" required>
                     </div>
