@@ -154,15 +154,20 @@ if(isset($_GET['idBenefique']) && ! empty ( $_GET['idBenefique'] ))
                         <input type="number"  name="aire" id="aire" class="form-control form-control-alternative" placeholder="المساحة" value="<?php echo $row['aire'] ?>" >
                       </div>
                     </div>
-                    <div class="col-lg-12">
+                    <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-country">رقم المقسم</label>
                         <input type="number"  name="numDiviseur" id="aire" class="form-control form-control-alternative" placeholder="رقم المقسم" value="<?php echo $row['numDiviseur'] ?>" >
                       </div>
                     </div>
-                 
-                                      </div>
-                                      <hr class="my-4" />
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-country">نوع الغراسات</label>
+                        <input type="number"  name="aire" id="aire" class="form-control form-control-alternative" placeholder="المساحة" value="<?php echo $row['nature'] ?>" >
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="my-4" />
                 <!-- Address -->
                 <h6 class="heading-small text-muted mb-4">معلومات العداد</h6>
                 <div class="row">
