@@ -1424,7 +1424,7 @@ if (isset($_POST['modifBenefiqueAEP'])) {
 
                 $newDette=$allDette-$oldDette+$dette;
 
-                $sql="UPDATE `benefique_aep` SET `numFamille` = '$numFamille', `nom` = '$nom', `unionFamiliale` = '$unionFamiliale', `CIN` = '$CIN', `address` = '$address', `propriete` = '$propriete', `tel` = '$tel', `dette` = '$dette', `numPlace` = '$numPlace', `aire` = '$aire', `numDiviseur` = '$numDiviseur', `email` = '$email', `mdp` = '$mdp' , `nature`=$nature WHERE `benefique_aep`.`idBenefique` = '$idBenefique';";
+                $sql="UPDATE `benefique_aep` SET `numFamille` = '$numFamille', `nom` = '$nom', `unionFamiliale` = '$unionFamiliale', `CIN` = '$CIN', `address` = '$address', `propriete` = '$propriete', `tel` = '$tel', `dette` = '$dette', `numPlace` = '$numPlace', `aire` = '$aire', `numDiviseur` = '$numDiviseur', `email` = '$email', `mdp` = '$mdp' , `nature`='$nature' WHERE `benefique_aep`.`idBenefique` = '$idBenefique';";
 
                 if($conn->query($sql) === TRUE){
         
