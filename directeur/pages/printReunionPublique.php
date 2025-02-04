@@ -72,7 +72,7 @@
                     </div>
                   </div>
                   <br>
-                  <small class="d-flex justify-content-start text-black " style="border: 2px solid black;padding: 20px;"> 
+                  <small class="d-flex justify-content-start text-black " style="border: 2px solid black;padding: 20px; width: 620px;"> 
                     يمكن للمنخرطين ابتداء من يوم ...........................االطالع على تقارير مجلس اإلدارة والموازنة المالية
                     لسنة ...........................وذلك بمقر المجمع الكائن ب....................................وعلى الراغبين في
                     الترشح لعضوية مجلس إدارة المجمع أو لجنة المراقبة الداخلية أن يقدموا ترشحاتهم الى المجمع عن طريق
