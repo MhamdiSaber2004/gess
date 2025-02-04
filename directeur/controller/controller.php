@@ -1398,7 +1398,7 @@ if (isset($_POST['modifBenefiqueAEP'])) {
     $dette = mysqli_real_escape_string($conn, $_POST['dette']);
     $numFamille = mysqli_real_escape_string($conn, $_POST['numFamille']);
     $unionFamiliale = mysqli_real_escape_string($conn, $_POST['unionFamiliale']);
-    $nature = mysqli_real_escape_string($conn, $_POST['nature']);
+
 
 
 
@@ -1424,7 +1424,7 @@ if (isset($_POST['modifBenefiqueAEP'])) {
 
                 $newDette=$allDette-$oldDette+$dette;
 
-                $sql="UPDATE `benefique_aep` SET `numFamille` = '$numFamille', `nom` = '$nom', `unionFamiliale` = '$unionFamiliale', `CIN` = '$CIN', `address` = '$address', `propriete` = '$propriete', `tel` = '$tel', `dette` = '$dette', `numPlace` = '$numPlace', `aire` = '$aire', `numDiviseur` = '$numDiviseur', `email` = '$email', `mdp` = '$mdp' , `nature`='$nature' WHERE `benefique_aep`.`idBenefique` = '$idBenefique';";
+                $sql="UPDATE `benefique_aep` SET `numFamille` = '$numFamille', `nom` = '$nom', `unionFamiliale` = '$unionFamiliale', `CIN` = '$CIN', `address` = '$address', `propriete` = '$propriete', `tel` = '$tel', `dette` = '$dette', `numPlace` = '$numPlace', `aire` = '$aire', `numDiviseur` = '$numDiviseur', `email` = '$email', `mdp` = '$mdp' WHERE `benefique_aep`.`idBenefique` = '$idBenefique';";
 
                 if($conn->query($sql) === TRUE){
         
@@ -1661,6 +1661,7 @@ header("Location: ../index.php?page=listeBenefiqueAEP");
         $mdp = mysqli_real_escape_string($conn, $_POST['mdp']);
         $dette = mysqli_real_escape_string($conn, $_POST['dette']);
         $numPrise = mysqli_real_escape_string($conn, $_POST['numPrise']);
+        $nature = mysqli_real_escape_string($conn, $_POST['nature']);
     
     
     
@@ -1704,7 +1705,7 @@ header("Location: ../index.php?page=listeBenefiqueAEP");
     
                     $newDette=$allDette-$oldDette+$dette;
     
-                    $sql="UPDATE `benefique_pi` SET `nom` = '$nom', `CIN` = '$CIN', `address` = '$address', `propriete` = '$propriete', `tel` = '$tel', `dette` = '$dette', `numPlace` = '$numPlace', `aire` = '$aire', `numDiviseur` = '$numDiviseur', `numCompteur` = '$numCompteur', `donneesCompteur` = '$donneesCompteur', `email` = '$email', `mdp` = '$mdp' WHERE `benefique_pi`.`idBenefique` = '$idBenefique';";
+                    $sql="UPDATE `benefique_pi` SET `nom` = '$nom', `CIN` = '$CIN', `address` = '$address', `propriete` = '$propriete', `tel` = '$tel', `dette` = '$dette', `numPlace` = '$numPlace', `aire` = '$aire', `numDiviseur` = '$numDiviseur', `numCompteur` = '$numCompteur', `donneesCompteur` = '$donneesCompteur', `email` = '$email', `mdp` = '$mdp' , `nature`='$nature' WHERE `benefique_pi`.`idBenefique` = '$idBenefique';";
     
                     if($conn->query($sql) === TRUE){
             
