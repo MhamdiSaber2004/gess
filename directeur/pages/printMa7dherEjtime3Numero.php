@@ -2,7 +2,7 @@
   <div class="main-content">
 
     <!-- Header -->
-    <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
+    <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8 no-print">
       <div class="container-fluid">
         <div class="header-body">
          
@@ -15,8 +15,8 @@
      
             <div class="col-xl-12 order-xl-1">
           <div class="card bg-white shadow">
-            <div class="card-header bg-secondary border-0 no-print">
-              <div class="row align-items-center">
+            <div class="card-header bg-secondary border-0 ">
+              <div class="row align-items-center no-print">
                 <div class="col-8">
                   <h3 class="mb-0"><button onclick="printPompiste('printDiv')" class="btn btn-sm btn-primary">طباعة</button> </h3>
                 </div>
