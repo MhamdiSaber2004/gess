@@ -253,7 +253,7 @@ if(!empty($_POST['mBranche'])){
           <div class="modal-body p-0">
             <div class="card border-0 mb-0">
               <div class="card-header bg-transparent pb-5">
-               <form action="ProgrammePompage.php?date=<?php echo $jourpp ; ?>" method="post">
+               <form action="programPompage.php?date=<?php echo $jourpp ; ?>" method="post">
                   <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">اسم ولقب الفلاح	</label>
                     <select class="form-select" name="anomBenifique" id="anomBenifique">
@@ -403,7 +403,7 @@ if(!empty($_POST['mBranche'])){
                   <div class="modal-body p-0">
                     <div class="card border-0 mb-0">
                       <div class="card-header bg-transparent pb-5">
-                      <form action="ProgrammePompage.php?date=<?php echo $jourpp ; ?>" method="post">
+                      <form action="programPompage.php?date=<?php echo $jourpp ; ?>" method="post">
                         <input type="text" name="midProgrammePompage" value="<?php echo $row1['idProgrammePompage']; ?>" class="d-none">
                         <div class="mb-3">
                           <label for="exampleInputPassword1" class="form-label">اسم ولقب الفلاح	</label>
