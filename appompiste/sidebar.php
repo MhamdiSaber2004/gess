@@ -103,13 +103,8 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"  data-toggle="modal" data-target="#consommation">
-              <i class="ni ni-chart-bar-32 text-red"></i>قائمة الإستهلاك  
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" <?php $sql = "SELECT * FROM vente_eau where idGess='$idGess' order by date asc";$result = $conn->query($sql);if ($result->num_rows > 0) { ?> href="index.php?page=venteEau"  <?php }  else {?> href="#"  data-toggle="modal" data-target="#premierVenteEau" <?php } ?>>
-              <i class="ni ni-chart-bar-32 text-red"></i>بيع الماء   
+            <a class="nav-link" href="#">
+              <i class="ni ni-vector text-red"></i>دفتر استغلال و صيانة محطة الضخ
             </a>
           </li>
           <li class="nav-item">
@@ -117,70 +112,19 @@
               <i class="ni ni-vector text-red"></i>قائمة الأعطاب
             </a>
           </li>
-          <li class="nav-item <?php echo ($current_page === 'listeFix') ? 'active' : ''; ?>">
-            <a class="nav-link" href="index.php?page=listeFix">
-              <i class="ni ni-vector text-red"></i>مراقبة و صيانة التجهيزات
-            </a>
-          </li>
           <li class="nav-item <?php echo ($current_page === 'listeInfoCompteur') ? 'active' : ''; ?>">
             <a class="nav-link" href="index.php?page=listeInfoCompteur" >
-              <i class="ni ni-chart-bar-32 text-red"></i>متابعة وضعية العدادات 
+              <i class="ni ni-chart-bar-32 text-red"></i>متابعة وضعية العدادات
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.php?page=facture<?php echo $typeGess ?>" >
-              <i class="ni ni-chart-bar-32 text-red"></i> فاتورة
+            <a class="nav-link" href="#" >
+              <i class="ni ni-chart-bar-32 text-red">برنامج الصيانة الدورية و الوقائية
+              </i> 
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.php?page=payement<?php echo $typeGess ?>">
-              <i class="ni ni-chart-bar-32 text-red"></i>إستخلاص  
-            </a>
-          </li>
-          <!--
-            <li class="nav-item">
-            <a class="nav-link" href="#" data-toggle="modal" data-target="#perteEau">
-              <i class="ni ni-chart-bar-32 text-red"></i>ضياع المياه  
-            </a>
-          </li>
-                    -->
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-toggle="modal" data-target="#archive">
-              <i class="ni ni-chart-bar-32 text-red"></i>متابعة الاستهلاك والفوترة
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.php?page=documents">
-              <i class="ni ni-bullet-list-67 text-red"></i> مراجع هامة
-            </a>
-          </li>
-</ul>
-
-
-        <hr class="my-3">
-        <!-- Heading -->
-        <!--<h6 class="navbar-heading text-muted">الحساب</h6>
-        <ul class="navbar-nav">
-
-        <li class="nav-item">
-            <a class="nav-link" href="index.php?page=parametreCompte">
-              <i class="ni ni-circle-08 text-red"></i> اعدادات الحساب  
-            </a>
-          </li>
-
-        <li class="nav-item">
-            <a class="nav-link" href="logout.php">
-              <i class="ni ni-button-power text-red"></i> تسجيل الخروج 
-            </a>
-          </li>
-
-      
-
-          
-        </ul>-->
+        </ul>
         <!-- Divider -->
-        <hr class="my-3">
-        
       </div>
     </div>
   </nav>
