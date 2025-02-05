@@ -523,7 +523,7 @@ include "footer.php"
              
 
               <input type="text" name="page" id="" value="prgPompeEauQuotiqien" hidden>
-                <input type="date" name="jour" required>
+                <input type="date" name="date" required>
                 
             </div>
         
