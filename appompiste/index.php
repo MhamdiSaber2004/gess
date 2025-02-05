@@ -511,7 +511,7 @@ include "footer.php"
     <div class="modal fade" id="datePrgPompeEau" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
   <div class="modal-dialog modal- modal-dialog-centered modal-md" role="document">
       <div class="modal-content">
-      <form method="get" action="index.php?page=prgPompeEauQuotidien">
+      <form method="get" action="pageComplet/programPompage.php">
           <div class="modal-body p-0">
             
 <div class="card bg-secondary border-0 mb-0">
