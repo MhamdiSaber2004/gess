@@ -119,8 +119,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" >
-              <i class="ni ni-chart-bar-32 text-red">برنامج الصيانة الدورية و الوقائية
-              </i> 
+              <i class="ni ni-chart-bar-32 text-red"></i> برنامج الصيانة الدورية و الوقائية
             </a>
           </li>
         </ul>
