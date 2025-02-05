@@ -31,12 +31,12 @@ if(!empty($_POST['aBranche'])){
   if ($conn->query($ajout) === TRUE) {
     $_SESSION['messageClass']="success";
     $_SESSION['message']="تمت الإضافة بنجاح";
-    header("Location: ProgrammePompage.php?date=".$jourpp);
+    header("Location: programPompage.php?date=".$jourpp);
     exit();
   }else{
       $_SESSION['messageClass']="danger";
       $_SESSION['message']="حصل خطأ ما، الرجاء المحاولة لاحقا";
-      header("Location: ProgrammePompage.php?date=".$jourpp);
+      header("Location: programPompage.php?date=".$jourpp);
   }
 }
 
@@ -60,12 +60,12 @@ if(!empty($_POST['mBranche'])){
   if ($conn->query($modifier) === TRUE) {
     $_SESSION['messageClass']="success";
     $_SESSION['message']="تمت الإضافة بنجاح";
-    header("Location: ProgrammePompage.php?date=".$jourpp);
+    header("Location: programPompage.php?date=".$jourpp);
     exit();
   }else{
       $_SESSION['messageClass']="danger";
       $_SESSION['message']="حصل خطأ ما، الرجاء المحاولة لاحقا";
-      header("Location: ProgrammePompage.php?date=".$jourpp);
+      header("Location: programPompage.php?date=".$jourpp);
   }
 }
 
