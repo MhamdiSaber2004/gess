@@ -38,6 +38,7 @@ ini_set('display_errors', 1);
       $numFacture=$_POST['numFacture'];
       $numPayement=$_POST['numPayement'];
       $dettePaye=$_POST['dettePaye'];
+      $parM3OuNon = $_POST['parM3OuNon'];
 
       $sqlA = "INSERT INTO `utilisation_et_facture`(`idGess`, `idBenefique`, `moisUF`, `detteAvantFacture`, `dateUF`, `numConsommation`, `numConsommationPrecedent`, `numFacture`, `numPayement`, `prixM3`, `prixFixe`, `autrePrix`, `parM3OuNon`, `MontantPaye`)VALUES ('$idGess','$idBenefique','$moisUF','$detteAvantFacture','$dateUF','$numConsommation','$numConsommationPrecedent','$numFacture','$numPayement','$prixM3','$prixFixe','$autrePrix','$parM3OuNon','$dettePaye')";
       
@@ -303,7 +304,7 @@ ini_set('display_errors', 1);
                                  لسعر بال h
                               </label>
                               <br>
-                              <input class="form-check-input" type="radio" name="parM3OuNon" value="0">
+                              <input class="form-check-input" type="radio" name="parM3OuNon" value="1">
                               <label class="form-check-label" for="flexRadioDefault1">
                                  لسعر بال m3
                               </label>
