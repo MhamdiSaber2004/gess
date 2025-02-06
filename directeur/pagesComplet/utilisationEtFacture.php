@@ -45,7 +45,7 @@ ini_set('display_errors', 1);
       $stmt = $conn->prepare("INSERT INTO `utilisation_et_facture` (`idGess`, `idBenefique`, `moisUF`, `detteAvantFacture`, `dateUF`, `numConsommation`, `numConsommationPrecedent`, `numFacture`, `numPayement`, `prixM3`, `prixFixe`, `autrePrix`, `parM3OuNon`, `MontantPaye`, `dettePaye`) 
       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
       
-      $stmt->bind_param("iisssiiiiidddi",$idGess, $idBenefique, $moisUF, $detteAvantFacture, $dateUF, $numConsommation, $numConsommationPrecedent, $numFacture, $numPayement, $prixM3, $prixFixe, $autrePrix, $parM3OuNon, $MontantPaye, $dettePaye);
+      $stmt->bind_param($idGess, $idBenefique, $moisUF, $detteAvantFacture, $dateUF, $numConsommation, $numConsommationPrecedent, $numFacture, $numPayement, $prixM3, $prixFixe, $autrePrix, $parM3OuNon, $MontantPaye, $dettePaye);
       
       if ($stmt->execute()) {
           header("Location: utilisationEtFacture.php?mois=$moisUF");
