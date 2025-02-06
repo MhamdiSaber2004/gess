@@ -40,6 +40,7 @@ ini_set('display_errors', 1);
       $numPayement=$_POST['numPayement'];
       $dettePaye=$_POST['dettePaye'];
       $parM3OuNon = $_POST['parM3OuNon'];
+      $MontantPaye = isset($MontantPaye) ? $MontantPaye : 0;
 
       $stmt = $conn->prepare("INSERT INTO `utilisation_et_facture` (`idGess`, `idBenefique`, `moisUF`, `detteAvantFacture`, `dateUF`, `numConsommation`, `numConsommationPrecedent`, `numFacture`, `numPayement`, `prixM3`, `prixFixe`, `autrePrix`, `parM3OuNon`, `MontantPaye`, `dettePaye`) 
       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
