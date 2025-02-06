@@ -90,7 +90,7 @@
         <h6 class="navbar-heading text-muted"> الديون </h6>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="pages/utilisationEtFacture.php">
               <i class="ni ni-circle-08 text-blue"></i>متابعة الاستهلاك
             </a>
           </li>
