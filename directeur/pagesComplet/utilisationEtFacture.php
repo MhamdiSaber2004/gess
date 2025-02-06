@@ -4,6 +4,7 @@ ini_set('display_errors', 1);
    include_once "../db/db.php";
    session_start();
    if (!isset($_SESSION["idPompiste"])) {
+      $idPompiste=$_SESSION['idPompiste'];
    header("location: ../login.php");
    exit();
    }
@@ -40,7 +41,7 @@ ini_set('display_errors', 1);
       $dettePaye=$_POST['dettePaye'];
       $parM3OuNon = $_POST['parM3OuNon'];
 
-      $sqlA = "INSERT INTO `utilisation_et_facture`(`idGess`, `idBenefique`, `moisUF`, `detteAvantFacture`, `dateUF`, `numConsommation`, `numConsommationPrecedent`, `numFacture`, `numPayement`, `prixM3`, `prixFixe`, `autrePrix`, `parM3OuNon`, `MontantPaye`)VALUES ('$idGess','$idBenefique','$moisUF','$detteAvantFacture','$dateUF','$numConsommation','$numConsommationPrecedent','$numFacture','$numPayement','$prixM3','$prixFixe','$autrePrix','$parM3OuNon','$dettePaye')";
+      $sqlA = "INSERT INTO `utilisation_et_facture`(`idGess`,`idPompiste`, `idBenefique`, `moisUF`, `detteAvantFacture`, `dateUF`, `numConsommation`, `numConsommationPrecedent`, `numFacture`, `numPayement`, `prixM3`, `prixFixe`, `autrePrix`, `parM3OuNon`, `MontantPaye`)VALUES ('$idGess','$idPompiste,'$idBenefique','$moisUF','$detteAvantFacture','$dateUF','$numConsommation','$numConsommationPrecedent','$numFacture','$numPayement','$prixM3','$prixFixe','$autrePrix','$parM3OuNon','$dettePaye')";
       
       if ($conn->query($sqlA) === TRUE) {
          header("Location: utilisationEtFacture.php?mois=$moisUF");
