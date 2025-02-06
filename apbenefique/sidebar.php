@@ -80,15 +80,30 @@
         <!-- Heading -->
         <h6 class="navbar-heading text-muted"> مطالب</h6>
         <ul class="navbar-nav">
-        <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link" href="index.php?page=listeDemandes">
               <i class="ni ni-circle-08 text-blue"></i>مطالب الترشح
             </a>
           </li>
-      
-          </ul>
-
-
+        </ul>
+        <hr class="my-3">
+        <h6 class="navbar-heading text-muted"> الديون </h6>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="ni ni-circle-08 text-blue"></i>متابعة الاستهلاك
+            </a>
+          </li>
+        </ul>
+        <hr class="my-3">
+        <h6 class="navbar-heading text-muted">الاعطاب </h6>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="ni ni-circle-08 text-blue"></i>تبليغ عن اعطاب
+            </a>
+          </li>
+        </ul>
 
           
 
@@ -131,7 +146,7 @@
 -->
         </ul>
         <!-- Divider -->
-        <hr class="my-3">
+        
         
       </div>
     </div>
