@@ -41,9 +41,8 @@ ini_set('display_errors', 1);
       $numPayement=$_POST['numPayement'];
       $dettePaye=$_POST['dettePaye'];
       
-      $MontantPaye = isset($MontantPaye) ? $MontantPaye : 0;
 
-      $stmt = $conn->prepare("INSERT INTO `utilisation_et_facture` (`idGess`, `idBenefique`, `moisUF`, `detteAvantFacture`, `dateUF`, `numConsommation`, `numConsommationPrecedent`, `numFacture`, `numPayement`, `prixM3`, `prixFixe`, `autrePrix`, `parM3OuNon`, `MontantPaye`, `dettePaye`) VALUES ('$idGess', '$idBenefique', '$moisUF', $detteAvantFacture', '$dateUF', '$numConsommation', '$numConsommationPrecedent', '$numFacture', '$numPayement', '$prixM3', '$prixFixe','$autrePrix', '$parM3OuNon', '$MontantPaye', '$dettePaye')");
+      $stmt = $conn->prepare("INSERT INTO `utilisation_et_facture`(`idGess`, `idBenefique`, `moisUF`, `detteAvantFacture`, `dateUF`, `numConsommation`, `numConsommationPrecedent`, `dettePaye`, `numFacture`, `numPayement`, `prixM3`, `prixFixe`, `autrePrix`, `parM3OuNon`, `MontantPaye`, `activ`) VALUES ('$idGess','$idBenefique','$moisUF','$detteAvantFacture','$dateUF','$numConsommation','$numConsommationPrecedent','$dettePaye','$numFacture','$numPayement','$prixM3','$prixFixe','$autrePrix','$parM3OuNon','0','1')");
       
       if ($stmt->execute()) {
           header("Location: utilisationEtFacture.php?mois=$moisUF");
