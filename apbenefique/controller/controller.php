@@ -36,6 +36,7 @@ if (isset($_POST["login"])) {
         if ($row["active"] == 1) {
             $_SESSION['type']="_aep";
             $_SESSION["idBenefique"] = $row["idBenefique"];
+            $_SESSION["idGess"] = $row["idGess"];
             header("Location: ./index.php");
             exit();
         }
@@ -55,6 +56,7 @@ if (isset($_POST["login"])) {
         if ($row["active"] == 1) {
             $_SESSION['type']="_pi";
             $_SESSION["idBenefique"] = $row["idBenefique"];
+            $_SESSION["idGess"] = $row["idGess"];
             header("Location: ./index.php");
             exit();
         }else if ($row["active"] == -1) {
