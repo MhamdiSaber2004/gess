@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
    include_once "../db/db.php";
-   session_start();
+   //session_start();
    if (!isset($_SESSION["idPompiste"])) {
       $idPompiste=$_SESSION['idPompiste'];
       header("location: ../login.php");
