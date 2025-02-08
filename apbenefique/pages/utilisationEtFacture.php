@@ -82,7 +82,6 @@ $idGess = $_SESSION['idGess'];
 
     <tr>
       <td rowspan="2">العدد الجملي</td>
-      <td rowspan="2" class="text-center">إسم ولقب المنتفع</td>
       <td rowspan="2" class="rotate-arabic bg-transparent">الديون المتخلدة بذمة <br>المنتفع قبل إصدار<br> الفاتورة الخاصة بهذه<br> الطريقة</td>
       <td colspan="3">رفع العدادات الخاصة</td>
       <td colspan="11">الفوترة</td>
@@ -106,31 +105,33 @@ $idGess = $_SESSION['idGess'];
     </tr>
     <?php 
          $result = $conn->query("SELECT * FROM utilisation_et_facture WHERE idBenefique = $idBenefique");
-      
+            $nb=0;
          while ($row = $result->fetch_assoc()) { 
-            echo $row['idBenefique'];
+         $nb=$nb+1;
+      ?>
+      <tr>
+        <td><?php echo $nb ; ?></td>
+        <td><?php echo $row['detteAvantFacture'] ; ?></td>
+        <td><?php echo $row['dateUF'] ; ?></td>
+        <td><?php echo $row['numConsommation'] ; ?></td>
+        <td><?php echo $row['numConsommationPrecedent'] ; ?></td>
+        <td><?php echo $row['numConsommation']-$row['numConsommationPrecedent'] ; ?></td>
+        <td><?php echo $row['prixM3'] ?></td>
+        <td><?php echo ($row['numConsommation']-$row['numConsommationPrecedent'])* $row['prixM3'];  ?></td>
+        <td><?php echo $row['prixFixe'] ; ?></td>
+        <td><?php echo (($row['numConsommation']-$row['numConsommationPrecedent'])* $row['prixM3'])+$row['prixFixe']; ?></td>
+        <td><?php echo $row['autrePrix'] ; ?></td>
+        <td><?php echo (($row['numConsommation']-$row['numConsommationPrecedent'])* $row['prixM3'])+$row['prixFixe']+$row['autrePrix'] ; ?></td>
+        <td><?php echo $row['MontantPaye'] ; ?></td>
+        <td><?php echo ((($row['numConsommation']-$row['numConsommationPrecedent'])* $row['prixM3'])+$row['prixFixe']+$row['autrePrix']-$row['MontantPaye'])  ; ?></td>
+        <td><?php echo $row['numFacture'] ; ?></td>
+        <td><?php echo $row['numPayement'] ; ?></td>
+      </tr>
+      <?php
          }
       ?> 
     
-   <tr>
-      <td>1</td>
-      <td id="tr_idBenefique_1">saber</td>
-      <td>500</td>
-      <td>2025-01-01</td>
-      <td>5000</td>
-      <td>4500</td>
-      <td>500</td>
-      <td>200</td>
-      <td>100000</td>
-      <td>50</td>
-      <td>100050</td>
-      <td>500</td>
-      <td>100550</td>
-      <td>0</td>
-      <td>100550</td>
-      <td>70</td>
-      <td>50</td>
-   </tr>  
+
 </table>
 </div>
 
