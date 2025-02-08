@@ -42,6 +42,9 @@ if(isset($_GET['page']) && ! empty ( $_GET['page'] ) ) {
                 case 'printPompiste':
                   include "./pages/printPompiste.php";
                   break;
+                  case 'ajouterproblem':
+                    include "./pages/ajouterProblem.php";
+                    break;
 
 
                   case 'recuconsommation':
@@ -79,7 +82,7 @@ include "footer.php"
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body text-center">
-      <a class="btn btn-primary mx-auto" href="#" >اضافة عطب</a>
+      <a class="btn btn-primary mx-auto" href="index.php?page=ajouterproblem" >اضافة عطب</a>
       <br><br>
       <a class="btn btn-primary mx-auto" href="#" >اشعار عن قطع الماء</a>
       </div>
