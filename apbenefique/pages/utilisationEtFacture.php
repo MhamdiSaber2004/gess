@@ -47,7 +47,7 @@ $idGess = $_SESSION['idGess'];
 
   </head>
   <body>
-
+<br>
   <div class="card-header  border-0">
               <div class="row align-items-center">
                 <div class="col-6 text-center">
