@@ -247,12 +247,6 @@ if (isset($_POST['parametreCompte'])) {
         $_SESSION['message']="كلمات السر القديمة التي قمت بادخلها خاطئة";
 header("Location: ../index.php?page=parametreCompte");
     }
-
-
-
-
-
-    
 }
 
 
