@@ -111,7 +111,7 @@
 
     </tr>
     <?php 
-      $sql = "SELECT * FROM `utilisation_et_facture` WHERE activ=1 and idBenifique =$idBenifique ";
+     /* $sql = "SELECT * FROM `utilisation_et_facture` WHERE activ=1 and idBenifique =$idBenifique ";
       $result = $conn->query($sql);
       $nb=0;
       while ($row = $result->fetch_assoc()) { 
@@ -136,14 +136,10 @@
         <td><?php echo $row['numPayement'] ; ?></td>
       </tr>
     <?php
-        }
+        }*/
     ?>        
 </table>
 </div>
-
-<small>لحذف سطر يمكنك الضغط على إسم المنتفع ( لا يوجد تحذير، سيتم الحذف تلقائياً)</small>
-  
-   
 
 <div class="modal fade" id="addInfoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
    <form method="post">
