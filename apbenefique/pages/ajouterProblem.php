@@ -34,10 +34,6 @@ ini_set('display_errors', 1);
             </div>
             <div class="card-body">
               <form onsubmit ="return checkInputsProbleme()" action="controller/controller.php" method="post" enctype="multipart/form-data">
-                     <div class="form-group">
-                       <label class="form-control-label" for="input-country">مصاريف الاصلاح</label>
-                       <input type="number" id="prix" class="form-control form-control-alternative" placeholder="مصاريف الاصلاح" name="prix" >
-                     </div>
                     <div class="form-group">
                         <label class="form-control-label" for="input-username">تفاصيل العطب</label>
                         <textarea id="detail" name="detail" rows="4" class="form-control form-control-alternative" placeholder="تفاصيل العطب ..." ></textarea>                      
