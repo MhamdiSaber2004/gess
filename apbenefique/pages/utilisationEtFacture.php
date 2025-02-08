@@ -104,7 +104,14 @@ $idGess = $_SESSION['idGess'];
       <td class="rotate-arabic bg-transparent">رقم وصل الخلاص</td>
 
     </tr>
-
+    <?php 
+         $result = $conn->query("SELECT * FROM utilisation_et_facture WHERE idBenefique = $idBenefique");
+      
+         while ($row = $result->fetch_assoc()) { 
+            echo $row['idBenefique'];
+         }
+      ?> 
+    
    <tr>
       <td>1</td>
       <td id="tr_idBenefique_1">saber</td>
