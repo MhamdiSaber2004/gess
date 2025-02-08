@@ -250,55 +250,27 @@ header("Location: ../index.php?page=parametreCompte");
 }
 
 if (isset($_POST["ajoutProbleme"])) {
+   $detail=$_POST['detail'];
 
+   
+   $sql="INSERT INTO `problemes`(`idGess` `numCompteur`, `detail`) VALUES ('$idGess','$numCompteur','$detail')";
+   
+    
+    if($conn->query($sql) === TRUE){
 
-
-    if($_FILES['file1']['name']!=""){
-
-        $file1 = $_FILES['file1']['name'];
-        $imageArrBack = explode('.', $file1); //first index is file name and second index file type
-        $rand = rand(10000, 99999);
-        $nameFile1 = $rand . '.' . $imageArrBack[1];
-        $uploadPathBack = "../../directeur/uploads/" . $nameFile1;
-        $isUploadedBack = move_uploaded_file($_FILES["file1"]["tmp_name"], $uploadPathBack);
-    }else{
-        $nameFile1="";
-    }
-    if($_FILES['file2']['name'] != ""){
-
-        $file2 = $_FILES['file2']['name'];
-        $file2Arr = explode('.', $file2); //first index is file name and second index file type
-        $rand = rand(10000, 99999);
-        $nameFile2 = $rand . '.' . $file2Arr[1];
-        $uploadPath = "../../directeur/uploads/" . $nameFile2;
-        $isUploaded = move_uploaded_file($_FILES["file2"]["tmp_name"], $uploadPath);
-    }else{
-        $nameFile2 = "";
-    }
-
-    //$idProbleme = mysqli_real_escape_string($conn, $_POST["idProbleme"]);
-    $numCompteur = mysqli_real_escape_string($conn, $_POST["numCompteur"]);
-    $detail = mysqli_real_escape_string($conn, $_POST["detail"]);
-    $typeProbleme = mysqli_real_escape_string($conn, $_POST["typeProbleme"]);
-    $typeBenefique = $type;
-    $prix = mysqli_real_escape_string($conn, $_POST["prix"]);
-    $elementAchete = mysqli_real_escape_string($conn, $_POST["elementAchete"]);
-
-    $sql = "INSERT INTO `problemes` ( `idPompiste`, `idGess`, `numCompteur`, `detail`, `typeBenefique`, `prix`, `elementAchete`, `date`, `typeProbleme`, `fichierPrix`, `fichierElementAchete`) VALUES ('$idBenefique', '$idGess', '$numCompteur', '$detail', '$typeBenefique', '$prix', '$elementAchete', current_timestamp(), '$typeProbleme', '$nameFile1', '$nameFile2');";
-
-    if ($conn->query($sql) === true) {
+                
         
         $_SESSION['messageClass']="success";
-        $_SESSION['message']="تمت الإضافة بنجاح";
+        $_SESSION['message']="تمت التحيين بنجاح";
         header("Location: ../index.php");
-    } else {
-    
+    }else{
         $_SESSION['messageClass']="danger";
         $_SESSION['message']="حصل خطأ ما، الرجاء المحاولة لاحقا";
         header("Location: ../index.php");
     }
-   
 }
+    
+
 
 
 
