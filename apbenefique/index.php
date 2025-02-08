@@ -8,7 +8,7 @@ include "sidebar.php";
 
 if(!isset($_GET['page']) || empty($_GET['page']))
 {
-  include "./pages/dashboard.php";
+  include "./pages/listeDemandes.php";
 }
 
 

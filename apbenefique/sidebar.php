@@ -68,15 +68,7 @@
           </div>
         </div>
 
-        <!-- Navigation -->
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.php">
-              <i class="ni ni-tv-2 text-primary"></i>متابعة الإستهلاك
-            </a>
-          </li>
-          </ul>
-<hr class="my-3">
+
         <!-- Heading -->
         <h6 class="navbar-heading text-muted"> مطالب</h6>
         <ul class="navbar-nav">
