@@ -91,7 +91,7 @@
         <h6 class="navbar-heading text-muted">الاعطاب </h6>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#problemEtat">
               <i class="ni ni-circle-08 text-blue"></i>تبليغ عن اعطاب
             </a>
           </li>
