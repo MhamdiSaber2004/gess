@@ -47,15 +47,13 @@ ini_set('display_errors', 1);
   <body>
 
   <div class="card-header  border-0">
-              <div class="row align-items-center">
-                <div class="col-6 text-center">
-                  <h3 class="mb-0"><button onclick="printPompiste('printDiv')" class="btn btn-sm btn-primary">طباعة</button> </h3>
-                </div>
-                <div class="col-6 text-center">
-                  <a href="../index.php" class="btn btn-sm btn-primary">رجوع</a>
-                </div>
-              </div>
-            </div>
+      <div class="row align-items-center">
+         <div class="col-6 text-center">
+         <h3 class="mb-0"><button onclick="printPompiste('printDiv')" class="btn btn-sm btn-primary">طباعة</button> </h3>
+         </div>
+
+      </div>
+   </div>
 
 <div  class="no-print" id="printDiv">
    
