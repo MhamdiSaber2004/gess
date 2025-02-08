@@ -1,3 +1,12 @@
+<?php
+include_once('../db/db.php');
+
+if(isset($_SESSION['idbenifique'])){
+   echo 'ok !';
+}
+
+
+?>
 
 <!doctype html>
 <html lang="en" dir="rtl">
@@ -85,6 +94,7 @@
       <td class="rotate-arabic bg-transparent">رقم وصل الخلاص</td>
 
     </tr>
+
    <tr>
       <td>1</td>
       <td id="tr_idBenefique_1">saber</td>
