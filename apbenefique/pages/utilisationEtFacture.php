@@ -14,13 +14,6 @@
       header("location: ../login.php");
    }
 
-   if(isset($_GET['delet'])){
-      $idUF=$_GET['delet'];
-      $sqld = "UPDATE `utilisation_et_facture` SET `activ`='1' WHERE idBenefique=$idBenifique";
-      if($resultd = $conn->query($sqld)){
-         header("Location: utilisationEtFacture.php?mois=$moisUF");
-      }
-   }
 ?>
 <!doctype html>
 <html lang="en" dir="rtl">
@@ -83,7 +76,7 @@
         ?>    
     </strong>
     <strong class=" text-center col-8 text-danger">
-        دفتر متابعة الاستهلاك والفوترة الخاصة بكل المنتفعين <br>لشهر :  <?php echo $_GET['mois'] ?>   
+        دفتر متابعة الاستهلاك والفوترة الخاصة بكل المنتفعين <br>
     </strong>
     <div class="col"> 
     </div>
@@ -277,15 +270,7 @@
 </div>
   
 
-<script>
-function printPompiste(areaID){
-    var printContent = document.getElementById(areaID).innerHTML;
-    var originalContent = document.body.innerHTML;
-    document.body.innerHTML = printContent;
-    window.print();
-    document.body.innerHTML = originalContent;
-}
-</script>
+
 
 
 <script>
