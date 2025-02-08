@@ -255,7 +255,7 @@ if (isset($_POST["ajoutProbleme"])) {
    $detail=$_POST['detail'];
 
    
-   $sql="INSERT INTO `problemes`(`idGess` `numCompteur`, `detail`) VALUES ('$idGess',$numCompteur,'$detail')";
+   $sql="INSERT INTO `problemes`(`idGess`, `numCompteur`, `detail`) VALUES ('$idGess','$numCompteur','$detail')";
     if($conn->query($sql) === TRUE){
         $_SESSION['messageClass']="success";
         $_SESSION['message']="تمت التحيين بنجاح";
