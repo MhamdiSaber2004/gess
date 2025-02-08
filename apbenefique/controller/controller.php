@@ -290,12 +290,12 @@ if (isset($_POST["ajoutProbleme"])) {
         
         $_SESSION['messageClass']="success";
         $_SESSION['message']="تمت الإضافة بنجاح";
-        header("Location: ../index.php?page=listeProblemes");
+        header("Location: ../index.php");
     } else {
     
         $_SESSION['messageClass']="danger";
         $_SESSION['message']="حصل خطأ ما، الرجاء المحاولة لاحقا";
-        header("Location: ../index.php?page=listeProblemes");
+        header("Location: ../index.php");
     }
    
 }
