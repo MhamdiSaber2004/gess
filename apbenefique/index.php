@@ -78,7 +78,7 @@ include "footer.php"
 <div class="modal fade" id="problemEtat" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-body">
+      <div class="modal-body text-center">
       <a class="btn btn-primary mx-auto" href="#" >اضافة عطب</a>
       <br><br>
       <a class="btn btn-primary mx-auto" href="#" >اشعار عن قطع الماء</a>
