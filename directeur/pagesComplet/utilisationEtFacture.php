@@ -42,7 +42,7 @@ ini_set('display_errors', 1);
       $dettePaye=$_POST['dettePaye'];
       
 
-      $stmt = $conn->prepare("INSERT INTO `utilisation_et_facture`(`idGess`, `idBenefique`, `moisUF`, `detteAvantFacture`, `dateUF`, `numConsommation`, `numConsommationPrecedent`, `dettePaye`, `numFacture`, `numPayement`, `prixM3`, `prixFixe`, `autrePrix`, `parM3OuNon`, `MontantPaye`, `activ`) VALUES ('$idGess','$idBenefique','$moisUF','$detteAvantFacture','$dateUF','$numConsommation','$numConsommationPrecedent','$dettePaye','$numFacture','$numPayement','$prixM3','$prixFixe','$autrePrix','$parM3OuNon','0','1')");
+      $stmt = $conn->prepare("INSERT INTO `utilisation_et_facture`(`idGess`, `idBenefique`, `moisUF`, `detteAvantFacture`, `dateUF`, `numConsommation`, `numConsommationPrecedent`, `dettePaye`, `numFacture`, `numPayement`, `prixM3`, `prixFixe`, `autrePrix`, `parM3OuNon`, `dettePaye`, `activ`) VALUES ('$idGess','$idBenefique','$moisUF','$detteAvantFacture','$dateUF','$numConsommation','$numConsommationPrecedent','$dettePaye','$numFacture','$numPayement','$prixM3','$prixFixe','$autrePrix','$parM3OuNon','0','1')");
       
       if ($stmt->execute()) {
           header("Location: utilisationEtFacture.php?mois=$moisUF");
@@ -161,7 +161,7 @@ ini_set('display_errors', 1);
         $prixFixe=0;
         $prixTotal=0;
         $MontantRequis=0;
-        $MontantPaye=0;
+        $dettePaye=0;
         $montantDu=0;
 
 
@@ -185,8 +185,8 @@ ini_set('display_errors', 1);
             $prixFixe=$prixFixe+$row['prixFixe'];
             $prixTotal=$prixTotal+(($row['numConsommation']-$row['numConsommationPrecedent'])* $row['prixM3'])+$row['prixFixe'];
             $MontantRequis=$MontantRequis+(($row['numConsommation']-$row['numConsommationPrecedent'])* $row['prixM3'])+$row['prixFixe']+$row['autrePrix'];
-            $MontantPaye=$MontantPaye+$row['MontantPaye'];
-            $montantDu=$montantDu+((($row['numConsommation']-$row['numConsommationPrecedent'])* $row['prixM3'])+$row['prixFixe']+$row['autrePrix']-$row['MontantPaye']);
+            $dettePaye=$dettePaye+$row['dettePaye'];
+            $montantDu=$montantDu+((($row['numConsommation']-$row['numConsommationPrecedent'])* $row['prixM3'])+$row['prixFixe']+$row['autrePrix']-$row['dettePaye']);
     ?>
       <tr>
         <td><?php echo $nb ; ?></td>
@@ -210,8 +210,8 @@ ini_set('display_errors', 1);
         <td><?php echo (($row['numConsommation']-$row['numConsommationPrecedent'])* $row['prixM3'])+$row['prixFixe']; ?></td>
         <td><?php echo $row['autrePrix'] ; ?></td>
         <td><?php echo (($row['numConsommation']-$row['numConsommationPrecedent'])* $row['prixM3'])+$row['prixFixe']+$row['autrePrix'] ; ?></td>
-        <td><?php echo $row['MontantPaye'] ; ?></td>
-        <td><?php echo ((($row['numConsommation']-$row['numConsommationPrecedent'])* $row['prixM3'])+$row['prixFixe']+$row['autrePrix']-$row['MontantPaye'])  ; ?></td>
+        <td><?php echo $row['dettePaye'] ; ?></td>
+        <td><?php echo ((($row['numConsommation']-$row['numConsommationPrecedent'])* $row['prixM3'])+$row['prixFixe']+$row['autrePrix']-$row['dettePaye'])  ; ?></td>
         <td><?php echo $row['numFacture'] ; ?></td>
         <td><?php echo $row['numPayement'] ; ?></td>
       </tr>
@@ -239,7 +239,7 @@ ini_set('display_errors', 1);
         <td><?php echo $prixTotal ; ?></td>
         <td style="background-color:grey"></td>
         <td><?php echo $MontantRequis ; ?></td>
-        <td><?php echo $MontantPaye ; ?></td>
+        <td><?php echo $dettePaye ; ?></td>
         <td><?php echo $montantDu ; ?></td>
         <td style="background-color:grey"></td>
         <td style="background-color:grey"></td>

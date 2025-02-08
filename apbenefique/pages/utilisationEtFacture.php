@@ -122,8 +122,8 @@ $idGess = $_SESSION['idGess'];
         <td><?php echo (($row['numConsommation']-$row['numConsommationPrecedent'])* $row['prixM3'])+$row['prixFixe']; ?></td>
         <td><?php echo $row['autrePrix'] ; ?></td>
         <td><?php echo (($row['numConsommation']-$row['numConsommationPrecedent'])* $row['prixM3'])+$row['prixFixe']+$row['autrePrix'] ; ?></td>
-        <td><?php echo $row['MontantPaye'] ; ?></td>
-        <td><?php echo ((($row['numConsommation']-$row['numConsommationPrecedent'])* $row['prixM3'])+$row['prixFixe']+$row['autrePrix']-$row['MontantPaye'])  ; ?></td>
+        <td><?php echo $row['dettePaye'] ; ?></td>
+        <td><?php echo ((($row['numConsommation']-$row['numConsommationPrecedent'])* $row['prixM3'])+$row['prixFixe']+$row['autrePrix']-$row['dettePaye'])  ; ?></td>
         <td><?php echo $row['numFacture'] ; ?></td>
         <td><?php echo $row['numPayement'] ; ?></td>
       </tr>
