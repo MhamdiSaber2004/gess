@@ -259,7 +259,7 @@ if (isset($_POST["ajoutProbleme"])) {
         $imageArrBack = explode('.', $file1); //first index is file name and second index file type
         $rand = rand(10000, 99999);
         $nameFile1 = $rand . '.' . $imageArrBack[1];
-        $uploadPathBack = "../uploads/" . $nameFile1;
+        $uploadPathBack = "../../directeur/uploads/" . $nameFile1;
         $isUploadedBack = move_uploaded_file($_FILES["file1"]["tmp_name"], $uploadPathBack);
     }else{
         $nameFile1="";
@@ -270,7 +270,7 @@ if (isset($_POST["ajoutProbleme"])) {
         $file2Arr = explode('.', $file2); //first index is file name and second index file type
         $rand = rand(10000, 99999);
         $nameFile2 = $rand . '.' . $file2Arr[1];
-        $uploadPath = "../uploads/" . $nameFile2;
+        $uploadPath = "../../directeur/uploads/" . $nameFile2;
         $isUploaded = move_uploaded_file($_FILES["file2"]["tmp_name"], $uploadPath);
     }else{
         $nameFile2 = "";
@@ -280,7 +280,7 @@ if (isset($_POST["ajoutProbleme"])) {
     $numCompteur = mysqli_real_escape_string($conn, $_POST["numCompteur"]);
     $detail = mysqli_real_escape_string($conn, $_POST["detail"]);
     $typeProbleme = mysqli_real_escape_string($conn, $_POST["typeProbleme"]);
-    $typeBenefique = mysqli_real_escape_string($conn, $_POST["typeBenefique"]);
+    $typeBenefique = $type;
     $prix = mysqli_real_escape_string($conn, $_POST["prix"]);
     $elementAchete = mysqli_real_escape_string($conn, $_POST["elementAchete"]);
 
