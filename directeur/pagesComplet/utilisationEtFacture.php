@@ -43,7 +43,7 @@ ini_set('display_errors', 1);
       
       $MontantPaye = isset($MontantPaye) ? $MontantPaye : 0;
 
-      $stmt = $conn->prepare("INSERT INTO `utilisation_et_facture` (`idGess`, `idBenefique`, `moisUF`, `detteAvantFacture`, `dateUF`, `numConsommation`, `numConsommationPrecedent`, `numFacture`, `numPayement`, `prixM3`, `prixFixe`, `autrePrix`, `parM3OuNon`, `MontantPaye`) VALUES ('$idGess', '$idBenefique', '$moisUF', $detteAvantFacture', '$dateUF', '$numConsommation', '$numConsommationPrecedent', '$numFacture', '$numPayement', '$prixM3', '$prixFixe','$autrePrix', '$parM3OuNon', '$MontantPaye')");
+      $stmt = $conn->prepare("INSERT INTO `utilisation_et_facture` (`idGess`, `idBenefique`, `moisUF`, `detteAvantFacture`, `dateUF`, `numConsommation`, `numConsommationPrecedent`, `numFacture`, `numPayement`, `prixM3`, `prixFixe`, `autrePrix`, `parM3OuNon`, `MontantPaye`, `dettePaye`) VALUES ('$idGess', '$idBenefique', '$moisUF', $detteAvantFacture', '$dateUF', '$numConsommation', '$numConsommationPrecedent', '$numFacture', '$numPayement', '$prixM3', '$prixFixe','$autrePrix', '$parM3OuNon', '$MontantPaye', '$dettePaye')");
       
       if ($stmt->execute()) {
           header("Location: utilisationEtFacture.php?mois=$moisUF");
@@ -344,13 +344,13 @@ ini_set('display_errors', 1);
                         <div class="col-lg-12 mb-3">
                            <div class="form-group">
                               <label class="form-control-label" for="input-country">معالم أخرى	   </label>
-                              <input type="number" id="autrePrix"  class="form-control form-control-alternative"  placeholder="معالم أخرى	 " name="autrePrix" value=""  required >
+                              <input type="number" id="autrePrix"  class="form-control form-control-alternative"  placeholder="معالم أخرى	 " name="autrePrix"  required >
                            </div>
                         </div> 
                         <div class="col-lg-12 mb-3">
                            <div class="form-group">
                               <label class="form-control-label" for="input-country">المبلغ المدفوع	   </label>
-                              <input type="number" id="numConsommation"  class="form-control form-control-alternative" placeholder="المبلغ المدفوع	 " name="dettePaye" dettePaye required>
+                              <input type="number" id="numConsommation"  class="form-control form-control-alternative" placeholder="المبلغ المدفوع	 " name="dettePaye"  required>
                            </div>
                         </div>
                         <div class="col-lg-12 mb-3">
