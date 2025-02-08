@@ -3,8 +3,8 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 include('../db/db.php');
 
-if(isset($_SESSION['idbenifique'])){
-   echo 'ok !';
+if(isset($_SESSION['idBenefique'])){
+   $idBenefique = $_SESSION['idBenefique'];
 }
 
 $idGess = $_SESSION['idGess'];
