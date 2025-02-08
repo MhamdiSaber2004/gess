@@ -258,7 +258,7 @@ if (isset($_POST["ajoutProbleme"])) {
    $sql="INSERT INTO `problemes`(`idGess`, `numCompteur`, `detail`) VALUES ('$idGess','$numCompteur','$detail')";
     if($conn->query($sql) === TRUE){
         $_SESSION['messageClass']="success";
-        $_SESSION['message']="تمت التحيين بنجاح";
+        $_SESSION['message']="تمت ارسال العطب بنجاح";
         header("Location: ../index.php");
     }else{
         $_SESSION['messageClass']="danger";

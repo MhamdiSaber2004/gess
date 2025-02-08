@@ -84,7 +84,11 @@ include "footer.php"
       <div class="modal-body text-center">
       <a class="btn btn-primary mx-auto" href="index.php?page=ajouterproblem" >اضافة عطب</a>
       <br><br>
-      <a class="btn btn-primary mx-auto" href="#" >اشعار عن قطع الماء</a>
+      <form action="controller/controller.php" method="post" >
+        <input type="text" name="detail" value="مشكلة قطع ماء" class="d-none">
+        <button button type="submit" name="ajoutProbleme" class="btn btn-primary mx-auto" name="" >اشعار عن قطع الماء</a>
+      </form>
+
       </div>
     </div>
   </div>
