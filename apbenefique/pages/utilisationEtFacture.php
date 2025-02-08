@@ -118,7 +118,7 @@
 
     </tr>
     <?php 
-      $sql = "SELECT * FROM `utilisation_et_facture` WHERE idGess = $idGess and moisUF='$moisUF' and activ=1";
+      $sql = "SELECT * FROM `utilisation_et_facture` WHERE idGess = $idGess and activ=1 and idBenifique =$idBenifique ";
       $result = $conn->query($sql);
       $nb=0;
       while ($row = $result->fetch_assoc()) { 
