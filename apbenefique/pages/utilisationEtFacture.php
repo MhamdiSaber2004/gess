@@ -7,6 +7,8 @@ if(isset($_SESSION['idbenifique'])){
    echo 'ok !';
 }
 
+$idGess = $_SESSION['idGess'];
+
 
 ?>
 
