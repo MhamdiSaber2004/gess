@@ -63,12 +63,10 @@ if(isset($_SESSION['idbenifique'])){
     <strong class="col-3 text-primary">
         المجمع المائي :<br> 
         <?php 
-            $sql1 = "SELECT nom FROM gess WHERE idGess = $idGess";
-
-            $result1 = $conn->query($sql1);
+            $result1 = $conn->query("SELECT nom FROM gess WHERE idGess = $idGess");
         
             while ($row1 = $result1->fetch_assoc()) { 
-            echo $row1['nom'];
+               echo $row1['nom'];
             }
         ?>        
     </strong>
