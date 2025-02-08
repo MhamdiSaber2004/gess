@@ -30,6 +30,7 @@ ini_set('display_errors', 1);
       $detteAvantFacture=$_POST['detteAvantFacture'];
       $numConsommation=$_POST['numConsommation'];
       $numConsommationPrecedent=$_POST['numConsommationPrecedent'];
+      $parM3OuNon = $_POST['parM3OuNon'];
       $prixM3=$_POST['prixM3'];
       $prixFixe=$_POST['prixFixe'];
       $dateUF=$_POST['dateUF'];
@@ -39,10 +40,10 @@ ini_set('display_errors', 1);
       $numFacture=$_POST['numFacture'];
       $numPayement=$_POST['numPayement'];
       $dettePaye=$_POST['dettePaye'];
-      $parM3OuNon = $_POST['parM3OuNon'];
+      
       $MontantPaye = isset($MontantPaye) ? $MontantPaye : 0;
 
-      $stmt = $conn->prepare("INSERT INTO `utilisation_et_facture` (`idGess`, `idBenefique`, `moisUF`, `detteAvantFacture`, `dateUF`, `numConsommation`, `numConsommationPrecedent`, `numFacture`, `numPayement`, `prixM3`, `prixFixe`, `autrePrix`, `parM3OuNon`, `MontantPaye`, `dettePaye`) VALUES ('$idGess', '$idBenefique', '$moisUF', $detteAvantFacture', '$dateUF', '$numConsommation', '$numConsommationPrecedent', '$numFacture', '$numPayement', '$prixM3', '$prixFixe','$autrePrix', '$parM3OuNon', '$MontantPaye', '$dettePaye')");
+      $stmt = $conn->prepare("INSERT INTO `utilisation_et_facture` (`idGess`, `idBenefique`, `moisUF`, `detteAvantFacture`, `dateUF`, `numConsommation`, `numConsommationPrecedent`, `numFacture`, `numPayement`, `prixM3`, `prixFixe`, `autrePrix`, `parM3OuNon`, `MontantPaye`) VALUES ('$idGess', '$idBenefique', '$moisUF', $detteAvantFacture', '$dateUF', '$numConsommation', '$numConsommationPrecedent', '$numFacture', '$numPayement', '$prixM3', '$prixFixe','$autrePrix', '$parM3OuNon', '$MontantPaye')");
       
       if ($stmt->execute()) {
           header("Location: utilisationEtFacture.php?mois=$moisUF");
@@ -273,6 +274,16 @@ ini_set('display_errors', 1);
                                     if ($result3->num_rows > 0) {
                                        // output data of each row
                                        while ($row = $result3->fetch_assoc()) {
+                                             echo '<option value="'.$row['idBenefique'].'">'.$row['nom'].'</option>';
+                                       }
+                                    }
+                                 ?>
+                                  <?php
+                                    $sql4 = "SELECT * FROM benefique_aep where idGess='$idGess' and active=1 ";
+                                    $result4 = $conn->query($sql4);
+                                    if ($result4->num_rows > 0) {
+                                       // output data of each row
+                                       while ($row = $result4->fetch_assoc()) {
                                              echo '<option value="'.$row['idBenefique'].'">'.$row['nom'].'</option>';
                                        }
                                     }
