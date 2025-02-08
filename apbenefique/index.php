@@ -79,9 +79,9 @@ include "footer.php"
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-      <a class="btn btn-primary" href="#" >اضافة عطب</a>
-      <br>
-      <a class="btn btn-primary" href="#" >اشعار عن قطع الماء</a>
+      <a class="btn btn-primary mx-auto" href="#" >اضافة عطب</a>
+      <br><br>
+      <a class="btn btn-primary mx-auto" href="#" >اشعار عن قطع الماء</a>
       </div>
     </div>
   </div>
