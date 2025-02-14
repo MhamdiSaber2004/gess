@@ -96,7 +96,7 @@ if(isset($_GET['moin'])){
             <tr>
                 <td>دائرة المجمع المائي</td>
                 <td rowspan="2"><h2 class="title">استغلال محطة الضخ الكهربائية المتوسطة الجهد</h2></td>
-                <td rowspan="3">المجمع المائي  : <?php echo $nomGess ?> <td>
+              
             </tr>
             <tr>
                 <td>ولاية :  <?php echo $decanatGess ?><td>
