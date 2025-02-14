@@ -135,7 +135,7 @@ if(isset($_GET['moin'])){
                 <th rowspan="2">انقطاع الماء</th>
                 <th rowspan="2">عطب محطة الضخ</th>
                 <th rowspan="2">انطاع الطاقة</th>
-                <th colspan="2">المضخات</th>
+                <th colspan="2">عطب في الشبكة</th>
             </tr>
             <tr>
                 <th>كلي</th>
