@@ -263,7 +263,7 @@ if(isset($_GET['moin'])){
                     <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form action="">
+                <form action="" style="text-align: justify;">
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-12">
@@ -278,7 +278,7 @@ if(isset($_GET['moin'])){
                                 </select>
                             </div>
                             <hr>
-                            <label for="de" class="form-label">مدة الضخ</label>
+                            <h5 for="de" class="form-label">مدة الضخ</h5>
                             <div class="col-6">
                                 <label for="de" class="form-label">من</label>
                                 <input type="time" class="form-control" id="de" name="de">
