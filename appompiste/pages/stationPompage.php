@@ -108,7 +108,9 @@ if(isset($_GET['moin'])){
             <tr>
             </tr>
         </table>
-        <br>    
+        <div class="non-print">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">اضافة</button>
+        </div>    
         <table>
             <tr>
                 <th rowspan="3">التاريخ</th>
