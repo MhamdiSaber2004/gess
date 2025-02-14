@@ -192,16 +192,6 @@ if(isset($_GET['moin'])){
                     echo "</tr>";
                 }
             ?>
-            <script>
-               /* for (let i = 1; i <= 30; i++) {
-                    document.write("<tr>");
-                    document.write("<td>" + i + "</td>");
-                    for (let j = 0; j < 17; j++) {
-                        document.write("<td></td>");
-                    }
-                    document.write("</tr>");
-                }*/
-            </script>
             <tr>
                 <th colspan="3">المجموع الشهري</th>
                 <th></th>
@@ -275,7 +265,30 @@ if(isset($_GET['moin'])){
                 </div>
                 <form action="">
                     <div class="modal-body">
-                        
+                        <div class="row">
+                            <div class="col-12">
+                                <label for="exampleInputEmail1" class="form-label">تاريخ</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <?php
+                                         for ($i = 1; $i <= $days_in_moin; $i++) {
+                                            //ajout condition
+                                           echo '<option value="'.$i.'">'.$i.'</option>';
+                                        }
+                                    ?>
+                                </select>
+                            </div>
+                            <hr>
+                            <label for="de" class="form-label">مدة الضخ</label>
+                            <div class="col-6">
+                                <label for="de" class="form-label">من</label>
+                                <input type="time" class="form-control" id="de" name="de">
+                            </div>
+                            <div class="col-6">
+                                <label for="a" class="form-label">من</label>
+                                <input type="time" class="form-control" id="a" name="a">
+                            </div>
+
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">اغلاق</button>
