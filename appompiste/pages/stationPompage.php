@@ -1,3 +1,17 @@
+<?php
+include_once "../db/db.php";
+if (!isset($_SESSION["idPompiste"])) {
+  header("location: ../login.php");
+  exit();
+}
+
+if(!isset($_SESSION["idPompiste"])){
+    
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>

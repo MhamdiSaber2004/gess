@@ -27,6 +27,7 @@ if (isset($_POST["login"])) {
 
         if ($row["actif"] == 1) {
             $_SESSION["idPompiste"] = $row["idPompiste"];
+            $_SESSION["idGess"] = $row["idGess"];
             header("Location: ./index.php");
             exit();
         } else {
