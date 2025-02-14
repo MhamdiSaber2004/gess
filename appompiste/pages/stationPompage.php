@@ -146,7 +146,7 @@ if(isset($_GET['moin'])){
             </tr>
             <tr>
                 <th colspan="3">المجموع العام السابق</th>
-                <th><?php echo $days_in_moin; ?></th>
+                <th></th>
                 <th></th>
                 <th></th>
                 <th></th>
@@ -182,15 +182,25 @@ if(isset($_GET['moin'])){
             </tr>
 
             <!-- تعبئة الجدول لـ 30 يومًا -->
+            <?php
+                for ($i = 1; $i <= $days_in_month; $i++) {
+                    echo "<tr>";
+                    echo "<td>$i</td>";
+                    for ($j = 0; $j < 17; $j++) {
+                        echo "<td></td>";
+                    }
+                    echo "</tr>";
+                }
+            ?>
             <script>
-                for (let i = 1; i <= 30; i++) {
+               /* for (let i = 1; i <= 30; i++) {
                     document.write("<tr>");
                     document.write("<td>" + i + "</td>");
                     for (let j = 0; j < 17; j++) {
                         document.write("<td></td>");
                     }
                     document.write("</tr>");
-                }
+                }*/
             </script>
             <tr>
                 <th colspan="3">المجموع الشهري</th>
