@@ -103,7 +103,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#stationPompage">
               <i class="ni ni-vector text-red"></i>دفتر استغلال و صيانة محطة الضخ
             </a>
           </li>
@@ -118,7 +118,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" >
+            <a class="nav-link" href="pages/programmeEntretien.php" >
               <i class="ni ni-chart-bar-32 text-red"></i> برنامج الصيانة الدورية و الوقائية
             </a>
           </li>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استغلال محطة الضخ الكهربائية</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            color: red;
+        }
+        .header {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>دائرة المجمع المائي</td>
+            <td rowspan="2"><h2 class="title">استغلال محطة الضخ الكهربائية المتوسطة الجهد</h2></td>
+            <td rowspan="3">المجمع المائي  : ..................</td>
+        </tr>
+        <tr>
+            <td>ولاية : ..................</td>
+        </tr>
+        <tr>
+            <td>معمدية  : ...............</td>        
+            <td><p class="header">خلال شهر: __________</p></td>
+        </tr>
+        <tr>
+        </tr>
+    </table>
+    <br>    
+    <table>
+        <tr>
+            <th rowspan="3">التاريخ</th>
+            <th colspan="3">مدة الضخ</th>
+            <th rowspan="3">رقم العداد المائي</th>
+            <th colspan="4">الطاقة الكهربائية</th>
+            <th colspan="3"></th>
+            <th colspan="5"></th>
+            <th rowspan="3">ملاحظات</th>
+        </tr>
+        <tr>
+            <th rowspan="2">من</th>
+            <th rowspan="2">إلى</th>
+            <th rowspan="2">العدد الساعاتي</th>
+            <th rowspan="2">عداد النهار</th>
+            <th rowspan="2">عداد الليل</th>
+            <th rowspan="2">عداد المساء</th>
+            <th rowspan="2">عداد الذروة</th>
+            <th rowspan="2">شراء</th>
+            <th rowspan="2">مستعمل</th>
+            <th rowspan="2">اشغال المضخة</th>
+            <th rowspan="2">انقطاع الماء</th>
+            <th rowspan="2">عطب محطة الضخ</th>
+            <th rowspan="2">انطاع الطاقة</th>
+            <th colspan="2">المضخات</th>
+        </tr>
+        <tr>
+            <th>الأولى</th>
+            <th>الثانية</th>
+        </tr>
+        <tr>
+            <th colspan="3">المجموع العام السابق</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th colspan="3">الرقم السابق</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+
+        <!-- تعبئة الجدول لـ 30 يومًا -->
+        <script>
+            for (let i = 1; i <= 30; i++) {
+                document.write("<tr>");
+                document.write("<td>" + i + "</td>");
+                for (let j = 0; j < 17; j++) {
+                    document.write("<td></td>");
+                }
+                document.write("</tr>");
+            }
+        </script>
+        <tr>
+            <th colspan="3">المجموع الشهري</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th colspan="3">المجموع العام</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td colspan="5" rowspan="5" style="padding-bottom : 9%">الملاحضات</td>
+            <td>الطاقة المستهاكة</td>
+            <td></td>
+            <td>الكيلوواط</td>
+            <td colspan="10">الاسم و الامضاء</td>
+        </tr>
+        <tr>
+            <td>الدفق</td>
+            <td></td>
+            <td>م3/ساعة</td>
+            <td colspan="5" rowspan="3" style="padding-bottom : 9%">الحارس</td>
+            <td colspan="5" rowspan="3" style="padding-bottom : 9%">الرئيس</td>
+        </tr>
+        <tr>
+            <td>الطاقة</td>
+            <td></td>
+            <td>كيلوواط/ساعة</td>
+        </tr>
+        <tr>
+            <td>الطاقة</td>
+            <td></td>
+            <td>كيلوواط/م3</td>
+        </tr>
+    </table>
+    <br>
+
+</body>
+</html>
