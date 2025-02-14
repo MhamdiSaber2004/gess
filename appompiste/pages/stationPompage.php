@@ -284,7 +284,7 @@ if(isset($_GET['moin'])){
                                 <input type="time" class="form-control" id="de" name="de">
                             </div>
                             <div class="col-6">
-                                <label for="a" class="form-label">من</label>
+                                <label for="a" class="form-label">الى</label>
                                 <input type="time" class="form-control" id="a" name="a">
                             </div>
 
