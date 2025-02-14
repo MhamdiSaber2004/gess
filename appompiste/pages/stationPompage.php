@@ -288,7 +288,7 @@ if(isset($_GET['moin'])){
                                 <input type="time" class="form-control" id="a" name="a">
                             </div>
                             <hr>
-                            <h5 class="form-label">الصاقة الكهروبائية</h5>
+                            <h5 class="form-label">الصاقة الكهربائية</h5>
                             <div class="col-6">
                                 <label for="numCompter" class="form-label">رقم العداد المائي</label>
                                 <input type="text" class="form-control" id="numCompter" name="numCompter">
