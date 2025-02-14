@@ -6,7 +6,7 @@ if (!isset($_SESSION["idPompiste"])) {
   header("location: ../login.php");
   exit();
 }
-$nonGess="";
+$nomGess="";
 $placeGess="";
 $decanatGess="";
 $idGess=0;
@@ -17,7 +17,7 @@ if(isset($_SESSION["idGess"])){
     $result1 = $conn->query($sql1);
 
     while ($row1 = $result1->fetch_assoc()) { 
-        $nonGess=$row1['nom'];
+        $nomGess=$row1['nom'];
         $placeGess=$row1['accreditation'];
         $decanatGess=$row1['decanat'];
     }
