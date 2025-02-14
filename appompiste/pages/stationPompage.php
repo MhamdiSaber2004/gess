@@ -183,7 +183,7 @@ if(isset($_GET['moin'])){
 
             <!-- تعبئة الجدول لـ 30 يومًا -->
             <?php
-                for ($i = 1; $i <= $days_in_month; $i++) {
+                for ($i = 1; $i <= $days_in_moin; $i++) {
                     echo "<tr>";
                     echo "<td>$i</td>";
                     for ($j = 0; $j < 17; $j++) {
