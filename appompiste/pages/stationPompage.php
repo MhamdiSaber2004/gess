@@ -96,13 +96,13 @@ if(isset($_GET['moin'])){
             <tr>
                 <td>دائرة المجمع المائي</td>
                 <td rowspan="2"><h2 class="title">استغلال محطة الضخ الكهربائية المتوسطة الجهد</h2></td>
-                <td rowspan="3">المجمع المائي  : <?php echo $nomGess ?> <td>
+                <td rowspan="3">المجمع المائي  : <?php echo $nomGess ?></td>
             </tr>
             <tr>
-                <td>ولاية :  <?php echo $decanatGess ?><td>
+                <td>ولاية :  <?php echo $decanatGess ?></td>
             </tr>
             <tr>
-                <td>معمدية  :  <?php echo $placeGess ?><td>        
+                <td>معمدية  :  <?php echo $placeGess ?></td>        
                 <td><p class="header">خلال شهر: <?php echo $moin ?></p></td>
             </tr>
             <tr>
