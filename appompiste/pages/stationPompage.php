@@ -30,7 +30,7 @@ if(isset($_GET['moin'])){
     $moin=$_GET['moin'];
     list($year, $month_number) = explode('-', $moin);
     $days_in_moin = cal_days_in_month(CAL_GREGORIAN, $month_number, $year);
-    echo $days_in_moin;
+    
 }else{
     header("location: ../index.php");
 }
@@ -146,7 +146,7 @@ if(isset($_GET['moin'])){
             </tr>
             <tr>
                 <th colspan="3">المجموع العام السابق</th>
-                <th></th>
+                <th><?php echo $days_in_moin; ?></th>
                 <th></th>
                 <th></th>
                 <th></th>
