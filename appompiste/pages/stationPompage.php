@@ -268,7 +268,7 @@ if(isset($_GET['moin'])){
                         <div class="row">
                             <div class="col-12">
                                 <label for="exampleInputEmail1" class="form-label">تاريخ</label>
-                                <select class="form-select" aria-label="Default select example">
+                                <select class="form-select mb-3" aria-label="Default select example" mane="jour">
                                     <?php
                                          for ($i = 1; $i <= $days_in_moin; $i++) {
                                             //ajout condition
