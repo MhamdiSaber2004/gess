@@ -4,9 +4,28 @@ if (!isset($_SESSION["idPompiste"])) {
   header("location: ../login.php");
   exit();
 }
+$nonGess="";
+$placeGess="";
+$decanatGess="";
+if(isset($_SESSION["idGess"])){
+    $sql1 = "SELECT * FROM gess WHERE idGess = $idGess";
 
-if(!isset($_SESSION["idPompiste"])){
-    
+    $result1 = $conn->query($sql1);
+
+    while ($row1 = $result1->fetch_assoc()) { 
+        $nonGess=$row1['nom'];
+        $placeGess=$row1['accreditation'];
+        $decanatGess=$row1['decanat'];
+    }
+}else{
+    header("location: ../login.php");
+    exit();
+}
+
+if(isset($_GET['moin'])){
+    $moin=$_GET['moin'];
+}else{
+    header("location: ../index.php");
 }
 
 
@@ -73,14 +92,14 @@ if(!isset($_SESSION["idPompiste"])){
             <tr>
                 <td>دائرة المجمع المائي</td>
                 <td rowspan="2"><h2 class="title">استغلال محطة الضخ الكهربائية المتوسطة الجهد</h2></td>
-                <td rowspan="3">المجمع المائي  : ..................</td>
+                <td rowspan="3">المجمع المائي  : <?php echo $nomGess ?> <td>
             </tr>
             <tr>
-                <td>ولاية : ..................</td>
+                <td>ولاية :  <?php echo $decanatGess ?><td>
             </tr>
             <tr>
-                <td>معمدية  : ...............</td>        
-                <td><p class="header">خلال شهر: __________</p></td>
+                <td>معمدية  :  <?php echo $placeGess ?><td>        
+                <td><p class="header">خلال شهر: <?php echo $moin ?></p></td>
             </tr>
             <tr>
             </tr>
