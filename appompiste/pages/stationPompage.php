@@ -53,7 +53,7 @@
     <div class="container">
         <div class="non-print">
             <a class="btn btn-primary mt-3 mb-3 float-start" href="../index.php">رجوع</a>
-            <button onclick="print()" class="btn btn-primary  mt-3 mb-3 float-end">طباعة</button>
+            <button onclick="printsp()" class="btn btn-primary  mt-3 mb-3 float-end">طباعة</button>
         </div>
         <table>
             <tr>
@@ -214,7 +214,7 @@
         <br>
     </div>
     <script>
-        function print(){
+        function printsp(){
             window.print();
         }
     </script>
