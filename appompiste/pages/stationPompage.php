@@ -37,6 +37,7 @@
 </head>
 <body>
     <div class="container">
+        <a class="btn btn-primary" href="../index.php">رجوع</a>
         <table>
             <tr>
                 <td>دائرة المجمع المائي</td>
