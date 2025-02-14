@@ -36,163 +36,164 @@
     </style>
 </head>
 <body>
-    <table>
-        <tr>
-            <td>دائرة المجمع المائي</td>
-            <td rowspan="2"><h2 class="title">استغلال محطة الضخ الكهربائية المتوسطة الجهد</h2></td>
-            <td rowspan="3">المجمع المائي  : ..................</td>
-        </tr>
-        <tr>
-            <td>ولاية : ..................</td>
-        </tr>
-        <tr>
-            <td>معمدية  : ...............</td>        
-            <td><p class="header">خلال شهر: __________</p></td>
-        </tr>
-        <tr>
-        </tr>
-    </table>
-    <br>    
-    <table>
-        <tr>
-            <th rowspan="3">التاريخ</th>
-            <th colspan="3">مدة الضخ</th>
-            <th rowspan="3">رقم العداد المائي</th>
-            <th colspan="4">الطاقة الكهربائية</th>
-            <th colspan="3"></th>
-            <th colspan="5"></th>
-            <th rowspan="3">ملاحظات</th>
-        </tr>
-        <tr>
-            <th rowspan="2">من</th>
-            <th rowspan="2">إلى</th>
-            <th rowspan="2">العدد الساعاتي</th>
-            <th rowspan="2">عداد النهار</th>
-            <th rowspan="2">عداد الليل</th>
-            <th rowspan="2">عداد المساء</th>
-            <th rowspan="2">عداد الذروة</th>
-            <th rowspan="2">شراء</th>
-            <th rowspan="2">مستعمل</th>
-            <th rowspan="2">اشغال المضخة</th>
-            <th rowspan="2">انقطاع الماء</th>
-            <th rowspan="2">عطب محطة الضخ</th>
-            <th rowspan="2">انطاع الطاقة</th>
-            <th colspan="2">المضخات</th>
-        </tr>
-        <tr>
-            <th>الأولى</th>
-            <th>الثانية</th>
-        </tr>
-        <tr>
-            <th colspan="3">المجموع العام السابق</th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-        </tr>
-        <tr>
-            <th colspan="3">الرقم السابق</th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-        </tr>
+    <div class="container">
+        <table>
+            <tr>
+                <td>دائرة المجمع المائي</td>
+                <td rowspan="2"><h2 class="title">استغلال محطة الضخ الكهربائية المتوسطة الجهد</h2></td>
+                <td rowspan="3">المجمع المائي  : ..................</td>
+            </tr>
+            <tr>
+                <td>ولاية : ..................</td>
+            </tr>
+            <tr>
+                <td>معمدية  : ...............</td>        
+                <td><p class="header">خلال شهر: __________</p></td>
+            </tr>
+            <tr>
+            </tr>
+        </table>
+        <br>    
+        <table>
+            <tr>
+                <th rowspan="3">التاريخ</th>
+                <th colspan="3">مدة الضخ</th>
+                <th rowspan="3">رقم العداد المائي</th>
+                <th colspan="4">الطاقة الكهربائية</th>
+                <th colspan="3"></th>
+                <th colspan="5"></th>
+                <th rowspan="3">ملاحظات</th>
+            </tr>
+            <tr>
+                <th rowspan="2">من</th>
+                <th rowspan="2">إلى</th>
+                <th rowspan="2">العدد الساعاتي</th>
+                <th rowspan="2">عداد النهار</th>
+                <th rowspan="2">عداد الليل</th>
+                <th rowspan="2">عداد المساء</th>
+                <th rowspan="2">عداد الذروة</th>
+                <th rowspan="2">شراء</th>
+                <th rowspan="2">مستعمل</th>
+                <th rowspan="2">اشغال المضخة</th>
+                <th rowspan="2">انقطاع الماء</th>
+                <th rowspan="2">عطب محطة الضخ</th>
+                <th rowspan="2">انطاع الطاقة</th>
+                <th colspan="2">المضخات</th>
+            </tr>
+            <tr>
+                <th>الأولى</th>
+                <th>الثانية</th>
+            </tr>
+            <tr>
+                <th colspan="3">المجموع العام السابق</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th colspan="3">الرقم السابق</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
 
-        <!-- تعبئة الجدول لـ 30 يومًا -->
-        <script>
-            for (let i = 1; i <= 30; i++) {
-                document.write("<tr>");
-                document.write("<td>" + i + "</td>");
-                for (let j = 0; j < 17; j++) {
-                    document.write("<td></td>");
+            <!-- تعبئة الجدول لـ 30 يومًا -->
+            <script>
+                for (let i = 1; i <= 30; i++) {
+                    document.write("<tr>");
+                    document.write("<td>" + i + "</td>");
+                    for (let j = 0; j < 17; j++) {
+                        document.write("<td></td>");
+                    }
+                    document.write("</tr>");
                 }
-                document.write("</tr>");
-            }
-        </script>
-        <tr>
-            <th colspan="3">المجموع الشهري</th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-        </tr>
-        <tr>
-            <th colspan="3">المجموع العام</th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-        </tr>
-        <tr>
-            <td colspan="5" rowspan="5" style="padding-bottom : 9%">الملاحضات</td>
-            <td>الطاقة المستهاكة</td>
-            <td></td>
-            <td>الكيلوواط</td>
-            <td colspan="10">الاسم و الامضاء</td>
-        </tr>
-        <tr>
-            <td>الدفق</td>
-            <td></td>
-            <td>م3/ساعة</td>
-            <td colspan="5" rowspan="3" style="padding-bottom : 9%">الحارس</td>
-            <td colspan="5" rowspan="3" style="padding-bottom : 9%">الرئيس</td>
-        </tr>
-        <tr>
-            <td>الطاقة</td>
-            <td></td>
-            <td>كيلوواط/ساعة</td>
-        </tr>
-        <tr>
-            <td>الطاقة</td>
-            <td></td>
-            <td>كيلوواط/م3</td>
-        </tr>
-    </table>
-    <br>
-
+            </script>
+            <tr>
+                <th colspan="3">المجموع الشهري</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th colspan="3">المجموع العام</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td colspan="5" rowspan="5" style="padding-bottom : 9%">الملاحضات</td>
+                <td>الطاقة المستهاكة</td>
+                <td></td>
+                <td>الكيلوواط</td>
+                <td colspan="10">الاسم و الامضاء</td>
+            </tr>
+            <tr>
+                <td>الدفق</td>
+                <td></td>
+                <td>م3/ساعة</td>
+                <td colspan="5" rowspan="3" style="padding-bottom : 9%">الحارس</td>
+                <td colspan="5" rowspan="3" style="padding-bottom : 9%">الرئيس</td>
+            </tr>
+            <tr>
+                <td>الطاقة</td>
+                <td></td>
+                <td>كيلوواط/ساعة</td>
+            </tr>
+            <tr>
+                <td>الطاقة</td>
+                <td></td>
+                <td>كيلوواط/م3</td>
+            </tr>
+        </table>
+        <br>
+    </div>
 </body>
 </html>
