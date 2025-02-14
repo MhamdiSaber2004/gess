@@ -252,7 +252,7 @@ if(isset($_GET['moin'])){
         <br>
     </div>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="ajouterSP" aria-hidden="true">
+    <div class="modal fade" id="ajouterSP" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
             <div class="modal-header">
