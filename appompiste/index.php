@@ -166,16 +166,24 @@ include "footer.php"
   <div class="modal fade" id="stationPompage" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
     <div class="modal-dialog modal- modal-dialog-centered modal-md" role="document">
       <div class="modal-content">
-        <div class="modal-body p-0">
-          <div class="card bg-secondary border-0 mb-0">
-            <div class="card-header bg-transparent pb-5">
-              <form action="pages/stationPompage.php" method="get">
-                <input class="form-input" type="month" name="moin">
-                <input type="submit" value="متابعة">
-              </form>
+        <form method="get" action="pages/stationPompage.php">
+          <div class="modal-body p-0">
+            <div class="card bg-secondary border-0 mb-0">
+              <div class="card-header bg-transparent pb-5">
+                  <h3 class=" text-center mt-2"> </h3><br>
+                  <div class="text-center mb-4">الرجاء إختيار الشهر  </div>
+                  <div class="btn-wrapper text-center">
+                    <input type="month" name="moin" required>
+                  </div>
+                </div>
+              </div>
             </div>
+          <div class="modal-footer flex-row-reverse">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">إلغاء</button>
+            <button type="submit"class="btn btn-primary">متابعة</button>                  
           </div>
-        </div>  
+        </form>
+      </div>
     </div>
   </div>
 </div>
@@ -525,39 +533,28 @@ include "footer.php"
 
 
 <div class="col-md-6">
-    <div class="modal fade" id="datePrgPompeEau" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
-  <div class="modal-dialog modal- modal-dialog-centered modal-md" role="document">
+  <div class="modal fade" id="datePrgPompeEau" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+    <div class="modal-dialog modal- modal-dialog-centered modal-md" role="document">
       <div class="modal-content">
-      <form method="get" action="pageComplet/programPompage.php">
+        <form method="get" action="pageComplet/programPompage.php">
           <div class="modal-body p-0">
-            
-<div class="card bg-secondary border-0 mb-0">
-  <div class="card-header bg-transparent pb-5">
-      <h3 class=" text-center mt-2"> </h3><br>
-      <div class="text-center mb-4">الرجاء إختيار اليوم  </div>
-        
-      <div class="btn-wrapper text-center">
-             
-
-              <input type="text" name="page" id="" value="prgPompeEauQuotiqien" hidden>
-                <input type="date" name="date" required>
-                
+            <div class="card bg-secondary border-0 mb-0">
+              <div class="card-header bg-transparent pb-5">
+                  <h3 class=" text-center mt-2"> </h3><br>
+                  <div class="text-center mb-4">الرجاء إختيار اليوم  </div>
+                  <div class="btn-wrapper text-center">
+                    <input type="text" name="page" id="" value="prgPompeEauQuotiqien" hidden>
+                    <input type="date" name="date" required>
+                  </div>
+                </div>
+              </div>
             </div>
-        
-      
-  </div>
- 
-</div>
-  
-          </div>
           <div class="modal-footer flex-row-reverse">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">إلغاء</button>
-                                  <button type="submit"class="btn btn-primary" name="factureAEP" >متابعة</button>
-                                  
-                                  </div>
-      </form>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">إلغاء</button>
+            <button type="submit"class="btn btn-primary" name="factureAEP" >متابعة</button>                  
+          </div>
+        </form>
       </div>
+    </div>
   </div>
-</div>
-
 </div>
