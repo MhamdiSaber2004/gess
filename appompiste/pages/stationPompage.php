@@ -287,6 +287,28 @@ if(isset($_GET['moin'])){
                                 <label for="a" class="form-label">الى</label>
                                 <input type="time" class="form-control" id="a" name="a">
                             </div>
+                            <hr>
+                            <h5 class="form-label">الصاقة الكهروبائية</h5>
+                            <div class="col-6">
+                                <label for="numCompter" class="form-label">رقم العداد المائي</label>
+                                <input type="text" class="form-control" id="numCompter" name="numCompter">
+                            </div>
+                            <div class="col-6">
+                                <label for="numJour" class="form-label">عداد النهار</label>
+                                <input type="text" class="form-control" id="numJour" name="numJour">
+                            </div>
+                            <div class="col-6">
+                                <label for="numNhuit" class="form-label">عداد الليل</label>
+                                <input type="text" class="form-control" id="numNhuit" name="numNhuit">
+                            </div>
+                            <div class="col-6">
+                                <label for="numMid" class="form-label">عداد المساء</label>
+                                <input type="text" class="form-control" id="numMid" name="numMid">
+                            </div>
+                            <div class="clo-12">
+                                <label for="numMax" class="form-label">عداد الذروة</label>
+                                <input type="text" class="form-control" id="numMax" name="numMax">
+                            </div>
 
                         </div>
                     </div>
