@@ -28,6 +28,9 @@ if(isset($_SESSION["idGess"])){
 
 if(isset($_GET['moin'])){
     $moin=$_GET['moin'];
+    list($year, $month_number) = explode('-', $moin);
+    $days_in_moin = cal_days_in_month(CAL_GREGORIAN, $month_number, $year);
+    echo $days_in_moin;
 }else{
     header("location: ../index.php");
 }
