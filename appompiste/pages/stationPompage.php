@@ -109,7 +109,7 @@ if(isset($_GET['moin'])){
             </tr>
         </table>
         <div class="non-print">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ajouterSP">اضافة</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ajouterSP">اضافة</button>
         </div>    
         <table>
             <tr>
