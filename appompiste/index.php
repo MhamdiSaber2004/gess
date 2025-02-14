@@ -170,7 +170,7 @@ include "footer.php"
           <div class="card bg-secondary border-0 mb-0">
             <div class="card-header bg-transparent pb-5">
               <form action="pages/stationPompage.php" method="get">
-                <input class="form-input" type="moin" name="moin">
+                <input class="form-input" type="month" name="moin">
                 <input type="submit" value="متابعة">
               </form>
             </div>
