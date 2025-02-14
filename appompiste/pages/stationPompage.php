@@ -33,11 +33,28 @@
             font-size: 18px;
             font-weight: bold;
         }
+        .print{
+            display: block;
+        }
+        .non-print{
+            display : block;
+        }
+        @media print {
+            .print{
+            display: block;
+        }
+        .non-print{
+            display : none;
+        }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <a class="btn btn-primary" href="../index.php">رجوع</a>
+        <div class="non-print">
+            <a class="btn btn-primary mt-3 mb-3 float-start" href="../index.php">رجوع</a>
+            <button type="button" onclick="print()" class="btn btn-primary">طباعة</button>
+        </div>
         <table>
             <tr>
                 <td>دائرة المجمع المائي</td>
@@ -196,5 +213,10 @@
         </table>
         <br>
     </div>
+    <script>
+        function print(){
+            window.print();
+        }
+    </script>
 </body>
 </html>
