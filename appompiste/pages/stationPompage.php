@@ -138,8 +138,8 @@ if(isset($_GET['moin'])){
                 <th colspan="2">المضخات</th>
             </tr>
             <tr>
-                <th>الأولى</th>
-                <th>الثانية</th>
+                <th>كلي</th>
+                <th>جزئي</th>
             </tr>
             <tr>
                 <th colspan="3">المجموع العام السابق</th>
@@ -262,7 +262,7 @@ if(isset($_GET['moin'])){
                 </div>
                 <form action="">
                     <div class="modal-body">
-                        ...
+                        
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">اغلاق</button>
