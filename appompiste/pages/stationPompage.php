@@ -9,7 +9,9 @@ if (!isset($_SESSION["idPompiste"])) {
 $nonGess="";
 $placeGess="";
 $decanatGess="";
+$idGess=0;
 if(isset($_SESSION["idGess"])){
+    $idGess=$_SESSION["idGess"];
     $sql1 = "SELECT * FROM gess WHERE idGess = $idGess";
 
     $result1 = $conn->query($sql1);
