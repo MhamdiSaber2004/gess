@@ -281,46 +281,46 @@ if(isset($_GET['moin'])){
                             <h5 for="de" class="form-label">مدة الضخ</h5>
                             <div class="col-6">
                                 <label for="de" class="form-label">من</label>
-                                <input type="time" class="form-control" id="de" name="de">
+                                <input type="time" class="form-control mb-3" id="de" name="de">
                             </div>
                             <div class="col-6">
                                 <label for="a" class="form-label">الى</label>
-                                <input type="time" class="form-control" id="a" name="a">
+                                <input type="time" class="form-control mb-3" id="a" name="a">
                             </div>
                             <hr>
                             <h5 class="form-label">الصاقة الكهربائية</h5>
                             <div class="col-6">
                                 <label for="numCompter" class="form-label">رقم العداد المائي</label>
-                                <input type="text" class="form-control" id="numCompter" name="numCompter">
+                                <input type="text" class="form-control mb-3" id="numCompter" name="numCompter">
                             </div>
                             <div class="col-6">
                                 <label for="numJour" class="form-label">عداد النهار</label>
-                                <input type="text" class="form-control" id="numJour" name="numJour">
+                                <input type="text" class="form-control mb-3" id="numJour" name="numJour">
                             </div>
                             <div class="col-6">
                                 <label for="numNhuit" class="form-label">عداد الليل</label>
-                                <input type="text" class="form-control" id="numNhuit" name="numNhuit">
+                                <input type="text" class="form-control mb-3" id="numNhuit" name="numNhuit">
                             </div>
                             <div class="col-6">
                                 <label for="numMid" class="form-label">عداد المساء</label>
-                                <input type="text" class="form-control" id="numMid" name="numMid">
+                                <input type="text" class="form-control mb-3" id="numMid" name="numMid">
                             </div>
                             <div class="clo-12">
                                 <label for="numMax" class="form-label">عداد الذروة</label>
-                                <input type="text" class="form-control" id="numMax" name="numMax">
+                                <input type="text" class="form-control mb-3" id="numMax" name="numMax">
                             </div>
                             <hr>
                             <div class="clo-6">
                                 <label for="acha" class="form-label">شراء</label>
-                                <input type="text" class="form-control" id="acha" name="acha">
+                                <input type="text" class="form-control mb-3" id="acha" name="acha">
                             </div>
                             <div class="clo-6">
                                 <label for="utiliser" class="form-label">مستعمل</label>
-                                <input type="text" class="form-control" id="utiliser" name="utiliser">
+                                <input type="text" class="form-control mb-3" id="utiliser" name="utiliser">
                             </div>
                             <div class="clo-12">
                                 <label for="trvailPomp" class="form-label">اشغال المضخة	</label>
-                                <input type="text" class="form-control" id="trvailPomp" name="trvailPomp">
+                                <input type="text" class="form-control mb-3" id="trvailPomp" name="trvailPomp">
                             </div>
                         </div>
                     </div>
