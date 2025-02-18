@@ -341,7 +341,7 @@ if(isset($_GET['moin'])){
                                 <input type="radio" class="form-control mb-3" id="paneTotalOuNon0" name="paneTotalOuNon" value="0">جزئي
                             </div>
                             <hr>
-                            <div class="col-6">
+                            <div class="col-12">
                                 <label for="note" class="form-label">ملاحظات</label>
                                 <textarea class="form-control mb-3" id="note" name="note" cols="30" rows="10"></textarea>
                             </div>
