@@ -336,11 +336,11 @@ if(isset($_GET['moin'])){
                                 <input type="text" class="form-control mb-3" id="coupeEnergie" name="coupeEnergie">
                             </div>
                             <div class="col-6">
-                                <label for="paneTotalOuNon1" class="form-label">عطب في الشبكة</label>
+                                <label for="paneTotalOuNon1" class="form-label">عطب في الشبكة</label><br>
                                 <input class="form-check-input" type="radio" name="paneTotalOuNon" id="paneTotalOuNon1" value="1">
                                 <label class="form-check-label" for="paneTotalOuNon1">
                                     كلي
-                                </label>    
+                                </label><br>
                                 <input class="form-check-input" type="radio" name="paneTotalOuNon" id="paneTotalOuNon2" value="0">
                                 <label class="form-check-label" for="paneTotalOuNon2">
                                     جزئي
