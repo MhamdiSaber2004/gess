@@ -343,7 +343,7 @@ if(isset($_GET['moin'])){
                             <hr>
                             <div class="col-12">
                                 <label for="note" class="form-label">ملاحظات</label>
-                                <textarea class="form-control mb-3" id="note" name="note" cols="30" rows="10"></textarea>
+                                <textarea class="form-control mb-3" id="note" name="note" cols="30" rows="3"></textarea>
                             </div>
                         </div>
                     </div>
