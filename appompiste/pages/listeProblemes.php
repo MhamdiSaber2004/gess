@@ -33,7 +33,7 @@
 
 
                 <div class="col-4 text-right">
-                  <a href="index.php?page=ajoutProbleme" class="btn btn-sm btn-primary">إضافة عطب</a>
+                 <!-- <a href="index.php?page=ajoutProbleme" class="btn btn-sm btn-primary">إضافة عطب</a>-->
                 </div>
               </div>
             </div>

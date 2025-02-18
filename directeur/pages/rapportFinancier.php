@@ -35,13 +35,18 @@
             
             
             <div class="card-header bg-secondary border-0">
-              <div class="row align-items-center">
+              <div class="row align-items-center no-print">
                 <div class="col-8">
                   <h3 class="mb-0">عناصر التقرير المالي   </h3>
                 </div>
 
-                <div class="col-4 text-right">
-                  <a href="#" class="btn btn-sm btn-primary" onclick="printPompiste('printDiv')">طباعة </a>
+                <div class="row align-items-center no-print">
+                  <div class="col-8">
+                    <h3 class="mb-0"><button onclick="printPompiste('printDiv')" class="btn btn-sm btn-primary">طباعة</button> </h3>
+                  </div>
+                  <div class="col-4 text-right">
+                    <a href="index.php?page=documentsReunions&type=4" class="btn btn-sm btn-primary">رجوع</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -56,10 +61,23 @@
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
 
-  <div class="no-print bg-secondary"  id="printDiv">
+  <div class="bg-secondary"  id="printDiv">
+  <div class="card-header bg-white border-0">
+                  <small class="d-flex justify-content-start text-black">مجمع التنمية في قطاع الفلاحة و الصيد البحري &nbsp;</small>
+                  <small class="d-flex d-xxl-flex justify-content-start justify-content-xxl-start text-black" > ب :
+                    <?php
+                      echo  $placeGess;
+                    ?>
+                  &nbsp;</small>
+              <div class="row align-items-center">
+                <div class="col-10 text-center">
+                  <h2 class="mb-0 text-center">التقرير المالي  </h2>
+                </div>
+              </div>
+            </div>
 
 
-  <form>
+  <form method="post" action="index.php?page=rapportFinancier">
   <div class="col-lg-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-username">مقدمة </label>
@@ -491,29 +509,28 @@
 
 <script>
   function printPompiste(areaID){
-    var printContent = document.getElementById(areaID).innerHTML;
-    var originalContent = document.body.innerHTML;
-    document.body.innerHTML = printContent;
+
     window.print();
-    document.body.innerHTML = originalContent;
+    
   }
+
   <?php
     for($i=0 ; $i<20 ; $i++){
       ?>
         document.getElementById('inp<?php echo $i ?>2').addEventListener("keyup", function(){
           var deff<?php echo $i ?>=document.getElementById('inp<?php echo $i ?>2').value - document.getElementById('inp<?php echo $i ?>1').value;
-          document.getElementById("inp<?php echo $i ?>3").value = deff<?php echo $i ?>;
+          document.getElementById("inp<?php echo $i ?>3").value = deff<?php echo $i ?>.toFixed(3);
 
           var moy<?php echo $i ?>=(parseFloat(deff<?php echo $i ?>) / parseFloat(document.getElementById('inp<?php echo $i ?>1').value))*100;
-          document.getElementById("inp<?php echo $i ?>4").value = moy<?php echo $i ?>;
+          document.getElementById("inp<?php echo $i ?>4").value = moy<?php echo $i ?>.toFixed(3);
         })
 
         document.getElementById('minp<?php echo $i ?>2').addEventListener("keyup", function(){
           var deff<?php echo $i ?>=document.getElementById('minp<?php echo $i ?>2').value - document.getElementById('minp<?php echo $i ?>1').value;
-          document.getElementById("minp<?php echo $i ?>3").value = deff<?php echo $i ?>;
+          document.getElementById("minp<?php echo $i ?>3").value = deff<?php echo $i ?>.toFixed(3);
 
           var moy<?php echo $i ?>=(parseFloat(deff<?php echo $i ?>) / parseFloat(document.getElementById('minp<?php echo $i ?>1').value))*100;
-          document.getElementById("minp<?php echo $i ?>4").value = moy<?php echo $i ?>;
+          document.getElementById("minp<?php echo $i ?>4").value = moy<?php echo $i ?>.toFixed(3);
         })
       <?php
     }

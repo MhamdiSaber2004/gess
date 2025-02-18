@@ -1,7 +1,7 @@
 
 
 <!-- Sidenav -->
-<nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white" id="sidenav-main">
+<nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white no-print" id="sidenav-main">
     <div class="container-fluid">
     <!-- Toggler -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidenav-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle navigation">
@@ -92,7 +92,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="index.php?page=reunionInterne">
-              <i class="ni ni-chart-bar-32 text-red"></i>مسك دفتر محاضر اجتماعات مجلس الدارة
+              <i class="ni ni-chart-bar-32 text-red"></i>مسك دفتر محاضر اجتماعات مجلس الادارة
             </a>
           </li>
           <li class="nav-item">
@@ -141,23 +141,7 @@
             </a>
           </li>
           <li class="nav-item <?php echo ($current_page === 'listeInfoCompteur') ? 'active' : ''; ?>">
-            <a class="nav-link" href="
-              <?php
-                $idGess=$_SESSION['idGess'];
-                $sql = "SELECT type FROM gess  where idGess='$idGess'";
-                  $result = $conn->query($sql);
-                  
-                  if ($result->num_rows > 0) {
-                    while ($row = $result->fetch_assoc()) {
-                      if($row['type']=='منطقة سقوية'){
-                        echo 'GDA/gestionPi.php';
-                      }else{
-                          echo 'GDA/gestionAep.php';
-                      }
-                    }
-                  }
-              ?>
-            " >
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#budgetAnnee" >
               <i class="ni ni-chart-bar-32 text-red"></i>المزانية السنوية
             </a>
           </li>
@@ -176,16 +160,17 @@
               <i class="ni ni-vector text-red"></i>الاعطاب 
             </a>
           </li>
-          <li class="nav-item <?php echo ($current_page === 'listesxPompiste') ? 'active' : ''; ?>">
+          <!--<li class="nav-item <?php echo ($current_page === 'listesxPompiste') ? 'active' : ''; ?>">
             <a class="nav-link" href="index.php?page=listeInfoCompteur" >
               <i class="ni ni-chart-bar-32 text-red"></i>متابعة وضعية العدادات 
             </a>
-          </li>
+          </li>-->
       </ul>
        <!--الجانب الفني-->
     </div>
 </div>
 </nav>
+
 
 
   

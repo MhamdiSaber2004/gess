@@ -53,7 +53,7 @@
                                            }
                                        }
                                        echo $random;
-                         ?>">
+                         ?>"require>
                       </div>
                     </div>
 
@@ -72,7 +72,7 @@
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label">الإسم و اللقب</label>
-                        <input type="text" id="nom" name="nom" class="form-control form-control-alternative" placeholder="الإسم و اللقب" >
+                        <input type="text" id="nom" name="nom" class="form-control form-control-alternative" placeholder="الإسم و اللقب" require>
                       </div>
                     </div>
                 
@@ -80,7 +80,7 @@
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-city">رقم بطاقة التعريف</label>
-                        <input name="CIN" type="text" id="CIN" class="form-control form-control-alternative" placeholder="رقم بطاقة التعريف">
+                        <input name="CIN" type="text" id="CIN" class="form-control form-control-alternative" placeholder="رقم بطاقة التعريف"require>
                       </div>
                     </div>
 
@@ -98,12 +98,7 @@
                     <div class="col-lg-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-last-name">مكان السكنى</label>
-                        <input  name="address" type="text" id="address" class="form-control form-control-alternative" placeholder="مكان السكنى" value="<?php  
-                        if(isset($_SESSION['idDemandeBenefique']))
-                        {
-                          echo $demande['address'];
-                        }
-                       ?>">
+                        <input  name="address" type="text" id="address" class="form-control form-control-alternative" placeholder="مكان السكنى" require>
                       </div>
                     </div>
                 
@@ -117,15 +112,7 @@
                     <div class="col-md-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-address">رقم الهاتف </label>
-                        <input id="tel" name="tel" class="form-control form-control-alternative" placeholder="+216 12345678 " type="number" value="<?php
-                        
-
-                                       if(isset($_SESSION['idDemandeBenefique']))
-                                       {
-                                         echo $demande['tel'];
-                                       }
-                                    
-                         ?>">
+                        <input id="tel" name="tel" class="form-control form-control-alternative" placeholder="+216 12345678 " type="number" require>
                       </div>
                     </div>
                   </div>

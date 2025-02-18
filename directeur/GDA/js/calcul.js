@@ -46,8 +46,8 @@ function calcul(){
     document.getElementById("salaire_et_avantages_en_nature_par_an1").value = document.getElementById("salaire_et_avantages_en_nature_par_an").value
     document.getElementById("salaire_et_avantages_du_directeur_technique_par_an1").value = document.getElementById("salaire_et_avantages_du_directeur_technique_par_an").value
     document.getElementById("couts_maintenance_totals1").value = document.getElementById("couts_maintenance_totals").value
-    document.getElementById("renouvellement_des_compteurs").value =( document.getElementById("surface_totale").value * document.getElementById("prix_compteur").value * 0.1).toFixed(3)
-    document.getElementById("renouvellement_des_equipements").value = (document.getElementById("duree_renovation_moto").value / document.getElementById("prix_moto").value).toFixed(3)
+    document.getElementById("renouvellement_des_compteurs").value =( document.getElementById("superficie_irriguee").value * document.getElementById("prix_compteur").value * 0.1).toFixed(3)
+    document.getElementById("renouvellement_des_equipements").value = (document.getElementById("prix_moto").value / document.getElementById("duree_renovation_moto").value).toFixed(3)
      if (document.getElementById("remuneration_gardien_gestionnaire")){
         document.getElementById("remuneration_gardien_gestionnaire").value=(document.getElementById("salaire_gardien_per_m3_eau").value*document.getElementById("points_deau_publics").value).toFixed(3);
      }

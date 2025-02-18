@@ -27,11 +27,11 @@ if (isset($_POST["login"])) {
 
         if ($row["actif"] == 1) {
             $_SESSION["idPompiste"] = $row["idPompiste"];
+            $_SESSION["idGess"] = $row["idGess"];
             header("Location: ./index.php");
             exit();
         } else {
-            $error["deactivated"] =
-                "لقد تم تعطيل حسابك، الرجاء الاتصال برئيس المجلس في حالي كان هذا خطأ";
+            $error["deactivated"] ="لقد تم تعطيل حسابك، الرجاء الاتصال برئيس المجلس في حالي كان هذا خطأ";
         }
     } else {
         $error["erreur"] = "الرجاء التثبت من صحة المعطيات التي قمت بادخلها";

@@ -8,7 +8,7 @@ if(isset($_GET['type'])){
 if($typeR==1){
     $urlfile='<a href="index.php?page=printReuinionPublique" class="btn btn-sm btn-primary"> الاعلان عن جلسة العامة  </a>';
 }else if($typeR==2){
-    $urlfile='<a href="https://gda2.ness.com.tn/assets/fichier/direct/استدعاء-للجلسة-العامة.pdf" target="_blank" class="btn btn-sm btn-primary"> الاستدعاء للجلسة العامة  </a>';
+    $urlfile='<a href="index.php?page=printInvReunion" class="btn btn-sm btn-primary"> الاستدعاء للجلسة العامة  </a>';
 }else if($typeR==3){
     $urlfile='<a href="index.php?page=rapportLitteraire" class="btn btn-sm btn-primary"> التقرير الأدبي</a>';
 }else if($typeR==4){
@@ -22,7 +22,7 @@ if($typeR==1){
 }else if($typeR==8){
     $urlfile='<a href="https://gda2.ness.com.tn/assets/fichier/direct/قائمة-الحضور-في-الجلسة-العامة.pdf" target="_blank" class="btn btn-sm btn-primary"> قائمة الحضور في الجلسة العامة  </a>';
 }else if($typeR==9){
-    $urlfile='<a href="https://gda2.ness.com.tn/assets/fichier/direct/محضر-جلسة-عامة.pdf" target="_blank" class="btn btn-sm btn-primary">محضر جلسة عامة</a>';
+    $urlfile='<a href="index.php?page=printMa7dherReunionPublique" class="btn btn-sm btn-primary">محضر جلسة عامة</a>';
 }else{
     $urlfile='<a href="https://gda2.ness.com.tn/assets/fichier/direct/محضر-جلسة-أول-اجتماع-مجلس-الادارة.pdf" target="_blank" class="btn btn-sm btn-primary">محضر جلسة أول اجتماع لمجلس الادارة  </a>';
 }
@@ -128,14 +128,14 @@ if($typeR==1){
                 <div class="card-header bg-transparent pb-5">
                     <div class="btn-wrapper text-center" id="newReunFrom">
                       <form action="controller/controller.php" method="post" class="text-center" enctype="multipart/form-data">
-                        <input type="text" name="numtype" class="d-none" value="<?php echo $typeR ; ?>">
+                        <input type="text" name="numtype" class="d-none" value="<?php echo $typeR ; ?>" require>
                         <div class="mb-3">
                             <label for="type" class="form-label">تفاصيل</label>
-                            <input type="text" class="form-control" name="type" id="type">
+                            <input type="text" class="form-control" name="type" id="type" require>
                         </div>
                         <div class="mb-3">
                             <label for="newReun" class="form-label">ملف</label><br>
-                            <input type="file" name="newReun" accept="image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf" id="newReunFile">
+                            <input type="file" name="newReun" accept="image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf" id="newReunFile" require>
                         </div>
                         <br><br>
                         <button type="submit" class="btn btn-primary">اضافة</button>

@@ -22,6 +22,15 @@ if(isset($_GET['page']) && ! empty ( $_GET['page']) ) {
         case 'printReuinionPublique'://khalil
           include "./pages/printReunionPublique.php";
           break;
+          case 'printMa7dherReunionPublique':
+            include "./pages/printMa7dherReunionPublique.php";
+            break;
+            case 'printInvReunion':
+              include "./pages/printInvReunion.php";
+              break;
+              case 'printEtatFinance':
+                include "./pages/printEtatFinance.php";
+                break;
         case 'ajoutBenefiquePublique':
           include "./pages/ajoutBenefiquePublique.php";
           break;
@@ -67,8 +76,8 @@ if(isset($_GET['page']) && ! empty ( $_GET['page']) ) {
               case 'reunionInterne':
                 include "./pages/reunionInterne.php";
                 break;
-          case 'printPremierMa7dherReunionPublique':
-            include "./pages/printPremierMa7dherReunionPublique.php";
+          case 'printMa7dherEjtime3Numero':
+            include "./pages/printMa7dherEjtime3Numero.php";
             break;
           case 'printMa7dherReunionPublique':
             include "./pages/printMa7dherReunionPublique.php";
@@ -89,9 +98,9 @@ if(isset($_GET['page']) && ! empty ( $_GET['page']) ) {
             case 'listeReunionPublique':
               include "./pages/listeReunionPublique.php";
               break;
-            case 'listeBenefique':
+           /* case 'listeBenefique':
               include "./pages/listeBenefique.php";
-              break;
+              break;*/
 
               case 'demandeBenefique':
                 include "./pages/demandeBenefique.php";
@@ -269,6 +278,48 @@ include "topNavBar.php";
 include "footer.php" 
 
 ?>
+
+<div class="col-md-6">
+  <div class="modal fade" id="budgetAnnee" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+    <div class="modal-dialog modal- modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="card bg-secondary border-0 mb-0">
+              <div class="card-header bg-transparent pb-5">
+                    <div class="btn-wrapper text-center" id="newReunIFrom">
+                      <form action="  <?php
+                                    $idGess=$_SESSION['idGess'];
+                                    $sql = "SELECT type FROM gess  where idGess='$idGess'";
+                                      $result = $conn->query($sql);
+                                      
+                                      if ($result->num_rows > 0) {
+                                        while ($row = $result->fetch_assoc()) {
+                                          if($row['type']=='منطقة سقوية'){
+                                            echo 'GDA/gestionPi.php';
+                                          }else{
+                                              echo 'GDA/gestionAep.php';
+                                          }
+                                        }
+                                      }
+                                  ?>" 
+                      method="get" class="text-center">
+                        <label for="formFile" class="form-label">مزنية سنة  :</label>
+                        <select name="annee" class="form-control">
+                          <?php for($i=2018 ; $i<=2030 ; $i++ ){ ?>
+                            <option value="<?php echo $i ?>"><?php echo $i ?></option>
+                          <?php } ?>
+                        </select>
+                        <br><br>
+                        <input type="submit" class="btn btn-neutral btn-icon" value="اطلاع">
+                      </form>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
 
 <div class="col-md-6">
   <div class="modal fade" id="documentsReunions"  tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">

@@ -24,6 +24,7 @@
                 </div>
 
                 <div class="col-4 text-right">
+                  <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#contrat">طباعة عقد</button>
                   <a href="index.php?page=ajoutPompiste" class="btn btn-sm btn-primary">إضافة عون تنفيذ</a>
                 </div>
               </div>
@@ -253,5 +254,38 @@ $sql = "SELECT * FROM pompiste where idGess='$idGess' and actif=1";
            
           </div>
         </div>
+        <div class="col-md-6">
+  <div class="modal fade" id="contrat"  tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+    <div class="modal-dialog modal- modal-dialog-centered modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <div class="card bg-secondary border-0 mb-0">
+            <div class="card-header bg-transparent pb-5">
+                <h3 class=" text-center mt-2">طباعة عقد  </h3><br>
+                  <div class="btn-wrapper text-center">
+                    <ul class="navbar-nav  text-center">
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://gda2.ness.com.tn/assets/fichier/legal/%D8%B9%D9%82%D8%AF-%D8%AA%D8%B4%D8%BA%D9%8A%D9%84-%D8%AD%D8%A7%D8%B1%D8%B3-%D8%A7%D9%84%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D8%A7%D8%A6%D9%8A.pdf" target="_blank">
+                          <i class="ni ni-bullet-list-67 text-red"></i>عقد تشغيل حارس النظام المائي
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://gda2.ness.com.tn/assets/fichier/legal/%D8%B9%D9%82%D8%AF-%D8%AA%D8%B4%D8%BA%D9%8A%D9%84-%D9%85%D9%88%D8%B2%D8%B9-%D8%A7%D9%84%D9%85%D8%A7%D8%A1.pdf" target="_blank">
+                          <i class="ni ni-bullet-list-67 text-red"></i>عقد تشغيل موزع الماء
+                        </a>
+                      </li>
+                    </ul>    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
+</div>
+      </div>
+
+
       

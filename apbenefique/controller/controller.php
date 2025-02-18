@@ -36,6 +36,7 @@ if (isset($_POST["login"])) {
         if ($row["active"] == 1) {
             $_SESSION['type']="_aep";
             $_SESSION["idBenefique"] = $row["idBenefique"];
+            $_SESSION["idGess"] = $row["idGess"];
             header("Location: ./index.php");
             exit();
         }
@@ -55,6 +56,7 @@ if (isset($_POST["login"])) {
         if ($row["active"] == 1) {
             $_SESSION['type']="_pi";
             $_SESSION["idBenefique"] = $row["idBenefique"];
+            $_SESSION["idGess"] = $row["idGess"];
             header("Location: ./index.php");
             exit();
         }else if ($row["active"] == -1) {
@@ -245,14 +247,24 @@ if (isset($_POST['parametreCompte'])) {
         $_SESSION['message']="كلمات السر القديمة التي قمت بادخلها خاطئة";
 header("Location: ../index.php?page=parametreCompte");
     }
-
-
-
-
-
-    
 }
 
+if (isset($_POST["ajoutProbleme"])) {
+   $detail=$_POST['detail'];
+
+   
+   $sql="INSERT INTO `problemes`(`idGess`, `numCompteur`, `detail`) VALUES ('$idGess','$numCompteur','$detail')";
+    if($conn->query($sql) === TRUE){
+        $_SESSION['messageClass']="success";
+        $_SESSION['message']="تمت ارسال الاشعار بنجاح";
+        header("Location: ../index.php");
+    }else{
+        $_SESSION['messageClass']="danger";
+        $_SESSION['message']="حصل خطأ ما، الرجاء المحاولة لاحقا";
+        header("Location: ../index.php");
+    }
+}
+    
 
 
 

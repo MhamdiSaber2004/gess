@@ -91,36 +91,8 @@ if(isset($_GET['idBenefique']) && ! empty ( $_GET['idBenefique'] ))
                     </div>
                     <div class="col-lg-12">
                       <div class="form-group">
-                        <label class="form-control-label" for="input-city"> 
-
-
-
-                        <?php 
-                        $numCompteur=$row['numCompteur'];
-                        $sql1="SELECT * from consommation_aep where numCompteur='$numCompteur' "; 
-                        $result1 = $conn->query($sql1);
-   
- 
-                        if ($result1->num_rows > 0) {
-                         $consomme=true;
-                         echo "  لا يمكنك تغير الديون المتخلدة إذا كان هناك إستهلك مسجل للمنتفع";
-
-                        }
-                        else{
-                          echo " الديون المتخلدة بذمة المنتفع";
-
-                        }
-                        ?> 
-                        </label>
-                        <input name="dette" type="number" id="dette" class="form-control form-control-alternative" placeholder="الديون المتخلدة بذمة المنتفع" value="<?php echo $row['dette'] ?>"
-                        <?php 
-                        if($consomme)
-                        echo "readonly";
-                        
-                             ?>
-                             
-                        >
-                        
+                        <label class="form-control-label" for="input-city"> الديون المتخلدة بذمة المنتفع </label>
+                        <input name="dette" type="number" id="dette" class="form-control form-control-alternative" placeholder="الديون المتخلدة بذمة المنتفع" value="<?php echo $row['dette'] ?>">
                       </div>
                     </div>
                   </div>
@@ -182,15 +154,20 @@ if(isset($_GET['idBenefique']) && ! empty ( $_GET['idBenefique'] ))
                         <input type="number"  name="aire" id="aire" class="form-control form-control-alternative" placeholder="المساحة" value="<?php echo $row['aire'] ?>" >
                       </div>
                     </div>
-                    <div class="col-lg-12">
+                    <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-country">رقم المقسم</label>
                         <input type="number"  name="numDiviseur" id="aire" class="form-control form-control-alternative" placeholder="رقم المقسم" value="<?php echo $row['numDiviseur'] ?>" >
                       </div>
                     </div>
-                 
-                                      </div>
-                                      <hr class="my-4" />
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-country">نوع الغراسات</label>
+                        <input type="text"  name="nature" id="nature" class="form-control form-control-alternative" placeholder="نوع الغراسات" value="<?php echo $row['nature'] ?>" >
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="my-4" />
                 <!-- Address -->
                 <h6 class="heading-small text-muted mb-4">معلومات العداد</h6>
                 <div class="row">
@@ -203,33 +180,8 @@ if(isset($_GET['idBenefique']) && ! empty ( $_GET['idBenefique'] ))
              
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <label class="form-control-label" for="input-city">
-                        <?php 
-                        $numCompteur=$row['numCompteur'];
-                        $sql1="SELECT * from consommation_pi where numCompteur='$numCompteur' "; 
-                        $result1 = $conn->query($sql1);
-   
- 
-                        if ($result1->num_rows > 0) {
-                         $consomme=true;
-                         echo "  لا يمكنك تغير الإستهلاك إذا كان هناك إستهلك مسجل للمنتفع";
-
-                        }
-                        else{
-                          echo "  رقم إستهلاك الماء المسجل بالعداد (في حال عداد جديد اكتب 0) ";
-
-                        }
-                        ?>  
-                        
-                       </label>
-                        <input type="number" name="donneesCompteur" id="donneesCompteur" class="form-control form-control-alternative" placeholder=" رقم إستهلاك الماء المسجل بالعداد (في حال عداد جديد اكتب 0) "  value="<?php echo $row['donneesCompteur']; ?>"
-                        <?php 
-                        if($consomme)
-                        echo "readonly";
-                        
-                             ?>
-                             
-                        >
+                        <label class="form-control-label" for="input-city">رقم إستهلاك الماء المسجل بالعداد (في حال عداد جديد اكتب 0)</label>
+                        <input type="number" name="donneesCompteur" id="donneesCompteur" class="form-control form-control-alternative"  value="<?php echo $row['donneesCompteur']; ?>">
                       </div>
                     </div>
                     <div class="col-lg-12">
@@ -240,21 +192,21 @@ if(isset($_GET['idBenefique']) && ! empty ( $_GET['idBenefique'] ))
                                                 <?php
 
                                                    $idPompiste=$_SESSION['idPompiste'];
-                                                   $sql = "SELECT * from pompiste where idPompiste='$idPompiste'";
+                                                   $sql1 = "SELECT * from pompiste where idPompiste='$idPompiste'";
 
-                                                   $result = $conn->query($sql);
+                                                   $result1 = $conn->query($sql1);
                                                
                                                    
-                                                       $row = $result->fetch_assoc();
-                                                       $idGess=$row['idGess'];
+                                                       $row1 = $result1->fetch_assoc();
+                                                       $idGess=$row1['idGess'];
                                                    
                                                    
-                                                    $sql = "SELECT numPrise FROM prise_pi where idGess='$idGess' ";
-                                                                  $result = $conn->query($sql);
+                                                    $sql2 = "SELECT numPrise FROM prise_pi where idGess='$idGess' ";
+                                                                  $result2 = $conn->query($sql2);
                                                    
-                                                                  if ($result->num_rows > 0) {
-                                                                   while ($row = $result->fetch_assoc()) {
-                                                                   echo "<option>".$row['numPrise']."</option>";
+                                                                  if ($result2->num_rows > 0) {
+                                                                   while ($row2 = $result2->fetch_assoc()) {
+                                                                   echo "<option>".$row2['numPrise']."</option>";
                                                                   
                                                                    
                                                                  }
@@ -272,7 +224,7 @@ if(isset($_GET['idBenefique']) && ! empty ( $_GET['idBenefique'] ))
                     <div class="col-md-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-city">البريد الإلكتروني </label>
-                        <input  name="email" type="email" id="email" class="form-control form-control-alternative" placeholder="example@gmail.com" value="<?php echo $row['email'] ?>">
+                        <input  name="email" type="email" id="email" class="form-control form-control-alternative" value="<?php echo $row['email'] ?>">
                       </div>
                     </div>
                   </div>

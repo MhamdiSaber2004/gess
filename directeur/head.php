@@ -37,6 +37,8 @@ $result = $conn->query($sql);
 
     $row = $result->fetch_assoc();
     $type=$row['type'];
+    $nameGess=$row['nom'];
+    $placeGess=$row['accreditation'];
 
     if ($type=="منطقة ماء صالح للشرب") 
     {
@@ -102,6 +104,22 @@ $sql = "SELECT * from pompe where idGess='$idGess'";
     /*margin-top:0px;*/
     margin:30px;
     background-color: white;
+}
+.print{
+  display : block
+}
+.no-print{
+  display : block
+}
+@media print{
+  .no-print{
+    display : none;
+   
+  }
+  .print{
+    display : block;
+    margin: 0;
+  }
 }
 </style>
 

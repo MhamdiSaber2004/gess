@@ -53,7 +53,7 @@ $_SESSION['pompe']=true;
                                            }
                                        }
                                        echo $random;
-                         ?>">
+                         ?>"require>
                       </div>
                     </div>
                     <div class="col-lg-6">
@@ -175,13 +175,13 @@ $_SESSION['pompe']=true;
                         
                             return $name;
                         }
-                        ?>">
+                        ?>"require>
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-username">تاريخ الميلاد</label>
-                        <input type="date" id="dateN" class="form-control form-control-alternative" placeholder="تاريخ الميلاد" name="dateN" value="1977-05-05">
+                        <input type="date" id="dateN" class="form-control form-control-alternative" placeholder="تاريخ الميلاد" name="dateN" value="1977-05-05" require>
                       </div>
                     </div>
 
@@ -203,14 +203,14 @@ $_SESSION['pompe']=true;
                                            }
                                        }
                                        echo $random;
-                         ?>">
+                         ?>"require>
                       </div>
                     </div>
                    
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-country">بتاريخ</label>
-                        <input type="date" id="dateCIN" class="form-control form-control-alternative" placeholder="بتاريخ" name="dateCIN" value="1977-02-05">
+                        <input type="date" id="dateCIN" class="form-control form-control-alternative" placeholder="بتاريخ" name="dateCIN" value="1977-02-05" require>
                       </div>
                     </div>
                     
@@ -252,7 +252,7 @@ $_SESSION['pompe']=true;
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-last-name">المهنة</label>
-                        <input type="text" id="travail" class="form-control form-control-alternative" placeholder="المهنة" name="travail" value="12345">
+                        <input type="text" id="travail" class="form-control form-control-alternative" placeholder="المهنة" name="travail" value="12345" require>
                       </div>
                     </div>
                   </div>
@@ -263,7 +263,7 @@ $_SESSION['pompe']=true;
                     <div class="col-md-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-address">العنوان</label>
-                        <input id="address" class="form-control form-control-alternative" placeholder="العنوان" type="text" name="address" value="12345">
+                        <input id="address" class="form-control form-control-alternative" placeholder="العنوان" type="text" name="address" value="12345"require>
                       </div>
                     </div>
                   </div>
@@ -286,7 +286,7 @@ $_SESSION['pompe']=true;
                                            }
                                        }
                                        echo $random;
-                         ?>">
+                         ?>"require>
                       </div>
                     </div>
                   </div>
@@ -312,7 +312,7 @@ $_SESSION['pompe']=true;
                                            }
                                        }
                                        echo $random;
-                         ?>@gmail.com">
+                         ?>@gmail.com" require>
                       </div>
                     </div>
                   </div>
@@ -320,13 +320,13 @@ $_SESSION['pompe']=true;
                   <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-email">كلمة السر</label>
-                        <input type="password" id="mdp1" class="form-control form-control-alternative" placeholder="كلمة السر" name="mdp" value="azeazeaze">
+                        <input type="password" id="mdp1" class="form-control form-control-alternative" placeholder="كلمة السر" name="mdp" value="azeazeaze" require>
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label class="form-control-label" for="input-username">أعد إدخال كلمة السر</label>
-                        <input type="password" id="mdp2" class="form-control form-control-alternative" placeholder="أعد إدخال كلمة السر" value="azeazeaze">
+                        <input type="password" id="mdp2" class="form-control form-control-alternative" placeholder="أعد إدخال كلمة السر" value="azeazeaze"require>
                       </div>
                     </div>
                   </div>

@@ -1,14 +1,24 @@
-<?php session_start();
+<?php 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+session_start();
 
 if (!isset($_SESSION["idGess"])) {
   header("location: ../index.php");
   exit();
 }
 
+if(isset($_GET['annee'])){
+  $budgetAnnee = $_GET['annee'];
+}else{
+  header("location: ../index.php");
+  exit();
+}
 
 include_once "../db/db.php";
 $idGess=$_SESSION['idGess'];
-$sql = "SELECT type FROM gess WHERE idGess = $idGess";
+$sql = "SELECT type FROM gess WHERE idGess = $idGess ";
 $result = mysqli_query($conn, $sql);
 
 if ($result) {
@@ -147,7 +157,7 @@ include "gestionPiController.php";
 
 <?php 
   
-  $sql = "SELECT * FROM budget WHERE idGess=$idGess";
+  $sql = "SELECT * FROM budget WHERE idGess=$idGess AND annee = $budgetAnnee";
 
   $result = $conn->query($sql);
 
@@ -173,7 +183,7 @@ if ($result->num_rows > 0) {
 ?>
 </h3>
 <h5 style="text-align: right;font-size:16px"> مجمع التنمية في قطاع الفلاحة و الصيد البحري للري </h5>
-<div class="title1">  <span class="text-with-border">الميزانية السنوية لسنة 2023 - 2024</span></div>
+<div class="title1">  <span class="text-with-border">الميزانية السنوية لسنة <?php echo $budgetAnnee ?></span></div>
 <table>
     
     <tr>
@@ -232,7 +242,7 @@ if ($result->num_rows > 0) {
     <tr>
       <td colspan="2" ><?php echo $row["heure_travail_ness"] ;?></td>
       <td colspan="2" >س</td>
-      <td colspan="3" >  ((3)/(8))	= عدد ساعات التشغيل الضرورية  </td>
+      <td colspan="3" >  ((8)/(3))	= عدد ساعات التشغيل الضرورية  </td>
       <td colspan="1"  style="width:8px">(9)</td>
     </tr>
     <tr>
@@ -385,14 +395,16 @@ if ($result->num_rows > 0) {
       <td colspan="2" >  		أجرة ومنح المدير الفني في السنة    </td>
       <td colspan="1"  style="width:8px">(29)</td>
     </tr>
+  <!--
     <tr>
       <td colspan="1" ></td>
       <td colspan="2" ></td>
       <td colspan="1" >د</td>
-      <td colspan="1" ><?php echo $row["salaire_gardien_per_m3_eau"] ;?></td>
+      <td colspan="1" ><?php //echo $row["salaire_gardien_per_m3_eau"] ;?></td>
       <td colspan="2" >  	أجرة الحارس المتصرف على م3 من الماء    </td>
       <td colspan="1"  style="width:8px">(30)</td>
     </tr>
+-->
     <tr>
       <th colspan="8" style="text-align: center;"> تقدير المصاريف</th>
     </tr> 
@@ -613,7 +625,11 @@ if ($result->num_rows > 0) {
 </h3>
 <h5 style="text-align: right;font-size:16px"> مجمع التنمية في قطاع الفلاحة و الصيد البحري للري </h5><br>
 <h5 style="text-align: right;font-size:14px;color :red">  الرجاء تعمير جميع الخانات و التثبت من صحتها قبل التسجيل / لا يمكن تعديل الخانات بعد التسجيل *</h5>
-<div class="title1">  <span class="text-with-border">الميزانية السنوية لسنة 2023 - 2024</span></div>
+<div class="title1">  <span class="text-with-border">الميزانية السنوية لسنة 
+  <?php
+    echo  $budgetAnnee ;
+  ?>
+</span></div>
 <form method="POST" onsubmit="submitData()">
 <table>
     
@@ -623,26 +639,11 @@ if ($result->num_rows > 0) {
     <tr>
        <th colspan="8" style="text-align: center;">  معطيات خاصة بالمنتفعين </th>
     </tr>
-    <?php
-      $sql = "SELECT surface_totale 
-      FROM
-      pi_donnees_points_distribution where idGess=$idGess";
-      
-      // Execute the query
-      $result = $conn->query($sql);
-      
-      // Check for and retrieve the result
-      if ($result) {
-          $row = $result->fetch_assoc();
-          $totalSum = $row['surface_totale'];
-      } 
-
-  ?>
     <tr>
-      <td colspan="1" ><input type="number" step="any" name="nombre_mitoyennete" id="nombre_mitoyennete" dir="rtl" placeholder="ادخال عدد المقاسم الفلاحية " value="2"  ></td>
+      <td colspan="1" ><input type="number" step="any" name="nombre_mitoyennete" id="nombre_mitoyennete" dir="rtl" placeholder="ادخال عدد المقاسم الفلاحية "  ></td>
       <td colspan="2" >عدد المقاسم الفلاحية</td>
       <td colspan="1"  style="width:32px">هك</td>
-      <td colspan="1" ><input type="number" step="any" dir="rtl" name="surface_totale" id="surface_totale" placeholder="ادخال عدد المقاسم الفلاحية " value="<?php echo $totalSum ;?>"  ></td>
+      <td colspan="1" ><input type="number" step="any" dir="rtl" name="surface_totale" id="surface_totale" placeholder="ادخال عدد المقاسم الفلاحية " ></td>
       <td colspan="2" > المساحة الجملية  </td>
       <td colspan="1"  style="width:8px">(1)</td>
     </tr>
@@ -834,6 +835,7 @@ if ($result->num_rows > 0) {
       <td colspan="2" >  		أجرة ومنح المدير الفني في السنة    </td>
       <td colspan="1"  style="width:8px">(29)</td>
     </tr>
+    <!--
     <tr>
       <td colspan="1" ></td>
       <td colspan="2" ></td>
@@ -842,6 +844,7 @@ if ($result->num_rows > 0) {
       <td colspan="2" >  	أجرة الحارس المتصرف على م3 من الماء    </td>
       <td colspan="1"  style="width:8px">(30)</td>
     </tr>
+    -->
     <tr>
       <th colspan="8" style="text-align: center;"> تقدير المصاريف</th>
     </tr> 
@@ -949,7 +952,7 @@ if ($result->num_rows > 0) {
     <tr>
       <td colspan="1" >د</td>
       <td colspan="1" ></td>
-      <td colspan="2" ></td>
+      <td colspan="2" ><input disabled type="number" step="any" dir="rtl" name="Dépenses_investissement_equipement" id="Dépenses_investissement_equipement" onkeyup="calcul()"></td>
       <td colspan="3"rowspan="2" >  			مصاريف الإستثمار والتجهيز  </td>
       <td colspan="1" rowspan="2" style="width:8px">(53)</td>
     </tr> 
@@ -983,7 +986,7 @@ if ($result->num_rows > 0) {
     <tr>
       <td colspan="1" >د</td>
       <td colspan="1" ><input disabled type="number" step="any" dir="rtl" name="revenues_des_frais_globaux" id="revenues_des_frais_globaux" onkeyup="calcul()" ></td>
-      <td colspan="5" >المداخيل المتأتية من المعاليم القارة الموظفة على الربط الخاص = (1) * (35) * 12 شهرا</td>
+      <td colspan="5" >المداخيل المتأتية من المعاليم القارة الموظفة على الربط الخاص = (2) * (35) * 12 شهرا</td>
       <td colspan="1"  style="width:8px">(57)</td>
     </tr> 
     <tr>

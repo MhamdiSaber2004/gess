@@ -159,10 +159,9 @@ if(isset($_POST['nom_dettes_beneficiaires'])){
     $note = $_POST['note'];
     $otre_non = $_POST['otre_non'];
 
-    $sql1="INSERT INTO `dettes_beneficiaires`(`beneficiaires`, `montant`, `numFacture`, `date`, `note`,`idGess`,`activ`,`otre_non`) VALUES ('$nom_dettes_beneficiaires','$montant','$numFacture','$date ','$note','$idGess','1','$otre_non')";
+    $sql1="INSERT INTO `dettes_beneficiaires` (`beneficiaires`, `montant`, `numFacture`, `date`, `note`,`idGess`,`activ`,`otre_non`) VALUES ('$nom_dettes_beneficiaires','$montant','$numFacture','$date ','$note','$idGess','1','$otre_non')";
         
         if ($conn->query($sql1) === TRUE) {
-            echo 'lfkjpoer';
             $_SESSION['messageClass']="success";
             $_SESSION['message']="تمت الإضافة بنجاح";
             header("Location: ../pages/listedetteBenificaierPI.php?dateDebut=".$datedebut."&dateFin=".$dateFin);
@@ -392,12 +391,17 @@ $famille = mysqli_real_escape_string($conn, $_POST['famille']);
 
 $date=date("Y-m-d");
 
-if(strlen($CIN)<8)
-$CIN='0'.$CIN;
+$sql2 = "SELECT * FROM pompiste where CIN = '$CIN'";
+$result2 = $conn->query($sql2);
 
+if ($result2->num_rows > 0) {
+    $_SESSION['messageClass']="danger";
+    $_SESSION['message']="رقم بطاقة التعريف مسجل بالفعل";
+    header("Location: ../index.php?page=listePompiste");
+}
 
 $file1 = $_FILES['file1']['name'];
-$imageArrBack = explode('.', $file1); //first index is file name and second index file type
+$imageArrBack = explode('.', $file1); 
 $rand = rand(10000, 99999);
 $nameFile1 = $rand . '.' . $imageArrBack[1];
 $uploadPathBack = "../uploads/" . $nameFile1;
@@ -554,7 +558,14 @@ if (isset($_POST['ajoutBenefiquePublique'])) {
 
     $tel = mysqli_real_escape_string($conn, $_POST['tel']);
 
-
+    $sql2 = "SELECT * FROM benefique_publique where CIN = '$CIN'";
+    $result2 = $conn->query($sql2);
+    
+    if ($result2->num_rows > 0) {
+        $_SESSION['messageClass']="danger";
+        $_SESSION['message']="رقم بطاقة التعريف مسجل بالفعل";
+        header("Location: ../index.php?page=listePompiste");
+    }
 
     $sql="INSERT INTO `benefique_publique` (`idBenefique`,`idGess`, `CIN`, `tel`, `address`, `nom`, `date`) VALUES ('$idBenefique','$idGess', '$CIN', '$tel', '$address', '$nom', current_timestamp());";
 
@@ -1297,14 +1308,15 @@ if (isset($_POST['ajoutBenefiquePI'])) {
     $numPrise = mysqli_real_escape_string($conn, $_POST['numPrise']);
     $numBranch = mysqli_real_escape_string($conn, $_POST['numBranch']);
     $numBenefique = mysqli_real_escape_string($conn, $_POST['numBenefique']);
+    $nature = mysqli_real_escape_string($conn, $_POST['nature']);
 
     $numDiviseur = mysqli_real_escape_string($conn, $_POST['numDiviseur']);
 
-    $sql = "SELECT * from benefique_pi where numCompteur='$numCompteur'";
+    $sql1 = "SELECT * from benefique_pi where numCompteur='$numCompteur'";
 
-    $result = $conn->query($sql);
+    $result1 = $conn->query($sql1);
 
-    if ($result->num_rows > 0) {
+    if ($result1->num_rows > 0) {
         $_SESSION['messageClass']="danger";
         $_SESSION['message']="هناك منتفع مسجل برقم العداد الذي أدخلته";
         header("Location: ../index.php?page=listeBenefiquePI");
@@ -1323,11 +1335,11 @@ if (isset($_POST['ajoutBenefiquePI'])) {
         exit();
     }
 
-    $sql = "SELECT * FROM prise_pi where idGess='$idGess' and numPrise='$numPrise'";
+    $sql2 = "SELECT * FROM prise_pi where idGess='$idGess' and numPrise='$numPrise'";
 
-    $result = $conn->query($sql);
+    $result2 = $conn->query($sql2);
 
-    if ($result->num_rows == 0) {
+    if ($result2->num_rows == 0) {
         $row = $result->fetch_assoc();
         $idPrise=$row['idPrise'];
 
@@ -1337,10 +1349,10 @@ if (isset($_POST['ajoutBenefiquePI'])) {
         header("Location: ../index.php?page=listeBenefiquePI");
     }else{
 
-    $sql="INSERT INTO `benefique_pi` (`idBenefique`, `idGess`, `numBenefique`, `idPompiste`, `nom`, `dateN`, `CIN`, `dateCIN`, `address`, `propriete`, `tel`, `dette`, `dateInscription`, `numPlace`,  `numDiviseur`, `aire`, `numCompteur`, `donneesCompteur`, `numPrise`, `email`, `mdp`, `active`,`numBranch`) 
-    VALUES ('$idBenefique', '$idGess', '$numBenefique', '$idPompiste', '$nom', '$dateN', '$CIN', '$dateCIN', '$address', '$propriete', '$tel', '$dette', current_timestamp(), '$numPlace', '$numDiviseur', '$aire', '$numCompteur', '$donneesCompteur', '$numPrise', '$email', '$mdp','1','$numBranch');";
+    $sql3="INSERT INTO `benefique_pi` (`idBenefique`, `idGess`, `numBenefique`, `idPompiste`, `nom`, `dateN`, `CIN`, `dateCIN`, `address`, `propriete`, `tel`, `dette`, `dateInscription`, `numPlace`,  `numDiviseur`, `aire`, `numCompteur`, `donneesCompteur`, `numPrise`, `email`, `mdp`, `active`,`numBranch`,`nature`) 
+    VALUES ('$idBenefique', '$idGess', '$numBenefique', '$idPompiste', '$nom', '$dateN', '$CIN', '$dateCIN', '$address', '$propriete', '$tel', '$dette', current_timestamp(), '$numPlace', '$numDiviseur', '$aire', '$numCompteur', '$donneesCompteur', '$numPrise', '$email', '$mdp','1','$numBranch','$nature');";
 
-        if($conn->query($sql) === TRUE){                
+        if($conn->query($sql3) === TRUE){                
         
             $_SESSION['numCompteur']=$numCompteur;
             $_SESSION['nom']=$nom;
@@ -1649,6 +1661,7 @@ header("Location: ../index.php?page=listeBenefiqueAEP");
         $mdp = mysqli_real_escape_string($conn, $_POST['mdp']);
         $dette = mysqli_real_escape_string($conn, $_POST['dette']);
         $numPrise = mysqli_real_escape_string($conn, $_POST['numPrise']);
+        $nature = mysqli_real_escape_string($conn, $_POST['nature']);
     
     
     
@@ -1692,7 +1705,7 @@ header("Location: ../index.php?page=listeBenefiqueAEP");
     
                     $newDette=$allDette-$oldDette+$dette;
     
-                    $sql="UPDATE `benefique_pi` SET `nom` = '$nom', `CIN` = '$CIN', `address` = '$address', `propriete` = '$propriete', `tel` = '$tel', `dette` = '$dette', `numPlace` = '$numPlace', `aire` = '$aire', `numDiviseur` = '$numDiviseur', `numCompteur` = '$numCompteur', `donneesCompteur` = '$donneesCompteur', `email` = '$email', `mdp` = '$mdp' WHERE `benefique_pi`.`idBenefique` = '$idBenefique';";
+                    $sql="UPDATE `benefique_pi` SET `nom` = '$nom', `CIN` = '$CIN', `address` = '$address', `propriete` = '$propriete', `tel` = '$tel', `dette` = '$dette', `numPlace` = '$numPlace', `aire` = '$aire', `numDiviseur` = '$numDiviseur', `numCompteur` = '$numCompteur', `donneesCompteur` = '$donneesCompteur', `email` = '$email', `mdp` = '$mdp' , `nature`='$nature' WHERE `benefique_pi`.`idBenefique` = '$idBenefique';";
     
                     if($conn->query($sql) === TRUE){
             

@@ -46,9 +46,9 @@
                     <th scope="col">رقم المأخذ</th>
                     <th scope="col">رقم المقسم </th>
 
-                    <th scope="col">رقم العداد</th>
+                    <th scope="col">رقم الفرع</th>
 
-                    <th scope="col">الديون </th>
+                    <th scope="col">نوع الغراسات </th>
 
                     <th scope="col"></th>
 
@@ -86,34 +86,79 @@
 
                   $active="مرفوض";
                 }
+                if($row["idBenefique"]==null){
+                  $idBenefique="";
+                }else{
+                  $idBenefique=$row["idBenefique"];
+                }
+                if($row["numBenefique"]==null){
+                  $numBenefique="";
+                }else{
+                  $numBenefique=$row["numBenefique"];
+                }
+                if($row["nom"]==null){
+                  $nom="";
+                }else{
+                  $nom=$row["nom"];
+                }
+                if($row["aire"]==null){
+                  $aire="";
+                }else{
+                  $aire=$row["aire"];
+                }
+                if($row["numPlace"]==null){
+                  $numPlace="";
+                }else{
+                  $numPlace=$row["numPlace"];
+                }
+                if($row["numPrise"]==null){
+                  $numPrise="";
+                }else{
+                  $numPrise=$row["numPrise"];
+                }
+                if($row["numDiviseur"]==null){
+                  $numDiviseur="";
+                }else{
+                  $numDiviseur=$row["numDiviseur"];
+                }
+                if($row["numBranch"]==null){
+                  $numBranch="";
+                }else{
+                  $numBranch=$row["numBranch"];
+                }
+                if($row["nature"]==null){
+                  $nature="";
+                }else{
+                  $nature=$row["nature"];
+                }
                 echo '
                   <tr>
                   <th scope="row">'
-                  . $row["idBenefique"] .'
+                  . $idBenefique .'
                   </th>
                   <td>'
-                  . $row['numBenefique'] .'
+                  . $numBenefique .'
                   </td>
                   <td>'
-                  . $row['nom'].'
+                  . $nom.'
                   </td>
                   <td>'
-                  . $row['aire'] .'
+                  . $aire .'
                   </td>
                   <td>'
-                  . $row['numPlace'] .'
+                  . $numPlace .'
                   </td>
                   <td>'
-                  . $row['numPrise'] .'
+                  . $numPrise .'
                   </td>
                   <td>'
-                  . $row['numDiviseur'] .'
+                  . $numDiviseur .'
                   </td>
                   <td>'
-                  . $row['numCompteur'] .'
+                  . $numBranch .'
                   </td>
                   <td>'
-                  . $row1['dette'] .'
+                  . $nature .'
                   </td>
                 
                   <td class="text-center">

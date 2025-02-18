@@ -40,7 +40,7 @@
                                        <div class="col-lg-12">
                                           <div class="form-group">
                                              <label class="form-control-label" for="input-country">الرقم المستهلك</label>
-                                             <input type="number" id="numConsomme" class="form-control form-control-alternative" placeholder="الرقم المستهلك" name="numConsomme" >
+                                             <input type="number" id="numConsomme" class="form-control form-control-alternative" placeholder="الرقم المستهلك" name="numConsomme"  require>
                                           </div>
                                        </div>
                                        <h6 class="heading-small text-muted mb-4 text-red" id="erreur"><br></h6>
@@ -51,7 +51,7 @@
             </div>
                <div class="modal-footer flex-row-reverse">
                <button type="button" class="btn btn-secondary" data-dismiss="modal">إلغاء</button>
-               <input type="submit" name="ajoutConsommationPompe" class="btn btn-primary" value="تسجيل">
+               <input type="submit" name="ajoutConsommationPompe" class="btn btn-primary" value="تسجيل" require>
                </div>
                </div>
                </div>
@@ -192,7 +192,7 @@
                                     <div class="col-lg-12">
                                           <div class="form-group">
                                              <label class="form-control-label" for="input-country">رمز العملية </label>
-                                             <input type="number" id="idConsommation" class="form-control form-control-alternative" placeholder="رمز العداد" name="idConsommation" readonly value="<?php echo $row['idConsommation'] ?>">
+                                             <input type="number" id="idConsommation" class="form-control form-control-alternative" placeholder="رمز العداد" name="idConsommation" readonly value="<?php echo $row['idConsommation'] ?>" require>
                                              
                                           </div>
                                        </div>
@@ -200,7 +200,7 @@
                                        <div class="col-lg-12">
                                           <div class="form-group">
                                              <label class="form-control-label" for="input-country">الرقم المستهلك</label>
-                                             <input type="number" id="numConsomme" class="form-control form-control-alternative" placeholder="الرقم المستهلك" name="numConsomme" value="<?php echo $row['numComsommation'] ?>">
+                                             <input type="number" id="numConsomme" class="form-control form-control-alternative" placeholder="الرقم المستهلك" name="numConsomme" value="<?php echo $row['numComsommation'] ?>" require>
                                           </div>
                                        </div>
                                       
@@ -212,7 +212,7 @@
             </div>
                <div class="modal-footer flex-row-reverse">
                <button type="button" class="btn btn-secondary" data-dismiss="modal">إلغاء</button>
-               <input type="submit" name="modifConsommationPompe" class="btn btn-primary" value="تسجيل">
+               <input type="submit" name="modifConsommationPompe" class="btn btn-primary" value="تسجيل" require>
                </div>
                </div>
                </div>

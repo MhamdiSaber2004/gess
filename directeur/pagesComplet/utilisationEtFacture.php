@@ -1,9 +1,12 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
    include_once "../db/db.php";
    session_start();
    if (!isset($_SESSION["idPompiste"])) {
-   header("location: ../login.php");
-   exit();
+      $idPompiste=$_SESSION['idPompiste'];
+      header("location: ../login.php");
+      exit();
    }
 
    $idGess=$_SESSION['idGess'];
@@ -27,6 +30,7 @@
       $detteAvantFacture=$_POST['detteAvantFacture'];
       $numConsommation=$_POST['numConsommation'];
       $numConsommationPrecedent=$_POST['numConsommationPrecedent'];
+      $parM3OuNon = $_POST['parM3OuNon'];
       $prixM3=$_POST['prixM3'];
       $prixFixe=$_POST['prixFixe'];
       $dateUF=$_POST['dateUF'];
@@ -36,11 +40,12 @@
       $numFacture=$_POST['numFacture'];
       $numPayement=$_POST['numPayement'];
       $dettePaye=$_POST['dettePaye'];
-
-      $sqlA = "INSERT INTO `utilisation_et_facture`(`idGess`, `idBenefique`, `moisUF`, `detteAvantFacture`, `dateUF`, `numConsommation`, `numConsommationPrecedent`, `numFacture`, `numPayement`, `prixM3`, `prixFixe`, `autrePrix`, `parM3OuNon`, `MontantPaye`)VALUES ('$idGess','$idBenefique','$moisUF','$detteAvantFacture','$dateUF','$numConsommation','$numConsommationPrecedent','$numFacture','$numPayement','$prixM3','$prixFixe','$autrePrix','$parM3OuNon','$dettePaye')";
       
-      if ($conn->query($sqlA) === TRUE) {
-         header("Location: utilisationEtFacture.php?mois=$moisUF");
+
+      $stmt = $conn->prepare("INSERT INTO `utilisation_et_facture`(`idGess`, `idBenefique`, `moisUF`, `detteAvantFacture`, `dateUF`, `numConsommation`, `numConsommationPrecedent`, `dettePaye`, `numFacture`, `numPayement`, `prixM3`, `prixFixe`, `autrePrix`, `parM3OuNon`, `dettePaye`, `activ`) VALUES ('$idGess','$idBenefique','$moisUF','$detteAvantFacture','$dateUF','$numConsommation','$numConsommationPrecedent','$dettePaye','$numFacture','$numPayement','$prixM3','$prixFixe','$autrePrix','$parM3OuNon','0','1')");
+      
+      if ($stmt->execute()) {
+          header("Location: utilisationEtFacture.php?mois=$moisUF");
       }
    }
 
@@ -156,11 +161,11 @@
         $prixFixe=0;
         $prixTotal=0;
         $MontantRequis=0;
-        $MontantPaye=0;
+        $dettePaye=0;
         $montantDu=0;
 
 
-        $sql2 = "SELECT idBenefique,nom FROM `benefique_aep` WHERE idGess = $idGess";
+        $sql2 = "SELECT idBenefique,nom FROM `benefique_pi` WHERE idGess = $idGess";
         $result2 = $conn->query($sql2);
         $benefique=array();
         $nb_benefique=0;
@@ -169,7 +174,7 @@
             $nb_benefique=$nb_benefique+1;
         }
 
-        $sql = "SELECT * FROM `utilisation_et_facture` WHERE idGess = $idGess and moisUF='$moisUF' and activ=0";
+        $sql = "SELECT * FROM `utilisation_et_facture` WHERE idGess = $idGess and moisUF='$moisUF' and activ=1";
         $result = $conn->query($sql);
         $nb=0;
         while ($row = $result->fetch_assoc()) { 
@@ -180,8 +185,8 @@
             $prixFixe=$prixFixe+$row['prixFixe'];
             $prixTotal=$prixTotal+(($row['numConsommation']-$row['numConsommationPrecedent'])* $row['prixM3'])+$row['prixFixe'];
             $MontantRequis=$MontantRequis+(($row['numConsommation']-$row['numConsommationPrecedent'])* $row['prixM3'])+$row['prixFixe']+$row['autrePrix'];
-            $MontantPaye=$MontantPaye+$row['MontantPaye'];
-            $montantDu=$montantDu+((($row['numConsommation']-$row['numConsommationPrecedent'])* $row['prixM3'])+$row['prixFixe']+$row['autrePrix']-$row['MontantPaye']);
+            $dettePaye=$dettePaye+$row['dettePaye'];
+            $montantDu=$montantDu+((($row['numConsommation']-$row['numConsommationPrecedent'])* $row['prixM3'])+$row['prixFixe']+$row['autrePrix']-$row['dettePaye']);
     ?>
       <tr>
         <td><?php echo $nb ; ?></td>
@@ -205,8 +210,8 @@
         <td><?php echo (($row['numConsommation']-$row['numConsommationPrecedent'])* $row['prixM3'])+$row['prixFixe']; ?></td>
         <td><?php echo $row['autrePrix'] ; ?></td>
         <td><?php echo (($row['numConsommation']-$row['numConsommationPrecedent'])* $row['prixM3'])+$row['prixFixe']+$row['autrePrix'] ; ?></td>
-        <td><?php echo $row['MontantPaye'] ; ?></td>
-        <td><?php echo ((($row['numConsommation']-$row['numConsommationPrecedent'])* $row['prixM3'])+$row['prixFixe']+$row['autrePrix']-$row['MontantPaye'])  ; ?></td>
+        <td><?php echo $row['dettePaye'] ; ?></td>
+        <td><?php echo ((($row['numConsommation']-$row['numConsommationPrecedent'])* $row['prixM3'])+$row['prixFixe']+$row['autrePrix']-$row['dettePaye'])  ; ?></td>
         <td><?php echo $row['numFacture'] ; ?></td>
         <td><?php echo $row['numPayement'] ; ?></td>
       </tr>
@@ -234,7 +239,7 @@
         <td><?php echo $prixTotal ; ?></td>
         <td style="background-color:grey"></td>
         <td><?php echo $MontantRequis ; ?></td>
-        <td><?php echo $MontantPaye ; ?></td>
+        <td><?php echo $dettePaye ; ?></td>
         <td><?php echo $montantDu ; ?></td>
         <td style="background-color:grey"></td>
         <td style="background-color:grey"></td>
@@ -256,17 +261,30 @@
                      <h3 class=" text-center mt-2 mb-3">الفوترة    </h3>
                      <br>
                      <div class="row">
-                        <h5>هل هذه المعظيات صحيحة, اذا كانت خاظئة, الرجاء التواصل مع رئيس المجمع   </h5>
+                        <h5>هل هذه المعظيات صحيحة, اذا كانت خاطئة, الرجاء التواصل مع رئيس المجمع   </h5>
                         <br>
                         <div class="col-lg-12 mb-3">
                            <div class="form-group">
                               <label class="form-control-label" for="input-country">إسم ولقب   </label>
                               <select class="form-select" name="idBenefique" aria-label="Default select example">
                                  <?php
-                                    for($ib=0 ; $ib < $nb_benefique ; $ib++){
-                                    ?>
-                                       <option value="<?php echo $benefique[$ib]['idBenefique'] ?>"><?php echo $benefique[$ib]['nom'] ?></option>
-                                    <?php
+                                    $sql3 = "SELECT * FROM benefique_pi where idGess='$idGess' and active=1 ";
+                                    $result3 = $conn->query($sql3);
+                                    if ($result3->num_rows > 0) {
+                                       // output data of each row
+                                       while ($row = $result3->fetch_assoc()) {
+                                             echo '<option value="'.$row['idBenefique'].'">'.$row['nom'].'</option>';
+                                       }
+                                    }
+                                 ?>
+                                  <?php
+                                    $sql4 = "SELECT * FROM benefique_aep where idGess='$idGess' and active=1 ";
+                                    $result4 = $conn->query($sql4);
+                                    if ($result4->num_rows > 0) {
+                                       // output data of each row
+                                       while ($row = $result4->fetch_assoc()) {
+                                             echo '<option value="'.$row['idBenefique'].'">'.$row['nom'].'</option>';
+                                       }
                                     }
                                  ?>
                               </select>
@@ -298,7 +316,7 @@
                                  لسعر بال h
                               </label>
                               <br>
-                              <input class="form-check-input" type="radio" name="parM3OuNon" value="0">
+                              <input class="form-check-input" type="radio" name="parM3OuNon" value="1">
                               <label class="form-check-label" for="flexRadioDefault1">
                                  لسعر بال m3
                               </label>
@@ -325,13 +343,13 @@
                         <div class="col-lg-12 mb-3">
                            <div class="form-group">
                               <label class="form-control-label" for="input-country">معالم أخرى	   </label>
-                              <input type="number" id="autrePrix"  class="form-control form-control-alternative"  placeholder="معالم أخرى	 " name="autrePrix" value=""  required >
+                              <input type="number" id="autrePrix"  class="form-control form-control-alternative"  placeholder="معالم أخرى	 " name="autrePrix"  required >
                            </div>
                         </div> 
                         <div class="col-lg-12 mb-3">
                            <div class="form-group">
                               <label class="form-control-label" for="input-country">المبلغ المدفوع	   </label>
-                              <input type="number" id="numConsommation"  class="form-control form-control-alternative" placeholder="المبلغ المدفوع	 " name="dettePaye" dettePaye required>
+                              <input type="number" id="numConsommation"  class="form-control form-control-alternative" placeholder="المبلغ المدفوع	 " name="dettePaye"  required>
                            </div>
                         </div>
                         <div class="col-lg-12 mb-3">

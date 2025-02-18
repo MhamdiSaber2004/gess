@@ -39,7 +39,7 @@
                                        <div class="col-lg-12">
                                           <div class="form-group">
                                              <label class="form-control-label" for="input-country">رمز العداد</label>
-                                             <input type="number" id="numCompteur" list="numeroCompteur" class="form-control form-control-alternative" placeholder="رمز العداد" name="numCompteur" >
+                                             <input type="number" id="numCompteur" list="numeroCompteur" class="form-control form-control-alternative" placeholder="رمز العداد" name="numCompteur" require>
                                              <datalist id="numeroCompteur">
                                                 <?php
                                                    
@@ -60,7 +60,7 @@
                                        <div class="col-lg-12">
                                           <div class="form-group">
                                              <label class="form-control-label" for="input-country">الرقم المستهلك</label>
-                                             <input type="number" id="numConsomme" class="form-control form-control-alternative" placeholder="الرقم المستهلك" name="numConsomme" >
+                                             <input type="number" id="numConsomme" class="form-control form-control-alternative" placeholder="الرقم المستهلك" name="numConsomme" require >
                                           </div>
                                        </div>
                                        <h6 class="heading-small text-muted mb-4 text-red" id="erreur"><br></h6>
@@ -71,7 +71,7 @@
             </div>
                <div class="modal-footer flex-row-reverse">
                <button type="button" class="btn btn-secondary" data-dismiss="modal">إلغاء</button>
-               <input type="submit" onclick=" return checkInputsConsommation()" name="ajoutConsommationPI" class="btn btn-primary" value="تسجيل">
+               <input type="submit" onclick=" return checkInputsConsommation()" name="ajoutConsommationPI" class="btn btn-primary" value="تسجيل" require>
                </div>
                </div>
                </div>
@@ -214,21 +214,21 @@
                                     <div class="col-lg-12">
                                           <div class="form-group">
                                              <label class="form-control-label" for="input-country">رمز العملية </label>
-                                             <input type="number" id="idConsommation" class="form-control form-control-alternative" placeholder="رمز العداد" name="idConsommation" readonly value="<?php echo $row['idConsommation'] ?>">
+                                             <input type="number" id="idConsommation" class="form-control form-control-alternative" placeholder="رمز العداد" name="idConsommation" readonly value="<?php echo $row['idConsommation'] ?>" require>
                                              
                                           </div>
                                        </div>
                                     <div class="col-lg-12">
                                           <div class="form-group">
                                              <label class="form-control-label" for="input-country">رمز العداد</label>
-                                             <input type="number" id="numCompteur" class="form-control form-control-alternative" placeholder="رمز العداد" name="numCompteur" readonly value="<?php echo $row['numCompteur'] ?>">
+                                             <input type="number" id="numCompteur" class="form-control form-control-alternative" placeholder="رمز العداد" name="numCompteur" readonly value="<?php echo $row['numCompteur'] ?>" require>
                                           
                                           </div>
                                        </div>
                                        <div class="col-lg-12">
                                           <div class="form-group">
                                              <label class="form-control-label" for="input-country">الرقم المستهلك</label>
-                                             <input type="number" id="numConsomme" class="form-control form-control-alternative" placeholder="الرقم المستهلك" name="numConsomme" value="<?php echo $row['numConsomme'] ?>">
+                                             <input type="number" id="numConsomme" class="form-control form-control-alternative" placeholder="الرقم المستهلك" name="numConsomme" value="<?php echo $row['numConsomme'] ?>" require>
                                           </div>
                                        </div>
                                       
@@ -240,7 +240,7 @@
             </div>
                <div class="modal-footer flex-row-reverse">
                <button type="button" class="btn btn-secondary" data-dismiss="modal">إلغاء</button>
-               <input type="submit" name="modifierConsommationPI" class="btn btn-primary" value="تسجيل">
+               <input type="submit" name="modifierConsommationPI" class="btn btn-primary" value="تسجيل" require>
                </div>
                </div>
                </div>

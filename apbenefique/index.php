@@ -8,7 +8,7 @@ include "sidebar.php";
 
 if(!isset($_GET['page']) || empty($_GET['page']))
 {
-  include "./pages/dashboard.php";
+  include "./pages/listeDemandes.php";
 }
 
 
@@ -42,6 +42,9 @@ if(isset($_GET['page']) && ! empty ( $_GET['page'] ) ) {
                 case 'printPompiste':
                   include "./pages/printPompiste.php";
                   break;
+                  case 'ajouterproblem':
+                    include "./pages/ajouterProblem.php";
+                    break;
 
 
                   case 'recuconsommation':
@@ -74,3 +77,19 @@ include "topNavBar.php";
 include "footer.php" 
 
 ?>
+
+<div class="modal fade" id="problemEtat" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+      <a class="btn btn-primary mx-auto" href="index.php?page=ajouterproblem" >اضافة عطب</a>
+      <br><br>
+      <form action="controller/controller.php" method="post" class="text-center">
+        <input type="text" name="detail" value="مشكلة قطع ماء" class="d-none">
+        <button button type="submit" name="ajoutProbleme" class="btn btn-primary mx-auto" name="" >اشعار عن قطع الماء</a>
+      </form>
+
+      </div>
+    </div>
+  </div>
+</div>
