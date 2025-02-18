@@ -322,6 +322,29 @@ if(isset($_GET['moin'])){
                                 <label for="trvailPomp" class="form-label">اشغال المضخة	</label>
                                 <input type="text" class="form-control mb-3" id="trvailPomp" name="trvailPomp">
                             </div>
+                            <hr>
+                            <div class="col-6">
+                                <label for="coupEau" class="form-label">انقطاع الماء</label>
+                                <input type="text" class="form-control mb-3" id="coupEau" name="coupEau">
+                            </div>
+                            <div class="col-6">
+                                <label for="panePompe" class="form-label">عطب محطة الضخ</label>
+                                <input type="text" class="form-control mb-3" id="panePompe" name="panePompe">
+                            </div>
+                            <div class="col-6">
+                                <label for="coupeEnergie" class="form-label">انطاع الطاقة</label>
+                                <input type="text" class="form-control mb-3" id="coupeEnergie" name="coupeEnergie">
+                            </div>
+                            <div class="col-6">
+                                <label for="paneTotalOuNon1" class="form-label">عطب في الشبكة</label>
+                                <input type="radio" class="form-control mb-3" id="paneTotalOuNon1" name="paneTotalOuNon" value="1">كلي
+                                <input type="radio" class="form-control mb-3" id="paneTotalOuNon0" name="paneTotalOuNon" value="0">جزئي
+                            </div>
+                            <hr>
+                            <div class="col-6">
+                                <label for="note" class="form-label">ملاحظات</label>
+                                <textarea class="form-control mb-3" id="note" name="note" cols="30" rows="10"></textarea>
+                            </div>
                         </div>
                     </div>
                     <div class="modal-footer">
