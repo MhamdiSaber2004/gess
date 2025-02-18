@@ -267,7 +267,7 @@ if(isset($_GET['moin'])){
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-12">
-                                <label for="exampleInputEmail1" class="form-label">تاريخ</label>
+                                <h5 for="exampleInputEmail1" class="form-label">تاريخ</h5>
                                 <select class="form-select mb-3" aria-label="Default select example" mane="jour">
                                     <?php
                                          for ($i = 1; $i <= $days_in_moin; $i++) {
@@ -309,7 +309,19 @@ if(isset($_GET['moin'])){
                                 <label for="numMax" class="form-label">عداد الذروة</label>
                                 <input type="text" class="form-control" id="numMax" name="numMax">
                             </div>
-
+                            <hr>
+                            <div class="clo-6">
+                                <label for="acha" class="form-label">شراء</label>
+                                <input type="text" class="form-control" id="acha" name="acha">
+                            </div>
+                            <div class="clo-6">
+                                <label for="utiliser" class="form-label">مستعمل</label>
+                                <input type="text" class="form-control" id="utiliser" name="utiliser">
+                            </div>
+                            <div class="clo-12">
+                                <label for="trvailPomp" class="form-label">اشغال المضخة	</label>
+                                <input type="text" class="form-control" id="trvailPomp" name="trvailPomp">
+                            </div>
                         </div>
                     </div>
                     <div class="modal-footer">
