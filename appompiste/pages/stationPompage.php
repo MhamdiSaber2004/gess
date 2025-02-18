@@ -305,20 +305,20 @@ if(isset($_GET['moin'])){
                                 <label for="numMid" class="form-label">عداد المساء</label>
                                 <input type="text" class="form-control mb-3" id="numMid" name="numMid">
                             </div>
-                            <div class="clo-12">
+                            <div class="col-12">
                                 <label for="numMax" class="form-label">عداد الذروة</label>
                                 <input type="text" class="form-control mb-3" id="numMax" name="numMax">
                             </div>
                             <hr>
-                            <div class="clo-6">
+                            <div class="col-6">
                                 <label for="acha" class="form-label">شراء</label>
                                 <input type="text" class="form-control mb-3" id="acha" name="acha">
                             </div>
-                            <div class="clo-6">
+                            <div class="col-6">
                                 <label for="utiliser" class="form-label">مستعمل</label>
                                 <input type="text" class="form-control mb-3" id="utiliser" name="utiliser">
                             </div>
-                            <div class="clo-12">
+                            <div class="col-12">
                                 <label for="trvailPomp" class="form-label">اشغال المضخة	</label>
                                 <input type="text" class="form-control mb-3" id="trvailPomp" name="trvailPomp">
                             </div>
