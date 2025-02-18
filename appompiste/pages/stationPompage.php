@@ -337,8 +337,14 @@ if(isset($_GET['moin'])){
                             </div>
                             <div class="col-6">
                                 <label for="paneTotalOuNon1" class="form-label">عطب في الشبكة</label>
-                                <input type="radio" class="form-control mb-3" id="paneTotalOuNon1" name="paneTotalOuNon" value="1">كلي
-                                <input type="radio" class="form-control mb-3" id="paneTotalOuNon0" name="paneTotalOuNon" value="0">جزئي
+                                <input class="form-check-input" type="radio" name="paneTotalOuNon" id="paneTotalOuNon1" value="1">
+                                <label class="form-check-label" for="paneTotalOuNon1">
+                                    كلي
+                                </label>    
+                                <input class="form-check-input" type="radio" name="paneTotalOuNon" id="paneTotalOuNon2" value="0">
+                                <label class="form-check-label" for="paneTotalOuNon2">
+                                    جزئي
+                                </label>                        
                             </div>
                             <hr>
                             <div class="col-12">
