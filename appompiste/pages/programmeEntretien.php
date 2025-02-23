@@ -67,159 +67,159 @@
             <td>أسبوعيا</td>
             <td>بعض الدقائق </td>
             <td>حارس المحطة</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
         </tr>
         <tr>
             <td>مراقبة مساواة التيار الكهربائي على مستوى الخطوط الثالثة بواسطة أجهزة األمبرمتر الثالثة</td>
             <td>أسبوعيا</td>
             <td>ربع ساعة</td>
             <td>حارس المحطة </td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
         </tr>
         <tr>
             <td>مراقبة المستوى الثابت للمائدة المائية بواسطة الهيدرومتر قبل انطالق الضخ</td>
             <td>شهريا</td>
             <td>ربع ساعة</td>
             <td>حارس المحطة</td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -229,51 +229,51 @@
             <td>شهريا</td>
             <td>ربع ساعة</td>
             <td>حارس المحطة</td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -283,51 +283,51 @@
             <td>شهريا</td>
             <td>ساعة</td>
             <td>حارس المحطة</td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -337,51 +337,51 @@
             <td>شهريا</td>
             <td>نصف يوم</td>
             <td>حارس المحطة</td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -391,7 +391,7 @@
             <td>كل 3 أشهر</td>
             <td>ربع ساعة</td>
             <td>حارس المحطة</td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -403,7 +403,7 @@
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -415,7 +415,7 @@
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -427,7 +427,7 @@
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -445,7 +445,7 @@
             <td>كل 3 أشهر</td>
             <td>ربع ساعة</td>
             <td>حارس المحطة</td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -457,7 +457,7 @@
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -469,7 +469,7 @@
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -481,7 +481,7 @@
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -499,7 +499,7 @@
             <td>كل 6 أشهر</td>
             <td>نصف يوم</td>
             <td>مختص</td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -523,7 +523,7 @@
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -553,7 +553,7 @@
             <td>كل 6 أشهر</td>
             <td>ساعة</td>
             <td>مختص</td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -577,7 +577,7 @@
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -690,51 +690,51 @@
             <td>نصف ساعة</td>
             <td>2</td>
             <td>حارس المحطة</td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -745,51 +745,51 @@
             <td>ربع ساعة</td>
             <td>1</td>
             <td>حارس المحطة</td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -800,51 +800,51 @@
             <td>ربع ساعة</td>
             <td>1</td>
             <td>حارس المحطة</td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -855,51 +855,51 @@
             <td>يومين</td>
             <td>152</td>
             <td>حارس الشبكة </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -910,7 +910,7 @@
             <td>يوم</td>
             <td>2</td>
             <td>حارس الشبكة</td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -922,7 +922,7 @@
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -934,7 +934,7 @@
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -946,7 +946,7 @@
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -966,9 +966,9 @@
             <td>55</td>
             <td>حارس الشبكة</td>
             <td> </td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -978,9 +978,9 @@
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -990,9 +990,9 @@
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -1002,9 +1002,9 @@
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -1022,8 +1022,8 @@
             <td>حارس الشبكة</td>
             <td> </td>
             <td> </td>
-            <td>*</td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -1046,8 +1046,8 @@
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -1093,8 +1093,8 @@
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -1146,7 +1146,7 @@
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -1195,8 +1195,8 @@
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -1250,9 +1250,9 @@
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -1313,7 +1313,7 @@
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -1358,9 +1358,9 @@
             <td> </td>
             <td> </td>
             <td> </td>
-            <td>*</td>
-            <td>*</td>
-            <td>*</td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
+            <td><input type="checkbox" class="form-check-input" id="exampleCheck1"><i class="bi bi-circle-fill"></i></td>
             <td> </td>
             <td> </td>
             <td> </td>
