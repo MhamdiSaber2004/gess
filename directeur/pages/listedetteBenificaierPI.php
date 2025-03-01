@@ -105,8 +105,8 @@ th {
 <div class="btnon">
 
     <a href="../index.php" class="btn btn-primary">رجوع</a>
-    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#eaudouyoun">اضافةالديون المتعلة باستغلال المياه</button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#eauotre">اضافةالديون المتعلة الانشطة الاخرى</button>
+    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#eaudouyoun">اضافةالديون المتعلقة باستغلال المياه</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#eauotre">اضافةالديون المتعلقة الانشطة الاخرى</button>
     <button type="button" class="btn btn-success" onclick="printer()">طباعة</button>
 
 </div>
@@ -132,7 +132,7 @@ th {
         <th>رقم الفاتورة</th>
     </tr>
     <tr>
-        <td colspan="6"> الديون المتعلة باستغلال المياه</td>
+        <td colspan="6"> الديون المتعلقة باستغلال المياه</td>
     </tr>
     <?php
         $sql = "SELECT * FROM `dettes_beneficiaires` WHERE idGess=$idGess and otre_non='0' and activ='1' and date between '$dateDebute'  and '$dateFin'";
@@ -155,7 +155,7 @@ th {
   
 
     <tr>
-        <td colspan="6"> الديون المتعلة الانشطة الاخرى</td>
+        <td colspan="6"> الديون المتعلقة الانشطة الاخرى</td>
     </tr>
 
     <?php
@@ -192,7 +192,7 @@ th {
     <div class="modal-content">
         <form action="../controller/controller.php?dateDebut=<?php echo $_GET['dateDebut'] ?>&dateFin=<?php echo $_GET['dateFin'] ?>" method="post" style="text-align: end;">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel" style="text-align: end;">اضافةالديون المتعلة باستغلال المياه</h5>
+                <h5 class="modal-title" id="exampleModalLabel" style="text-align: end;">اضافةالديون المتعلقة باستغلال المياه</h5>
             </div>
             <div class="modal-body">
                 <input type="text" class="d-none" name="otre_non" value="0">
@@ -243,7 +243,7 @@ th {
     <div class="modal-content">
         <form action="../controller/controller.php?dateDebut=<?php echo $_GET['dateDebut'] ?>&dateFin=<?php echo $_GET['dateFin'] ?>" method="post" style="text-align: end;">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel" style="text-align: end;">اضافةالديون المتعلة باستغلال المياه</h5>
+                <h5 class="modal-title" id="exampleModalLabel" style="text-align: end;">اضافةالديون المتعلقة باستغلال المياه</h5>
             </div>
             <div class="modal-body">
                 <input type="text" class="d-none" name="otre_non" value="1">
