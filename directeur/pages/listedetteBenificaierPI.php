@@ -222,7 +222,7 @@ th {
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">تاريخ الخلاص</label>
-                    <input type="date" min="<?php echo $_GET['dateDebut'] ?>" max="<?php echo $_GET['dateFin'] ?>" name="date" class="form-control" >
+                    <input type="date" name="date" class="form-control" >
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">ملاحظات</label>
