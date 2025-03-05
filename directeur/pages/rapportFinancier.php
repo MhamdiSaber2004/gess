@@ -544,7 +544,7 @@
           document.getElementById("minp<?php echo $i ?>4").value = moy<?php echo $i ?>.toFixed(3);
         })
       <?php
-    }else if($i != 18){
+    }else if($i != 18 and $i!=8){
       ?>
         document.getElementById('inp<?php echo $i ?>2').addEventListener("change", function(){
           var deff<?php echo $i ?>=document.getElementById('inp<?php echo $i ?>2').value - document.getElementById('inp<?php echo $i ?>1').value;
