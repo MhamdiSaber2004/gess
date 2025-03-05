@@ -516,7 +516,7 @@
       if($i < 7){
       ?>
         
-        document.getElementById('inp<?php echo $i ?>2').addEventListener("keyup", function(){
+        document.getElementById('inp<?php echo $i ?>2').addEventListener("change", function(){
           var deff<?php echo $i ?>=document.getElementById('inp<?php echo $i ?>2').value - document.getElementById('inp<?php echo $i ?>1').value;
           document.getElementById("inp<?php echo $i ?>3").value = deff<?php echo $i ?>.toFixed(3);
 
@@ -530,7 +530,7 @@
           document.getElementById("inp<?php echo $i ?>4").value = moy<?php echo $i ?>.toFixed(3);
         })
 
-        document.getElementById('minp<?php echo $i ?>2').addEventListener("keyup", function(){
+        document.getElementById('minp<?php echo $i ?>2').addEventListener("change", function(){
           var deff<?php echo $i ?>=document.getElementById('minp<?php echo $i ?>2').value - document.getElementById('minp<?php echo $i ?>1').value;
           document.getElementById("minp<?php echo $i ?>3").value = deff<?php echo $i ?>.toFixed(3);
 
@@ -546,7 +546,7 @@
       <?php
     }else if($i != 18){
       ?>
-        document.getElementById('inp<?php echo $i ?>2').addEventListener("keyup", function(){
+        document.getElementById('inp<?php echo $i ?>2').addEventListener("change", function(){
           var deff<?php echo $i ?>=document.getElementById('inp<?php echo $i ?>2').value - document.getElementById('inp<?php echo $i ?>1').value;
           document.getElementById("inp<?php echo $i ?>3").value = deff<?php echo $i ?>.toFixed(3);
 
@@ -560,7 +560,7 @@
           document.getElementById("inp<?php echo $i ?>4").value = moy<?php echo $i ?>.toFixed(3);
         })
 
-        document.getElementById('minp<?php echo $i ?>2').addEventListener("keyup", function(){
+        document.getElementById('minp<?php echo $i ?>2').addEventListener("change", function(){
           var deff<?php echo $i ?>=document.getElementById('minp<?php echo $i ?>2').value - document.getElementById('minp<?php echo $i ?>1').value;
           document.getElementById("minp<?php echo $i ?>3").value = deff<?php echo $i ?>.toFixed(3);
 
