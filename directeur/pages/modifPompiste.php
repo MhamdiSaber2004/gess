@@ -81,22 +81,24 @@ if(isset($_GET['id']) && ! empty ( $_GET['id'] ))
                 </div>
                 
               </div>
-              <div class="col-lg-12">
-                <div class="form-group">
-                  <label class="form-control-label" for="input-first-name">صفة المهمة</label>
-                  <select class="form-control form-control-alternative" type="text" placeholder="" name="payement" >
-                  <option value="مقابل منحة شهرية" <?php if($row['payement']=="مقابل منحة شهرية") {echo "selected";} ?> > مقابل منحة شهرية</option>
-                  <option value="مقابل نسبة من المداخيل"<?php if($row['payement']=="مقابل نسبة من المداخيل") {echo "selected";} ?>> مقابل نسبة من المداخيل</option>
-                  <option value="من دون مقابل"<?php if($row['payement']=="من دون مقابل") {echo "selected";} ?>>من دون مقابل</option>
-                  </select>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-first-name">صفة المهمة</label>
+                    <select class="form-control form-control-alternative" type="text" placeholder="" name="payement" >
+                    <option value="مقابل منحة شهرية" <?php if($row['payement']=="مقابل منحة شهرية") {echo "selected";} ?> > مقابل منحة شهرية</option>
+                    <option value="مقابل نسبة من المداخيل"<?php if($row['payement']=="مقابل نسبة من المداخيل") {echo "selected";} ?>> مقابل نسبة من المداخيل</option>
+                    <option value="من دون مقابل"<?php if($row['payement']=="من دون مقابل") {echo "selected";} ?>>من دون مقابل</option>
+                    </select>
+                  </div>
                 </div>
-              </div>
-              <div class="col-lg-6">
+                <div class="col-lg-6">
                   <div class="form-group">
                     <label class="form-control-label" for="input-country"> تاريخ التكليف</label>
                     <input type="date" id="dateDebut" class="form-control form-control-alternative" placeholder="تاريخ التكليف" name="dateDebut" value="<?php echo $row['dateDebut']; ?>" require>
                   </div>
                 </div>
+              </div>
             </div>
             <hr class="my-4" />
             <!-- Address -->

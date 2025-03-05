@@ -81,20 +81,22 @@
                     </div>
                     
                   </div>
-                  <div class="col-lg-6">
+                  <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                          <label class="form-control-label" for="input-first-name">صفة المهمة</label>
+                          <select class="form-control form-control-alternative" type="text" placeholder="" name="payement" >
+                          <option value="مقابل منحة شهرية" > مقابل منحة شهرية</option>
+                          <option value="مقابل نسبة من المداخيل"> مقابل نسبة من المداخيل</option>
+                          <option value="من دون مقابل">من دون مقابل</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
                       <div class="form-group">
-                        <label class="form-control-label" for="input-first-name">صفة المهمة</label>
-                        <select class="form-control form-control-alternative" type="text" placeholder="" name="payement" >
-                        <option value="مقابل منحة شهرية" > مقابل منحة شهرية</option>
-                        <option value="مقابل نسبة من المداخيل"> مقابل نسبة من المداخيل</option>
-                        <option value="من دون مقابل">من دون مقابل</option>
-                        </select>
+                        <label class="form-control-label" for="input-country"> تاريخ التكليف</label>
+                        <input type="date" id="dateDebut" class="form-control form-control-alternative" placeholder="تاريخ التكليف" name="dateDebut" require>
                       </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <label class="form-control-label" for="input-country"> تاريخ التكليف</label>
-                      <input type="date" id="dateDebut" class="form-control form-control-alternative" placeholder="تاريخ التكليف" name="dateDebut" require>
                     </div>
                   </div>
                 </div>
