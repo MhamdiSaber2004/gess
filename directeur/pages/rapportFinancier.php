@@ -537,8 +537,8 @@
           total21 = total21 + parseFloat(document.getElementById('minp<?php echo $i ?>1').value) ;
           total22 = total22 + parseFloat(document.getElementById('minp<?php echo $i ?>2').value) ;
 
-          document.getElementById('minp71').value = total11;
-          document.getElementById('minp72').value = total12;
+          document.getElementById('minp71').value = total21;
+          document.getElementById('minp72').value = total22;
 
           var moy<?php echo $i ?>=(parseFloat(deff<?php echo $i ?>) / parseFloat(document.getElementById('minp<?php echo $i ?>1').value))*100;
           document.getElementById("minp<?php echo $i ?>4").value = moy<?php echo $i ?>.toFixed(3);
