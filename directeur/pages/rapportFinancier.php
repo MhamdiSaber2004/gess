@@ -170,16 +170,9 @@
 
 
                       <tr>
-                        <td class="text-center" colspan="5">المداخيل</td>
+                        <td class="text-center" colspan="5">المصاريف</td>
                       </tr>
 
-                      <tr>
-                        <td class="text-center" style="border: 1px solid;">اشتراكات</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="inp81" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="inp82" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="inp83" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="inp84" style="width: 100px;border: 0;"></td>
-                      </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">شراء الماء</td>
                         <td class="text-center" style="border: 1px solid;"><input type="text"  id="inp91" style="width: 100px;border: 0;"></td>
@@ -362,16 +355,9 @@
 
 
                       <tr>
-                        <td class="text-center" colspan="5">المداخيل</td>
+                        <td class="text-center" colspan="5">المصاريف</td>
                       </tr>
 
-                      <tr>
-                        <td class="text-center" style="border: 1px solid;">اشتراكات</td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp81" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp82" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp83" style="width: 100px;border: 0;"></td>
-                        <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp84" style="width: 100px;border: 0;"></td>
-                      </tr>
                       <tr>
                         <td class="text-center" style="border: 1px solid;">شراء الماء</td>
                         <td class="text-center" style="border: 1px solid;"><input type="text"  id="minp91" style="width: 100px;border: 0;"></td>
@@ -514,13 +500,32 @@
     
   }
 
+  var total11 = 0 ;
+  var total12 = 0 ;
+
+  var total21 = 0;
+  var total22 = 0;
+
+  var total111 = 0 ;
+  var total121 = 0 ;
+
+  var total211 = 0;
+  var total221 = 0;
   <?php
     for($i=0 ; $i<20 ; $i++){
+      if($i < 7){
       ?>
+        
         document.getElementById('inp<?php echo $i ?>2').addEventListener("keyup", function(){
           var deff<?php echo $i ?>=document.getElementById('inp<?php echo $i ?>2').value - document.getElementById('inp<?php echo $i ?>1').value;
           document.getElementById("inp<?php echo $i ?>3").value = deff<?php echo $i ?>.toFixed(3);
 
+          total11 = total11 + document.getElementById('inp<?php echo $i ?>1').value;
+          total12 = total12 + document.getElementById('inp<?php echo $i ?>2').value;
+
+          document.getElementById('inp71').value = total11;
+          document.getElementById('inp72').value = total12;
+          
           var moy<?php echo $i ?>=(parseFloat(deff<?php echo $i ?>) / parseFloat(document.getElementById('inp<?php echo $i ?>1').value))*100;
           document.getElementById("inp<?php echo $i ?>4").value = moy<?php echo $i ?>.toFixed(3);
         })
@@ -529,11 +534,48 @@
           var deff<?php echo $i ?>=document.getElementById('minp<?php echo $i ?>2').value - document.getElementById('minp<?php echo $i ?>1').value;
           document.getElementById("minp<?php echo $i ?>3").value = deff<?php echo $i ?>.toFixed(3);
 
+          total21 = total21 + document.getElementById('minp<?php echo $i ?>1').value ;
+          total22 = total22 + document.getElementById('minp<?php echo $i ?>2').value ;
+
+          document.getElementById('minp71').value = total11;
+          document.getElementById('minp72').value = total12;
+
+          var moy<?php echo $i ?>=(parseFloat(deff<?php echo $i ?>) / parseFloat(document.getElementById('minp<?php echo $i ?>1').value))*100;
+          document.getElementById("minp<?php echo $i ?>4").value = moy<?php echo $i ?>.toFixed(3);
+        })
+      <?php
+    }else if($i != 18){
+      ?>
+        document.getElementById('inp<?php echo $i ?>2').addEventListener("keyup", function(){
+          var deff<?php echo $i ?>=document.getElementById('inp<?php echo $i ?>2').value - document.getElementById('inp<?php echo $i ?>1').value;
+          document.getElementById("inp<?php echo $i ?>3").value = deff<?php echo $i ?>.toFixed(3);
+
+          total111 = total111 + document.getElementById('inp<?php echo $i ?>1').value;
+          total121 = total121 + document.getElementById('inp<?php echo $i ?>2').value;
+
+          document.getElementById('inp71').value = total111;
+          document.getElementById('inp72').value = total121;
+          
+          var moy<?php echo $i ?>=(parseFloat(deff<?php echo $i ?>) / parseFloat(document.getElementById('inp<?php echo $i ?>1').value))*100;
+          document.getElementById("inp<?php echo $i ?>4").value = moy<?php echo $i ?>.toFixed(3);
+        })
+
+        document.getElementById('minp<?php echo $i ?>2').addEventListener("keyup", function(){
+          var deff<?php echo $i ?>=document.getElementById('minp<?php echo $i ?>2').value - document.getElementById('minp<?php echo $i ?>1').value;
+          document.getElementById("minp<?php echo $i ?>3").value = deff<?php echo $i ?>.toFixed(3);
+
+          total211 = total211 + document.getElementById('minp<?php echo $i ?>1').value ;
+          total221 = total221 + document.getElementById('minp<?php echo $i ?>2').value ;
+
+          document.getElementById('minp71').value = total111;
+          document.getElementById('minp72').value = total121;
+
           var moy<?php echo $i ?>=(parseFloat(deff<?php echo $i ?>) / parseFloat(document.getElementById('minp<?php echo $i ?>1').value))*100;
           document.getElementById("minp<?php echo $i ?>4").value = moy<?php echo $i ?>.toFixed(3);
         })
       <?php
     }
+  }
   ?>
 </script>
 
