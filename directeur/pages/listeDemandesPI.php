@@ -61,15 +61,14 @@
                                            // output data of each row
                                            while ($row = $result->fetch_assoc()) {
            
-                                       if ($result1->num_rows == 0) 
-                                       {
+                                      
                                         $sql1 = "SELECT * FROM benefique_pi where idBenefique=".$row["idBenefique"];
                                         $result1 = $conn->query($sql1);
                                         
                                         if ($result1->num_rows > 0)
                                         $row1 = $result1->fetch_assoc();
                                        
-                                       }
+                                       
                                        else
 
                                        {
