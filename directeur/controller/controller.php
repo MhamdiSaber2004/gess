@@ -383,6 +383,7 @@ $dateCIN = mysqli_real_escape_string($conn, $_POST['dateCIN']);
 $payement = mysqli_real_escape_string($conn, $_POST['payement']);
 $address = mysqli_real_escape_string($conn, $_POST['address']);
 $tel = mysqli_real_escape_string($conn, $_POST['tel']);
+$dateDebut = $_POST['dateDebut'];
 $email = mysqli_real_escape_string($conn, $_POST['email']);
 $mdp = mysqli_real_escape_string($conn, $_POST['mdp']);
 $travail = mysqli_real_escape_string($conn, $_POST['travail']);
@@ -410,7 +411,7 @@ $isUploadedBack = move_uploaded_file($_FILES["file1"]["tmp_name"], $uploadPathBa
 if($isUploadedBack)
 {
 
-    $sql1="INSERT INTO `pompiste` (`idGess` , `nom`, `dateN`, `CIN`, `dateCIN`, `payement`, `famille`, `travail`, `address`, `tel`, `dateDebut`, `dateFin`, `email`, `mdp`, `file`, `directeur`) VALUES ('$idGess', '$nom', '$dateN', '$CIN', '$dateCIN', '$payement', '$famille', '$travail', '$address', '$tel', current_timestamp(), '1000-10-10', '$email', '$mdp', '$nameFile1','0')";
+    $sql1="INSERT INTO `pompiste` (`idGess` , `nom`, `dateN`, `CIN`, `dateCIN`, `payement`, `famille`, `travail`, `address`, `tel`, `dateDebut`, `dateFin`, `email`, `mdp`, `file`, `directeur`) VALUES ('$idGess', '$nom', '$dateN', '$CIN', '$dateCIN', '$payement', '$famille', '$travail', '$address', '$tel', '$dateDebut', '1000-10-10', '$email', '$mdp', '$nameFile1','0')";
 
             
     if ($conn->query($sql1) === TRUE) {
@@ -453,6 +454,7 @@ if (isset($_POST['modifPompiste'])) {
     $payement = mysqli_real_escape_string($conn, $_POST['payement']);
     $address = mysqli_real_escape_string($conn, $_POST['address']);
     $tel = mysqli_real_escape_string($conn, $_POST['tel']);
+    $dateDebut = $_POST['dateDebut'];
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $mdp = mysqli_real_escape_string($conn, $_POST['mdp']);
     $travail =  $_POST['travail'];
@@ -461,7 +463,7 @@ if (isset($_POST['modifPompiste'])) {
     
 if(strlen($CIN)<8)
     $CIN='0'.$CIN;
-    $sql="UPDATE `pompiste` SET `nom` = '$nom', `dateN` = '$dateN', `CIN` = '$CIN', `dateCIN` = '$dateCIN', `payement` = '$payement', `famille` = '$famille', `travail` = '$travail', `address` = '$address', `tel` = '$tel', `email` = '$email', `mdp` = '$mdp' WHERE `pompiste`.`idPompiste` = $id ;";    
+    $sql="UPDATE `pompiste` SET `nom` = '$nom', `dateN` = '$dateN', `CIN` = '$CIN', `dateCIN` = '$dateCIN', `payement` = '$payement', `famille` = '$famille', `travail` = '$travail', `address` = '$address', `tel` = '$tel',`dateDebut` = '$dateDebut', `email` = '$email', `mdp` = '$mdp' WHERE `pompiste`.`idPompiste` = $id ;";    
 
         if ($conn->query($sql) === TRUE) {
             $_SESSION['messageClass']="success";

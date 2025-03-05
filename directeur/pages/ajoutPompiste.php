@@ -31,7 +31,7 @@
               <form onsubmit ="return checkInputsPompiste()" action="controller/controller.php" method="post" enctype="multipart/form-data">
                 <h6 class="heading-small text-muted mb-4">معلومات المستخدم </h6>
                 <div class="pl-lg-4">
-                  <div class="row">
+                <div class="row">
                   <div class="col-md-12">
                       <div class="form-group">
                         <label class="form-control-label" for="input-address">رمز (تلقائي)</label>
@@ -81,18 +81,22 @@
                     </div>
                     
                   </div>
-                  <div class="col-lg-12">
+                  <div class="col-lg-6">
                       <div class="form-group">
-
-                      <label class="form-control-label" for="input-first-name">صفة المهمة</label>
-
-                      <select class="form-control form-control-alternative" type="text" placeholder="" name="payement" >
-                       <option value="مقابل منحة شهرية" > مقابل منحة شهرية</option>
-                       <option value="مقابل نسبة من المداخيل"> مقابل نسبة من المداخيل</option>
-                       <option value="من دون مقابل">من دون مقابل</option>
-                      </select>
+                        <label class="form-control-label" for="input-first-name">صفة المهمة</label>
+                        <select class="form-control form-control-alternative" type="text" placeholder="" name="payement" >
+                        <option value="مقابل منحة شهرية" > مقابل منحة شهرية</option>
+                        <option value="مقابل نسبة من المداخيل"> مقابل نسبة من المداخيل</option>
+                        <option value="من دون مقابل">من دون مقابل</option>
+                        </select>
                       </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label class="form-control-label" for="input-country"> تاريخ التكليف</label>
+                      <input type="date" id="dateDebut" class="form-control form-control-alternative" placeholder="تاريخ التكليف" name="dateDebut" require>
                     </div>
+                  </div>
                 </div>
                 <hr class="my-4" />
                 <!-- Address -->

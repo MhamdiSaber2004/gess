@@ -47,7 +47,7 @@
       <tr style="border: 1px solid;">
         <td style="border: 1px solid;">العدد الرتبي</td>
         <td style="border: 1px solid;">الاسم و اللقب</td>
-        <td style="border: 1px solid;">رقم بطاقة التعريف </td>
+        <td style="border: 1px solid;">الصفة </td>
         <td style="border: 1px solid;">الامضاء </td>
       </tr>
       <tr style="border: 1px solid;">
@@ -94,7 +94,7 @@
       <tr style="border: 1px solid;">
         <td style="border: 1px solid;">العدد الرتبي</td>
         <td style="border: 1px solid;">الاسم و اللقب</td>
-        <td style="border: 1px solid;">رقم بطاقة التعريف </td>
+        <td style="border: 1px solid;">الصفة </td>
         <td style="border: 1px solid;">سبب الغياب </td>
       </tr>
       <tr style="border: 1px solid;">
@@ -190,32 +190,32 @@
         <td style="border: 1px solid;"><small>مستوى الانجاز</small>    </td>
       </tr>
       <tr style="border: 1px solid;">
-        <td style="border: 1px solid;">1</td>
+        <td style="border: 1px solid;">1<input type="text" placeholder="..........................................." style="border:0" name="inp2"></td>
         <td  style="border: 1px solid;"><input type="text" placeholder="..........................................." style="border:0" name="inp2"></td>
         <td  style="border: 1px solid;"><input type="text" placeholder="..........................................." style="border:0" name="inp2"></td>
       </tr>
       <tr style="border: 1px solid;">
-        <td style="border: 1px solid;">2</td>
+        <td style="border: 1px solid;">2<input type="text" placeholder="..........................................." style="border:0" name="inp2"></td>
         <td  style="border: 1px solid;"><input type="text" placeholder="..........................................." style="border:0" name="inp2"></td>
         <td  style="border: 1px solid;"><input type="text" placeholder="..........................................." style="border:0" name="inp2"></td>
       </tr>
       <tr style="border: 1px solid;">
-        <td style="border: 1px solid;">3</td>
+        <td style="border: 1px solid;">3<input type="text" placeholder="..........................................." style="border:0" name="inp2"></td>
         <td  style="border: 1px solid;"><input type="text" placeholder="..........................................." style="border:0" name="inp2"></td>
         <td  style="border: 1px solid;"><input type="text" placeholder="..........................................." style="border:0" name="inp2"></td>
       </tr>
       <tr style="border: 1px solid;">
-        <td style="border: 1px solid;">4</td>
+        <td style="border: 1px solid;">4<input type="text" placeholder="..........................................." style="border:0" name="inp2"></td>
         <td  style="border: 1px solid;"><input type="text" placeholder="..........................................." style="border:0" name="inp2"></td>
         <td  style="border: 1px solid;"><input type="text" placeholder="..........................................." style="border:0" name="inp2"></td>
       </tr>
       <tr style="border: 1px solid;">
-        <td style="border: 1px solid;">5</td>
+        <td style="border: 1px solid;">5<input type="text" placeholder="..........................................." style="border:0" name="inp2"></td>
         <td  style="border: 1px solid;"><input type="text" placeholder="..........................................." style="border:0" name="inp2"></td>
         <td  style="border: 1px solid;"><input type="text" placeholder="..........................................." style="border:0" name="inp2"></td>
       </tr>
       <tr style="border: 1px solid;">
-        <td style="border: 1px solid;">6</td>
+        <td style="border: 1px solid;">6<input type="text" placeholder="..........................................." style="border:0" name="inp2"></td>
         <td  style="border: 1px solid;"><input type="text" placeholder="..........................................." style="border:0" name="inp2"></td>
         <td  style="border: 1px solid;"><input type="text" placeholder="..........................................." style="border:0" name="inp2"></td>
       </tr>
@@ -226,13 +226,14 @@
 
     <div class="container text-center text-black">
         <div class="row">
-          <div class="col">
+          <div class="col-12">
      
           </div>
-          <div class="col">
-          رئيس مجلس الإدارة <br>_____________
+        
+          <div class="col-6">
+          رئيس الجلسة  
           </div>
-          <strong class="col">
+          <strong class="col-6">
        
           </strong>
         </div>
