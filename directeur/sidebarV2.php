@@ -101,7 +101,7 @@
             </a>
           </li>
           <li class="nav-item <?php echo ($current_page === 'listePxwoxwmpiste') ? 'active' : ''; ?>">
-            <a class="nav-link" href="index.php?page=listeDemandes">
+            <a class="nav-link" href="index.php?page=listeDemandes<?php echo $typeGess ?>">
               <i class="ni ni-chart-bar-32 text-red"></i>دفتر الانخراطات  
             </a>
           </li>

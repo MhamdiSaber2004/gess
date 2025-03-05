@@ -98,7 +98,7 @@
                                                . $row1['CIN'].'
                                                </td>
                     <td>
-                    <a class="btn btn-sm btn-primary"   href="index.php?page=printDemande&idDemande='.$row['idDemande'].'" >طباعة المطلب </a>
+                    <a class="btn btn-sm btn-primary"   href="index.php?page=printDemande&idDemande='.$row['idDemande'].'" >طباعة قرار قبول الانخراط</a>
                     </td>
                    
                     
