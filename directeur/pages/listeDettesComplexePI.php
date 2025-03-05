@@ -104,8 +104,8 @@ th {
 <div class="btnon">
 
     <a href="../index.php" class="btn btn-primary">رجوع</a>
-    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#eaudouyoun">اضافةالديون المتعلة باستغلال المياه</button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#eauotre">اضافةالديون المتعلة الانشطة الاخرى</button>
+    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#eaudouyoun">اضافةالديون المتعلقة باستغلال المياه</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#eauotre">اضافةالديون المتعلقة الانشطة الاخرى</button>
     <button type="button" class="btn btn-success" onclick="printer()">طباعة</button>
 
 </div>
@@ -128,7 +128,7 @@ th {
         <th>الاسم</th>
     </tr>
     <tr>
-        <td colspan="6"> الديون المتعلة باستغلال المياه</td>
+        <td colspan="6"> الديون المتعلقة باستغلال المياه</td>
     </tr>
     <?php
         $sql = "SELECT * FROM `dettes_complexe` WHERE idGess=$idGess and otre_non='0' and active='1' and dateFacture between '$dateDebute'  and '$dateFin'";
@@ -151,7 +151,7 @@ th {
   
 
     <tr>
-        <td colspan="6"> الديون المتعلة الانشطة الاخرى</td>
+        <td colspan="6"> الديون المتعلقة الانشطة الاخرى</td>
     </tr>
 
     <?php
@@ -188,7 +188,7 @@ th {
     <div class="modal-content">
         <form action="../controller/controller.php?dateDebut=<?php echo $_GET['dateDebut'] ?>&dateFin=<?php echo $_GET['dateFin'] ?>" method="post" style="text-align: end;">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel" style="text-align: end;">اضافةالديون المتعلة باستغلال المياه</h5>
+                <h5 class="modal-title" id="exampleModalLabel" style="text-align: end;">اضافةالديون المتعلقة باستغلال المياه</h5>
             </div>
             <div class="modal-body">
                 <input type="text" class="d-none" name="otre_non_C" value="0">
@@ -198,7 +198,7 @@ th {
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">تاريخ الفاتورة</label>
-                    <input type="date" name="dateFacture" min="<?php echo $_GET['dateDebut'] ?>" max="<?php echo $_GET['dateFin'] ?>" class="form-control" >
+                    <input type="date" name="dateFacture"  class="form-control" >
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">المبلغ (بالدينار)</label>
@@ -206,7 +206,7 @@ th {
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">تاريخ الخلاص</label>
-                    <input type="date" min="<?php echo $_GET['dateDebut'] ?>" max="<?php echo $_GET['dateFin'] ?>" name="dateMontant" class="form-control" >
+                    <input type="date"  name="dateMontant" class="form-control" >
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">ملاحظات</label>
@@ -227,7 +227,7 @@ th {
     <div class="modal-content">
         <form action="../controller/controller.php?dateDebut=<?php echo $_GET['dateDebut'] ?>&dateFin=<?php echo $_GET['dateFin'] ?>" method="post" style="text-align: end;">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel" style="text-align: end;">اضافةالديون المتعلة باستغلال المياه</h5>
+                <h5 class="modal-title" id="exampleModalLabel" style="text-align: end;">اضافةالديون المتعلقة باستغلال المياه</h5>
             </div>
             <div class="modal-body">
                 <input type="text" class="d-none" name="otre_non_C" value="1">
@@ -237,7 +237,7 @@ th {
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">تاريخ الفاتورة</label>
-                    <input type="date" name="dateFacture" min="<?php echo $_GET['dateDebut'] ?>" max="<?php echo $_GET['dateFin'] ?>" class="form-control" >
+                    <input type="date" name="dateFacture" class="form-control" >
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">المبلغ (بالدينار)</label>
@@ -245,7 +245,7 @@ th {
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">تاريخ الخلاص</label>
-                    <input type="date" min="<?php echo $_GET['dateDebut'] ?>" max="<?php echo $_GET['dateFin'] ?>" name="dateMontant" class="form-control" >
+                    <input type="date"  name="dateMontant" class="form-control" >
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">ملاحظات</label>
