@@ -237,6 +237,7 @@
         <div class="col-6 text-center">
           رئيس الجلسة  
         </div>
+        <br><br>
       </div>
     </div>
     <br>
