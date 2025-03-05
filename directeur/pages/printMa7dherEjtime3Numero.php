@@ -226,10 +226,11 @@
 
     <div class="container text-center text-black">
         <div class="row">
+          <br>
           <div class="col-12">
-            <small class="d-flex justify-content-start text-black">ورفعت الجلسة على الساعة : <input type="text" placeholder="..........................................." style="border:0" name="inp2"> &nbsp;<br></small>
+            ورفعت الجلسة على الساعة : <input type="text" placeholder="..........................................." style="border:0" name="inp2"> &nbsp;<br>
           </div>
-        
+          <br>
           <div class="col-6 text-center">
             مقرر الجلسة  
           </div>
