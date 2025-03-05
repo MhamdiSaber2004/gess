@@ -234,7 +234,7 @@
         <div class="col-6 text-center">
           مقرر الجلسة  
         </div>
-        <div class="col-6 text-center">
+        <div class="col-6">
           رئيس الجلسة  
         </div>
         <br><br>
