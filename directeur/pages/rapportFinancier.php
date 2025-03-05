@@ -282,8 +282,8 @@
                     <table style="border: 1px solid; width:70%">
                     <tr>
                       <td class="text-center" style="border: 1px solid;"></td>
-                      <td class="text-center" style="border: 1px solid;">السنة السابقة</td>
-                      <td class="text-center" style="border: 1px solid;">السنة الحالية</td>
+                      <td class="text-center" style="border: 1px solid;">المزانية</td>
+                      <td class="text-center" style="border: 1px solid;">التنفيذ</td>
                       <td class="text-center" style="border: 1px solid;">الفارق</td>
                       <td class="text-center" style="border: 1px solid;">%</td>
                     </tr>
