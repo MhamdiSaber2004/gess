@@ -224,22 +224,22 @@
 
     <p class="d-xxl-flex justify-content-xxl-start text-black" ></p>
 
-    <div class="container text-center text-black">
-        <div class="row">
-          <br>
-          <div class="col-12">
-            ورفعت الجلسة على الساعة : <input type="text" placeholder="..........................................." style="border:0" name="inp2"> &nbsp;<br>
-          </div>
-          <br>
-          <div class="col-6 text-center">
-            مقرر الجلسة  
-          </div>
-          <div class="col-6 text-center">
-            رئيس الجلسة  
-          </div>
+    <div class=" text-black">
+      <div class="row">
+        <br>
+        <div class="col-12">
+          ورفعت الجلسة على الساعة : <input type="text" placeholder="..........................................." style="border:0" name="inp2"> &nbsp;<br>
+        </div>
+        <br>
+        <div class="col-6 text-center">
+          مقرر الجلسة  
+        </div>
+        <div class="col-6 text-center">
+          رئيس الجلسة  
         </div>
       </div>
-      <br>
+    </div>
+    <br>
 
    
     
